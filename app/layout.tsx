@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   description: `${promptItems.length + liveIndex.sourceStats.youMindCompleteRecords} 组真实生成效果与完整提示词，含 ${liveIndex.sourceStats.youMindImages} 张 YouMind 公开实图和小小东专题，重点覆盖 PPT、信息图、海报与产品视觉。`,
   keywords: ["PPT 提示词", "GPT Image 2", "真实生成效果", "生图提示词", "信息图", "Prompt Atlas"],
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "./favicon.svg",
+    shortcut: "./favicon.svg",
   },
   openGraph: {
     title: "Prompt Atlas｜生图与 PPT 提示词灵感库",
