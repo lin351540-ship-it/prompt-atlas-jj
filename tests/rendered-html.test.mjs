@@ -25,7 +25,7 @@ test("server-renders the real-output Prompt Atlas gallery", async () => {
   assert.match(html, /授权案例/);
   assert.match(html, /先看效果/);
   assert.match(html, /查看[\s\S]{0,60}组真实案例/);
-  assert.match(html, /14,003/);
+  assert.match(html, /YouMind 上游目录/);
   assert.match(html, /LIVE DISCOVERY/);
   assert.match(html, /PPT \/ 信息图/);
   assert.match(html, /ToseaAI/);
