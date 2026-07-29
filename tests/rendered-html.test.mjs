@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access, readFile } from "node:fs/promises";
+import { access, readFile, readdir } from "node:fs/promises";
 import test from "node:test";
 
 async function render() {
@@ -70,4 +70,18 @@ test("ships complete prompts, source attribution, filtering, and real image asse
   assert.match(layout, /lang="zh-CN"/);
   await access(new URL("../public/gallery/tosea/03.jpg", import.meta.url));
   await access(new URL(`../public/${items.find((item) => item.id.startsWith("2slides-")).image.replace(/^\.\//, "")}`, import.meta.url));
+});
+
+test("builds relative client chunks for GitHub Pages project hosting", async () => {
+  const assetDirectory = new URL("../dist/client/assets/", import.meta.url);
+  const javascriptFiles = (await readdir(assetDirectory)).filter((name) => name.endsWith(".js"));
+  const contents = await Promise.all(
+    javascriptFiles.map(async (name) => ({ name, source: await readFile(new URL(name, assetDirectory), "utf8") })),
+  );
+  const bootstrap = contents.find(({ source }) => source.includes("__vite__mapDeps"));
+
+  assert.ok(bootstrap, "expected to find the Vite client bootstrap bundle");
+  assert.match(bootstrap.source, /\["\.\/[^"]+\.js"/);
+  assert.match(bootstrap.source, /new URL\(e,t\)\.href/);
+  assert.doesNotMatch(bootstrap.source, /return[`"']\/[`"']\+e/);
 });

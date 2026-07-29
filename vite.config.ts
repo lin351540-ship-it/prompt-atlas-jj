@@ -44,6 +44,9 @@ export default defineConfig(async () => {
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 
   return {
+    // Keep generated chunk and preload URLs relative so the static export works
+    // both at a domain root and under the GitHub Pages project subdirectory.
+    base: "./",
     server: isCodexSeatbeltSandbox
       ? { watch: { useFsEvents: false, usePolling: true } }
       : undefined,

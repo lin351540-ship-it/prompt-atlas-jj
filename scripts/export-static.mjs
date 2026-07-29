@@ -18,8 +18,8 @@ if (!response.ok) throw new Error(`Static render failed: ${response.status}`);
 
 let html = await response.text();
 html = html
-  .replaceAll("/assets/", "./assets/")
-  .replaceAll("/favicon.svg", "./favicon.svg")
+  .replaceAll('="/assets/', '="./assets/')
+  .replaceAll('="/favicon.svg"', '="./favicon.svg"')
   .replaceAll('src="/gallery/', 'src="./gallery/')
   .replace('"pathname":"/"', '"pathname":"/prompt-atlas-jj/"');
 
