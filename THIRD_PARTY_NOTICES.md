@@ -28,3 +28,47 @@ The full license text in effect for the referenced project is reproduced below.
 
 Canonical license text:
 https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md
+
+## JCodesMore AI Website Cloner Template
+
+The Geist / Geist Mono typography setup and parts of the layout rhythm were
+informed by the public template below. No generated clone output is bundled.
+
+- Project: https://github.com/JCodesMore/ai-website-cloner-template
+- License: MIT
+- Copyright: the project contributors
+
+Canonical license text:
+https://github.com/JCodesMore/ai-website-cloner-template/blob/main/LICENSE
+
+## Geist typeface
+
+The website self-hosts the variable Geist Sans and Geist Mono webfonts from
+Vercel's official `geist` package so static exports do not depend on local file
+URLs.
+
+- Project: https://github.com/vercel/geist-font
+- License: SIL Open Font License 1.1
+
+## YouMind GPT Image 2 Prompts Search
+
+The large public prompt catalog is synchronized from YouMind OpenLab's
+official GitHub repository. The source manifest currently declares 14,106
+prompts; the published category files contain 14,074 unique IDs after
+deduplication. Prompt text is stored in local static shards. Preview images
+remain source-hosted and retain their original URLs.
+
+- Project: https://github.com/YouMind-OpenLab/gpt-image-2-prompts-search
+- Upstream attribution: 提示词由 [YouMind.com](https://youmind.com) 通过公开社区搜集 ❤️
+- Rights note: the repository README and package metadata identify MIT, but a
+  root LICENSE file was not present when this snapshot was reviewed. This site
+  therefore preserves attribution and does not claim ownership of community
+  prompt text or preview images.
+
+## YouMind Awesome GPT Image 2
+
+The smaller curated set supplies richer author, original-post and multi-image
+metadata for 126 entries. It is deduplicated against the large public catalog.
+
+- Project: https://github.com/YouMind-OpenLab/awesome-gpt-image-2
+- License: CC BY 4.0

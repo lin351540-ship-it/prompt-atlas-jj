@@ -7,15 +7,16 @@
   },
   "scripts": {
     "dev": "vinext dev",
-    "build": "vinext build",
+    "build": "node scripts/sync-font-assets.mjs && vinext build",
     "start": "vinext start",
-    "sync": "node scripts/import-curated-prompts.mjs && node scripts/sync-public-index.mjs",
+    "sync": "node scripts/import-curated-prompts.mjs && node scripts/sync-public-index.mjs && node scripts/sync-youmind-search-index.mjs",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint app scripts tests --ignore-pattern dist --ignore-pattern docs --ignore-pattern build --ignore-pattern .vinext --ignore-pattern .wrangler",
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",
+    "geist": "^1.7.2",
     "next": "16.2.6",
     "react": "19.2.6",
     "react-dom": "19.2.6"

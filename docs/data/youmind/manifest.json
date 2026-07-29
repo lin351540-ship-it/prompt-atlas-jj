@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "source": "https://github.com/YouMind-OpenLab/gpt-image-2-prompts-search",
+  "sourceUpdatedAt": "2026-07-29T14:29:36.899Z",
+  "syncedAt": "2026-07-29T17:03:43.425Z",
+  "declaredTotalPrompts": 14106,
+  "uniquePromptCount": 14074,
+  "manifestDrift": 32,
+  "completePromptCount": 14074,
+  "categoryMemberships": 22105,
+  "categories": [
+    {
+      "slug": "profile-avatar",
+      "title": "Profile / Avatar",
+      "file": "profile-avatar.json",
+      "count": 1939
+    },
+    {
+      "slug": "social-media-post",
+      "title": "Social Media Post",
+      "file": "social-media-post.json",
+      "count": 5250
+    },
+    {
+      "slug": "infographic-edu-visual",
+      "title": "Infographic / Edu Visual",
+      "file": "infographic-edu-visual.json",
+      "count": 1327
+    },
+    {
+      "slug": "youtube-thumbnail",
+      "title": "YouTube Thumbnail",
+      "file": "youtube-thumbnail.json",
+      "count": 190
+    },
+    {
+      "slug": "comic-storyboard",
+      "title": "Comic / Storyboard",
+      "file": "comic-storyboard.json",
+      "count": 2152
+    },
+    {
+      "slug": "product-marketing",
+      "title": "Product Marketing",
+      "file": "product-marketing.json",
+      "count": 3864
+    },
+    {
+      "slug": "ecommerce-main-image",
+      "title": "E-commerce Main Image",
+      "file": "ecommerce-main-image.json",
+      "count": 402
+    },
+    {
+      "slug": "game-asset",
+      "title": "Game Asset",
+      "file": "game-asset.json",
+      "count": 1738
+    },
+    {
+      "slug": "poster-flyer",
+      "title": "Poster / Flyer",
+      "file": "poster-flyer.json",
+      "count": 3976
+    },
+    {
+      "slug": "app-web-design",
+      "title": "App / Web Design",
+      "file": "app-web-design.json",
+      "count": 921
+    },
+    {
+      "slug": "others",
+      "title": "Uncategorized",
+      "file": "others.json",
+      "count": 346
+    }
+  ],
+  "chunkSize": 500,
+  "chunks": [
+    {
+      "file": "chunks/001.json",
+      "count": 500,
+      "firstId": 30189,
+      "lastId": 29595
+    },
+    {
+      "file": "chunks/002.json",
+      "count": 500,
+      "firstId": 29594,
+      "lastId": 29010
+    },
+    {
+      "file": "chunks/003.json",
+      "count": 500,
+      "firstId": 29009,
+      "lastId": 28469
+    },
+    {
+      "file": "chunks/004.json",
+      "count": 500,
+      "firstId": 28468,
+      "lastId": 27907
+    },
+    {
+      "file": "chunks/005.json",
+      "count": 500,
+      "firstId": 27906,
+      "lastId": 27337
+    },
+    {
+      "file": "chunks/006.json",
+      "count": 500,
+      "firstId": 27336,
+      "lastId": 26779
+    },
+    {
+      "file": "chunks/007.json",
+      "count": 500,
+      "firstId": 26778,
+      "lastId": 26205
+    },
+    {
+      "file": "chunks/008.json",
+      "count": 500,
+      "firstId": 26183,
+      "lastId": 25617
+    },
+    {
+      "file": "chunks/009.json",
+      "count": 500,
+      "firstId": 25616,
+      "lastId": 24909
+    },
+    {
+      "file": "chunks/010.json",
+      "count": 500,
+      "firstId": 24908,
+      "lastId": 24278
+    },
+    {
+      "file": "chunks/011.json",
+      "count": 500,
+      "firstId": 24277,
+      "lastId": 23664
+    },
+    {
+      "file": "chunks/012.json",
+      "count": 500,
+      "firstId": 23663,
+      "lastId": 23038
+    },
+    {
+      "file": "chunks/013.json",
+      "count": 500,
+      "firstId": 23037,
+      "lastId": 22420
+    },
+    {
+      "file": "chunks/014.json",
+      "count": 500,
+      "firstId": 22419,
+      "lastId": 21757
+    },
+    {
+      "file": "chunks/015.json",
+      "count": 500,
+      "firstId": 21756,
+      "lastId": 21168
+    },
+    {
+      "file": "chunks/016.json",
+      "count": 500,
+      "firstId": 21167,
+      "lastId": 20571
+    },
+    {
+      "file": "chunks/017.json",
+      "count": 500,
+      "firstId": 20570,
+      "lastId": 19950
+    },
+    {
+      "file": "chunks/018.json",
+      "count": 500,
+      "firstId": 19949,
+      "lastId": 19329
+    },
+    {
+      "file": "chunks/019.json",
+      "count": 500,
+      "firstId": 19328,
+      "lastId": 18689
+    },
+    {
+      "file": "chunks/020.json",
+      "count": 500,
+      "firstId": 18688,
+      "lastId": 18088
+    },
+    {
+      "file": "chunks/021.json",
+      "count": 500,
+      "firstId": 18087,
+      "lastId": 17454
+    },
+    {
+      "file": "chunks/022.json",
+      "count": 500,
+      "firstId": 17453,
+      "lastId": 16868
+    },
+    {
+      "file": "chunks/023.json",
+      "count": 500,
+      "firstId": 16867,
+      "lastId": 16303
+    },
+    {
+      "file": "chunks/024.json",
+      "count": 500,
+      "firstId": 16302,
+      "lastId": 15733
+    },
+    {
+      "file": "chunks/025.json",
+      "count": 500,
+      "firstId": 15732,
+      "lastId": 15199
+    },
+    {
+      "file": "chunks/026.json",
+      "count": 500,
+      "firstId": 15198,
+      "lastId": 14654
+    },
+    {
+      "file": "chunks/027.json",
+      "count": 500,
+      "firstId": 14653,
+      "lastId": 14128
+    },
+    {
+      "file": "chunks/028.json",
+      "count": 500,
+      "firstId": 14127,
+      "lastId": 13600
+    },
+    {
+      "file": "chunks/029.json",
+      "count": 74,
+      "firstId": 13599,
+      "lastId": 13440
+    }
+  ],
+  "attribution": "提示词由 [YouMind.com](https://youmind.com) 通过公开社区搜集 ❤️"
+}

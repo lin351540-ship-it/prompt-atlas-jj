@@ -39,6 +39,7 @@ jobs:
         run: |
           node scripts/import-curated-prompts.mjs
           node scripts/sync-public-index.mjs
+          node scripts/sync-youmind-search-index.mjs
 
       - name: Verify and export
         run: |
@@ -49,7 +50,7 @@ jobs:
         run: |
           git config user.name "prompt-atlas-sync[bot]"
           git config user.email "prompt-atlas-sync[bot]@users.noreply.github.com"
-          git add app/data public/gallery docs
+          git add app/data public/gallery public/data docs
           if git diff --cached --quiet; then
             echo "No source changes"
           else
