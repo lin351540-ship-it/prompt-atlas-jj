@@ -20,6 +20,7 @@ let html = await response.text();
 html = html
   .replaceAll("/assets/", "./assets/")
   .replaceAll("/favicon.svg", "./favicon.svg")
+  .replaceAll('src="/gallery/', 'src="./gallery/')
   .replace('"pathname":"/"', '"pathname":"/prompt-atlas-jj/"');
 
 if (html.includes('="/assets/') || html.includes('("/assets/') || html.includes('\\"/assets/')) {
@@ -30,6 +31,7 @@ await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 await cp(resolve(root, "dist/client/assets"), resolve(output, "assets"), { recursive: true });
 await cp(resolve(root, "dist/client/favicon.svg"), resolve(output, "favicon.svg"));
+await cp(resolve(root, "public/gallery"), resolve(output, "gallery"), { recursive: true });
 await writeFile(resolve(output, "index.html"), html, "utf8");
 await writeFile(resolve(output, "404.html"), html, "utf8");
 await writeFile(resolve(output, ".nojekyll"), "", "utf8");

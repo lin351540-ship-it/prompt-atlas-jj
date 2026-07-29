@@ -14,39 +14,41 @@ async function render() {
   );
 }
 
-test("server-renders the Prompt Atlas library", async () => {
+test("server-renders the real-output Prompt Atlas gallery", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Prompt Atlas｜生图提示词图鉴<\/title>/i);
-  assert.match(html, /PROMPT ATLAS/);
-  assert.match(html, /生图提示词图鉴/);
-  assert.match(html, /原创长提示词/);
-  assert.match(html, />145</);
-  assert.match(html, />75</);
-  assert.match(html, /公开灵感来源/);
-  assert.match(html, /不绕过付费墙/);
-  assert.doesNotMatch(html, /codex-preview|SkeletonPreview|react-loading-skeleton/i);
+  assert.match(html, /<title>Prompt Atlas｜真实生图提示词效果库<\/title>/i);
+  assert.match(html, /Prompt Atlas/);
+  assert.match(html, /真实图像输出/);
+  assert.match(html, /不是示意图/);
+  assert.match(html, /54 组真实生成效果/);
+  assert.match(html, /PPT \/ 信息图/);
+  assert.match(html, /ToseaAI/);
+  assert.match(html, /CC BY 4\.0/);
+  assert.match(html, /\.\/gallery\/tosea\/03\.jpg/);
+  assert.match(html, /不破解 VIP/);
+  assert.doesNotMatch(html, /preview-grid|preview-orbit|CSS 图形模拟.*作为预览/i);
 });
 
-test("ships prompt generation, sources, filters, and no starter skeleton", async () => {
-  const [page, layout, packageJson] = await Promise.all([
+test("ships complete prompts, source attribution, filtering, and real image assets", async () => {
+  const [page, layout, data] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
-    readFile(new URL("../package.json", import.meta.url), "utf8"),
+    readFile(new URL("../app/data/prompt-items.json", import.meta.url), "utf8"),
   ]);
 
-  assert.match(page, /function buildPrompt/);
-  assert.match(page, /const generatedPrompts/);
+  const items = JSON.parse(data);
+  assert.equal(items.length, 54);
+  assert.equal(items.filter((item) => item.category === "PPT / 信息图").length, 20);
+  assert.ok(items.every((item) => item.prompt && item.image && item.author && item.originalPostUrl));
+  assert.ok(items.every((item) => item.promptLicense === "CC BY 4.0"));
   assert.match(page, /navigator\.clipboard\.writeText/);
-  assert.match(page, /prompt-atlas-favorites/);
-  assert.match(page, /https:\/\/openai\.com\/academy\/image-generation\//);
-  assert.match(page, /https:\/\/x\.com\/xiaoxiaodong01\/status\//);
-  assert.match(page, /https:\/\/github\.com\/YouMind-OpenLab\//);
+  assert.match(page, /prompt-atlas-real-favorites/);
+  assert.match(page, /https:\/\/youmind\.com\/zh-CN\/gpt-image-2-prompts/);
+  assert.match(page, /https:\/\/github\.com\/ToseaAI\/awesome-gpt-image-2-prompts/);
   assert.match(layout, /lang="zh-CN"/);
-  assert.match(layout, /145 条原创重构/);
-  assert.doesNotMatch(packageJson, /react-loading-skeleton/);
-  await assert.rejects(access(new URL("../app/_sites-preview/SkeletonPreview.tsx", import.meta.url)));
+  await access(new URL("../public/gallery/tosea/03.jpg", import.meta.url));
 });
