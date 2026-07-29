@@ -22,11 +22,11 @@ test("server-renders the real-output Prompt Atlas gallery", async () => {
   const html = await response.text();
   assert.match(html, /<title>Prompt Atlas｜生图与 PPT 提示词灵感库<\/title>/i);
   assert.match(html, /Prompt Atlas/);
-  assert.match(html, /授权案例/);
-  assert.match(html, /先看效果/);
+  assert.match(html, /真实效果图/);
+  assert.match(html, /所有公开图文/);
   assert.match(html, /查看[\s\S]{0,60}组真实案例/);
-  assert.match(html, /YouMind 上游目录/);
-  assert.match(html, /LIVE DISCOVERY/);
+  assert.match(html, /YouMind 公开效果图/);
+  assert.match(html, /OFFICIAL X EMBEDS/);
   assert.match(html, /PPT \/ 信息图/);
   assert.match(html, /ToseaAI/);
   assert.match(html, /ApiMartAI/);
@@ -34,7 +34,8 @@ test("server-renders the real-output Prompt Atlas gallery", async () => {
   assert.match(html, /CC BY 4\.0/);
   assert.match(html, /\.\/gallery\/2slides\//);
   assert.match(html, /不破解 VIP/);
-  assert.doesNotMatch(html, /preview-grid|preview-orbit|CSS 图形模拟.*作为预览/i);
+  assert.match(html, /小小东也在这里/);
+  assert.doesNotMatch(html, /ILLUSTRATIVE PREVIEW|preview-grid|preview-orbit|CSS 图形模拟.*作为预览/i);
 });
 
 test("ships complete prompts, source attribution, filtering, and real image assets", async () => {
@@ -52,14 +53,19 @@ test("ships complete prompts, source attribution, filtering, and real image asse
   assert.ok(items.filter((item) => item.category === "PPT / 信息图").length >= 45);
   assert.ok(items.every((item) => item.prompt && item.image && item.author && item.originalPostUrl));
   assert.ok(items.every((item) => ["CC BY 4.0", "CC BY 4.0 collection", "Apache-2.0"].includes(item.promptLicense)));
-  assert.ok(live.items.length >= 100);
-  assert.ok(live.items.some((item) => item.author === "小小东"));
-  assert.ok(live.items.every((item) => item.rightsMode === "source-link-only"));
+  const publicFullRecords = live.items.filter((item) => item.syncMethod === "github-public-full-record");
+  assert.equal(live.sourceStats.youMindCompleteRecords, 126);
+  assert.ok(live.sourceStats.youMindImages >= 200);
+  assert.equal(publicFullRecords.length, 126);
+  assert.ok(publicFullRecords.every((item) => item.prompt && item.image && item.imageUrls.length && item.author && item.originalPostUrl));
+  assert.ok(publicFullRecords.some((item) => item.author === "小小东"));
+  assert.ok(live.items.filter((item) => item.syncMethod === "editorial-link").every((item) => item.rightsMode === "official-embed-only"));
   assert.match(page, /navigator\.clipboard\.writeText/);
   assert.match(page, /prompt-atlas-real-favorites/);
-  assert.match(page, /https:\/\/youmind\.com\/zh-CN\/gpt-image-2-prompts/);
+  assert.ok(publicFullRecords.every((item) => /^https:\/\/youmind\.com\/gpt-image-2-prompts\?id=/.test(item.landingUrl)));
   assert.match(page, /https:\/\/github\.com\/ToseaAI\/awesome-gpt-image-2-prompts/);
-  assert.match(page, /ILLUSTRATIVE PREVIEW/);
+  assert.match(page, /platform\.twitter\.com\/widgets\.js/);
+  assert.match(page, /github-public-full-record/);
   assert.match(workflow, /cron: "17 \*\/6 \* \* \*"/);
   assert.match(layout, /lang="zh-CN"/);
   await access(new URL("../public/gallery/tosea/03.jpg", import.meta.url));

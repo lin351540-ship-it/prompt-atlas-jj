@@ -40,6 +40,8 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+.playwright-cli/
+/output/
 .codex-dev.*.log
 .codex-*.log
 .static-preview*.log

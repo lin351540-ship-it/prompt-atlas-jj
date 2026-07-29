@@ -5,19 +5,56 @@ import { createHash } from "node:crypto";
 const root = resolve(import.meta.dirname, "..");
 const outputPath = resolve(root, "app", "data", "live-index.json");
 const readmeUrl = "https://raw.githubusercontent.com/YouMind-OpenLab/awesome-gpt-image-2/main/README.md";
+const readmeApiUrl = "https://api.github.com/repos/YouMind-OpenLab/awesome-gpt-image-2/contents/README.md";
 const syncedAt = new Date().toISOString();
+
+const fetchPublicReadme = async () => {
+  const attempts = [
+    [readmeUrl, { "user-agent": "Prompt-Atlas-JJ/2.0" }],
+    [readmeUrl, { "user-agent": "Prompt-Atlas-JJ/2.0" }],
+    [readmeApiUrl, { "user-agent": "Prompt-Atlas-JJ/2.0", accept: "application/vnd.github.raw+json" }],
+  ];
+  let lastError;
+  for (const [url, headers] of attempts) {
+    try {
+      const response = await fetch(url, { headers, signal: AbortSignal.timeout(25_000) });
+      if (!response.ok) throw new Error(`GitHub returned ${response.status}`);
+      return await response.text();
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError;
+};
 
 const categoryFor = (input) => {
   if (/ppt|slide|presentation|infographic|diagram|chart|map|education|course|知识|信息图|课件/i.test(input)) return "PPT / 信息图";
-  if (/poster|flyer|typography|海报|卡片/i.test(input)) return "海报设计";
+  if (/poster|flyer|typography|海报|卡片|magazine|cover/i.test(input)) return "海报设计";
   if (/ui|interface|website|app|dashboard/i.test(input)) return "UI / 产品";
   if (/portrait|photo|selfie|photography/i.test(input)) return "人像摄影";
   if (/comic|illustration|anime|character|storyboard/i.test(input)) return "插画 / 漫画";
+  if (/brand|social media|logo|packaging/i.test(input)) return "社媒 / 品牌";
   return "创意发现";
 };
 
 const compact = (value, length = 230) => value.replace(/\s+/g, " ").trim().slice(0, length);
 const hash = (value) => createHash("sha256").update(value).digest("hex").slice(0, 12);
+const inferRatio = (input) => input.match(/\b(16\s*:\s*9|9\s*:\s*16|4\s*:\s*3|3\s*:\s*4|1\s*:\s*1|2\s*:\s*3|3\s*:\s*2)\b/i)?.[1]?.replace(/\s/g, "") ?? "自适应";
+const tagsFor = (input, category) => {
+  const tags = new Set();
+  if (category === "PPT / 信息图") tags.add("PPT 可用");
+  const rules = [
+    [/infographic|diagram|chart|timeline|map|信息图/i, "信息图"],
+    [/presentation|slide|ppt/i, "演示设计"],
+    [/3d|isometric|render/i, "3D"],
+    [/minimal|clean|negative space/i, "极简"],
+    [/typography|editorial|magazine/i, "文字排版"],
+    [/photography|photo|cinematic/i, "摄影感"],
+    [/chinese|中国|中文|ink|水墨/i, "东方美学"],
+  ];
+  for (const [pattern, tag] of rules) if (pattern.test(input)) tags.add(tag);
+  return [...tags].slice(0, 5);
+};
 
 const xSeeds = [
   ["PPT 与小红书卡页系列 07", "将同一套视觉系统扩展到 PPT 与小红书知识卡，适合观察多页一致性。", "https://x.com/xiaoxiaodong01/status/2082347501609460125", "PPT / 信息图"],
@@ -43,10 +80,10 @@ const xSeeds = [
   sourceUrl,
   landingUrl: sourceUrl,
   sourcePlatform: "X",
-  origin: "小小东公开 X 索引",
+  origin: "小小东公开 X 原帖",
   category,
   previewTheme: (index + 2) % 8,
-  rightsMode: "source-link-only",
+  rightsMode: "official-embed-only",
   syncMethod: "editorial-link",
   syncedAt,
 }));
@@ -60,36 +97,61 @@ const parseYouMind = (markdown) => {
 
   for (const [index, match] of starts.entries()) {
     const section = markdown.slice(match.index, starts[index + 1]?.index ?? markdown.length);
-    const title = compact(match[2], 140);
-    const description = compact(section.match(/^#### 📖 Description\s*\n+([\s\S]+?)(?=^####|^###|^---)/m)?.[1] ?? "公开提示词案例，点击来源查看作者原帖与完整上下文。");
+    const sourceNumber = Number(match[1]);
+    const title = compact(match[2], 160);
+    const description = compact(section.match(/^#### 📖 Description\s*\n+([\s\S]+?)(?=^####|^###|^---)/m)?.[1] ?? "公开提示词案例。", 320);
+    const prompt = section.match(/^#### 📝 Prompt\s*\n+```[^\n]*\n([\s\S]+?)\n```/m)?.[1]?.trim() ?? "";
+    const imageUrls = [...section.matchAll(/<img\s+[^>]*src="(https?:\/\/[^\"]+)"[^>]*>/gi)].map((image) => image[1]);
     const authorMatch = section.match(/- \*\*Author:\*\* \[([^\]]+)\]\((https?:\/\/[^)]+)\)/);
     const sourceMatch = section.match(/- \*\*Source:\*\* \[[^\]]+\]\((https?:\/\/[^)]+)\)/);
     const landingMatch = section.match(/\*\*\[👉 Try it now →\]\((https?:\/\/[^)]+)\)\*\*/);
+    const publishedAt = section.match(/- \*\*Published:\*\* (.+)$/m)?.[1]?.trim() ?? "";
     const sourceUrl = sourceMatch?.[1]?.replace(/#.*$/, "") ?? landingMatch?.[1] ?? "https://github.com/YouMind-OpenLab/awesome-gpt-image-2";
     const dedupeKey = sourceUrl.includes("/status/") ? sourceUrl : `${title}|${authorMatch?.[1] ?? ""}`;
-    if (seen.has(dedupeKey)) continue;
+    if (!prompt || !imageUrls.length || seen.has(dedupeKey)) continue;
     seen.add(dedupeKey);
-    const text = `${title} ${description}`;
+    const allText = `${title} ${description} ${prompt}`;
+    const category = categoryFor(allText);
+    const author = authorMatch?.[1] ?? "YouMind OpenLab 社区";
+    const authorUrl = authorMatch?.[2] ?? "https://github.com/YouMind-OpenLab/awesome-gpt-image-2";
     items.push({
-      id: `youmind-${hash(dedupeKey)}`,
+      id: `youmind-${sourceNumber}-${hash(dedupeKey)}`,
+      index: 20000 + sourceNumber,
       title,
-      summary: description,
-      author: authorMatch?.[1] ?? "YouMind OpenLab 社区",
-      authorUrl: authorMatch?.[2] ?? "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
-      sourceUrl,
+      originalTitle: title,
+      description,
+      category,
+      sourceCategory: "youmind-public-github",
+      ratio: inferRatio(allText),
+      prompt,
+      promptType: "original",
+      featured: /Featured/g.test(section),
+      tags: tagsFor(allText, category),
+      image: imageUrls[0],
+      imageUrls,
+      author,
+      authorHandle: authorUrl.match(/x\.com\/([^/?#]+)/i)?.[1] ?? "",
+      originalPostUrl: sourceUrl,
+      publishedAt,
+      repositoryUrl: "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
+      collectionName: "YouMind OpenLab · Awesome GPT Image 2",
+      promptLicense: "CC BY 4.0（公开 GitHub 集合）",
+      promptLicenseUrl: "https://github.com/YouMind-OpenLab/awesome-gpt-image-2/blob/main/LICENSE",
+      previewOwner: author,
+      previewSourceUrl: sourceUrl,
       landingUrl: landingMatch?.[1] ?? "https://youmind.com/zh-CN/gpt-image-2-prompts",
-      sourcePlatform: "YouMind / X",
-      origin: "YouMind OpenLab · GitHub 公开镜像",
-      category: categoryFor(text),
-      previewTheme: Number(match[1]) % 8,
-      rightsMode: "source-link-only",
-      syncMethod: "github-public-mirror",
+      attributionText: `提示词与效果图：${author}；公开整理：YouMind OpenLab。图片从 GitHub 清单所列的来源地址远程展示。`,
+      modificationNote: "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      rightsReviewStatus: "source-attributed-public-github",
+      rightsReviewedAt: syncedAt.slice(0, 10),
+      assetHostingMode: "remote-source",
+      sourcePlatform: "YouMind OpenLab / X",
+      syncMethod: "github-public-full-record",
       syncedAt,
     });
-    if (items.length >= 320) break;
   }
 
-  return { total, sourceUpdatedAt, items };
+  return { total, sourceUpdatedAt, publicSections: starts.length, items };
 };
 
 let previous = { sourceStats: {}, items: [] };
@@ -100,17 +162,16 @@ try {
 let youMind;
 let status = "fresh";
 try {
-  const response = await fetch(readmeUrl, { headers: { "user-agent": "Prompt-Atlas-JJ/1.0" } });
-  if (!response.ok) throw new Error(`GitHub raw returned ${response.status}`);
-  youMind = parseYouMind(await response.text());
-  if (!youMind.items.length) throw new Error("No public index entries parsed");
+  youMind = parseYouMind(await fetchPublicReadme());
+  if (!youMind.items.length) throw new Error("No complete public records parsed");
 } catch (error) {
   status = "stale-fallback";
-  const priorItems = previous.items?.filter((item) => item.syncMethod === "github-public-mirror") ?? [];
+  const priorItems = previous.items?.filter((item) => item.syncMethod === "github-public-full-record") ?? [];
   if (!priorItems.length) throw error;
   youMind = {
     total: previous.sourceStats?.youMindTotal ?? priorItems.length,
     sourceUpdatedAt: previous.sourceStats?.youMindUpdatedAt ?? "",
+    publicSections: previous.sourceStats?.youMindPublicSections ?? priorItems.length,
     items: priorItems,
   };
 }
@@ -121,11 +182,20 @@ await writeFile(outputPath, `${JSON.stringify({
   status,
   sourceStats: {
     youMindTotal: youMind.total,
-    youMindIndexed: youMind.items.length,
+    youMindPublicSections: youMind.publicSections,
+    youMindCompleteRecords: youMind.items.length,
+    youMindImages: youMind.items.reduce((sum, item) => sum + item.imageUrls.length, 0),
     youMindUpdatedAt: youMind.sourceUpdatedAt,
     xEditorialLinks: xSeeds.length,
   },
   items,
 }, null, 2)}\n`, "utf8");
 
-console.log(JSON.stringify({ status, indexed: items.length, youMind: youMind.items.length, x: xSeeds.length, upstreamTotal: youMind.total }, null, 2));
+console.log(JSON.stringify({
+  status,
+  completeRecords: youMind.items.length,
+  images: youMind.items.reduce((sum, item) => sum + item.imageUrls.length, 0),
+  xEmbeds: xSeeds.length,
+  upstreamTotal: youMind.total,
+  publicSections: youMind.publicSections,
+}, null, 2));
