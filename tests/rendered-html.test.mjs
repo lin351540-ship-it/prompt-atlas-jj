@@ -20,35 +20,48 @@ test("server-renders the real-output Prompt Atlas gallery", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Prompt Atlas｜真实生图提示词效果库<\/title>/i);
+  assert.match(html, /<title>Prompt Atlas｜生图与 PPT 提示词灵感库<\/title>/i);
   assert.match(html, /Prompt Atlas/);
-  assert.match(html, /真实图像输出/);
-  assert.match(html, /不是示意图/);
-  assert.match(html, /54 组真实生成效果/);
+  assert.match(html, /授权案例/);
+  assert.match(html, /先看效果/);
+  assert.match(html, /查看[\s\S]{0,60}组真实案例/);
+  assert.match(html, /14,003/);
+  assert.match(html, /LIVE DISCOVERY/);
   assert.match(html, /PPT \/ 信息图/);
   assert.match(html, /ToseaAI/);
+  assert.match(html, /ApiMartAI/);
+  assert.match(html, /2slides/);
   assert.match(html, /CC BY 4\.0/);
-  assert.match(html, /\.\/gallery\/tosea\/03\.jpg/);
+  assert.match(html, /\.\/gallery\/2slides\//);
   assert.match(html, /不破解 VIP/);
   assert.doesNotMatch(html, /preview-grid|preview-orbit|CSS 图形模拟.*作为预览/i);
 });
 
 test("ships complete prompts, source attribution, filtering, and real image assets", async () => {
-  const [page, layout, data] = await Promise.all([
+  const [page, layout, data, liveData, workflow] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/data/prompt-items.json", import.meta.url), "utf8"),
+    readFile(new URL("../app/data/live-index.json", import.meta.url), "utf8"),
+    readFile(new URL("../.github/workflows/sync-sources.yml", import.meta.url), "utf8"),
   ]);
 
   const items = JSON.parse(data);
-  assert.equal(items.length, 54);
-  assert.equal(items.filter((item) => item.category === "PPT / 信息图").length, 20);
+  const live = JSON.parse(liveData);
+  assert.ok(items.length >= 165);
+  assert.ok(items.filter((item) => item.category === "PPT / 信息图").length >= 45);
   assert.ok(items.every((item) => item.prompt && item.image && item.author && item.originalPostUrl));
-  assert.ok(items.every((item) => item.promptLicense === "CC BY 4.0"));
+  assert.ok(items.every((item) => ["CC BY 4.0", "CC BY 4.0 collection", "Apache-2.0"].includes(item.promptLicense)));
+  assert.ok(live.items.length >= 100);
+  assert.ok(live.items.some((item) => item.author === "小小东"));
+  assert.ok(live.items.every((item) => item.rightsMode === "source-link-only"));
   assert.match(page, /navigator\.clipboard\.writeText/);
   assert.match(page, /prompt-atlas-real-favorites/);
   assert.match(page, /https:\/\/youmind\.com\/zh-CN\/gpt-image-2-prompts/);
   assert.match(page, /https:\/\/github\.com\/ToseaAI\/awesome-gpt-image-2-prompts/);
+  assert.match(page, /ILLUSTRATIVE PREVIEW/);
+  assert.match(workflow, /cron: "17 \*\/6 \* \* \*"/);
   assert.match(layout, /lang="zh-CN"/);
   await access(new URL("../public/gallery/tosea/03.jpg", import.meta.url));
+  await access(new URL(`../public/${items.find((item) => item.id.startsWith("2slides-")).image.replace(/^\.\//, "")}`, import.meta.url));
 });

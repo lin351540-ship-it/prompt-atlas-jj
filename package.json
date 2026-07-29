@@ -9,6 +9,7 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "start": "vinext start",
+    "sync": "node scripts/import-curated-prompts.mjs && node scripts/sync-public-index.mjs",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint app scripts tests --ignore-pattern dist --ignore-pattern docs --ignore-pattern build --ignore-pattern .vinext --ignore-pattern .wrangler",
     "db:generate": "drizzle-kit generate"
