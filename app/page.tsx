@@ -5,11 +5,12 @@
 import { startTransition, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import localPromptData from "./data/prompt-items.json";
 import diffusionDbData from "./data/diffusiondb-3d.json";
+import nanoBananaData from "./data/nano-banana-public.json";
 import liveIndex from "./data/live-index.json";
 import fullIndexSummary from "./data/full-index-summary.json";
 
 type Category = "全部" | "PPT / 信息图" | "海报设计" | "社媒 / 品牌" | "UI / 产品" | "人像摄影" | "插画 / 漫画" | "实验 / 对比" | "创意发现";
-type SourceMode = "全部来源" | "小小东" | "YouMind 全量公开索引" | "开放授权 3D" | "PPT 开源集" | "其他开源集";
+type SourceMode = "全部来源" | "小小东" | "YouMind 全量公开索引" | "Nano Banana 公开集" | "开放授权 3D" | "PPT 开源集" | "其他开源集";
 type SortMode = "ppt" | "source" | "title";
 
 type CatalogItem = {
@@ -63,11 +64,12 @@ type PublicCatalogRecord = {
 };
 
 const categories: Category[] = ["全部", "PPT / 信息图", "海报设计", "社媒 / 品牌", "UI / 产品", "人像摄影", "插画 / 漫画", "实验 / 对比", "创意发现"];
-const sourceModes: SourceMode[] = ["全部来源", "小小东", "YouMind 全量公开索引", "开放授权 3D", "PPT 开源集", "其他开源集"];
+const sourceModes: SourceMode[] = ["全部来源", "小小东", "YouMind 全量公开索引", "Nano Banana 公开集", "开放授权 3D", "PPT 开源集", "其他开源集"];
 const localPromptItems = localPromptData as CatalogItem[];
 const diffusionDbItems = diffusionDbData as CatalogItem[];
+const nanoBananaItems = nanoBananaData.items as unknown as CatalogItem[];
 const curatedYouMindItems = liveIndex.items.filter((item) => item.syncMethod === "github-public-full-record") as unknown as CatalogItem[];
-const initialItems = [...diffusionDbItems, ...curatedYouMindItems, ...localPromptItems];
+const initialItems = [...diffusionDbItems, ...nanoBananaItems, ...curatedYouMindItems, ...localPromptItems];
 const curatedYouMindImages = new Set(curatedYouMindItems.flatMap((item) => item.imageUrls?.length ? item.imageUrls : [item.image]));
 
 const categoryMap: Record<string, Category> = {
@@ -98,6 +100,12 @@ const sourceLinks = [
     title: "YouMind OpenLab · Awesome GPT Image 2",
     copy: `${liveIndex.sourceStats.youMindCompleteRecords} 条带原作者、原帖与多张效果图的精选完整记录。`,
     url: "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
+  },
+  {
+    eyebrow: "NANO BANANA · CC BY 4.0",
+    title: "YouMind · Awesome Nano Banana Pro",
+    copy: `${nanoBananaData.sourceStats.completeRecords} 条逐项可核验完整记录、${nanoBananaData.sourceStats.imageCount} 张真实效果图；公开仓库当前声明 ${nanoBananaData.sourceStats.declaredTotal.toLocaleString()} 条总量。`,
+    url: "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
   },
   {
     eyebrow: "3D PROMPT–IMAGE PAIRS · CC0 1.0",
@@ -229,11 +237,13 @@ function sourceMatches(item: CatalogItem, source: SourceMode) {
   if (source === "全部来源") return true;
   if (source === "小小东") return item.author === "小小东" || item.authorHandle.toLowerCase() === "xiaoxiaodong01";
   if (source === "YouMind 全量公开索引") return item.syncMethod === "youmind-public-search-index" || item.syncMethod === "github-public-full-record";
+  if (source === "Nano Banana 公开集") return item.syncMethod === "github-public-nano-banana-record";
   if (source === "开放授权 3D") return item.syncMethod === "diffusiondb-cc0-curated";
   if (source === "PPT 开源集") return item.collectionName.includes("2slides");
   return item.syncMethod !== "youmind-public-search-index"
     && item.syncMethod !== "github-public-full-record"
     && item.syncMethod !== "diffusiondb-cc0-curated"
+    && item.syncMethod !== "github-public-nano-banana-record"
     && !item.collectionName.includes("2slides");
 }
 
@@ -241,6 +251,7 @@ function sourceLabel(item: CatalogItem) {
   if (item.author === "小小东" || item.authorHandle.toLowerCase() === "xiaoxiaodong01") return "小小东 · YouMind";
   if (item.syncMethod === "youmind-public-search-index") return "YouMind 公开索引";
   if (item.syncMethod === "github-public-full-record") return "YouMind 精选记录";
+  if (item.syncMethod === "github-public-nano-banana-record") return "YouMind · Nano Banana";
   if (item.syncMethod === "diffusiondb-cc0-curated") return "DiffusionDB · CC0 3D";
   if (item.collectionName.includes("2slides")) return "2slides";
   if (item.collectionName.includes("Tosea")) return "ToseaAI";
@@ -254,6 +265,13 @@ function moveSpotlight(event: React.PointerEvent<HTMLElement>) {
   event.currentTarget.style.setProperty("--spot-y", `${event.clientY - rect.top}px`);
 }
 
+function moveCreatorParallax(event: React.PointerEvent<HTMLElement>) {
+  const rect = event.currentTarget.getBoundingClientRect();
+  const x = ((event.clientX - rect.left) / rect.width - 0.5) * 16;
+  const y = ((event.clientY - rect.top) / rect.height - 0.5) * 12;
+  event.currentTarget.style.setProperty("--creator-x", `${x}px`);
+  event.currentTarget.style.setProperty("--creator-y", `${y}px`);
+}
 async function copyText(text: string) {
   if (navigator.clipboard?.writeText) {
     try {
@@ -289,7 +307,7 @@ export default function Home() {
   const [promptLoading, setPromptLoading] = useState(false);
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [copyErrorId, setCopyErrorId] = useState<string | null>(null);
-  const [visibleLimit, setVisibleLimit] = useState(36);
+  const [visibleLimit, setVisibleLimit] = useState(60);
   const [galleryColumns, setGalleryColumns] = useState(0);
   const [indexReloadKey, setIndexReloadKey] = useState(0);
   const chunkCache = useRef(new Map<string, Map<number, string>>());
@@ -445,7 +463,8 @@ export default function Home() {
       const priority = (item: CatalogItem) => item.authorHandle.toLowerCase() === "xiaoxiaodong01" ? 5
         : item.collectionName.includes("2slides") ? 4
           : item.syncMethod === "github-public-full-record" ? 3
-            : item.syncMethod === "diffusiondb-cc0-curated" ? 2
+            : item.syncMethod === "github-public-nano-banana-record" ? 3
+              : item.syncMethod === "diffusiondb-cc0-curated" ? 2
             : item.featured ? 2
               : item.syncMethod === "youmind-public-search-index" ? 1 : 0;
       return Number(b.category === "PPT / 信息图") - Number(a.category === "PPT / 信息图") || priority(b) - priority(a) || b.index - a.index;
@@ -461,7 +480,8 @@ export default function Home() {
   }, [galleryColumns, visibleItems]);
   const heroItems = useMemo(() => [
     curatedYouMindItems.find((item) => item.author === "小小东" && item.category === "PPT / 信息图"),
-    localPromptItems.find((item) => item.id.startsWith("2slides-")),
+    ...nanoBananaItems.filter((item) => item.category === "PPT / 信息图").slice(0, 3),
+    ...localPromptItems.filter((item) => item.id.startsWith("2slides-")).slice(0, 2),
     curatedYouMindItems.find((item) => item.featured && item.category === "PPT / 信息图"),
   ].filter(Boolean) as CatalogItem[], []);
 
@@ -536,7 +556,7 @@ export default function Home() {
   };
 
   const selectedImages = selected ? (selected.imageUrls?.length ? selected.imageUrls : [selected.image]).filter(Boolean) : [];
-  const totalBrowsable = fullIndexSummary.uniquePromptCount + localPromptItems.length + diffusionDbItems.length;
+  const totalBrowsable = fullIndexSummary.uniquePromptCount + localPromptItems.length + diffusionDbItems.length + nanoBananaItems.length;
 
   return (
     <main>
@@ -549,40 +569,50 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <div className="hero-copy">
-          <div className="creator-credit"><span className="creator-avatar">猩</span><span><small>网站制作者</small><strong>小明猩</strong></span><i>CREATOR</i></div>
-          <h1>所有好提示词，<br /><span>打开就能看。</span></h1>
-          <p>{totalBrowsable.toLocaleString()} 组真实效果与完整提示词，统一收进同一座可直接浏览、复制的灵感美术馆。</p>
-          <div className="hero-actions"><a className="glass-button primary" href="#gallery">查看 {totalBrowsable.toLocaleString()} 组案例 <ArrowIcon /></a><a className="quiet-link" href="#rights">数据范围与授权</a></div>
-          <div className="hero-facts" aria-label="图库数据">
-            <span><b>{fullIndexSummary.uniquePromptCount.toLocaleString()}</b>公开提示词</span>
-            <span><b>{diffusionDbItems.length}</b>3D 图文配对</span>
-            <span><b>站内</b>直接查看复制</span>
-          </div>
-        </div>
-
-        <div className="creator-stage" aria-label="网站制作者与主理精选">
-          <div className="creator-halo" />
-          <article className="creator-profile">
-            <header>
-              <div className="creator-identity"><span className="creator-avatar large">猩</span><span><small>WEBSITE CREATOR</small><strong>小明猩</strong><em>Prompt Atlas 网站制作者</em></span></div>
-              <b className="creator-seal">制作者</b>
-            </header>
-            <p className="creator-signature">“把公开、可验证的好提示词，整理成一座人人都能直接逛的美术馆。”</p>
-            <div className="creator-metrics">
-              <span><b>{totalBrowsable.toLocaleString()}</b>收录</span>
-              <span><b>{diffusionDbItems.length}</b>3D 配对</span>
-              <span><b>1 CLICK</b>站内复制</span>
+        <div className="creator-home" onPointerMove={moveCreatorParallax}>
+          <div className="creator-portrait-panel" aria-label="小明猩制作者形象">
+            <div className="portrait-bokeh portrait-bokeh-a" /><div className="portrait-bokeh portrait-bokeh-b" />
+            <div className="creator-anime-wrap">
+              <img className="creator-anime" src="./creator-anime.webp" alt="手持白玫瑰、从撕纸中出现的动漫制作者形象" fetchPriority="high" />
             </div>
-            <div className="creator-showcase">
-              <div><strong>主理精选</strong><span>点击查看完整提示词</span></div>
-              <div className="creator-thumbs">
-                {heroItems.map((item, index) => <button type="button" key={item.id} onClick={() => openItem(item)} aria-label={`查看主理精选：${item.title}`}><ResilientImage sources={item.imageUrls?.length ? item.imageUrls : [item.image]} alt={`${item.title}真实生成效果`} eager /><span>0{index + 1}</span></button>)}
+            <div className="portrait-label"><small>PROMPT ATLAS / CREATOR</small><strong>小明猩</strong><span>网站制作者 · 视觉主理人</span></div>
+            <div className="portrait-capsule"><i />OPEN SOURCE CURATION</div>
+          </div>
+
+          <article className="creator-profile-sheet">
+            <div className="profile-glass-glow" />
+            <header className="creator-name-row">
+              <div><span>WEBSITE CREATOR</span><h1>小明猩</h1><p>Prompt Atlas 网站制作者</p></div>
+              <div className="creator-like"><b>{totalBrowsable.toLocaleString()}</b><span>组收录</span></div>
+            </header>
+
+            <div className="creator-role-row"><span>AI 生图游侠</span><strong>把公开、可验证的灵感排进同一座美术馆</strong></div>
+            <div className="creator-profile-meta"><span><b>重点</b>PPT / 信息图</span><span><b>模型</b>GPT Image 2</span><span><b>方式</b>站内直看</span></div>
+
+            <div className="creator-badge-track" aria-label="来源与能力徽章">
+              <span className="badge-sun">AI</span><span className="badge-aqua">P</span><span className="badge-blue">CC</span><span className="badge-gold">X</span><span className="badge-silver">3D</span><span className="badge-dark">14K</span>
+            </div>
+
+            <div className="profile-line"><span>签名</span><strong>先看真实效果，再复制完整提示词。</strong></div>
+
+            <div className="creator-album-block">
+              <div className="creator-album-heading"><span>✦</span><strong>PPT 灵感空间</strong><small>主理精选</small></div>
+              <div className="creator-album-strip">
+                {heroItems.slice(0, 4).map((item) => <button type="button" key={`ppt-${item.id}`} onClick={() => openItem(item)} aria-label={`查看主理精选：${item.title}`}><ResilientImage sources={item.imageUrls?.length ? item.imageUrls : [item.image]} alt={`${item.title}真实生成效果`} eager /></button>)}
               </div>
             </div>
-            <div className="creator-profile-footer"><span>DESIGNED &amp; CURATED BY</span><strong>小明猩</strong><a href="#gallery">进入图库 <ArrowIcon /></a></div>
+
+            <div className="creator-album-block secondary">
+              <div className="creator-album-heading"><span>⌘</span><strong>Image 2 精选</strong><small>{nanoBananaItems.length} 条新增</small></div>
+              <div className="creator-album-strip compact">
+                {heroItems.slice(1, 7).map((item) => <button type="button" key={`image-${item.id}`} onClick={() => openItem(item)} aria-label={`查看精选案例：${item.title}`}><ResilientImage sources={item.imageUrls?.length ? item.imageUrls : [item.image]} alt={`${item.title}真实生成效果`} eager /></button>)}
+              </div>
+            </div>
+
+            <div className="creator-sheet-actions"><a href="#rights">来源与授权</a><a className="primary" href="#gallery">开始浏览 <ArrowIcon /></a></div>
           </article>
         </div>
+        <div className="hero-floating-copy"><span>真实效果图</span><i /> <span>完整提示词</span><i /> <span>持续同步</span></div>
       </section>
 
       <section className="maker-strip" aria-label="网站制作者"><strong>小明猩制作</strong><span>真实效果 · 完整提示词 · 站内直看</span></section>
@@ -593,13 +623,13 @@ export default function Home() {
         <div className={`index-status ${indexStatus}`} aria-live="polite"><i /><span>{indexStatus === "loading" ? "正在装入 YouMind 14K+ 公开索引…" : indexStatus === "ready" ? `公开索引已就绪：${fullIndexSummary.uniquePromptCount.toLocaleString()} 条唯一记录` : "全量索引暂时未加载，当前仍可浏览精选与开源集合"}</span>{indexStatus === "error" && <button type="button" onClick={() => { setIndexStatus("loading"); setIndexReloadKey((value) => value + 1); }}>重新加载</button>}</div>
 
         <div className="glass-toolbar">
-          <label className="search-field"><SearchIcon /><input value={query} onChange={(event) => { setQuery(event.target.value); setVisibleLimit(36); }} placeholder="搜索标题、主题、作者或风格…" aria-label="搜索提示词案例" />{query && <button type="button" onClick={() => { setQuery(""); setVisibleLimit(36); }} aria-label="清空搜索">×</button>}</label>
-          <select value={sort} onChange={(event) => { setSort(event.target.value as SortMode); setVisibleLimit(36); }} aria-label="排序方式"><option value="ppt">PPT / 小小东优先</option><option value="source">按来源序号</option><option value="title">按标题排序</option></select>
-          <button className={onlyFavorites ? "favorite-toggle active" : "favorite-toggle"} type="button" aria-pressed={onlyFavorites} onClick={() => { setOnlyFavorites((value) => !value); setVisibleLimit(36); }}><span>♥</span> 收藏 {favorites.length || ""}</button>
+          <label className="search-field"><SearchIcon /><input value={query} onChange={(event) => { setQuery(event.target.value); setVisibleLimit(60); }} placeholder="搜索标题、主题、作者或风格…" aria-label="搜索提示词案例" />{query && <button type="button" onClick={() => { setQuery(""); setVisibleLimit(60); }} aria-label="清空搜索">×</button>}</label>
+          <select value={sort} onChange={(event) => { setSort(event.target.value as SortMode); setVisibleLimit(60); }} aria-label="排序方式"><option value="ppt">PPT / 小小东优先</option><option value="source">按来源序号</option><option value="title">按标题排序</option></select>
+          <button className={onlyFavorites ? "favorite-toggle active" : "favorite-toggle"} type="button" aria-pressed={onlyFavorites} onClick={() => { setOnlyFavorites((value) => !value); setVisibleLimit(60); }}><span>♥</span> 收藏 {favorites.length || ""}</button>
         </div>
 
-        <div className="category-rail" aria-label="分类筛选">{categories.map((name) => <button className={category === name ? "active" : ""} type="button" key={name} aria-pressed={category === name} onClick={() => { setCategory(name); setVisibleLimit(36); }}><span>{name}</span><i>{Number(counts[name] ?? 0).toLocaleString()}</i></button>)}</div>
-        <div className="source-rail" aria-label="来源筛选"><small>SOURCE / 来源</small>{sourceModes.map((name) => <button className={source === name ? "active" : ""} type="button" key={name} aria-pressed={source === name} onClick={() => { setSource(name); setVisibleLimit(36); if (name === "小小东" || name === "开放授权 3D") setCategory("全部"); }}>{name}<i>{Number(sourceCounts[name] ?? 0).toLocaleString()}</i></button>)}</div>
+        <div className="category-rail" aria-label="分类筛选">{categories.map((name) => <button className={category === name ? "active" : ""} type="button" key={name} aria-pressed={category === name} onClick={() => { setCategory(name); setVisibleLimit(60); }}><span>{name}</span><i>{Number(counts[name] ?? 0).toLocaleString()}</i></button>)}</div>
+        <div className="source-rail" aria-label="来源筛选"><small>SOURCE / 来源</small>{sourceModes.map((name) => <button className={source === name ? "active" : ""} type="button" key={name} aria-pressed={source === name} onClick={() => { setSource(name); setVisibleLimit(60); if (name === "小小东" || name === "开放授权 3D") setCategory("全部"); }}>{name}<i>{Number(sourceCounts[name] ?? 0).toLocaleString()}</i></button>)}</div>
         <div className="result-line"><span>SHOWING {visibleItems.length.toLocaleString()} / {filtered.length.toLocaleString()}</span><span>{category} · {source}{query ? ` · “${query}”` : ""}</span></div>
 
         {filtered.length ? <>
@@ -608,7 +638,7 @@ export default function Home() {
               ? stableColumns.map((column, columnIndex) => <div className="prompt-column" key={`column-${columnIndex}`}>{column.map(renderPromptCard)}</div>)
               : visibleItems.map(renderPromptCard)}
           </div>
-          {visibleLimit < filtered.length && <button className="load-more" type="button" onClick={() => setVisibleLimit((value) => Math.min(value + 36, filtered.length))}>继续加载同类卡片 <span>+{Math.min(36, filtered.length - visibleLimit)}</span></button>}
+          {visibleLimit < filtered.length && <button className="load-more" type="button" onClick={() => setVisibleLimit((value) => Math.min(value + 60, filtered.length))}>继续加载同类卡片 <span>+{Math.min(60, filtered.length - visibleLimit)}</span></button>}
         </> : <div className="empty-state"><span>NO MATCH</span><h3>没有找到对应作品</h3><p>换一个关键词，或重置来源与分类。</p><button type="button" onClick={() => { setQuery(""); setOnlyFavorites(false); setCategory("全部"); setSource("全部来源"); }}>重置筛选</button></div>}
       </section>
 
@@ -618,7 +648,7 @@ export default function Home() {
       </section>
 
       <section className="rights-section" id="rights">
-        <div className="rights-glass"><span className="section-index">03 / RIGHTS & TRANSPARENCY</span><h2>能公开验证多少，就准确展示多少。</h2><div className="rights-columns"><p><b>A · 公开数据范围：</b>YouMind 官方清单宣称 {fullIndexSummary.declaredTotalPrompts.toLocaleString()} 条；当前 11 个公开分类文件按 ID 去重后实际可验证 {fullIndexSummary.uniquePromptCount.toLocaleString()} 条，且均有提示词正文。分类会重叠，因此会员数合计不等于唯一条目数。</p><p><b>B · 3D 开放替代库：</b>新增 {diffusionDbItems.length} 组 DiffusionDB 原提示词—对应生成图，数据集和生成图均按 CC0 1.0 发布。本站只做通用安全筛选、分类和本地化展示，不改写原英文提示词。</p><p><b>C · 获取与展示方式：</b>本站不破解 VIP、不调用隐藏接口、不抓取受限页面，也不复制 PromptWall 的原文或原图。YouMind 仅同步官方 GitHub 公开 JSON；3D 图片只从 DiffusionDB 公开 CC0 分片按入选文件精确取回。</p></div><p className="youmind-credit">提示词由 <a href="https://youmind.com" target="_blank" rel="noreferrer">YouMind.com</a> 通过公开社区搜集 ❤️</p><div className="license-row"><a href={fullIndexSummary.source} target="_blank" rel="noreferrer">YouMind 公开索引 <SourceIcon /></a><a href="https://github.com/poloclub/diffusiondb" target="_blank" rel="noreferrer">DiffusionDB CC0 <SourceIcon /></a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0 <SourceIcon /></a><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">Apache-2.0 <SourceIcon /></a><a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/main/LICENSE" target="_blank" rel="noreferrer">JCodesMore MIT <SourceIcon /></a><a href="https://github.com/lin351540-ship-it/prompt-atlas-jj" target="_blank" rel="noreferrer">本站仓库 <SourceIcon /></a></div></div>
+        <div className="rights-glass"><span className="section-index">03 / RIGHTS & TRANSPARENCY</span><h2>能公开验证多少，就准确展示多少。</h2><div className="rights-columns"><p><b>A · 公开数据范围：</b>YouMind 官方清单宣称 {fullIndexSummary.declaredTotalPrompts.toLocaleString()} 条；当前 11 个公开分类文件按 ID 去重后实际可验证 {fullIndexSummary.uniquePromptCount.toLocaleString()} 条，且均有提示词正文。分类会重叠，因此会员数合计不等于唯一条目数。</p><p><b>B · 新增公开图文：</b>现有 {diffusionDbItems.length} 组 DiffusionDB CC0 原提示词—对应生成图，并新增 {nanoBananaItems.length} 条 Nano Banana 完整公开记录与 {nanoBananaData.sourceStats.imageCount} 张真实效果图；提示词不改写，逐条保留作者和来源。</p><p><b>C · 获取与展示方式：</b>本站不破解 VIP、不调用隐藏接口、不抓取受限页面，也不复制 PromptWall 的原文或原图。YouMind 仅同步官方 GitHub 公开数据；DiffusionDB 图片只从公开 CC0 分片按入选文件精确取回。X 内容只有进入明确开放许可集合后才直接并入，否则仅保留官方来源。</p></div><p className="youmind-credit">提示词由 <a href="https://youmind.com" target="_blank" rel="noreferrer">YouMind.com</a> 通过公开社区搜集 ❤️</p><div className="license-row"><a href={fullIndexSummary.source} target="_blank" rel="noreferrer">YouMind 公开索引 <SourceIcon /></a><a href="https://github.com/poloclub/diffusiondb" target="_blank" rel="noreferrer">DiffusionDB CC0 <SourceIcon /></a><a href="https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE" target="_blank" rel="noreferrer">Nano Banana CC BY 4.0 <SourceIcon /></a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0 <SourceIcon /></a><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">Apache-2.0 <SourceIcon /></a><a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/main/LICENSE" target="_blank" rel="noreferrer">JCodesMore MIT <SourceIcon /></a><a href="https://github.com/lin351540-ship-it/prompt-atlas-jj" target="_blank" rel="noreferrer">本站仓库 <SourceIcon /></a></div></div>
       </section>
 
       <footer className="site-footer"><div className="footer-maker"><span className="creator-avatar">猩</span><span><small>网站制作者</small><strong>小明猩</strong></span></div><p>Prompt Atlas · {totalBrowsable.toLocaleString()} 组真实效果与完整提示词</p><a href="#top">返回顶部 ↑</a></footer>

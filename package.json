@@ -9,7 +9,7 @@
     "dev": "vinext dev",
     "build": "node scripts/sync-font-assets.mjs && vinext build",
     "start": "vinext start",
-    "sync": "node scripts/import-curated-prompts.mjs && node scripts/sync-public-index.mjs && node scripts/sync-youmind-search-index.mjs",
+    "sync": "node scripts/import-curated-prompts.mjs && node scripts/sync-public-index.mjs && node scripts/sync-nano-banana-public.mjs && node scripts/sync-youmind-search-index.mjs",
     "sync:diffusiondb": "python scripts/generate-diffusiondb-3d.py && node scripts/fetch-diffusiondb-images.mjs",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint app scripts tests --ignore-pattern dist --ignore-pattern docs --ignore-pattern build --ignore-pattern .vinext --ignore-pattern .wrangler",

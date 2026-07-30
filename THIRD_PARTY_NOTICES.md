@@ -73,9 +73,20 @@ metadata for 126 entries. It is deduplicated against the large public catalog.
 - Project: https://github.com/YouMind-OpenLab/awesome-gpt-image-2
 - License: CC BY 4.0
 
+## YouMind Awesome Nano Banana Pro Prompts
+
+The site synchronizes 129 complete public records with 231 generated preview
+images from the repository snapshot. Each card preserves the original author,
+source URL and license link. The upstream index currently declares 15,027
+records; this site counts only the complete records that can be independently
+verified in the public GitHub README.
+
+- Project: https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts
+- License: CC BY 4.0
+- Local modifications: classification, search tags and source explanation only
 ## DiffusionDB CC0 3D collection
 
-The site includes a safety-filtered subset of 161 original prompt-image pairs
+The site includes a safety-filtered subset of 383 original prompt-image pairs
 from DiffusionDB. Prompt text is kept verbatim. The corresponding generated
 images are fetched by exact filename from the public dataset ZIP partitions,
 converted lossily to WebP for delivery performance, and self-hosted so gallery

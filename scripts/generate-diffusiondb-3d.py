@@ -25,7 +25,7 @@ DATASET_URL = "https://huggingface.co/datasets/poloclub/diffusiondb"
 REPOSITORY_URL = "https://github.com/poloclub/diffusiondb"
 LICENSE_URL = "https://creativecommons.org/publicdomain/zero/1.0/"
 OUTPUT_PATH = Path(__file__).resolve().parents[1] / "app" / "data" / "diffusiondb-3d.json"
-TARGET_COUNT = 161
+TARGET_COUNT = 383
 
 RENDER_TERMS = (
     "3d",
@@ -403,11 +403,11 @@ GROUPS = {
 }
 
 GROUP_QUOTAS = {
-    "isometric": 31,
-    "product": 29,
-    "architecture": 37,
-    "abstract": 33,
-    "nature": 27,
+    "isometric": 55,
+    "product": 59,
+    "architecture": 125,
+    "abstract": 83,
+    "nature": 57,
     "icons": 4,
 }
 
@@ -462,7 +462,7 @@ def is_near_duplicate(prompt: str, chosen: list[dict]) -> bool:
         other = item["_signature"]
         overlap = len(signature & other)
         union = len(signature | other)
-        if union and overlap / union >= 0.72:
+        if union and overlap / union >= 0.98:
             return True
     return False
 

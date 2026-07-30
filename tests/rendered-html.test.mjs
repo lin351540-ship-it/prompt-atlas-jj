@@ -20,7 +20,7 @@ test("server-renders the unified real-output Prompt Atlas gallery", async () => 
 
   const html = await response.text();
   assert.match(html, /<title>Prompt Atlas｜生图与 PPT 提示词灵感库<\/title>/i);
-  assert.match(html, /所有好提示词/);
+  assert.match(html, /把公开、可验证的灵感/);
   assert.match(html, /网站制作者/);
   assert.match(html, /小明猩制作/);
   assert.match(html, /Prompt Atlas 网站制作者/);
@@ -28,7 +28,7 @@ test("server-renders the unified real-output Prompt Atlas gallery", async () => 
   assert.match(html, /站内查看完整提示词/);
   assert.match(html, /YouMind · GPT Image 2 Prompts Search/);
   assert.match(html, /DiffusionDB · Open 3D Collection/);
-  assert.match(html, /161<\/b>3D 配对/);
+  assert.match(html, /383 组经过安全筛选/);
   assert.match(html, /JCodesMore · AI Website Cloner Template/);
   assert.match(html, /og\.png/);
   assert.match(html, /不破解 VIP/);
@@ -37,11 +37,12 @@ test("server-renders the unified real-output Prompt Atlas gallery", async () => 
 });
 
 test("ships the full public catalog, prompt shards, resilient images, and attribution", async () => {
-  const [page, layout, localData, diffusionDbData, liveData, summaryData, catalogData, workflow, notices] = await Promise.all([
+  const [page, layout, localData, diffusionDbData, nanoBananaData, liveData, summaryData, catalogData, workflow, notices] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/data/prompt-items.json", import.meta.url), "utf8"),
     readFile(new URL("../app/data/diffusiondb-3d.json", import.meta.url), "utf8"),
+    readFile(new URL("../app/data/nano-banana-public.json", import.meta.url), "utf8"),
     readFile(new URL("../app/data/live-index.json", import.meta.url), "utf8"),
     readFile(new URL("../app/data/full-index-summary.json", import.meta.url), "utf8"),
     readFile(new URL("../public/data/youmind/catalog.json", import.meta.url), "utf8"),
@@ -51,6 +52,7 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
 
   const localItems = JSON.parse(localData);
   const diffusionDbItems = JSON.parse(diffusionDbData);
+  const nanoBanana = JSON.parse(nanoBananaData);
   const live = JSON.parse(liveData);
   const summary = JSON.parse(summaryData);
   const catalog = JSON.parse(catalogData);
@@ -59,12 +61,15 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
 
   assert.ok(localItems.length >= 165);
   assert.ok(localItems.filter((item) => item.category === "PPT / 信息图").length >= 45);
-  assert.equal(diffusionDbItems.length, 161);
+  assert.equal(diffusionDbItems.length, 383);
   assert.ok(diffusionDbItems.every((item) => item.prompt && item.image && item.imageUrls?.length === 1));
   assert.ok(diffusionDbItems.every((item) => item.promptLicense === "CC0 1.0 Universal" && item.syncMethod === "diffusiondb-cc0-curated"));
   assert.ok(diffusionDbItems.every((item) => item.sourceImageNsfwScore < 0.05 && item.sourcePromptNsfwScore < 0.02));
   const blockedOpen3d = /\b(?:nude|nsfw|blood|weapon|celebrity|portrait|artist|artwork|painting|illustration|style|movie|videogame|woman|man|person|child|disney|pixar|marvel|pokemon|mario|batman|stormtrooper|rolex|fujifilm)\b/i;
   assert.ok(diffusionDbItems.every((item) => !blockedOpen3d.test(item.prompt)));
+  assert.equal(nanoBanana.items.length, 129);
+  assert.ok(nanoBanana.sourceStats.imageCount >= 230);
+  assert.ok(nanoBanana.items.every((item) => item.prompt && item.imageUrls?.length && item.syncMethod === "github-public-nano-banana-record"));
   assert.equal(live.sourceStats.youMindCompleteRecords, 126);
   assert.ok(summary.declaredTotalPrompts >= 14_000);
   assert.ok(summary.uniquePromptCount >= 14_000);
@@ -77,7 +82,7 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(page, /fetch\("\.\/data\/youmind\/catalog\.json"\)/);
   assert.match(page, /item\.syncMethod === "diffusiondb-cc0-curated"/);
   assert.match(page, /className={`image-fallback/);
-  assert.match(page, /setVisibleLimit\(36\)/);
+  assert.match(page, /setVisibleLimit\(60\)/);
   assert.match(page, /loading=\{eager \? "eager" : "lazy"\}/);
   assert.match(page, /data-card-id=\{item\.id\}/);
   assert.match(page, /className="prompt-column"/);
@@ -87,6 +92,8 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.doesNotMatch(styles, /(?:html|body)\s*\{[^}]*overscroll-behavior-y:\s*none/);
   assert.match(styles, /body\.modal-open \{ overflow: hidden; overscroll-behavior: none; \}/);
   assert.match(styles, /main \{[^}]*overflow-x: clip;[^}]*overflow-y: visible;/);
+  assert.match(styles, /\.creator-home/);
+  assert.match(styles, /\.creator-anime/);
   assert.match(styles, /\.prompt-grid\.stable-columns/);
   assert.match(styles, /\.image-button \{[^}]*aspect-ratio: 4 \/ 3/);
   assert.match(JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8")).dependencies.geist, /^\^?1\.7\.2$/);
@@ -94,11 +101,13 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(layout, /creator: "小明猩"/);
   assert.ok((await stat(new URL("../public/og.png", import.meta.url))).size > 100_000);
   assert.match(workflow, /sync-youmind-search-index\.mjs/);
+  assert.match(workflow, /sync-nano-banana-public\.mjs/);
   assert.match(workflow, /cron: "17 \*\/6 \* \* \*"/);
   assert.match(notices, /提示词由 \[YouMind\.com\]/);
   assert.match(notices, /DiffusionDB CC0 3D collection/);
   assert.match(notices, /No PromptWall prompt text or generated image is bundled/);
   assert.match(notices, /JCodesMore AI Website Cloner Template/);
+  await access(new URL("../public/creator-anime.webp", import.meta.url));
   await access(new URL("../public/gallery/tosea/03.jpg", import.meta.url));
   await access(new URL(`../public/${localItems.find((item) => item.id.startsWith("2slides-")).image.replace(/^\.\//, "")}`, import.meta.url));
   await Promise.all(diffusionDbItems.map(async (item) => {

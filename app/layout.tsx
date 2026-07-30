@@ -3,13 +3,14 @@ import "./globals.css";
 import localPromptItems from "./data/prompt-items.json";
 import fullIndexSummary from "./data/full-index-summary.json";
 import diffusionDbItems from "./data/diffusiondb-3d.json";
+import nanoBananaData from "./data/nano-banana-public.json";
 
 const totalBrowsable =
-  fullIndexSummary.uniquePromptCount + localPromptItems.length + diffusionDbItems.length;
+  fullIndexSummary.uniquePromptCount + localPromptItems.length + diffusionDbItems.length + nanoBananaData.items.length;
 
 export const metadata: Metadata = {
   title: "Prompt Atlas｜生图与 PPT 提示词灵感库",
-  description: `由小明猩制作的提示词美术馆：${totalBrowsable.toLocaleString()} 组真实生成效果与完整提示词，可直接站内查看和复制。`,
+  description: `由小明猩制作的提示词美术馆：${totalBrowsable.toLocaleString()} 组真实生成效果与完整提示词，融合小明猩动漫制作者主页，可直接站内查看和复制。`,
   authors: [{ name: "小明猩" }],
   creator: "小明猩",
   keywords: ["PPT 提示词", "GPT Image 2", "真实生成效果", "生图提示词", "信息图", "Prompt Atlas"],
