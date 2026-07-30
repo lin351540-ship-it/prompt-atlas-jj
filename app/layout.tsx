@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localPromptItems from "./data/prompt-items.json";
 import fullIndexSummary from "./data/full-index-summary.json";
+import diffusionDbItems from "./data/diffusiondb-3d.json";
 
-const totalBrowsable = fullIndexSummary.uniquePromptCount + localPromptItems.length;
+const totalBrowsable =
+  fullIndexSummary.uniquePromptCount + localPromptItems.length + diffusionDbItems.length;
 
 export const metadata: Metadata = {
   title: "Prompt Atlas｜生图与 PPT 提示词灵感库",

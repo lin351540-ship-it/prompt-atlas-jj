@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access, readFile, readdir } from "node:fs/promises";
+import { access, readFile, readdir, stat } from "node:fs/promises";
 import test from "node:test";
 
 async function render() {
@@ -24,6 +24,8 @@ test("server-renders the unified real-output Prompt Atlas gallery", async () => 
   assert.match(html, /小小东内容已经并入主图库/);
   assert.match(html, /站内查看完整提示词/);
   assert.match(html, /YouMind · GPT Image 2 Prompts Search/);
+  assert.match(html, /DiffusionDB · Open 3D Collection/);
+  assert.match(html, /161 CC0 3D PAIRS/);
   assert.match(html, /JCodesMore · AI Website Cloner Template/);
   assert.match(html, /不破解 VIP/);
   assert.doesNotMatch(html, /OFFICIAL X EMBEDS|platform\.twitter\.com\/widgets\.js|id="x-posts"/i);
@@ -31,10 +33,11 @@ test("server-renders the unified real-output Prompt Atlas gallery", async () => 
 });
 
 test("ships the full public catalog, prompt shards, resilient images, and attribution", async () => {
-  const [page, layout, localData, liveData, summaryData, catalogData, workflow, notices] = await Promise.all([
+  const [page, layout, localData, diffusionDbData, liveData, summaryData, catalogData, workflow, notices] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/data/prompt-items.json", import.meta.url), "utf8"),
+    readFile(new URL("../app/data/diffusiondb-3d.json", import.meta.url), "utf8"),
     readFile(new URL("../app/data/live-index.json", import.meta.url), "utf8"),
     readFile(new URL("../app/data/full-index-summary.json", import.meta.url), "utf8"),
     readFile(new URL("../public/data/youmind/catalog.json", import.meta.url), "utf8"),
@@ -43,6 +46,7 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   ]);
 
   const localItems = JSON.parse(localData);
+  const diffusionDbItems = JSON.parse(diffusionDbData);
   const live = JSON.parse(liveData);
   const summary = JSON.parse(summaryData);
   const catalog = JSON.parse(catalogData);
@@ -51,6 +55,12 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
 
   assert.ok(localItems.length >= 165);
   assert.ok(localItems.filter((item) => item.category === "PPT / 信息图").length >= 45);
+  assert.equal(diffusionDbItems.length, 161);
+  assert.ok(diffusionDbItems.every((item) => item.prompt && item.image && item.imageUrls?.length === 1));
+  assert.ok(diffusionDbItems.every((item) => item.promptLicense === "CC0 1.0 Universal" && item.syncMethod === "diffusiondb-cc0-curated"));
+  assert.ok(diffusionDbItems.every((item) => item.sourceImageNsfwScore < 0.05 && item.sourcePromptNsfwScore < 0.02));
+  const blockedOpen3d = /\b(?:nude|nsfw|blood|weapon|celebrity|portrait|artist|artwork|painting|illustration|style|movie|videogame|woman|man|person|child|disney|pixar|marvel|pokemon|mario|batman|stormtrooper|rolex|fujifilm)\b/i;
+  assert.ok(diffusionDbItems.every((item) => !blockedOpen3d.test(item.prompt)));
   assert.equal(live.sourceStats.youMindCompleteRecords, 126);
   assert.ok(summary.declaredTotalPrompts >= 14_000);
   assert.ok(summary.uniquePromptCount >= 14_000);
@@ -61,6 +71,7 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.ok(catalog.every((item) => item.id && item.title && item.description && item.image && item.imageUrls.length && item.promptFile));
   assert.ok(promptRecords.every((item) => item.id && item.content));
   assert.match(page, /fetch\("\.\/data\/youmind\/catalog\.json"\)/);
+  assert.match(page, /item\.syncMethod === "diffusiondb-cc0-curated"/);
   assert.match(page, /className={`image-fallback/);
   assert.match(page, /setVisibleLimit\(36\)/);
   assert.match(page, /loading=\{eager \? "eager" : "lazy"\}/);
@@ -79,9 +90,16 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(workflow, /sync-youmind-search-index\.mjs/);
   assert.match(workflow, /cron: "17 \*\/6 \* \* \*"/);
   assert.match(notices, /提示词由 \[YouMind\.com\]/);
+  assert.match(notices, /DiffusionDB CC0 3D collection/);
+  assert.match(notices, /No PromptWall prompt text or generated image is bundled/);
   assert.match(notices, /JCodesMore AI Website Cloner Template/);
   await access(new URL("../public/gallery/tosea/03.jpg", import.meta.url));
   await access(new URL(`../public/${localItems.find((item) => item.id.startsWith("2slides-")).image.replace(/^\.\//, "")}`, import.meta.url));
+  await Promise.all(diffusionDbItems.map(async (item) => {
+    const imageUrl = new URL(`../public/${item.image.replace(/^\.\//, "")}`, import.meta.url);
+    await access(imageUrl);
+    assert.ok((await stat(imageUrl)).size > 4_096);
+  }));
 });
 
 test("builds relative client chunks for GitHub Pages project hosting", async () => {

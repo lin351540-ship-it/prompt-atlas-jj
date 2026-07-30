@@ -72,3 +72,24 @@ metadata for 126 entries. It is deduplicated against the large public catalog.
 
 - Project: https://github.com/YouMind-OpenLab/awesome-gpt-image-2
 - License: CC BY 4.0
+
+## DiffusionDB CC0 3D collection
+
+The site includes a safety-filtered subset of 161 original prompt-image pairs
+from DiffusionDB. Prompt text is kept verbatim. The corresponding generated
+images are fetched by exact filename from the public dataset ZIP partitions,
+converted lossily to WebP for delivery performance, and self-hosted so gallery
+cards do not depend on expiring signed URLs.
+
+- Dataset: https://huggingface.co/datasets/poloclub/diffusiondb
+- Project: https://github.com/poloclub/diffusiondb
+- Dataset and generated-image license: CC0 1.0 Universal
+- License deed: https://creativecommons.org/publicdomain/zero/1.0/
+- Local curation: entries with elevated NSFW scores, people, named franchises,
+  brands, violent subjects, artist-name imitation, and near-duplicate prompts
+  are excluded.
+
+No PromptWall prompt text or generated image is bundled. PromptWall was used
+only to understand the requested 3D browsing category; this collection is an
+independent, openly licensed replacement displayed directly inside Prompt
+Atlas.

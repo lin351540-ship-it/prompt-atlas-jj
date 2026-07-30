@@ -4,11 +4,12 @@
 
 import { startTransition, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import localPromptData from "./data/prompt-items.json";
+import diffusionDbData from "./data/diffusiondb-3d.json";
 import liveIndex from "./data/live-index.json";
 import fullIndexSummary from "./data/full-index-summary.json";
 
 type Category = "全部" | "PPT / 信息图" | "海报设计" | "社媒 / 品牌" | "UI / 产品" | "人像摄影" | "插画 / 漫画" | "实验 / 对比" | "创意发现";
-type SourceMode = "全部来源" | "小小东" | "YouMind 全量公开索引" | "PPT 开源集" | "其他开源集";
+type SourceMode = "全部来源" | "小小东" | "YouMind 全量公开索引" | "开放授权 3D" | "PPT 开源集" | "其他开源集";
 type SortMode = "ppt" | "source" | "title";
 
 type CatalogItem = {
@@ -62,10 +63,11 @@ type PublicCatalogRecord = {
 };
 
 const categories: Category[] = ["全部", "PPT / 信息图", "海报设计", "社媒 / 品牌", "UI / 产品", "人像摄影", "插画 / 漫画", "实验 / 对比", "创意发现"];
-const sourceModes: SourceMode[] = ["全部来源", "小小东", "YouMind 全量公开索引", "PPT 开源集", "其他开源集"];
+const sourceModes: SourceMode[] = ["全部来源", "小小东", "YouMind 全量公开索引", "开放授权 3D", "PPT 开源集", "其他开源集"];
 const localPromptItems = localPromptData as CatalogItem[];
+const diffusionDbItems = diffusionDbData as CatalogItem[];
 const curatedYouMindItems = liveIndex.items.filter((item) => item.syncMethod === "github-public-full-record") as unknown as CatalogItem[];
-const initialItems = [...curatedYouMindItems, ...localPromptItems];
+const initialItems = [...diffusionDbItems, ...curatedYouMindItems, ...localPromptItems];
 const curatedYouMindImages = new Set(curatedYouMindItems.flatMap((item) => item.imageUrls?.length ? item.imageUrls : [item.image]));
 
 const categoryMap: Record<string, Category> = {
@@ -96,6 +98,12 @@ const sourceLinks = [
     title: "YouMind OpenLab · Awesome GPT Image 2",
     copy: `${liveIndex.sourceStats.youMindCompleteRecords} 条带原作者、原帖与多张效果图的精选完整记录。`,
     url: "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
+  },
+  {
+    eyebrow: "3D PROMPT–IMAGE PAIRS · CC0 1.0",
+    title: "DiffusionDB · Open 3D Collection",
+    copy: `${diffusionDbItems.length} 组经过安全筛选的 3D 原提示词与对应生成图；图片已本地化，卡片详情可直接站内查看。`,
+    url: "https://github.com/poloclub/diffusiondb",
   },
   {
     eyebrow: "PPT SOURCE · APACHE-2.0",
@@ -221,14 +229,19 @@ function sourceMatches(item: CatalogItem, source: SourceMode) {
   if (source === "全部来源") return true;
   if (source === "小小东") return item.author === "小小东" || item.authorHandle.toLowerCase() === "xiaoxiaodong01";
   if (source === "YouMind 全量公开索引") return item.syncMethod === "youmind-public-search-index" || item.syncMethod === "github-public-full-record";
+  if (source === "开放授权 3D") return item.syncMethod === "diffusiondb-cc0-curated";
   if (source === "PPT 开源集") return item.collectionName.includes("2slides");
-  return item.syncMethod !== "youmind-public-search-index" && item.syncMethod !== "github-public-full-record" && !item.collectionName.includes("2slides");
+  return item.syncMethod !== "youmind-public-search-index"
+    && item.syncMethod !== "github-public-full-record"
+    && item.syncMethod !== "diffusiondb-cc0-curated"
+    && !item.collectionName.includes("2slides");
 }
 
 function sourceLabel(item: CatalogItem) {
   if (item.author === "小小东" || item.authorHandle.toLowerCase() === "xiaoxiaodong01") return "小小东 · YouMind";
   if (item.syncMethod === "youmind-public-search-index") return "YouMind 公开索引";
   if (item.syncMethod === "github-public-full-record") return "YouMind 精选记录";
+  if (item.syncMethod === "diffusiondb-cc0-curated") return "DiffusionDB · CC0 3D";
   if (item.collectionName.includes("2slides")) return "2slides";
   if (item.collectionName.includes("Tosea")) return "ToseaAI";
   if (item.collectionName.includes("ApiMart")) return "ApiMartAI";
@@ -424,7 +437,7 @@ export default function Home() {
       if (!sourceMatches(item, source)) return false;
       if (onlyFavorites && !favorites.includes(item.id)) return false;
       if (!keyword) return true;
-      return [item.title, item.originalTitle, item.description, item.author, item.category, item.collectionName, ...item.tags].join(" ").toLowerCase().includes(keyword);
+      return [item.title, item.originalTitle, item.description, item.prompt, item.author, item.category, item.collectionName, ...item.tags].join(" ").toLowerCase().includes(keyword);
     });
     return [...result].sort((a, b) => {
       if (sort === "title") return a.title.localeCompare(b.title, "zh-CN");
@@ -432,6 +445,7 @@ export default function Home() {
       const priority = (item: CatalogItem) => item.authorHandle.toLowerCase() === "xiaoxiaodong01" ? 5
         : item.collectionName.includes("2slides") ? 4
           : item.syncMethod === "github-public-full-record" ? 3
+            : item.syncMethod === "diffusiondb-cc0-curated" ? 2
             : item.featured ? 2
               : item.syncMethod === "youmind-public-search-index" ? 1 : 0;
       return Number(b.category === "PPT / 信息图") - Number(a.category === "PPT / 信息图") || priority(b) - priority(a) || b.index - a.index;
@@ -522,7 +536,7 @@ export default function Home() {
   };
 
   const selectedImages = selected ? (selected.imageUrls?.length ? selected.imageUrls : [selected.image]).filter(Boolean) : [];
-  const totalBrowsable = fullIndexSummary.uniquePromptCount + localPromptItems.length;
+  const totalBrowsable = fullIndexSummary.uniquePromptCount + localPromptItems.length + diffusionDbItems.length;
 
   return (
     <main>
@@ -538,11 +552,11 @@ export default function Home() {
         <div className="hero-copy">
           <div className="signal"><i /> 真实效果图 · 完整提示词 · 同页直看</div>
           <h1>一万四千条公开灵感，<br /><span>排进同一座提示词美术馆。</span></h1>
-          <p>小小东、YouMind OpenLab 与优质开源集合统一进入卡片瀑布流。先看真实生成效果，再在站内展开并复制完整提示词，不再另设小小东专区，也不强迫跳转外站。</p>
+          <p>小小东、YouMind OpenLab、DiffusionDB 3D 与优质开源集合统一进入卡片瀑布流。先看真实生成效果，再在站内展开并复制完整提示词，不再另设专区，也不强迫跳转外站。</p>
           <div className="hero-actions"><a className="glass-button primary" href="#gallery">查看 {totalBrowsable.toLocaleString()} 组案例 <ArrowIcon /></a><a className="quiet-link" href="#rights">数据范围与授权</a></div>
           <div className="proof-row">
             <span><b>{fullIndexSummary.uniquePromptCount.toLocaleString()}</b>YouMind 唯一公开记录</span>
-            <span><b>{liveIndex.sourceStats.youMindImages}</b>精选多图实效预览</span>
+            <span><b>{diffusionDbItems.length}</b>CC0 3D 图文配对</span>
             <span><b>{curatedYouMindItems.filter((item) => item.author === "小小东").length}</b>小小东完整图文</span>
           </div>
         </div>
@@ -554,7 +568,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="ticker" aria-label="站点特点"><div><span>14K+ PUBLIC PROMPTS</span><span>ACTUAL GENERATED IMAGES</span><span>FULL PROMPTS ON SITE</span><span>XIAOXIAODONG IN THE SAME GRID</span><span>14K+ PUBLIC PROMPTS</span></div></section>
+      <section className="ticker" aria-label="站点特点"><div><span>14K+ PUBLIC PROMPTS</span><span>161 CC0 3D PAIRS</span><span>ACTUAL GENERATED IMAGES</span><span>FULL PROMPTS ON SITE</span><span>XIAOXIAODONG IN THE SAME GRID</span><span>14K+ PUBLIC PROMPTS</span></div></section>
 
       <section className="library" id="gallery">
         <div className="section-intro"><div><span className="section-index">01 / UNIFIED PROMPT GALLERY</span><h2>效果图、提示词与来源，<br />全部使用同一种卡片。</h2></div><p>全量目录加载后共显示 {totalBrowsable.toLocaleString()} 条去重记录。小小东内容已经并入主图库；点击任意效果图即可在本站查看完整提示词与全部可用预览。</p></div>
@@ -568,7 +582,7 @@ export default function Home() {
         </div>
 
         <div className="category-rail" aria-label="分类筛选">{categories.map((name) => <button className={category === name ? "active" : ""} type="button" key={name} aria-pressed={category === name} onClick={() => { setCategory(name); setVisibleLimit(36); }}><span>{name}</span><i>{Number(counts[name] ?? 0).toLocaleString()}</i></button>)}</div>
-        <div className="source-rail" aria-label="来源筛选"><small>SOURCE / 来源</small>{sourceModes.map((name) => <button className={source === name ? "active" : ""} type="button" key={name} aria-pressed={source === name} onClick={() => { setSource(name); setVisibleLimit(36); if (name === "小小东") setCategory("全部"); }}>{name}<i>{Number(sourceCounts[name] ?? 0).toLocaleString()}</i></button>)}</div>
+        <div className="source-rail" aria-label="来源筛选"><small>SOURCE / 来源</small>{sourceModes.map((name) => <button className={source === name ? "active" : ""} type="button" key={name} aria-pressed={source === name} onClick={() => { setSource(name); setVisibleLimit(36); if (name === "小小东" || name === "开放授权 3D") setCategory("全部"); }}>{name}<i>{Number(sourceCounts[name] ?? 0).toLocaleString()}</i></button>)}</div>
         <div className="result-line"><span>SHOWING {visibleItems.length.toLocaleString()} / {filtered.length.toLocaleString()}</span><span>{category} · {source}{query ? ` · “${query}”` : ""}</span></div>
 
         {filtered.length ? <>
@@ -587,10 +601,10 @@ export default function Home() {
       </section>
 
       <section className="rights-section" id="rights">
-        <div className="rights-glass"><span className="section-index">03 / RIGHTS & TRANSPARENCY</span><h2>能公开验证多少，就准确展示多少。</h2><div className="rights-columns"><p><b>A · 公开数据范围：</b>YouMind 官方清单宣称 {fullIndexSummary.declaredTotalPrompts.toLocaleString()} 条；当前 11 个公开分类文件按 ID 去重后实际可验证 {fullIndexSummary.uniquePromptCount.toLocaleString()} 条，且均有提示词正文。分类会重叠，因此会员数合计不等于唯一条目数。</p><p><b>B · 获取与展示方式：</b>本站不破解 VIP、不调用隐藏接口、不抓取受限页面；只同步 YouMind 官方 GitHub 公开 JSON。效果图保留上游远程地址并自动尝试同条目的其他图片，不对外宣称拥有原图版权。</p></div><p className="youmind-credit">提示词由 <a href="https://youmind.com" target="_blank" rel="noreferrer">YouMind.com</a> 通过公开社区搜集 ❤️</p><div className="license-row"><a href={fullIndexSummary.source} target="_blank" rel="noreferrer">YouMind 公开索引 <SourceIcon /></a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0 <SourceIcon /></a><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">Apache-2.0 <SourceIcon /></a><a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/main/LICENSE" target="_blank" rel="noreferrer">JCodesMore MIT <SourceIcon /></a><a href="https://github.com/lin351540-ship-it/prompt-atlas-jj" target="_blank" rel="noreferrer">本站仓库 <SourceIcon /></a></div></div>
+        <div className="rights-glass"><span className="section-index">03 / RIGHTS & TRANSPARENCY</span><h2>能公开验证多少，就准确展示多少。</h2><div className="rights-columns"><p><b>A · 公开数据范围：</b>YouMind 官方清单宣称 {fullIndexSummary.declaredTotalPrompts.toLocaleString()} 条；当前 11 个公开分类文件按 ID 去重后实际可验证 {fullIndexSummary.uniquePromptCount.toLocaleString()} 条，且均有提示词正文。分类会重叠，因此会员数合计不等于唯一条目数。</p><p><b>B · 3D 开放替代库：</b>新增 {diffusionDbItems.length} 组 DiffusionDB 原提示词—对应生成图，数据集和生成图均按 CC0 1.0 发布。本站只做通用安全筛选、分类和本地化展示，不改写原英文提示词。</p><p><b>C · 获取与展示方式：</b>本站不破解 VIP、不调用隐藏接口、不抓取受限页面，也不复制 PromptWall 的原文或原图。YouMind 仅同步官方 GitHub 公开 JSON；3D 图片只从 DiffusionDB 公开 CC0 分片按入选文件精确取回。</p></div><p className="youmind-credit">提示词由 <a href="https://youmind.com" target="_blank" rel="noreferrer">YouMind.com</a> 通过公开社区搜集 ❤️</p><div className="license-row"><a href={fullIndexSummary.source} target="_blank" rel="noreferrer">YouMind 公开索引 <SourceIcon /></a><a href="https://github.com/poloclub/diffusiondb" target="_blank" rel="noreferrer">DiffusionDB CC0 <SourceIcon /></a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0 <SourceIcon /></a><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">Apache-2.0 <SourceIcon /></a><a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/main/LICENSE" target="_blank" rel="noreferrer">JCodesMore MIT <SourceIcon /></a><a href="https://github.com/lin351540-ship-it/prompt-atlas-jj" target="_blank" rel="noreferrer">本站仓库 <SourceIcon /></a></div></div>
       </section>
 
-      <footer><div className="brand"><span className="brand-glyph">P</span><span><b>Prompt Atlas</b><small>REAL OUTPUT LIBRARY</small></span></div><p>{totalBrowsable.toLocaleString()} 组可浏览记录 · 小小东已并入统一卡片流 · 完整提示词站内读取</p><a href="#top">返回顶部 ↑</a></footer>
+      <footer><div className="brand"><span className="brand-glyph">P</span><span><b>Prompt Atlas</b><small>REAL OUTPUT LIBRARY</small></span></div><p>{totalBrowsable.toLocaleString()} 组可浏览记录 · 含 {diffusionDbItems.length} 组 CC0 3D 图文配对 · 完整提示词站内读取</p><a href="#top">返回顶部 ↑</a></footer>
 
       {selected && <div className="modal-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && setSelected(null)}>
         <section className="prompt-modal" ref={modalRef} role="dialog" aria-modal="true" aria-label={`${selected.title}完整提示词`}>
