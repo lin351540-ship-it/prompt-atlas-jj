@@ -69,7 +69,9 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.doesNotMatch(page, /platform\.twitter\.com\/widgets\.js|x-section/);
   const styles = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
   assert.match(styles, /font-family: "Geist Atlas"/);
-  assert.match(styles, /overscroll-behavior-y: none/);
+  assert.doesNotMatch(styles, /(?:html|body)\s*\{[^}]*overscroll-behavior-y:\s*none/);
+  assert.match(styles, /body\.modal-open \{ overflow: hidden; overscroll-behavior: none; \}/);
+  assert.match(styles, /main \{[^}]*overflow-x: clip;[^}]*overflow-y: visible;/);
   assert.match(styles, /\.prompt-grid\.stable-columns/);
   assert.match(styles, /\.image-button \{[^}]*aspect-ratio: 4 \/ 3/);
   assert.match(JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8")).dependencies.geist, /^\^?1\.7\.2$/);
