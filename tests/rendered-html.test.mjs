@@ -63,8 +63,15 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(page, /fetch\("\.\/data\/youmind\/catalog\.json"\)/);
   assert.match(page, /className={`image-fallback/);
   assert.match(page, /setVisibleLimit\(36\)/);
-  assert.doesNotMatch(page, /loading="lazy"|platform\.twitter\.com\/widgets\.js|x-section/);
-  assert.match(await readFile(new URL("../app/globals.css", import.meta.url), "utf8"), /font-family: "Geist Atlas"/);
+  assert.match(page, /loading=\{eager \? "eager" : "lazy"\}/);
+  assert.match(page, /data-card-id=\{item\.id\}/);
+  assert.match(page, /className="prompt-column"/);
+  assert.doesNotMatch(page, /platform\.twitter\.com\/widgets\.js|x-section/);
+  const styles = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  assert.match(styles, /font-family: "Geist Atlas"/);
+  assert.match(styles, /overscroll-behavior-y: none/);
+  assert.match(styles, /\.prompt-grid\.stable-columns/);
+  assert.match(styles, /\.image-button \{[^}]*aspect-ratio: 4 \/ 3/);
   assert.match(JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8")).dependencies.geist, /^\^?1\.7\.2$/);
   assert.match(layout, /lang="zh-CN"/);
   assert.match(workflow, /sync-youmind-search-index\.mjs/);

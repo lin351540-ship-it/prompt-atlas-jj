@@ -2,7 +2,7 @@
 
 /* eslint-disable @next/next/no-img-element -- this static gallery intentionally renders source-hosted previews */
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { startTransition, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import localPromptData from "./data/prompt-items.json";
 import liveIndex from "./data/live-index.json";
 import fullIndexSummary from "./data/full-index-summary.json";
@@ -186,7 +186,7 @@ function SourceIcon() {
   return <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-8 8" /><path d="M18 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" /></svg>;
 }
 
-function ResilientImage({ sources, alt, className }: { sources: string[]; alt: string; className?: string }) {
+function ResilientImage({ sources, alt, className, eager = false }: { sources: string[]; alt: string; className?: string; eager?: boolean }) {
   const usableSources = sources.filter(Boolean);
   const [sourceIndex, setSourceIndex] = useState(0);
   const [loaded, setLoaded] = useState(false);
@@ -195,7 +195,22 @@ function ResilientImage({ sources, alt, className }: { sources: string[]; alt: s
     return <span className={`image-fallback ${className ?? ""}`} role="img" aria-label={`${alt}（效果图源暂不可用）`}><i>IMAGE SOURCE</i><b>效果图暂不可用</b><small>提示词正文仍可在站内查看</small></span>;
   }
 
-  return <img className={`${className ?? ""}${loaded ? " is-loaded" : ""}`} src={usableSources[sourceIndex]} alt={alt} decoding="async" referrerPolicy="no-referrer" onLoad={() => setLoaded(true)} onError={() => { setLoaded(false); setSourceIndex((index) => index + 1); }} />;
+  return <img className={`${className ?? ""}${loaded ? " is-loaded" : ""}`} src={usableSources[sourceIndex]} alt={alt} loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : "auto"} decoding="async" referrerPolicy="no-referrer" onLoad={() => setLoaded(true)} onError={() => { setLoaded(false); setSourceIndex((index) => index + 1); }} />;
+}
+
+function previewAspectRatio(ratio: string) {
+  const match = ratio.replace("：", ":").match(/^(\d+(?:\.\d+)?)\s*[:/]\s*(\d+(?:\.\d+)?)$/);
+  if (!match) return "4 / 3";
+  const width = Number(match[1]);
+  const height = Number(match[2]);
+  return width > 0 && height > 0 ? `${width} / ${height}` : "4 / 3";
+}
+
+function galleryColumnCount() {
+  if (typeof window === "undefined") return 0;
+  if (window.matchMedia("(max-width: 560px)").matches) return 1;
+  if (window.matchMedia("(max-width: 1100px)").matches) return 2;
+  return 3;
 }
 
 function itemMatchesCategory(item: CatalogItem, category: Category) {
@@ -227,15 +242,21 @@ function moveSpotlight(event: React.PointerEvent<HTMLElement>) {
 }
 
 async function copyText(text: string) {
-  if (navigator.clipboard?.writeText) return navigator.clipboard.writeText(text);
+  if (navigator.clipboard?.writeText) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return;
+    } catch { /* fall through to the selection-based fallback */ }
+  }
   const area = document.createElement("textarea");
   area.value = text;
   area.style.position = "fixed";
   area.style.opacity = "0";
   document.body.appendChild(area);
   area.select();
-  document.execCommand("copy");
+  const copied = document.execCommand("copy");
   area.remove();
+  if (!copied) throw new Error("Clipboard copy was rejected");
 }
 
 export default function Home() {
@@ -254,10 +275,26 @@ export default function Home() {
   const [selectedImage, setSelectedImage] = useState(0);
   const [promptLoading, setPromptLoading] = useState(false);
   const [copiedId, setCopiedId] = useState<string | null>(null);
+  const [copyErrorId, setCopyErrorId] = useState<string | null>(null);
   const [visibleLimit, setVisibleLimit] = useState(36);
+  const [galleryColumns, setGalleryColumns] = useState(0);
+  const [indexReloadKey, setIndexReloadKey] = useState(0);
   const chunkCache = useRef(new Map<string, Map<number, string>>());
+  const catalogAnchor = useRef<{ id: string; top: number } | null>(null);
+  const modalScrollY = useRef(0);
+  const modalRef = useRef<HTMLElement | null>(null);
+  const restoreFocusRef = useRef<HTMLElement | null>(null);
+  const promptRequest = useRef(0);
+  const selectedId = selected?.id;
 
   const catalogItems = useMemo(() => [...fullItems, ...initialItems], [fullItems]);
+
+  useLayoutEffect(() => {
+    const updateColumns = () => setGalleryColumns(galleryColumnCount());
+    updateColumns();
+    window.addEventListener("resize", updateColumns, { passive: true });
+    return () => window.removeEventListener("resize", updateColumns);
+  }, []);
 
   useEffect(() => {
     let active = true;
@@ -268,23 +305,94 @@ export default function Home() {
       })
       .then((records) => {
         if (!active) return;
-        setFullItems(records.filter((record) => !record.imageUrls.some((image) => curatedYouMindImages.has(image))).map(mapPublicRecord));
-        setIndexStatus("ready");
+        const visibleCard = [...document.querySelectorAll<HTMLElement>("[data-card-id]")]
+          .filter((card) => {
+            const rect = card.getBoundingClientRect();
+            return rect.bottom > 100 && rect.top < window.innerHeight - 100;
+          })
+          .sort((a, b) => Math.abs(a.getBoundingClientRect().top - 120) - Math.abs(b.getBoundingClientRect().top - 120))[0];
+        catalogAnchor.current = visibleCard ? { id: visibleCard.dataset.cardId ?? "", top: visibleCard.getBoundingClientRect().top } : null;
+        const mappedRecords = records.filter((record) => !record.imageUrls.some((image) => curatedYouMindImages.has(image))).map(mapPublicRecord);
+        startTransition(() => {
+          setFullItems(mappedRecords);
+          setIndexStatus("ready");
+        });
       })
       .catch(() => active && setIndexStatus("error"));
     return () => { active = false; };
-  }, []);
+  }, [indexReloadKey]);
+
+  useLayoutEffect(() => {
+    const snapshot = catalogAnchor.current;
+    if (!snapshot || !fullItems.length) return;
+    catalogAnchor.current = null;
+    const anchor = [...document.querySelectorAll<HTMLElement>("[data-card-id]")].find((card) => card.dataset.cardId === snapshot.id);
+    if (!anchor) return;
+    const delta = anchor.getBoundingClientRect().top - snapshot.top;
+    if (Math.abs(delta) < 1) return;
+    const root = document.documentElement;
+    const previousBehavior = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    window.scrollBy(0, delta);
+    root.style.scrollBehavior = previousBehavior;
+  }, [fullItems]);
 
   useEffect(() => {
-    if (!selected) return;
-    const onKey = (event: KeyboardEvent) => event.key === "Escape" && setSelected(null);
-    document.body.classList.add("modal-open");
-    window.addEventListener("keydown", onKey);
-    return () => {
-      document.body.classList.remove("modal-open");
-      window.removeEventListener("keydown", onKey);
+    if (!selectedId) return;
+    const body = document.body;
+    const root = document.documentElement;
+    const previousStyles = {
+      position: body.style.position,
+      top: body.style.top,
+      left: body.style.left,
+      right: body.style.right,
+      width: body.style.width,
+      overflow: body.style.overflow,
+      paddingRight: body.style.paddingRight,
     };
-  }, [selected]);
+    modalScrollY.current = window.scrollY;
+    restoreFocusRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const scrollbarWidth = Math.max(0, window.innerWidth - root.clientWidth);
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setSelected(null);
+        return;
+      }
+      if (event.key !== "Tab" || !modalRef.current) return;
+      const focusable = [...modalRef.current.querySelectorAll<HTMLElement>('button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])')];
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+    document.body.classList.add("modal-open");
+    body.style.position = "fixed";
+    body.style.top = `-${modalScrollY.current}px`;
+    body.style.left = "0";
+    body.style.right = "0";
+    body.style.width = "100%";
+    body.style.overflow = "hidden";
+    if (scrollbarWidth) body.style.paddingRight = `${scrollbarWidth}px`;
+    window.addEventListener("keydown", onKey);
+    const focusFrame = window.requestAnimationFrame(() => modalRef.current?.querySelector<HTMLElement>(".modal-close")?.focus());
+    return () => {
+      window.cancelAnimationFrame(focusFrame);
+      body.classList.remove("modal-open");
+      Object.assign(body.style, previousStyles);
+      window.removeEventListener("keydown", onKey);
+      const previousBehavior = root.style.scrollBehavior;
+      root.style.scrollBehavior = "auto";
+      window.scrollTo(0, modalScrollY.current);
+      root.style.scrollBehavior = previousBehavior;
+      restoreFocusRef.current?.focus({ preventScroll: true });
+    };
+  }, [selectedId]);
 
   useEffect(() => {
     const cards = document.querySelectorAll<HTMLElement>(".reveal-card:not(.is-revealed)");
@@ -304,7 +412,7 @@ export default function Home() {
       observer.observe(card);
     });
     return () => observer.disconnect();
-  }, [visibleLimit, category, query, source, onlyFavorites, sort, indexStatus]);
+  }, [visibleLimit, category, query, source, onlyFavorites, sort, indexStatus, galleryColumns]);
 
   const counts = useMemo(() => Object.fromEntries(categories.map((name) => [name, catalogItems.filter((item) => itemMatchesCategory(item, name)).length])), [catalogItems]);
   const sourceCounts = useMemo(() => Object.fromEntries(sourceModes.map((name) => [name, catalogItems.filter((item) => sourceMatches(item, name)).length])), [catalogItems]);
@@ -321,12 +429,22 @@ export default function Home() {
     return [...result].sort((a, b) => {
       if (sort === "title") return a.title.localeCompare(b.title, "zh-CN");
       if (sort === "source") return a.index - b.index;
-      const priority = (item: CatalogItem) => item.author === "小小东" ? 4 : item.collectionName.includes("2slides") ? 3 : item.syncMethod === "youmind-public-search-index" ? 2 : item.featured ? 1 : 0;
+      const priority = (item: CatalogItem) => item.authorHandle.toLowerCase() === "xiaoxiaodong01" ? 5
+        : item.collectionName.includes("2slides") ? 4
+          : item.syncMethod === "github-public-full-record" ? 3
+            : item.featured ? 2
+              : item.syncMethod === "youmind-public-search-index" ? 1 : 0;
       return Number(b.category === "PPT / 信息图") - Number(a.category === "PPT / 信息图") || priority(b) - priority(a) || b.index - a.index;
     });
   }, [catalogItems, category, favorites, onlyFavorites, query, sort, source]);
 
-  const visibleItems = filtered.slice(0, visibleLimit);
+  const visibleItems = useMemo(() => filtered.slice(0, visibleLimit), [filtered, visibleLimit]);
+  const stableColumns = useMemo(() => {
+    if (!galleryColumns) return [];
+    const columns = Array.from({ length: galleryColumns }, () => [] as CatalogItem[]);
+    visibleItems.forEach((item, index) => columns[index % galleryColumns].push(item));
+    return columns;
+  }, [galleryColumns, visibleItems]);
   const heroItems = useMemo(() => [
     curatedYouMindItems.find((item) => item.author === "小小东" && item.category === "PPT / 信息图"),
     localPromptItems.find((item) => item.id.startsWith("2slides-")),
@@ -347,21 +465,23 @@ export default function Home() {
   };
 
   const openItem = async (item: CatalogItem) => {
+    const requestId = ++promptRequest.current;
     setSelectedImage(0);
     setSelected(item);
+    setPromptLoading(!item.prompt);
     if (item.prompt) return;
-    setPromptLoading(true);
     try {
       const resolved = await loadPrompt(item);
-      setSelected((current) => current?.id === item.id ? resolved : current);
+      if (promptRequest.current === requestId) setSelected((current) => current?.id === item.id ? resolved : current);
     } catch {
-      setSelected((current) => current?.id === item.id ? { ...item, prompt: "提示词分片暂时加载失败，请稍后重试。" } : current);
+      if (promptRequest.current === requestId) setSelected((current) => current?.id === item.id ? { ...item, prompt: "提示词分片暂时加载失败，请稍后重试。" } : current);
     } finally {
-      setPromptLoading(false);
+      if (promptRequest.current === requestId) setPromptLoading(false);
     }
   };
 
   const handleCopy = async (item: CatalogItem) => {
+    setCopyErrorId(null);
     try {
       const resolved = await loadPrompt(item);
       await copyText(resolved.prompt);
@@ -370,15 +490,35 @@ export default function Home() {
       window.setTimeout(() => setCopiedId(null), 1700);
     } catch {
       setCopiedId(null);
+      setCopyErrorId(item.id);
+      window.setTimeout(() => setCopyErrorId((current) => current === item.id ? null : current), 2200);
     }
   };
 
   const toggleFavorite = (id: string) => {
     setFavorites((current) => {
       const next = current.includes(id) ? current.filter((item) => item !== id) : [...current, id];
-      localStorage.setItem("prompt-atlas-real-favorites", JSON.stringify(next));
+      try { localStorage.setItem("prompt-atlas-real-favorites", JSON.stringify(next)); } catch { /* keep this session usable when storage is unavailable */ }
       return next;
     });
+  };
+
+  const renderPromptCard = (item: CatalogItem) => {
+    const favorite = favorites.includes(item.id);
+    const images = item.imageUrls?.filter(Boolean).length ?? Number(Boolean(item.image));
+    return <article className="prompt-card reveal-card" data-card-id={item.id} key={item.id} onPointerMove={moveSpotlight}>
+      <button className="image-button" style={{ aspectRatio: previewAspectRatio(item.ratio) }} type="button" onClick={() => openItem(item)} aria-label={`查看${item.title}完整提示词`}>
+        <ResilientImage sources={item.imageUrls?.length ? item.imageUrls : [item.image]} alt={`${item.title}真实生成效果`} />
+        <span className="image-sheen" /><span className="image-badge">REAL OUTPUT</span>{images > 1 && <span className="image-count">{images} 张实图</span>}<span className="image-open">站内查看完整提示词 <ArrowIcon /></span>
+      </button>
+      <div className="card-body">
+        <div className="card-kicker"><span>{item.category}</span><i>{item.ratio}</i></div><span className="source-pill">{sourceLabel(item)}</span>
+        <h3>{item.title}</h3><p>{item.description}</p>
+        <div className="tag-row">{item.tags.map((tag) => <span key={tag}>#{tag}</span>)}</div>
+        <div className="card-credit"><div><small>ORIGINAL SOURCE</small><b>{item.author}</b></div><a href={item.originalPostUrl} target="_blank" rel="noreferrer" aria-label={`打开${item.author}的原始来源`}><SourceIcon /></a></div>
+        <div className="card-actions"><button type="button" onClick={() => handleCopy(item)}><CopyIcon />{copiedId === item.id ? "已复制" : copyErrorId === item.id ? "复制失败，请重试" : "复制完整提示词"}</button><button className={favorite ? "heart active" : "heart"} type="button" onClick={() => toggleFavorite(item.id)} aria-label={favorite ? "取消收藏" : "收藏"} aria-pressed={favorite}>♥</button></div>
+      </div>
+    </article>;
   };
 
   const selectedImages = selected ? (selected.imageUrls?.length ? selected.imageUrls : [selected.image]).filter(Boolean) : [];
@@ -409,7 +549,7 @@ export default function Home() {
 
         <div className="hero-gallery" aria-label="精选真实生成效果">
           <div className="hero-halo" />
-          {heroItems.map((item, index) => <button className={`hero-shot hero-shot-${index + 1}`} type="button" key={item.id} onClick={() => openItem(item)}><ResilientImage sources={item.imageUrls?.length ? item.imageUrls : [item.image]} alt={`${item.title}真实生成效果`} /><span><small>0{index + 1} · {sourceLabel(item)}</small><b>{item.title}</b></span></button>)}
+          {heroItems.map((item, index) => <button className={`hero-shot hero-shot-${index + 1}`} type="button" key={item.id} onClick={() => openItem(item)}><ResilientImage sources={item.imageUrls?.length ? item.imageUrls : [item.image]} alt={`${item.title}真实生成效果`} eager /><span><small>0{index + 1} · {sourceLabel(item)}</small><b>{item.title}</b></span></button>)}
           <div className="hero-orbit-note"><i />点击作品查看原图与完整提示词</div>
         </div>
       </section>
@@ -419,37 +559,23 @@ export default function Home() {
       <section className="library" id="gallery">
         <div className="section-intro"><div><span className="section-index">01 / UNIFIED PROMPT GALLERY</span><h2>效果图、提示词与来源，<br />全部使用同一种卡片。</h2></div><p>全量目录加载后共显示 {totalBrowsable.toLocaleString()} 条去重记录。小小东内容已经并入主图库；点击任意效果图即可在本站查看完整提示词与全部可用预览。</p></div>
 
-        <div className={`index-status ${indexStatus}`}><i />{indexStatus === "loading" ? "正在装入 YouMind 14K+ 公开索引…" : indexStatus === "ready" ? `公开索引已就绪：${fullIndexSummary.uniquePromptCount.toLocaleString()} 条唯一记录` : "全量索引暂时未加载，当前仍可浏览精选与开源集合"}</div>
+        <div className={`index-status ${indexStatus}`} aria-live="polite"><i /><span>{indexStatus === "loading" ? "正在装入 YouMind 14K+ 公开索引…" : indexStatus === "ready" ? `公开索引已就绪：${fullIndexSummary.uniquePromptCount.toLocaleString()} 条唯一记录` : "全量索引暂时未加载，当前仍可浏览精选与开源集合"}</span>{indexStatus === "error" && <button type="button" onClick={() => { setIndexStatus("loading"); setIndexReloadKey((value) => value + 1); }}>重新加载</button>}</div>
 
         <div className="glass-toolbar">
           <label className="search-field"><SearchIcon /><input value={query} onChange={(event) => { setQuery(event.target.value); setVisibleLimit(36); }} placeholder="搜索标题、主题、作者或风格…" aria-label="搜索提示词案例" />{query && <button type="button" onClick={() => { setQuery(""); setVisibleLimit(36); }} aria-label="清空搜索">×</button>}</label>
           <select value={sort} onChange={(event) => { setSort(event.target.value as SortMode); setVisibleLimit(36); }} aria-label="排序方式"><option value="ppt">PPT / 小小东优先</option><option value="source">按来源序号</option><option value="title">按标题排序</option></select>
-          <button className={onlyFavorites ? "favorite-toggle active" : "favorite-toggle"} type="button" onClick={() => { setOnlyFavorites((value) => !value); setVisibleLimit(36); }}><span>♥</span> 收藏 {favorites.length || ""}</button>
+          <button className={onlyFavorites ? "favorite-toggle active" : "favorite-toggle"} type="button" aria-pressed={onlyFavorites} onClick={() => { setOnlyFavorites((value) => !value); setVisibleLimit(36); }}><span>♥</span> 收藏 {favorites.length || ""}</button>
         </div>
 
-        <div className="category-rail" aria-label="分类筛选">{categories.map((name) => <button className={category === name ? "active" : ""} type="button" key={name} onClick={() => { setCategory(name); setVisibleLimit(36); }}><span>{name}</span><i>{Number(counts[name] ?? 0).toLocaleString()}</i></button>)}</div>
-        <div className="source-rail" aria-label="来源筛选"><small>SOURCE / 来源</small>{sourceModes.map((name) => <button className={source === name ? "active" : ""} type="button" key={name} onClick={() => { setSource(name); setVisibleLimit(36); if (name === "小小东") setCategory("全部"); }}>{name}<i>{Number(sourceCounts[name] ?? 0).toLocaleString()}</i></button>)}</div>
+        <div className="category-rail" aria-label="分类筛选">{categories.map((name) => <button className={category === name ? "active" : ""} type="button" key={name} aria-pressed={category === name} onClick={() => { setCategory(name); setVisibleLimit(36); }}><span>{name}</span><i>{Number(counts[name] ?? 0).toLocaleString()}</i></button>)}</div>
+        <div className="source-rail" aria-label="来源筛选"><small>SOURCE / 来源</small>{sourceModes.map((name) => <button className={source === name ? "active" : ""} type="button" key={name} aria-pressed={source === name} onClick={() => { setSource(name); setVisibleLimit(36); if (name === "小小东") setCategory("全部"); }}>{name}<i>{Number(sourceCounts[name] ?? 0).toLocaleString()}</i></button>)}</div>
         <div className="result-line"><span>SHOWING {visibleItems.length.toLocaleString()} / {filtered.length.toLocaleString()}</span><span>{category} · {source}{query ? ` · “${query}”` : ""}</span></div>
 
         {filtered.length ? <>
-          <div className="prompt-grid">
-            {visibleItems.map((item) => {
-              const favorite = favorites.includes(item.id);
-              const images = item.imageUrls?.filter(Boolean).length ?? Number(Boolean(item.image));
-              return <article className="prompt-card reveal-card" key={item.id} onPointerMove={moveSpotlight}>
-                <button className="image-button" type="button" onClick={() => openItem(item)} aria-label={`查看${item.title}完整提示词`}>
-                  <ResilientImage sources={item.imageUrls?.length ? item.imageUrls : [item.image]} alt={`${item.title}真实生成效果`} />
-                  <span className="image-sheen" /><span className="image-badge">REAL OUTPUT</span>{images > 1 && <span className="image-count">{images} 张实图</span>}<span className="image-open">站内查看完整提示词 <ArrowIcon /></span>
-                </button>
-                <div className="card-body">
-                  <div className="card-kicker"><span>{item.category}</span><i>{item.ratio}</i></div><span className="source-pill">{sourceLabel(item)}</span>
-                  <h3>{item.title}</h3><p>{item.description}</p>
-                  <div className="tag-row">{item.tags.map((tag) => <span key={tag}>#{tag}</span>)}</div>
-                  <div className="card-credit"><div><small>ORIGINAL SOURCE</small><b>{item.author}</b></div><a href={item.originalPostUrl} target="_blank" rel="noreferrer" aria-label={`打开${item.author}的原始来源`}><SourceIcon /></a></div>
-                  <div className="card-actions"><button type="button" onClick={() => handleCopy(item)}><CopyIcon />{copiedId === item.id ? "已复制" : "复制完整提示词"}</button><button className={favorite ? "heart active" : "heart"} type="button" onClick={() => toggleFavorite(item.id)} aria-label={favorite ? "取消收藏" : "收藏"}>♥</button></div>
-                </div>
-              </article>;
-            })}
+          <div className={galleryColumns ? "prompt-grid stable-columns" : "prompt-grid initial-columns"} style={galleryColumns ? { gridTemplateColumns: `repeat(${galleryColumns}, minmax(0, 1fr))` } : undefined}>
+            {galleryColumns
+              ? stableColumns.map((column, columnIndex) => <div className="prompt-column" key={`column-${columnIndex}`}>{column.map(renderPromptCard)}</div>)
+              : visibleItems.map(renderPromptCard)}
           </div>
           {visibleLimit < filtered.length && <button className="load-more" type="button" onClick={() => setVisibleLimit((value) => Math.min(value + 36, filtered.length))}>继续加载同类卡片 <span>+{Math.min(36, filtered.length - visibleLimit)}</span></button>}
         </> : <div className="empty-state"><span>NO MATCH</span><h3>没有找到对应作品</h3><p>换一个关键词，或重置来源与分类。</p><button type="button" onClick={() => { setQuery(""); setOnlyFavorites(false); setCategory("全部"); setSource("全部来源"); }}>重置筛选</button></div>}
@@ -467,7 +593,7 @@ export default function Home() {
       <footer><div className="brand"><span className="brand-glyph">P</span><span><b>Prompt Atlas</b><small>REAL OUTPUT LIBRARY</small></span></div><p>{totalBrowsable.toLocaleString()} 组可浏览记录 · 小小东已并入统一卡片流 · 完整提示词站内读取</p><a href="#top">返回顶部 ↑</a></footer>
 
       {selected && <div className="modal-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && setSelected(null)}>
-        <section className="prompt-modal" role="dialog" aria-modal="true" aria-label={`${selected.title}完整提示词`}>
+        <section className="prompt-modal" ref={modalRef} role="dialog" aria-modal="true" aria-label={`${selected.title}完整提示词`}>
           <button className="modal-close" type="button" onClick={() => setSelected(null)} aria-label="关闭">×</button>
           <div className="modal-visual">
             <ResilientImage key={selectedImages[selectedImage] ?? selected.id} sources={selectedImages.length ? [selectedImages[selectedImage], ...selectedImages.filter((_, index) => index !== selectedImage)] : []} alt={`${selected.title}真实生成效果 ${selectedImage + 1}`} />
@@ -477,7 +603,7 @@ export default function Home() {
           <div className="modal-content">
             <div className="modal-tags"><span>{selected.category}</span><i>{sourceLabel(selected)}</i>{selected.tags.map((tag) => <i key={tag}>{tag}</i>)}</div>
             <h2>{selected.title}</h2><p className="original-title">{selected.originalTitle}</p>
-            <div className="prompt-heading"><span>完整原提示词</span><button type="button" disabled={promptLoading} onClick={() => handleCopy(selected)}><CopyIcon />{promptLoading ? "读取中…" : copiedId === selected.id ? "已复制" : "一键复制"}</button></div>
+            <div className="prompt-heading"><span>完整原提示词</span><button type="button" disabled={promptLoading} onClick={() => handleCopy(selected)}><CopyIcon />{promptLoading ? "读取中…" : copiedId === selected.id ? "已复制" : copyErrorId === selected.id ? "复制失败，请重试" : "一键复制"}</button></div>
             <pre className={promptLoading ? "is-loading" : ""}>{promptLoading ? "正在从本站分片读取完整提示词…" : selected.prompt}</pre>
             <dl><div><dt>原始来源</dt><dd>{selected.author}{selected.authorHandle ? ` · @${selected.authorHandle}` : ""}</dd></div><div><dt>内容集合</dt><dd>{selected.collectionName}</dd></div><div><dt>许可 / 展示依据</dt><dd>{selected.promptLicense}</dd></div><div><dt>修改说明</dt><dd>{selected.modificationNote}</dd></div></dl>
             <div className="modal-links"><a href={selected.originalPostUrl} target="_blank" rel="noreferrer">查看来源 <SourceIcon /></a><a href={selected.repositoryUrl} target="_blank" rel="noreferrer">公开仓库 <SourceIcon /></a>{selected.landingUrl && <a href={selected.landingUrl} target="_blank" rel="noreferrer">来源详情 <SourceIcon /></a>}<a href={selected.promptLicenseUrl} target="_blank" rel="noreferrer">展示依据 <SourceIcon /></a></div>
