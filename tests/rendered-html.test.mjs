@@ -20,13 +20,17 @@ test("server-renders the unified real-output Prompt Atlas gallery", async () => 
 
   const html = await response.text();
   assert.match(html, /<title>Prompt Atlas｜生图与 PPT 提示词灵感库<\/title>/i);
-  assert.match(html, /一万四千条公开灵感/);
-  assert.match(html, /小小东内容已经并入主图库/);
+  assert.match(html, /所有好提示词/);
+  assert.match(html, /网站制作者/);
+  assert.match(html, /小明猩制作/);
+  assert.match(html, /Prompt Atlas 网站制作者/);
+  assert.match(html, /先看效果/);
   assert.match(html, /站内查看完整提示词/);
   assert.match(html, /YouMind · GPT Image 2 Prompts Search/);
   assert.match(html, /DiffusionDB · Open 3D Collection/);
-  assert.match(html, /161 CC0 3D PAIRS/);
+  assert.match(html, /161<\/b>3D 配对/);
   assert.match(html, /JCodesMore · AI Website Cloner Template/);
+  assert.match(html, /og\.png/);
   assert.match(html, /不破解 VIP/);
   assert.doesNotMatch(html, /OFFICIAL X EMBEDS|platform\.twitter\.com\/widgets\.js|id="x-posts"/i);
   assert.doesNotMatch(html, /ILLUSTRATIVE PREVIEW|CSS 图形模拟.*作为预览/i);
@@ -87,6 +91,8 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(styles, /\.image-button \{[^}]*aspect-ratio: 4 \/ 3/);
   assert.match(JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8")).dependencies.geist, /^\^?1\.7\.2$/);
   assert.match(layout, /lang="zh-CN"/);
+  assert.match(layout, /creator: "小明猩"/);
+  assert.ok((await stat(new URL("../public/og.png", import.meta.url))).size > 100_000);
   assert.match(workflow, /sync-youmind-search-index\.mjs/);
   assert.match(workflow, /cron: "17 \*\/6 \* \* \*"/);
   assert.match(notices, /提示词由 \[YouMind\.com\]/);

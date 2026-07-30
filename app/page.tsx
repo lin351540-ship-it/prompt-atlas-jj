@@ -528,8 +528,8 @@ export default function Home() {
       <div className="card-body">
         <div className="card-kicker"><span>{item.category}</span><i>{item.ratio}</i></div><span className="source-pill">{sourceLabel(item)}</span>
         <h3>{item.title}</h3><p>{item.description}</p>
-        <div className="tag-row">{item.tags.map((tag) => <span key={tag}>#{tag}</span>)}</div>
-        <div className="card-credit"><div><small>ORIGINAL SOURCE</small><b>{item.author}</b></div><a href={item.originalPostUrl} target="_blank" rel="noreferrer" aria-label={`打开${item.author}的原始来源`}><SourceIcon /></a></div>
+        <div className="tag-row">{item.tags.slice(0, 3).map((tag) => <span key={tag}>#{tag}</span>)}</div>
+        <div className="card-credit"><div><small>来源</small><b>{item.author}</b></div><a href={item.originalPostUrl} target="_blank" rel="noreferrer" aria-label={`打开${item.author}的原始来源`}><SourceIcon /></a></div>
         <div className="card-actions"><button type="button" onClick={() => handleCopy(item)}><CopyIcon />{copiedId === item.id ? "已复制" : copyErrorId === item.id ? "复制失败，请重试" : "复制完整提示词"}</button><button className={favorite ? "heart active" : "heart"} type="button" onClick={() => toggleFavorite(item.id)} aria-label={favorite ? "取消收藏" : "收藏"} aria-pressed={favorite}>♥</button></div>
       </div>
     </article>;
@@ -543,35 +543,52 @@ export default function Home() {
       <div className="ambient ambient-one" /><div className="ambient ambient-two" />
 
       <header className="glass-nav" aria-label="主导航">
-        <a className="brand" href="#top" aria-label="Prompt Atlas 首页"><span className="brand-glyph">P</span><span><b>Prompt Atlas</b><small>REAL OUTPUT LIBRARY</small></span></a>
-        <nav><a href="#gallery">完整图库</a><a href="#sources">来源</a><a href="#rights">透明说明</a></nav>
-        <a className="nav-cta" href="#gallery">开始浏览 <ArrowIcon /></a>
+        <a className="brand" href="#top" aria-label="Prompt Atlas 首页"><span className="brand-glyph">P</span><span><b>Prompt Atlas</b><strong className="brand-creator">小明猩制作</strong></span></a>
+        <nav><a href="#gallery">图库</a><a href="#sources">来源</a><a href="#rights">说明</a></nav>
+        <a className="nav-cta" href="#gallery">浏览图库 <ArrowIcon /></a>
       </header>
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <div className="signal"><i /> 真实效果图 · 完整提示词 · 同页直看</div>
-          <h1>一万四千条公开灵感，<br /><span>排进同一座提示词美术馆。</span></h1>
-          <p>小小东、YouMind OpenLab、DiffusionDB 3D 与优质开源集合统一进入卡片瀑布流。先看真实生成效果，再在站内展开并复制完整提示词，不再另设专区，也不强迫跳转外站。</p>
+          <div className="creator-credit"><span className="creator-avatar">猩</span><span><small>网站制作者</small><strong>小明猩</strong></span><i>CREATOR</i></div>
+          <h1>所有好提示词，<br /><span>打开就能看。</span></h1>
+          <p>{totalBrowsable.toLocaleString()} 组真实效果与完整提示词，统一收进同一座可直接浏览、复制的灵感美术馆。</p>
           <div className="hero-actions"><a className="glass-button primary" href="#gallery">查看 {totalBrowsable.toLocaleString()} 组案例 <ArrowIcon /></a><a className="quiet-link" href="#rights">数据范围与授权</a></div>
-          <div className="proof-row">
-            <span><b>{fullIndexSummary.uniquePromptCount.toLocaleString()}</b>YouMind 唯一公开记录</span>
-            <span><b>{diffusionDbItems.length}</b>CC0 3D 图文配对</span>
-            <span><b>{curatedYouMindItems.filter((item) => item.author === "小小东").length}</b>小小东完整图文</span>
+          <div className="hero-facts" aria-label="图库数据">
+            <span><b>{fullIndexSummary.uniquePromptCount.toLocaleString()}</b>公开提示词</span>
+            <span><b>{diffusionDbItems.length}</b>3D 图文配对</span>
+            <span><b>站内</b>直接查看复制</span>
           </div>
         </div>
 
-        <div className="hero-gallery" aria-label="精选真实生成效果">
-          <div className="hero-halo" />
-          {heroItems.map((item, index) => <button className={`hero-shot hero-shot-${index + 1}`} type="button" key={item.id} onClick={() => openItem(item)}><ResilientImage sources={item.imageUrls?.length ? item.imageUrls : [item.image]} alt={`${item.title}真实生成效果`} eager /><span><small>0{index + 1} · {sourceLabel(item)}</small><b>{item.title}</b></span></button>)}
-          <div className="hero-orbit-note"><i />点击作品查看原图与完整提示词</div>
+        <div className="creator-stage" aria-label="网站制作者与主理精选">
+          <div className="creator-halo" />
+          <article className="creator-profile">
+            <header>
+              <div className="creator-identity"><span className="creator-avatar large">猩</span><span><small>WEBSITE CREATOR</small><strong>小明猩</strong><em>Prompt Atlas 网站制作者</em></span></div>
+              <b className="creator-seal">制作者</b>
+            </header>
+            <p className="creator-signature">“把公开、可验证的好提示词，整理成一座人人都能直接逛的美术馆。”</p>
+            <div className="creator-metrics">
+              <span><b>{totalBrowsable.toLocaleString()}</b>收录</span>
+              <span><b>{diffusionDbItems.length}</b>3D 配对</span>
+              <span><b>1 CLICK</b>站内复制</span>
+            </div>
+            <div className="creator-showcase">
+              <div><strong>主理精选</strong><span>点击查看完整提示词</span></div>
+              <div className="creator-thumbs">
+                {heroItems.map((item, index) => <button type="button" key={item.id} onClick={() => openItem(item)} aria-label={`查看主理精选：${item.title}`}><ResilientImage sources={item.imageUrls?.length ? item.imageUrls : [item.image]} alt={`${item.title}真实生成效果`} eager /><span>0{index + 1}</span></button>)}
+              </div>
+            </div>
+            <div className="creator-profile-footer"><span>DESIGNED &amp; CURATED BY</span><strong>小明猩</strong><a href="#gallery">进入图库 <ArrowIcon /></a></div>
+          </article>
         </div>
       </section>
 
-      <section className="ticker" aria-label="站点特点"><div><span>14K+ PUBLIC PROMPTS</span><span>161 CC0 3D PAIRS</span><span>ACTUAL GENERATED IMAGES</span><span>FULL PROMPTS ON SITE</span><span>XIAOXIAODONG IN THE SAME GRID</span><span>14K+ PUBLIC PROMPTS</span></div></section>
+      <section className="maker-strip" aria-label="网站制作者"><strong>小明猩制作</strong><span>真实效果 · 完整提示词 · 站内直看</span></section>
 
       <section className="library" id="gallery">
-        <div className="section-intro"><div><span className="section-index">01 / UNIFIED PROMPT GALLERY</span><h2>效果图、提示词与来源，<br />全部使用同一种卡片。</h2></div><p>全量目录加载后共显示 {totalBrowsable.toLocaleString()} 条去重记录。小小东内容已经并入主图库；点击任意效果图即可在本站查看完整提示词与全部可用预览。</p></div>
+        <div className="section-intro"><div><span className="section-index">01 / 提示词图库</span><h2>先看效果，<br />再复制完整提示词。</h2></div><p>{totalBrowsable.toLocaleString()} 条记录统一使用同一种卡片，点击即可在站内展开。</p></div>
 
         <div className={`index-status ${indexStatus}`} aria-live="polite"><i /><span>{indexStatus === "loading" ? "正在装入 YouMind 14K+ 公开索引…" : indexStatus === "ready" ? `公开索引已就绪：${fullIndexSummary.uniquePromptCount.toLocaleString()} 条唯一记录` : "全量索引暂时未加载，当前仍可浏览精选与开源集合"}</span>{indexStatus === "error" && <button type="button" onClick={() => { setIndexStatus("loading"); setIndexReloadKey((value) => value + 1); }}>重新加载</button>}</div>
 
@@ -604,7 +621,7 @@ export default function Home() {
         <div className="rights-glass"><span className="section-index">03 / RIGHTS & TRANSPARENCY</span><h2>能公开验证多少，就准确展示多少。</h2><div className="rights-columns"><p><b>A · 公开数据范围：</b>YouMind 官方清单宣称 {fullIndexSummary.declaredTotalPrompts.toLocaleString()} 条；当前 11 个公开分类文件按 ID 去重后实际可验证 {fullIndexSummary.uniquePromptCount.toLocaleString()} 条，且均有提示词正文。分类会重叠，因此会员数合计不等于唯一条目数。</p><p><b>B · 3D 开放替代库：</b>新增 {diffusionDbItems.length} 组 DiffusionDB 原提示词—对应生成图，数据集和生成图均按 CC0 1.0 发布。本站只做通用安全筛选、分类和本地化展示，不改写原英文提示词。</p><p><b>C · 获取与展示方式：</b>本站不破解 VIP、不调用隐藏接口、不抓取受限页面，也不复制 PromptWall 的原文或原图。YouMind 仅同步官方 GitHub 公开 JSON；3D 图片只从 DiffusionDB 公开 CC0 分片按入选文件精确取回。</p></div><p className="youmind-credit">提示词由 <a href="https://youmind.com" target="_blank" rel="noreferrer">YouMind.com</a> 通过公开社区搜集 ❤️</p><div className="license-row"><a href={fullIndexSummary.source} target="_blank" rel="noreferrer">YouMind 公开索引 <SourceIcon /></a><a href="https://github.com/poloclub/diffusiondb" target="_blank" rel="noreferrer">DiffusionDB CC0 <SourceIcon /></a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0 <SourceIcon /></a><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">Apache-2.0 <SourceIcon /></a><a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/main/LICENSE" target="_blank" rel="noreferrer">JCodesMore MIT <SourceIcon /></a><a href="https://github.com/lin351540-ship-it/prompt-atlas-jj" target="_blank" rel="noreferrer">本站仓库 <SourceIcon /></a></div></div>
       </section>
 
-      <footer><div className="brand"><span className="brand-glyph">P</span><span><b>Prompt Atlas</b><small>REAL OUTPUT LIBRARY</small></span></div><p>{totalBrowsable.toLocaleString()} 组可浏览记录 · 含 {diffusionDbItems.length} 组 CC0 3D 图文配对 · 完整提示词站内读取</p><a href="#top">返回顶部 ↑</a></footer>
+      <footer className="site-footer"><div className="footer-maker"><span className="creator-avatar">猩</span><span><small>网站制作者</small><strong>小明猩</strong></span></div><p>Prompt Atlas · {totalBrowsable.toLocaleString()} 组真实效果与完整提示词</p><a href="#top">返回顶部 ↑</a></footer>
 
       {selected && <div className="modal-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && setSelected(null)}>
         <section className="prompt-modal" ref={modalRef} role="dialog" aria-modal="true" aria-label={`${selected.title}完整提示词`}>

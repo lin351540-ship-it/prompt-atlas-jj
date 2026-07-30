@@ -31,6 +31,7 @@ await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 await cp(resolve(root, "dist/client/assets"), resolve(output, "assets"), { recursive: true });
 await cp(resolve(root, "dist/client/favicon.svg"), resolve(output, "favicon.svg"));
+await cp(resolve(root, "public/og.png"), resolve(output, "og.png"));
 await cp(resolve(root, "public/gallery"), resolve(output, "gallery"), { recursive: true });
 await cp(resolve(root, "public/data"), resolve(output, "data"), { recursive: true });
 await writeFile(resolve(output, "index.html"), html, "utf8");

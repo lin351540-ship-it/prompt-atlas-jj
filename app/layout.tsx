@@ -9,13 +9,22 @@ const totalBrowsable =
 
 export const metadata: Metadata = {
   title: "Prompt Atlas｜生图与 PPT 提示词灵感库",
-  description: `${totalBrowsable.toLocaleString()} 组可浏览记录：真实生成效果、完整提示词、YouMind 公开索引、小小东与优质开源 PPT 案例。`,
+  description: `由小明猩制作的提示词美术馆：${totalBrowsable.toLocaleString()} 组真实生成效果与完整提示词，可直接站内查看和复制。`,
+  authors: [{ name: "小明猩" }],
+  creator: "小明猩",
   keywords: ["PPT 提示词", "GPT Image 2", "真实生成效果", "生图提示词", "信息图", "Prompt Atlas"],
   icons: { icon: "./favicon.svg", shortcut: "./favicon.svg" },
   openGraph: {
     title: "Prompt Atlas｜生图与 PPT 提示词灵感库",
-    description: "在统一瀑布流中浏览真实生成效果，并在站内查看与复制完整提示词。",
+    description: "小明猩制作：在统一瀑布流中浏览真实生成效果，并在站内查看与复制完整提示词。",
     type: "website",
+    images: ["https://lin351540-ship-it.github.io/prompt-atlas-jj/og.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Prompt Atlas｜小明猩制作",
+    description: "真实效果、完整提示词、站内直看。",
+    images: ["https://lin351540-ship-it.github.io/prompt-atlas-jj/og.png"],
   },
 };
 
