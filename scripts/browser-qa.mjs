@@ -63,6 +63,11 @@ for (const viewport of viewports) {
   const cardWheelY = await page.evaluate(() => window.scrollY);
   await page.waitForTimeout(800);
   const stableY = await page.evaluate(() => window.scrollY);
+  const toolbarState = await page.evaluate(() => {
+    const toolbar = document.querySelector(".glass-toolbar");
+    if (!toolbar) return { position: "", top: -1 };
+    return { position: getComputedStyle(toolbar).position, top: toolbar.getBoundingClientRect().top };
+  });
 
   await firstCard.locator(".image-button").click();
   await page.waitForSelector('[role="dialog"][aria-modal="true"]', { state: "visible" });
@@ -98,6 +103,7 @@ for (const viewport of viewports) {
     cardBeforeY,
     cardWheelY,
     stableY,
+    toolbarState,
     restoredY,
     modalState,
     imageAudit,
@@ -109,6 +115,7 @@ for (const viewport of viewports) {
       wheelWorksOnHero: heroWheelY > initial.scrollY,
       wheelWorksOnCard: cardWheelY > cardBeforeY,
       noScrollBounce: stableY >= cardWheelY - 4,
+      toolbarStaysSticky: toolbarState.position === "sticky" && toolbarState.top >= 80,
       modalLocksBody: modalState.bodyPosition === "fixed",
       modalRestoresScroll: Math.abs(restoredY - modalState.lockedScrollY) <= 4,
       noHorizontalOverflow: !initial.horizontalOverflow,

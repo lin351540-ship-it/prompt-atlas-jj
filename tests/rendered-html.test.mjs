@@ -27,6 +27,8 @@ test("server-renders the unified real-output Prompt Atlas gallery", async () => 
   assert.match(html, /先看效果/);
   assert.match(html, /站内查看完整提示词/);
   assert.match(html, /YouMind · GPT Image 2 Prompts Search/);
+  assert.match(html, /X · Public Prompt Radar/);
+  assert.match(html, /EvoLink · Open Prompt–Image Cases/);
   assert.match(html, /DiffusionDB · Open 3D Collection/);
   assert.match(html, /383 组经过安全筛选/);
   assert.match(html, /JCodesMore · AI Website Cloner Template/);
@@ -37,12 +39,14 @@ test("server-renders the unified real-output Prompt Atlas gallery", async () => 
 });
 
 test("ships the full public catalog, prompt shards, resilient images, and attribution", async () => {
-  const [page, layout, localData, diffusionDbData, nanoBananaData, liveData, summaryData, catalogData, workflow, notices] = await Promise.all([
+  const [page, layout, localData, diffusionDbData, nanoBananaData, xOpenData, evolinkData, liveData, summaryData, catalogData, workflow, notices] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/data/prompt-items.json", import.meta.url), "utf8"),
     readFile(new URL("../app/data/diffusiondb-3d.json", import.meta.url), "utf8"),
     readFile(new URL("../app/data/nano-banana-public.json", import.meta.url), "utf8"),
+    readFile(new URL("../app/data/x-open-prompts.json", import.meta.url), "utf8"),
+    readFile(new URL("../app/data/evolink-public.json", import.meta.url), "utf8"),
     readFile(new URL("../app/data/live-index.json", import.meta.url), "utf8"),
     readFile(new URL("../app/data/full-index-summary.json", import.meta.url), "utf8"),
     readFile(new URL("../public/data/youmind/catalog.json", import.meta.url), "utf8"),
@@ -53,6 +57,8 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   const localItems = JSON.parse(localData);
   const diffusionDbItems = JSON.parse(diffusionDbData);
   const nanoBanana = JSON.parse(nanoBananaData);
+  const xOpen = JSON.parse(xOpenData);
+  const evolink = JSON.parse(evolinkData);
   const live = JSON.parse(liveData);
   const summary = JSON.parse(summaryData);
   const catalog = JSON.parse(catalogData);
@@ -70,6 +76,14 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.equal(nanoBanana.items.length, 129);
   assert.ok(nanoBanana.sourceStats.imageCount >= 230);
   assert.ok(nanoBanana.items.every((item) => item.prompt && item.imageUrls?.length && item.syncMethod === "github-public-nano-banana-record"));
+  assert.ok(xOpen.items.length >= 150);
+  assert.ok(xOpen.sourceStats.xiaoxiaodongCount >= 25);
+  assert.ok(xOpen.items.every((item) => item.prompt.length >= 90 && item.imageUrls?.length && item.syncMethod === "x-public-alt-prompt"));
+  assert.ok(xOpen.items.every((item) => item.originalPostUrl.startsWith("https://x.com/") && item.rightsReviewStatus === "author-public-x-alt-with-attribution"));
+  assert.ok(evolink.items.length >= 600);
+  assert.ok(evolink.sourceStats.pptRecords >= 50);
+  assert.ok(evolink.items.every((item) => item.prompt.length >= 40 && item.imageUrls?.length && item.syncMethod === "github-public-evolink-cc0"));
+  assert.ok(evolink.items.every((item) => item.promptLicense === "CC0 1.0（公开 GitHub 集合）" && item.originalPostUrl.startsWith("https://x.com/")));
   assert.equal(live.sourceStats.youMindCompleteRecords, 126);
   assert.ok(summary.declaredTotalPrompts >= 14_000);
   assert.ok(summary.uniquePromptCount >= 14_000);
@@ -81,6 +95,8 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.ok(promptRecords.every((item) => item.id && item.content));
   assert.match(page, /fetch\("\.\/data\/youmind\/catalog\.json"\)/);
   assert.match(page, /item\.syncMethod === "diffusiondb-cc0-curated"/);
+  assert.match(page, /item\.syncMethod === "x-public-alt-prompt"/);
+  assert.match(page, /item\.syncMethod === "github-public-evolink-cc0"/);
   assert.match(page, /className={`image-fallback/);
   assert.match(page, /setVisibleLimit\(60\)/);
   assert.match(page, /loading=\{eager \? "eager" : "lazy"\}/);
@@ -94,7 +110,11 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(styles, /main \{[^}]*overflow-x: clip;[^}]*overflow-y: visible;/);
   assert.match(styles, /\.creator-home/);
   assert.match(styles, /\.creator-anime/);
+  assert.match(styles, /\.creator-depth-field/);
+  assert.match(styles, /\.depth-chip/);
+  assert.match(styles, /rotateX\(var\(--tilt-x\)\)/);
   assert.match(styles, /\.prompt-grid\.stable-columns/);
+  assert.match(styles, /\.library > :not\(\.glass-toolbar\)/);
   assert.match(styles, /\.image-button \{[^}]*aspect-ratio: 4 \/ 3/);
   assert.match(JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8")).dependencies.geist, /^\^?1\.7\.2$/);
   assert.match(layout, /lang="zh-CN"/);
@@ -102,13 +122,22 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.ok((await stat(new URL("../public/og.png", import.meta.url))).size > 100_000);
   assert.match(workflow, /sync-youmind-search-index\.mjs/);
   assert.match(workflow, /sync-nano-banana-public\.mjs/);
+  assert.match(workflow, /sync-evolink-public\.mjs/);
   assert.match(workflow, /cron: "17 \*\/6 \* \* \*"/);
   assert.match(notices, /提示词由 \[YouMind\.com\]/);
   assert.match(notices, /DiffusionDB CC0 3D collection/);
+  assert.match(notices, /EvoLink GPT Image 2 CC0 collection/);
+  assert.match(notices, /Public X ALT prompt snapshot/);
   assert.match(notices, /No PromptWall prompt text or generated image is bundled/);
   assert.match(notices, /JCodesMore AI Website Cloner Template/);
   await access(new URL("../public/creator-anime.webp", import.meta.url));
   await access(new URL("../public/gallery/tosea/03.jpg", import.meta.url));
+  await Promise.all(xOpen.items.flatMap((item) => item.imageUrls).map(async (image) => {
+    assert.match(image, /^\.\/gallery\/x-open\/.+\.webp$/);
+    const imageUrl = new URL(`../public/${image.replace(/^\.\//, "")}`, import.meta.url);
+    await access(imageUrl);
+    assert.ok((await stat(imageUrl)).size > 4_096);
+  }));
   await access(new URL(`../public/${localItems.find((item) => item.id.startsWith("2slides-")).image.replace(/^\.\//, "")}`, import.meta.url));
   await Promise.all(diffusionDbItems.map(async (item) => {
     const imageUrl = new URL(`../public/${item.image.replace(/^\.\//, "")}`, import.meta.url);

@@ -41,6 +41,7 @@ jobs:
           node scripts/sync-public-index.mjs
           node scripts/sync-nano-banana-public.mjs
           node scripts/sync-youmind-search-index.mjs
+          node scripts/sync-evolink-public.mjs
 
       - name: Verify and export
         run: |

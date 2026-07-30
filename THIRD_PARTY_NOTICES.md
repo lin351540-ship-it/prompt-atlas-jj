@@ -84,6 +84,39 @@ verified in the public GitHub README.
 - Project: https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts
 - License: CC BY 4.0
 - Local modifications: classification, search tags and source explanation only
+
+## EvoLink GPT Image 2 CC0 collection
+
+The site synchronizes complete prompt-image pairs from EvoLink's public GPT
+Image 2 case files. Records without a complete fenced prompt, an effect image,
+an original X post, or an author handle are excluded. Each accepted card keeps
+the upstream title, full prompt, effect-image URL, original author and original
+post.
+
+- Project: https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts
+- License: CC0 1.0 Universal
+- License text: https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts/blob/main/LICENSE
+- Local modifications: Chinese category mapping, search tags, ratio inference
+  and source explanation only
+
+## Public X ALT prompt snapshot
+
+Prompt Atlas also includes a dated snapshot of public X posts where the author
+explicitly shares a prompt and publishes a complete prompt-like ALT text
+alongside generated images. Discovery uses public X search and the public tweet
+syndication response only. It does not bypass login, inspect private posts,
+recover deleted posts, or scrape restricted pages.
+
+- Source: each card links to its exact public X post and author
+- Inclusion rule: public image post, explicit prompt-sharing language, and a
+  complete ALT prompt of at least 90 characters
+- Image handling: accepted public images are converted to WebP and cached
+  locally so the card remains directly visible; author and source attribution
+  remain attached to every record
+- Rights note: public availability is not presented as a Creative Commons
+  license. Cards say “author-public X post; attribution required” and direct
+  users to the author's original terms before reuse.
+
 ## DiffusionDB CC0 3D collection
 
 The site includes a safety-filtered subset of 383 original prompt-image pairs

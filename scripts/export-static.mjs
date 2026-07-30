@@ -22,6 +22,7 @@ html = html
   .replaceAll('="/favicon.svg"', '="./favicon.svg"')
   .replaceAll('src="/gallery/', 'src="./gallery/')
   .replace('"pathname":"/"', '"pathname":"/prompt-atlas-jj/"');
+html = html.split("\n").map((line) => line.trimEnd()).join("\n");
 
 if (html.includes('="/assets/') || html.includes('("/assets/') || html.includes('\\"/assets/')) {
   throw new Error("Static export still contains absolute asset paths");

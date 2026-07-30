@@ -7,8 +7,10 @@
 ## 当前内容
 
 - 14,074 条 YouMind 官方 GitHub 公开索引唯一记录，均含提示词正文与至少一张效果图地址。
-- 168 条来自 2slides、ToseaAI、ApiMartAI 等公开许可集合的补充记录。
-- 共 14,242 张去重卡片；小小东内容与其他来源使用同一套卡片、筛选和详情弹窗。
+- 374 条 X 公开 ALT 完整提示词，含 704 张本地化效果图、25 位作者与 216 条小小东案例。
+- 687 条 EvoLink CC0 完整提示词，含 980 张效果图、284 位原作者与 84 条 PPT / 信息图案例。
+- 680 条来自 Nano Banana、DiffusionDB、2slides、ToseaAI、ApiMartAI 等开放集合的补充记录。
+- 全量公开索引装入后共 15,820 张可浏览卡片；新增来源内部及跨开放集合按“原帖 + 完整提示词”去重，小小东、X 与其他来源使用同一套卡片、筛选和详情弹窗。
 - 全量提示词拆成 29 个静态分片：浏览时先读取轻量目录，打开或复制时再读取对应正文。
 - Geist Sans / Mono 自托管字体、三列/双列/单列响应式瀑布流、图片多源容错、搜索、收藏与分类筛选。
 
@@ -34,11 +36,17 @@ node scripts/export-static.mjs
 npm run sync
 ```
 
-同步流程会刷新三个许可明确的公开集合、YouMind 精选完整记录，以及 YouMind 官方 `gpt-image-2-prompts-search` 公共 JSON。GitHub Actions 每 6 小时运行一次并重新导出 `docs/`。
+同步流程会刷新许可明确的公开集合、EvoLink CC0 案例、YouMind 精选完整记录，以及 YouMind 官方 `gpt-image-2-prompts-search` 公共 JSON。GitHub Actions 每 6 小时运行一次并重新导出 `docs/`。
+
+X 的公开 ALT 提示词快照需在已配置 Agent Reach / OpenCLI 的本机手动刷新：
+
+```bash
+npm run sync:x
+```
 
 ## 来源与权利
 
-本站不破解 VIP、不调用隐藏接口、不抓取 YouMind 受限网页或 X 媒体。全量数据来自 YouMind OpenLab 官方公开 GitHub 仓库；效果图保留上游远程地址，提示词和图片版权仍归各自作者或权利人。
+本站不破解 VIP、不调用隐藏接口、不抓取 YouMind 受限网页、私密 X 内容或删除内容。X 只收录公开检索可见、明确分享提示词且 ALT 正文完整的帖子，并逐条保留作者和原帖；未声明开放许可证的公开帖子不会被标成 CC 授权。其他批量集合均来自公开 GitHub 数据，提示词和图片版权仍归各自作者或权利人。
 
 提示词由 [YouMind.com](https://youmind.com) 通过公开社区搜集 ❤️
 
