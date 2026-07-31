@@ -31,8 +31,13 @@ for (const viewport of viewports) {
     failedRequests.push({ url: request.url(), error: request.failure()?.errorText });
   });
 
-  const response = await page.goto(baseUrl, { waitUntil: "networkidle", timeout: 120_000 });
+  const response = await page.goto(baseUrl, { waitUntil: "domcontentloaded", timeout: 120_000 });
   await page.waitForSelector(".creator-home", { state: "visible" });
+  await page.waitForFunction(
+    () => ["ready", "reduced", "fallback"].includes(document.documentElement.dataset.designCdn || ""),
+    undefined,
+    { timeout: 30_000 },
+  );
   await page.waitForTimeout(1_500);
 
   const initial = await page.evaluate(() => ({

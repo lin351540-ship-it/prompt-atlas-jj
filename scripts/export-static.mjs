@@ -31,6 +31,7 @@ if (html.includes('="/assets/') || html.includes('("/assets/') || html.includes(
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 await cp(resolve(root, "dist/client/assets"), resolve(output, "assets"), { recursive: true });
+await rm(resolve(output, "assets", "_vinext_fonts"), { recursive: true, force: true });
 await cp(resolve(root, "dist/client/favicon.svg"), resolve(output, "favicon.svg"));
 await cp(resolve(root, "public/og.png"), resolve(output, "og.png"));
 await cp(resolve(root, "public/creator-anime.webp"), resolve(output, "creator-anime.webp"));

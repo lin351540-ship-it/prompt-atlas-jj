@@ -99,6 +99,9 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(page, /item\.syncMethod === "x-public-alt-prompt"/);
   assert.match(page, /item\.syncMethod === "github-public-evolink-cc0"/);
   assert.match(page, /CdnDesignRuntime/);
+  assert.match(page, /bootstrap-feed\.json/);
+  assert.doesNotMatch(page, /import .*from "\.\/data\/(?:evolink-public|x-open-prompts|diffusiondb-3d|nano-banana-public|live-index)\.json"/);
+  assert.match(page, /\.\/data\/feeds\/x-open-prompts\.json/);
   assert.match(page, /data-cdn-tilt="card"/);
   assert.match(page, /Motion\/mini \+ Vanilla Tilt · 双 CDN/);
   assert.match(page, /className={`image-fallback/);
@@ -134,6 +137,11 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(workflow, /sync-nano-banana-public\.mjs/);
   assert.match(workflow, /sync-evolink-public\.mjs/);
   assert.match(workflow, /cron: "17 \*\/6 \* \* \*"/);
+  const bootstrap = JSON.parse(await readFile(new URL("../app/data/bootstrap-feed.json", import.meta.url), "utf8"));
+  assert.ok(bootstrap.items.length >= 200);
+  assert.ok(bootstrap.heroItems.length >= 6);
+  assert.ok(bootstrap.extraUniqueCount >= 1_500);
+  await access(new URL("../public/data/feeds/evolink-public.json", import.meta.url));
   assert.match(notices, /提示词由 \[YouMind\.com\]/);
   assert.match(notices, /DiffusionDB CC0 3D collection/);
   assert.match(notices, /EvoLink GPT Image 2 CC0 collection/);
@@ -164,6 +172,8 @@ test("builds relative client chunks for GitHub Pages project hosting", async () 
   const contents = await Promise.all(javascriptFiles.map(async (name) => ({ name, source: await readFile(new URL(name, assetDirectory), "utf8") })));
   const bootstrap = contents.find(({ source }) => source.includes("__vite__mapDeps"));
   assert.ok(bootstrap, "expected to find the Vite client bootstrap bundle");
+  const pageChunk = contents.find(({ name }) => name.startsWith("page-"));
+  assert.ok(pageChunk && Buffer.byteLength(pageChunk.source) < 1_000_000, "client page bundle should stay below 1 MB");
   assert.match(bootstrap.source, /\["\.\/[^\"]+\.js"/);
   assert.match(bootstrap.source, /new URL\(e,t\)\.href/);
   assert.doesNotMatch(bootstrap.source, /return[`"']\/[[`"']\+e/);

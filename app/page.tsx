@@ -3,12 +3,7 @@
 /* eslint-disable @next/next/no-img-element -- this static gallery intentionally renders source-hosted previews */
 
 import { startTransition, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
-import localPromptData from "./data/prompt-items.json";
-import diffusionDbData from "./data/diffusiondb-3d.json";
-import nanoBananaData from "./data/nano-banana-public.json";
-import xOpenData from "./data/x-open-prompts.json";
-import evolinkData from "./data/evolink-public.json";
-import liveIndex from "./data/live-index.json";
+import bootstrapFeed from "./data/bootstrap-feed.json";
 import fullIndexSummary from "./data/full-index-summary.json";
 import CdnDesignRuntime from "./cdn-design-runtime";
 
@@ -68,12 +63,6 @@ type PublicCatalogRecord = {
 
 const categories: Category[] = ["全部", "PPT / 信息图", "海报设计", "社媒 / 品牌", "UI / 产品", "人像摄影", "插画 / 漫画", "实验 / 对比", "创意发现"];
 const sourceModes: SourceMode[] = ["全部来源", "小小东", "X 公开分享", "YouMind 全量公开索引", "Nano Banana 公开集", "EvoLink CC0", "开放授权 3D", "PPT 开源集", "其他开源集"];
-const localPromptItems = localPromptData as CatalogItem[];
-const diffusionDbItems = diffusionDbData as CatalogItem[];
-const nanoBananaItems = nanoBananaData.items as unknown as CatalogItem[];
-const xOpenItems = xOpenData.items as unknown as CatalogItem[];
-const evolinkItems = evolinkData.items as unknown as CatalogItem[];
-const curatedYouMindItems = liveIndex.items.filter((item) => item.syncMethod === "github-public-full-record") as unknown as CatalogItem[];
 function dedupePromptItems(items: CatalogItem[]) {
   const seen = new Set<string>();
   return items.filter((item) => {
@@ -84,9 +73,10 @@ function dedupePromptItems(items: CatalogItem[]) {
     return true;
   });
 }
-const extraUniqueItems = dedupePromptItems([...xOpenItems, ...evolinkItems, ...diffusionDbItems, ...nanoBananaItems, ...localPromptItems]);
-const initialItems = dedupePromptItems([...xOpenItems, ...evolinkItems, ...diffusionDbItems, ...nanoBananaItems, ...curatedYouMindItems, ...localPromptItems]);
-const curatedYouMindImages = new Set(curatedYouMindItems.flatMap((item) => item.imageUrls?.length ? item.imageUrls : [item.image]));
+const initialItems = bootstrapFeed.items as unknown as CatalogItem[];
+const heroBootstrapItems = bootstrapFeed.heroItems as unknown as CatalogItem[];
+const curatedYouMindImages = new Set(bootstrapFeed.curatedImageUrls);
+const feedStats = bootstrapFeed.stats;
 
 const categoryMap: Record<string, Category> = {
   "profile-avatar": "人像摄影",
@@ -108,13 +98,13 @@ const sourceLinks = [
   {
     eyebrow: "PUBLIC X ALT PROMPTS · ATTRIBUTED",
     title: "X · Public Prompt Radar",
-    copy: `${xOpenData.sourceStats.completeRecords} 条带完整 ALT 提示词的公开 X 记录、${xOpenData.sourceStats.imageCount} 张效果图，覆盖 ${xOpenData.sourceStats.authorCount} 位作者；其中小小东 ${xOpenData.sourceStats.xiaoxiaodongCount} 条。`,
+    copy: `${feedStats.x.completeRecords} 条带完整 ALT 提示词的公开 X 记录、${feedStats.x.imageCount} 张效果图，覆盖 ${feedStats.x.authorCount} 位作者；其中小小东 ${feedStats.x.xiaoxiaodongCount} 条。`,
     url: "https://x.com/search?q=%22GPT%20Image%22%20prompt&src=typed_query",
   },
   {
     eyebrow: "GPT IMAGE 2 CASES · CC0 1.0",
     title: "EvoLink · Open Prompt–Image Cases",
-    copy: `${evolinkData.sourceStats.completeRecords} 条 CC0 完整提示词、${evolinkData.sourceStats.imageCount} 张公开效果图，来自 ${evolinkData.sourceStats.authorCount} 位 X 原作者。`,
+    copy: `${feedStats.evolink.completeRecords} 条 CC0 完整提示词、${feedStats.evolink.imageCount} 张公开效果图，来自 ${feedStats.evolink.authorCount} 位 X 原作者。`,
     url: "https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts",
   },
   {
@@ -126,19 +116,19 @@ const sourceLinks = [
   {
     eyebrow: "CURATED FULL RECORDS · CC BY 4.0",
     title: "YouMind OpenLab · Awesome GPT Image 2",
-    copy: `${liveIndex.sourceStats.youMindCompleteRecords} 条带原作者、原帖与多张效果图的精选完整记录。`,
+    copy: `${feedStats.youMindCompleteRecords} 条带原作者、原帖与多张效果图的精选完整记录。`,
     url: "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
   },
   {
     eyebrow: "NANO BANANA · CC BY 4.0",
     title: "YouMind · Awesome Nano Banana Pro",
-    copy: `${nanoBananaData.sourceStats.completeRecords} 条逐项可核验完整记录、${nanoBananaData.sourceStats.imageCount} 张真实效果图；公开仓库当前声明 ${nanoBananaData.sourceStats.declaredTotal.toLocaleString()} 条总量。`,
+    copy: `${feedStats.nano.completeRecords} 条逐项可核验完整记录、${feedStats.nano.imageCount} 张真实效果图；公开仓库当前声明 ${feedStats.nano.declaredTotal.toLocaleString()} 条总量。`,
     url: "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
   },
   {
     eyebrow: "3D PROMPT–IMAGE PAIRS · CC0 1.0",
     title: "DiffusionDB · Open 3D Collection",
-    copy: `${diffusionDbItems.length} 组经过安全筛选的 3D 原提示词与对应生成图；图片已本地化，卡片详情可直接站内查看。`,
+    copy: `${feedStats.diffusionCount} 组经过安全筛选的 3D 原提示词与对应生成图；图片已本地化，卡片详情可直接站内查看。`,
     url: "https://github.com/poloclub/diffusiondb",
   },
   {
@@ -341,6 +331,7 @@ async function copyText(text: string) {
 
 export default function Home() {
   const [fullItems, setFullItems] = useState<CatalogItem[]>([]);
+  const [supplementalItems, setSupplementalItems] = useState<CatalogItem[]>([]);
   const [indexStatus, setIndexStatus] = useState<"loading" | "ready" | "error">("loading");
   const [category, setCategory] = useState<Category>("PPT / 信息图");
   const [source, setSource] = useState<SourceMode>("全部来源");
@@ -367,13 +358,39 @@ export default function Home() {
   const promptRequest = useRef(0);
   const selectedId = selected?.id;
 
-  const catalogItems = useMemo(() => [...fullItems, ...initialItems], [fullItems]);
+  const catalogItems = useMemo(
+    () => dedupePromptItems([...fullItems, ...supplementalItems, ...initialItems]),
+    [fullItems, supplementalItems],
+  );
 
   useLayoutEffect(() => {
     const updateColumns = () => setGalleryColumns(galleryColumnCount());
     updateColumns();
     window.addEventListener("resize", updateColumns, { passive: true });
     return () => window.removeEventListener("resize", updateColumns);
+  }, []);
+
+  useEffect(() => {
+    let active = true;
+    const feeds = [
+      ["./data/feeds/x-open-prompts.json", (data: unknown) => (data as { items: CatalogItem[] }).items],
+      ["./data/feeds/evolink-public.json", (data: unknown) => (data as { items: CatalogItem[] }).items],
+      ["./data/feeds/diffusiondb-3d.json", (data: unknown) => data as CatalogItem[]],
+      ["./data/feeds/nano-banana-public.json", (data: unknown) => (data as { items: CatalogItem[] }).items],
+      ["./data/feeds/live-index.json", (data: unknown) => (data as { items: CatalogItem[] }).items.filter((item) => item.syncMethod === "github-public-full-record")],
+    ] as const;
+    Promise.all(feeds.map(async ([url, select]) => {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`Supplemental feed returned ${response.status}`);
+      return select(await response.json());
+    }))
+      .then((groups) => {
+        if (active) startTransition(() => setSupplementalItems(dedupePromptItems(groups.flat())));
+      })
+      .catch(() => {
+        // The compact bootstrap remains usable when a supplemental feed is unavailable.
+      });
+    return () => { active = false; };
   }, []);
 
   useEffect(() => {
@@ -529,14 +546,7 @@ export default function Home() {
     visibleItems.forEach((item, index) => columns[index % galleryColumns].push(item));
     return columns;
   }, [galleryColumns, visibleItems]);
-  const heroItems = useMemo(() => [
-    xOpenItems.find((item) => item.authorHandle.toLowerCase() === "xiaoxiaodong01" && item.category === "PPT / 信息图"),
-    curatedYouMindItems.find((item) => item.author === "小小东" && item.category === "PPT / 信息图"),
-    ...nanoBananaItems.filter((item) => item.category === "PPT / 信息图").slice(0, 3),
-    ...evolinkItems.filter((item) => item.category === "PPT / 信息图").slice(0, 2),
-    ...localPromptItems.filter((item) => item.id.startsWith("2slides-")).slice(0, 2),
-    curatedYouMindItems.find((item) => item.featured && item.category === "PPT / 信息图"),
-  ].filter(Boolean) as CatalogItem[], []);
+  const heroItems = heroBootstrapItems;
 
   const loadPrompt = async (item: CatalogItem) => {
     if (item.prompt || !item.promptFile || !item.promptRecordId) return item;
@@ -609,7 +619,7 @@ export default function Home() {
   };
 
   const selectedImages = selected ? (selected.imageUrls?.length ? selected.imageUrls : [selected.image]).filter(Boolean) : [];
-  const totalBrowsable = indexStatus === "ready" ? catalogItems.length : fullIndexSummary.uniquePromptCount + extraUniqueItems.length;
+  const totalBrowsable = indexStatus === "ready" ? catalogItems.length : fullIndexSummary.uniquePromptCount + bootstrapFeed.extraUniqueCount;
 
   return (
     <main>
@@ -658,7 +668,7 @@ export default function Home() {
             </div>
 
             <div className="creator-album-block secondary">
-              <div className="creator-album-heading"><span>⌘</span><strong>Image 2 精选</strong><small>{(xOpenItems.length + evolinkItems.length + nanoBananaItems.length).toLocaleString()} 条开放图文</small></div>
+              <div className="creator-album-heading"><span>⌘</span><strong>Image 2 精选</strong><small>{(feedStats.x.completeRecords + feedStats.evolink.completeRecords + feedStats.nano.completeRecords).toLocaleString()} 条开放图文</small></div>
               <div className="creator-album-strip compact">
                 {heroItems.slice(1, 7).map((item) => <button type="button" key={`image-${item.id}`} onClick={() => openItem(item)} aria-label={`查看精选案例：${item.title}`}><ResilientImage sources={item.imageUrls?.length ? item.imageUrls : [item.image]} alt={`${item.title}真实生成效果`} eager /></button>)}
               </div>
@@ -704,7 +714,7 @@ export default function Home() {
       </section>
 
       <section className="rights-section" id="rights">
-        <div className="rights-glass" data-cdn-tilt="panel" data-cdn-reveal><span className="section-index">03 / RIGHTS & TRANSPARENCY</span><h2>能公开验证多少，就准确展示多少。</h2><div className="rights-columns"><p><b>A · 公开数据范围：</b>YouMind 官方清单宣称 {fullIndexSummary.declaredTotalPrompts.toLocaleString()} 条；当前 11 个公开分类文件按 ID 去重后实际可验证 {fullIndexSummary.uniquePromptCount.toLocaleString()} 条，且均有提示词正文。分类会重叠，因此会员数合计不等于唯一条目数。</p><p><b>B · 新增开放图文：</b>当前新增 X 公开 ALT 完整提示词 {xOpenItems.length} 条、EvoLink CC0 图文 {evolinkItems.length} 条、Nano Banana {nanoBananaItems.length} 条，以及 {diffusionDbItems.length} 组 DiffusionDB CC0 原提示词—对应生成图；逐条保留作者、原帖和展示依据。</p><p><b>C · 获取与展示方式：</b>本站不破解 VIP、不绕过登录、不抓取私密或删除内容，也不复制受限会员页。X 仅收录公开检索可见、明确分享提示词且 ALT 正文完整的帖子；作者未声明开放许可证的 X 卡片会明确标记为“公开分享、保留署名”，不冒充 CC 授权。</p></div><p className="youmind-credit">提示词由 <a href="https://youmind.com" target="_blank" rel="noreferrer">YouMind.com</a>、X 公开作者及开放仓库共同提供；每张卡片均保留逐条来源。</p><div className="license-row"><a href={fullIndexSummary.source} target="_blank" rel="noreferrer">YouMind 公开索引 <SourceIcon /></a><a href="https://x.com/search?q=%22GPT%20Image%22%20prompt&src=typed_query" target="_blank" rel="noreferrer">X 公开分享 <SourceIcon /></a><a href="https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts/blob/main/LICENSE" target="_blank" rel="noreferrer">EvoLink CC0 <SourceIcon /></a><a href="https://github.com/poloclub/diffusiondb" target="_blank" rel="noreferrer">DiffusionDB CC0 <SourceIcon /></a><a href="https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE" target="_blank" rel="noreferrer">Nano Banana CC BY 4.0 <SourceIcon /></a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0 <SourceIcon /></a><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">Apache-2.0 <SourceIcon /></a><a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/main/LICENSE" target="_blank" rel="noreferrer">JCodesMore MIT <SourceIcon /></a><a href="https://github.com/motiondivision/motion/blob/main/LICENSE.md" target="_blank" rel="noreferrer">Motion MIT <SourceIcon /></a><a href="https://github.com/micku7zu/vanilla-tilt.js/blob/master/LICENSE" target="_blank" rel="noreferrer">Vanilla Tilt MIT <SourceIcon /></a><a href="https://www.jsdelivr.com/" target="_blank" rel="noreferrer">jsDelivr CDN <SourceIcon /></a><a href="https://github.com/lin351540-ship-it/prompt-atlas-jj" target="_blank" rel="noreferrer">本站仓库 <SourceIcon /></a></div></div>
+        <div className="rights-glass" data-cdn-tilt="panel" data-cdn-reveal><span className="section-index">03 / RIGHTS & TRANSPARENCY</span><h2>能公开验证多少，就准确展示多少。</h2><div className="rights-columns"><p><b>A · 公开数据范围：</b>YouMind 官方清单宣称 {fullIndexSummary.declaredTotalPrompts.toLocaleString()} 条；当前 11 个公开分类文件按 ID 去重后实际可验证 {fullIndexSummary.uniquePromptCount.toLocaleString()} 条，且均有提示词正文。分类会重叠，因此会员数合计不等于唯一条目数。</p><p><b>B · 新增开放图文：</b>当前新增 X 公开 ALT 完整提示词 {feedStats.x.completeRecords} 条、EvoLink CC0 图文 {feedStats.evolink.completeRecords} 条、Nano Banana {feedStats.nano.completeRecords} 条，以及 {feedStats.diffusionCount} 组 DiffusionDB CC0 原提示词—对应生成图；逐条保留作者、原帖和展示依据。</p><p><b>C · 获取与展示方式：</b>本站不破解 VIP、不绕过登录、不抓取私密或删除内容，也不复制受限会员页。X 仅收录公开检索可见、明确分享提示词且 ALT 正文完整的帖子；作者未声明开放许可证的 X 卡片会明确标记为“公开分享、保留署名”，不冒充 CC 授权。</p></div><p className="youmind-credit">提示词由 <a href="https://youmind.com" target="_blank" rel="noreferrer">YouMind.com</a>、X 公开作者及开放仓库共同提供；每张卡片均保留逐条来源。</p><div className="license-row"><a href={fullIndexSummary.source} target="_blank" rel="noreferrer">YouMind 公开索引 <SourceIcon /></a><a href="https://x.com/search?q=%22GPT%20Image%22%20prompt&src=typed_query" target="_blank" rel="noreferrer">X 公开分享 <SourceIcon /></a><a href="https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts/blob/main/LICENSE" target="_blank" rel="noreferrer">EvoLink CC0 <SourceIcon /></a><a href="https://github.com/poloclub/diffusiondb" target="_blank" rel="noreferrer">DiffusionDB CC0 <SourceIcon /></a><a href="https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE" target="_blank" rel="noreferrer">Nano Banana CC BY 4.0 <SourceIcon /></a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0 <SourceIcon /></a><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">Apache-2.0 <SourceIcon /></a><a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/main/LICENSE" target="_blank" rel="noreferrer">JCodesMore MIT <SourceIcon /></a><a href="https://github.com/motiondivision/motion/blob/main/LICENSE.md" target="_blank" rel="noreferrer">Motion MIT <SourceIcon /></a><a href="https://github.com/micku7zu/vanilla-tilt.js/blob/master/LICENSE" target="_blank" rel="noreferrer">Vanilla Tilt MIT <SourceIcon /></a><a href="https://www.jsdelivr.com/" target="_blank" rel="noreferrer">jsDelivr CDN <SourceIcon /></a><a href="https://github.com/lin351540-ship-it/prompt-atlas-jj" target="_blank" rel="noreferrer">本站仓库 <SourceIcon /></a></div></div>
       </section>
 
       <footer className="site-footer" data-cdn-reveal><div className="footer-maker"><span className="creator-avatar">猩</span><span><small>网站制作者</small><strong>小明猩</strong></span></div><p>Prompt Atlas · {totalBrowsable.toLocaleString()} 组真实效果与完整提示词</p><a href="#top">返回顶部 ↑</a></footer>
