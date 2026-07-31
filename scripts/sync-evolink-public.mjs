@@ -1,14 +1,17 @@
 import { createHash } from "node:crypto";
+import { execFile } from "node:child_process";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { promisify } from "node:util";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outputPath = resolve(root, "app", "data", "evolink-public.json");
 const repositoryUrl = "https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts";
 const licenseUrl = `${repositoryUrl}/blob/main/LICENSE`;
-const rawRoot = "https://raw.githubusercontent.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts/main";
+const rawRoot = "https://cdn.jsdelivr.net/gh/Evolink-AI/awesome-gpt-image-2-API-and-Prompts@main";
 const syncedAt = new Date().toISOString();
+const execFileAsync = promisify(execFile);
 const sources = [
   ["poster", "海报设计", "Poster & Illustration"],
   ["portrait", "人像摄影", "Portrait & Photography"],
@@ -23,11 +26,20 @@ const compact = (value) => String(value ?? "").replace(/\r/g, "").replace(/[ \t]
 const hash = (value) => createHash("sha256").update(value).digest("hex").slice(0, 12);
 
 async function readPrevious() {
+  const snapshots = [];
   try {
-    return JSON.parse(await readFile(outputPath, "utf8"));
-  } catch {
-    return { generatedAt: "", sourceStats: {}, items: [] };
-  }
+    snapshots.push(JSON.parse(await readFile(outputPath, "utf8")));
+  } catch {}
+  try {
+    const { stdout } = await execFileAsync("git", ["show", "HEAD:app/data/evolink-public.json"], {
+      cwd: root,
+      encoding: "utf8",
+      maxBuffer: 64 * 1024 * 1024,
+    });
+    snapshots.push(JSON.parse(stdout));
+  } catch {}
+  return snapshots.sort((left, right) => (right.items?.length ?? 0) - (left.items?.length ?? 0))[0]
+    ?? { generatedAt: "", sourceStats: {}, items: [] };
 }
 
 async function fetchText(url, attempts = 3) {
@@ -52,10 +64,17 @@ async function fetchText(url, attempts = 3) {
 
 function resolveImage(sourcePath, url) {
   if (!url) return "";
-  if (/^https?:\/\//i.test(url)) return url;
+  if (/^https?:\/\//i.test(url)) return normalizeImageUrl(url);
   const normalized = url.replace(/^(\.\.\/)+/, "").replace(/^\.\//, "");
   if (normalized.startsWith("images/")) return `${rawRoot}/${normalized}`;
   return `${rawRoot}/cases/${sourcePath.replace(/[^/]+$/, "")}${normalized}`;
+}
+
+function normalizeImageUrl(url) {
+  return String(url ?? "").replace(
+    "https://raw.githubusercontent.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts/main/",
+    `${rawRoot}/`,
+  );
 }
 
 function ratioFor(prompt) {
@@ -123,7 +142,7 @@ function parseCases(markdown, sourceSlug, baseCategory, collectionLabel) {
       modificationNote: "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
       rightsReviewStatus: "cc0-1.0-public-github",
       rightsReviewedAt: syncedAt.slice(0, 10),
-      assetHostingMode: "remote-github-source-with-fallback",
+      assetHostingMode: "remote-jsdelivr-source-with-fallback",
       sourcePlatform: "EvoLink / GitHub / X",
       syncMethod: "github-public-evolink-cc0",
       syncedAt,
@@ -147,7 +166,13 @@ for (const [slug, category, label] of sources) {
 }
 
 const seen = new Set();
-const items = parsed
+const previousItems = (previous.items ?? []).map((item) => ({
+  ...item,
+  image: normalizeImageUrl(item.image),
+  imageUrls: (item.imageUrls ?? [item.image]).map(normalizeImageUrl).filter(Boolean),
+  assetHostingMode: "remote-jsdelivr-source-with-fallback",
+}));
+const items = [...parsed, ...previousItems]
   .filter((item) => {
     const key = hash(`${item.originalPostUrl}\n${item.prompt}`.toLowerCase());
     if (seen.has(key)) return false;
