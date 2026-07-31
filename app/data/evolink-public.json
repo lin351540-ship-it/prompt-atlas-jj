@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T00:58:49.746Z",
+  "generatedAt": "2026-07-31T03:54:32.158Z",
   "sourceStats": {
     "completeRecords": 687,
     "imageCount": 980,
@@ -12,27 +12,31 @@
         "source": "poster",
         "records": 0,
         "ok": false,
-        "error": "fetch failed"
+        "error": "HTTP 404"
       },
       {
         "source": "portrait",
-        "records": 177,
-        "ok": true
+        "records": 0,
+        "ok": false,
+        "error": "HTTP 404"
       },
       {
         "source": "ui",
-        "records": 108,
-        "ok": true
+        "records": 0,
+        "ok": false,
+        "error": "HTTP 404"
       },
       {
         "source": "character",
-        "records": 28,
-        "ok": true
+        "records": 0,
+        "ok": false,
+        "error": "HTTP 404"
       },
       {
         "source": "ecommerce",
-        "records": 33,
-        "ok": true
+        "records": 0,
+        "ok": false,
+        "error": "HTTP 404"
       },
       {
         "source": "comparison",
