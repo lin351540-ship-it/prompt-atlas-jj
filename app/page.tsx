@@ -10,6 +10,7 @@ import xOpenData from "./data/x-open-prompts.json";
 import evolinkData from "./data/evolink-public.json";
 import liveIndex from "./data/live-index.json";
 import fullIndexSummary from "./data/full-index-summary.json";
+import CdnDesignRuntime from "./cdn-design-runtime";
 
 type Category = "全部" | "PPT / 信息图" | "海报设计" | "社媒 / 品牌" | "UI / 产品" | "人像摄影" | "插画 / 漫画" | "实验 / 对比" | "创意发现";
 type SourceMode = "全部来源" | "小小东" | "X 公开分享" | "YouMind 全量公开索引" | "Nano Banana 公开集" | "EvoLink CC0" | "开放授权 3D" | "PPT 开源集" | "其他开源集";
@@ -163,6 +164,12 @@ const sourceLinks = [
     title: "React Bits + Transitions.dev",
     copy: "吸收 Spotlight、分段入场和克制的视差反馈；动画仅服务于浏览与内容定位。",
     url: "https://github.com/DavidHDev/react-bits",
+  },
+  {
+    eyebrow: "PINNED DESIGN RUNTIME · MIT · CDN",
+    title: "Motion/mini + Vanilla Tilt · 双 CDN",
+    copy: "固定版本双 CDN 负责统一入场节奏、近视口 3D 倾斜与指针光泽；任一来源失败可自动切换，全部失败仍保留本地样式。",
+    url: "https://github.com/motiondivision/motion",
   },
 ] as const;
 
@@ -586,7 +593,7 @@ export default function Home() {
   const renderPromptCard = (item: CatalogItem) => {
     const favorite = favorites.includes(item.id);
     const images = item.imageUrls?.filter(Boolean).length ?? Number(Boolean(item.image));
-    return <article className="prompt-card reveal-card" data-card-id={item.id} key={item.id} onPointerMove={moveSpotlight} onPointerLeave={resetSpotlight}>
+    return <article className="prompt-card reveal-card" data-card-id={item.id} data-cdn-tilt="card" key={item.id} onPointerMove={moveSpotlight} onPointerLeave={resetSpotlight}>
       <button className="image-button" style={{ aspectRatio: previewAspectRatio(item.ratio) }} type="button" onClick={() => openItem(item)} aria-label={`查看${item.title}完整提示词`}>
         <ResilientImage sources={item.imageUrls?.length ? item.imageUrls : [item.image]} alt={`${item.title}真实生成效果`} />
         <span className="image-sheen" /><span className="image-badge">REAL OUTPUT</span>{images > 1 && <span className="image-count">{images} 张实图</span>}<span className="image-open">站内查看完整提示词 <ArrowIcon /></span>
@@ -606,6 +613,7 @@ export default function Home() {
 
   return (
     <main>
+      <CdnDesignRuntime />
       <div className="ambient ambient-one" /><div className="ambient ambient-two" />
 
       <header className="glass-nav" aria-label="主导航">
@@ -614,8 +622,8 @@ export default function Home() {
         <a className="nav-cta" href="#gallery">浏览图库 <ArrowIcon /></a>
       </header>
 
-      <section className="hero" id="top">
-        <div className="creator-home" onPointerMove={moveCreatorParallax}>
+      <section className="hero" id="top" data-cdn-reveal>
+        <div className="creator-home" data-cdn-tilt="hero" onPointerMove={moveCreatorParallax}>
           <div className="creator-depth-field" aria-hidden="true"><span className="depth-ring ring-one" /><span className="depth-ring ring-two" /><span className="depth-chip chip-x">X</span><span className="depth-chip chip-ppt">PPT</span><span className="depth-chip chip-3d">3D</span><i className="depth-star star-one">✦</i><i className="depth-star star-two">✧</i></div>
           <div className="creator-portrait-panel" aria-label="小明猩制作者形象">
             <div className="portrait-bokeh portrait-bokeh-a" /><div className="portrait-bokeh portrait-bokeh-b" />
@@ -659,14 +667,14 @@ export default function Home() {
             <div className="creator-sheet-actions"><a href="#rights">来源与授权</a><a className="primary" href="#gallery">开始浏览 <ArrowIcon /></a></div>
           </article>
         </div>
-        <div className="hero-floating-copy"><span>真实效果图</span><i /> <span>完整提示词</span><i /> <span>持续同步</span></div>
+        <div className="hero-floating-copy" data-cdn-reveal><span>真实效果图</span><i /> <span>完整提示词</span><i /> <span>持续同步</span></div>
       </section>
 
-      <section className="maker-strip" aria-label="网站制作者"><strong>小明猩制作</strong><span>真实效果 · 完整提示词 · 站内直看</span></section>
+      <section className="maker-strip" aria-label="网站制作者" data-cdn-reveal><strong>小明猩制作</strong><span>真实效果 · 完整提示词 · 站内直看</span></section>
 
       <section className="library" id="gallery">
         <div className="section-depth-decor" aria-hidden="true"><span>XM</span><i /><b>PROMPT<br />ATLAS</b></div>
-        <div className="section-intro"><div><span className="section-index">01 / 提示词图库</span><h2>先看效果，<br />再复制完整提示词。</h2></div><p>{totalBrowsable.toLocaleString()} 条记录统一使用同一种卡片，点击即可在站内展开。</p></div>
+        <div className="section-intro" data-cdn-reveal><div><span className="section-index">01 / 提示词图库</span><h2>先看效果，<br />再复制完整提示词。</h2></div><p>{totalBrowsable.toLocaleString()} 条记录统一使用同一种卡片，点击即可在站内展开。</p></div>
 
         <div className={`index-status ${indexStatus}`} aria-live="polite"><i /><span>{indexStatus === "loading" ? "正在装入 YouMind 14K+ 公开索引…" : indexStatus === "ready" ? `公开索引已就绪：${fullIndexSummary.uniquePromptCount.toLocaleString()} 条唯一记录` : "全量索引暂时未加载，当前仍可浏览精选与开源集合"}</span>{indexStatus === "error" && <button type="button" onClick={() => { setIndexStatus("loading"); setIndexReloadKey((value) => value + 1); }}>重新加载</button>}</div>
 
@@ -691,15 +699,15 @@ export default function Home() {
       </section>
 
       <section className="source-section" id="sources">
-        <div className="section-intro compact"><div><span className="section-index">02 / SOURCE MAP</span><h2>内容、字体与动画，<br />分别标清来源。</h2></div><p>完整提示词、真实效果图和 UI 参考各自保留出处。“公开可浏览”不等同于放弃版权，卡片详情始终附带来源与展示依据。</p></div>
-        <div className="source-grid">{sourceLinks.map((item, index) => <a href={item.url} target="_blank" rel="noreferrer" className="source-card reveal-card" key={item.title} onPointerMove={moveSpotlight} onPointerLeave={resetSpotlight}><span>{String(index + 1).padStart(2, "0")}</span><small>{item.eyebrow}</small><h3>{item.title}</h3><p>{item.copy}</p><i><SourceIcon /></i></a>)}</div>
+        <div className="section-intro compact" data-cdn-reveal><div><span className="section-index">02 / SOURCE MAP</span><h2>内容、字体与动画，<br />分别标清来源。</h2></div><p>完整提示词、真实效果图和 UI 参考各自保留出处。“公开可浏览”不等同于放弃版权，卡片详情始终附带来源与展示依据。</p></div>
+        <div className="source-grid">{sourceLinks.map((item, index) => <a href={item.url} target="_blank" rel="noreferrer" className="source-card reveal-card" data-cdn-tilt="source" key={item.title} onPointerMove={moveSpotlight} onPointerLeave={resetSpotlight}><span>{String(index + 1).padStart(2, "0")}</span><small>{item.eyebrow}</small><h3>{item.title}</h3><p>{item.copy}</p><i><SourceIcon /></i></a>)}</div>
       </section>
 
       <section className="rights-section" id="rights">
-        <div className="rights-glass"><span className="section-index">03 / RIGHTS & TRANSPARENCY</span><h2>能公开验证多少，就准确展示多少。</h2><div className="rights-columns"><p><b>A · 公开数据范围：</b>YouMind 官方清单宣称 {fullIndexSummary.declaredTotalPrompts.toLocaleString()} 条；当前 11 个公开分类文件按 ID 去重后实际可验证 {fullIndexSummary.uniquePromptCount.toLocaleString()} 条，且均有提示词正文。分类会重叠，因此会员数合计不等于唯一条目数。</p><p><b>B · 新增开放图文：</b>当前新增 X 公开 ALT 完整提示词 {xOpenItems.length} 条、EvoLink CC0 图文 {evolinkItems.length} 条、Nano Banana {nanoBananaItems.length} 条，以及 {diffusionDbItems.length} 组 DiffusionDB CC0 原提示词—对应生成图；逐条保留作者、原帖和展示依据。</p><p><b>C · 获取与展示方式：</b>本站不破解 VIP、不绕过登录、不抓取私密或删除内容，也不复制受限会员页。X 仅收录公开检索可见、明确分享提示词且 ALT 正文完整的帖子；作者未声明开放许可证的 X 卡片会明确标记为“公开分享、保留署名”，不冒充 CC 授权。</p></div><p className="youmind-credit">提示词由 <a href="https://youmind.com" target="_blank" rel="noreferrer">YouMind.com</a>、X 公开作者及开放仓库共同提供；每张卡片均保留逐条来源。</p><div className="license-row"><a href={fullIndexSummary.source} target="_blank" rel="noreferrer">YouMind 公开索引 <SourceIcon /></a><a href="https://x.com/search?q=%22GPT%20Image%22%20prompt&src=typed_query" target="_blank" rel="noreferrer">X 公开分享 <SourceIcon /></a><a href="https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts/blob/main/LICENSE" target="_blank" rel="noreferrer">EvoLink CC0 <SourceIcon /></a><a href="https://github.com/poloclub/diffusiondb" target="_blank" rel="noreferrer">DiffusionDB CC0 <SourceIcon /></a><a href="https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE" target="_blank" rel="noreferrer">Nano Banana CC BY 4.0 <SourceIcon /></a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0 <SourceIcon /></a><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">Apache-2.0 <SourceIcon /></a><a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/main/LICENSE" target="_blank" rel="noreferrer">JCodesMore MIT <SourceIcon /></a><a href="https://github.com/lin351540-ship-it/prompt-atlas-jj" target="_blank" rel="noreferrer">本站仓库 <SourceIcon /></a></div></div>
+        <div className="rights-glass" data-cdn-tilt="panel" data-cdn-reveal><span className="section-index">03 / RIGHTS & TRANSPARENCY</span><h2>能公开验证多少，就准确展示多少。</h2><div className="rights-columns"><p><b>A · 公开数据范围：</b>YouMind 官方清单宣称 {fullIndexSummary.declaredTotalPrompts.toLocaleString()} 条；当前 11 个公开分类文件按 ID 去重后实际可验证 {fullIndexSummary.uniquePromptCount.toLocaleString()} 条，且均有提示词正文。分类会重叠，因此会员数合计不等于唯一条目数。</p><p><b>B · 新增开放图文：</b>当前新增 X 公开 ALT 完整提示词 {xOpenItems.length} 条、EvoLink CC0 图文 {evolinkItems.length} 条、Nano Banana {nanoBananaItems.length} 条，以及 {diffusionDbItems.length} 组 DiffusionDB CC0 原提示词—对应生成图；逐条保留作者、原帖和展示依据。</p><p><b>C · 获取与展示方式：</b>本站不破解 VIP、不绕过登录、不抓取私密或删除内容，也不复制受限会员页。X 仅收录公开检索可见、明确分享提示词且 ALT 正文完整的帖子；作者未声明开放许可证的 X 卡片会明确标记为“公开分享、保留署名”，不冒充 CC 授权。</p></div><p className="youmind-credit">提示词由 <a href="https://youmind.com" target="_blank" rel="noreferrer">YouMind.com</a>、X 公开作者及开放仓库共同提供；每张卡片均保留逐条来源。</p><div className="license-row"><a href={fullIndexSummary.source} target="_blank" rel="noreferrer">YouMind 公开索引 <SourceIcon /></a><a href="https://x.com/search?q=%22GPT%20Image%22%20prompt&src=typed_query" target="_blank" rel="noreferrer">X 公开分享 <SourceIcon /></a><a href="https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts/blob/main/LICENSE" target="_blank" rel="noreferrer">EvoLink CC0 <SourceIcon /></a><a href="https://github.com/poloclub/diffusiondb" target="_blank" rel="noreferrer">DiffusionDB CC0 <SourceIcon /></a><a href="https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE" target="_blank" rel="noreferrer">Nano Banana CC BY 4.0 <SourceIcon /></a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0 <SourceIcon /></a><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">Apache-2.0 <SourceIcon /></a><a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/main/LICENSE" target="_blank" rel="noreferrer">JCodesMore MIT <SourceIcon /></a><a href="https://github.com/motiondivision/motion/blob/main/LICENSE.md" target="_blank" rel="noreferrer">Motion MIT <SourceIcon /></a><a href="https://github.com/micku7zu/vanilla-tilt.js/blob/master/LICENSE" target="_blank" rel="noreferrer">Vanilla Tilt MIT <SourceIcon /></a><a href="https://www.jsdelivr.com/" target="_blank" rel="noreferrer">jsDelivr CDN <SourceIcon /></a><a href="https://github.com/lin351540-ship-it/prompt-atlas-jj" target="_blank" rel="noreferrer">本站仓库 <SourceIcon /></a></div></div>
       </section>
 
-      <footer className="site-footer"><div className="footer-maker"><span className="creator-avatar">猩</span><span><small>网站制作者</small><strong>小明猩</strong></span></div><p>Prompt Atlas · {totalBrowsable.toLocaleString()} 组真实效果与完整提示词</p><a href="#top">返回顶部 ↑</a></footer>
+      <footer className="site-footer" data-cdn-reveal><div className="footer-maker"><span className="creator-avatar">猩</span><span><small>网站制作者</small><strong>小明猩</strong></span></div><p>Prompt Atlas · {totalBrowsable.toLocaleString()} 组真实效果与完整提示词</p><a href="#top">返回顶部 ↑</a></footer>
 
       {selected && <div className="modal-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && setSelected(null)}>
         <section className="prompt-modal" ref={modalRef} role="dialog" aria-modal="true" aria-label={`${selected.title}完整提示词`}>

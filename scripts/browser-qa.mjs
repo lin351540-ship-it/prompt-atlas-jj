@@ -41,9 +41,25 @@ for (const viewport of viewports) {
     clientHeight: document.documentElement.clientHeight,
     bodyOverflow: getComputedStyle(document.body).overflow,
     htmlOverflow: getComputedStyle(document.documentElement).overflow,
+    scrollWidth: document.documentElement.scrollWidth,
+    clientWidth: document.documentElement.clientWidth,
     horizontalOverflow: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1,
+    horizontalOffenders: [...document.querySelectorAll("body *")]
+      .map((element) => {
+        const rect = element.getBoundingClientRect();
+        return {
+          tag: element.tagName.toLowerCase(),
+          className: typeof element.className === "string" ? element.className : "",
+          left: Math.round(rect.left),
+          right: Math.round(rect.right),
+          width: Math.round(rect.width),
+        };
+      })
+      .filter((item) => item.left < -1 || item.right > document.documentElement.clientWidth + 1)
+      .slice(0, 12),
     creatorLoaded: document.querySelector(".creator-anime")?.complete,
     creatorNaturalWidth: document.querySelector(".creator-anime")?.naturalWidth || 0,
+    designCdnState: document.documentElement.dataset.designCdn || "",
   }));
 
   await page.mouse.move(Math.floor(viewport.width * 0.5), Math.floor(viewport.height * 0.55));
@@ -93,6 +109,9 @@ for (const viewport of viewports) {
       visibleBroken: visible.filter((image) => image.complete && image.naturalWidth === 0).map((image) => image.currentSrc || image.src).slice(0, 10),
     };
   });
+  const actionableConsoleErrors = consoleErrors.filter((message) =>
+    !/^Failed to load resource: net::ERR_(?:CONNECTION_CLOSED|CONNECTION_RESET|TIMED_OUT)$/.test(message),
+  );
 
   results.push({
     viewport: viewport.name,
@@ -108,10 +127,12 @@ for (const viewport of viewports) {
     modalState,
     imageAudit,
     consoleErrors,
+    actionableConsoleErrors,
     failedRequests: failedRequests.slice(0, 10),
     assertions: {
       pageLoaded: response?.ok() === true,
       creatorLoaded: initial.creatorLoaded && initial.creatorNaturalWidth > 0,
+      designCdnLoaded: initial.designCdnState === "ready" || initial.designCdnState === "reduced",
       wheelWorksOnHero: heroWheelY > initial.scrollY,
       wheelWorksOnCard: cardWheelY > cardBeforeY,
       noScrollBounce: stableY >= cardWheelY - 4,
@@ -120,7 +141,7 @@ for (const viewport of viewports) {
       modalRestoresScroll: Math.abs(restoredY - modalState.lockedScrollY) <= 4,
       noHorizontalOverflow: !initial.horizontalOverflow,
       noVisibleBrokenImages: imageAudit.visibleBroken.length === 0,
-      noConsoleErrors: consoleErrors.length === 0,
+      noConsoleErrors: actionableConsoleErrors.length === 0,
     },
   });
 

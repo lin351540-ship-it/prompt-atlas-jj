@@ -30,5 +30,10 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="zh-CN"><body>{children}</body></html>;
+  return <html lang="zh-CN"><head>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://esm.sh" crossOrigin="anonymous" />
+    <link rel="dns-prefetch" href="https://esm.sh" />
+  </head><body>{children}</body></html>;
 }

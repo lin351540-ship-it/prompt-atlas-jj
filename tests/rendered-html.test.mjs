@@ -39,9 +39,10 @@ test("server-renders the unified real-output Prompt Atlas gallery", async () => 
 });
 
 test("ships the full public catalog, prompt shards, resilient images, and attribution", async () => {
-  const [page, layout, localData, diffusionDbData, nanoBananaData, xOpenData, evolinkData, liveData, summaryData, catalogData, workflow, notices] = await Promise.all([
+  const [page, layout, cdnRuntime, localData, diffusionDbData, nanoBananaData, xOpenData, evolinkData, liveData, summaryData, catalogData, workflow, notices] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/cdn-design-runtime.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/data/prompt-items.json", import.meta.url), "utf8"),
     readFile(new URL("../app/data/diffusiondb-3d.json", import.meta.url), "utf8"),
     readFile(new URL("../app/data/nano-banana-public.json", import.meta.url), "utf8"),
@@ -97,6 +98,9 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(page, /item\.syncMethod === "diffusiondb-cc0-curated"/);
   assert.match(page, /item\.syncMethod === "x-public-alt-prompt"/);
   assert.match(page, /item\.syncMethod === "github-public-evolink-cc0"/);
+  assert.match(page, /CdnDesignRuntime/);
+  assert.match(page, /data-cdn-tilt="card"/);
+  assert.match(page, /Motion\/mini \+ Vanilla Tilt · 双 CDN/);
   assert.match(page, /className={`image-fallback/);
   assert.match(page, /setVisibleLimit\(60\)/);
   assert.match(page, /loading=\{eager \? "eager" : "lazy"\}/);
@@ -119,6 +123,12 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8")).dependencies.geist, /^\^?1\.7\.2$/);
   assert.match(layout, /lang="zh-CN"/);
   assert.match(layout, /creator: "小明猩"/);
+  assert.match(layout, /preconnect" href="https:\/\/cdn\.jsdelivr\.net"/);
+  assert.match(cdnRuntime, /motion@12\.43\.0\/mini\?bundle/);
+  assert.match(cdnRuntime, /rootMargin: "420px 0px"/);
+  assert.match(cdnRuntime, /vanilla-tilt@1\.8\.1\/\+esm/);
+  assert.match(cdnRuntime, /dataset\.designCdn = "fallback"/);
+  assert.match(cdnRuntime, /prefers-reduced-motion: reduce/);
   assert.ok((await stat(new URL("../public/og.png", import.meta.url))).size > 100_000);
   assert.match(workflow, /sync-youmind-search-index\.mjs/);
   assert.match(workflow, /sync-nano-banana-public\.mjs/);
@@ -130,6 +140,8 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(notices, /Public X ALT prompt snapshot/);
   assert.match(notices, /No PromptWall prompt text or generated image is bundled/);
   assert.match(notices, /JCodesMore AI Website Cloner Template/);
+  assert.match(notices, /Runtime version: 12\.43\.0/);
+  assert.match(notices, /Runtime version: 1\.8\.1/);
   await access(new URL("../public/creator-anime.webp", import.meta.url));
   await access(new URL("../public/gallery/tosea/03.jpg", import.meta.url));
   await Promise.all(xOpen.items.flatMap((item) => item.imageUrls).map(async (image) => {

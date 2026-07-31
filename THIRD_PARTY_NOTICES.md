@@ -29,6 +29,32 @@ The full license text in effect for the referenced project is reproduced below.
 Canonical license text:
 https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md
 
+## Motion
+
+Prompt Atlas progressively loads Motion's `mini` entry from a pinned ESM CDN
+endpoint to orchestrate one-time section reveals. The runtime never replaces
+native page scrolling, and the local layout remains fully usable if the CDN is
+unavailable.
+
+- Project: https://github.com/motiondivision/motion
+- Runtime version: 12.43.0
+- Primary CDN: https://esm.sh/motion@12.43.0/mini?bundle
+- Fallback CDN: https://cdn.jsdelivr.net/npm/motion@12.43.0/mini/+esm
+- License: MIT
+
+## Vanilla Tilt
+
+Prompt Atlas progressively loads Vanilla Tilt from a pinned jsDelivr ESM
+endpoint for restrained pointer-driven depth and glare on the creator hero,
+prompt cards, source cards, and the rights panel. Tilt is activated only near
+the viewport and is disabled for coarse pointers and reduced-motion users.
+
+- Project: https://github.com/micku7zu/vanilla-tilt.js
+- Runtime version: 1.8.1
+- Primary CDN: https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/+esm
+- Fallback CDN: https://esm.sh/vanilla-tilt@1.8.1
+- License: MIT
+
 ## JCodesMore AI Website Cloner Template
 
 The Geist / Geist Mono typography setup and parts of the layout rhythm were

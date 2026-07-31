@@ -1318,3 +1318,114 @@ body, main { background: #050d14; }
   .creator-home:hover .creator-portrait-panel, .creator-home:hover .creator-profile-sheet, .prompt-card:hover, .source-card:hover { transform: none; }
   .creator-depth-field { display: none; }
 }
+
+/* Pinned CDN design runtime: Motion choreographs reveals; Vanilla Tilt adds restrained depth. */
+html[data-design-cdn="ready"] {
+  --cdn-aqua: #76f0d7;
+  --cdn-blue: #7ebeff;
+  --cdn-gold: #ffc66f;
+}
+
+html[data-design-cdn="ready"] .ambient {
+  animation: cdn-ambient-drift 18s cubic-bezier(.45,0,.55,1) infinite alternate;
+}
+html[data-design-cdn="ready"] .ambient-two { animation-delay: -9s; }
+
+html[data-design-cdn="ready"] [data-cdn-tilt] {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+html[data-design-cdn="ready"] [data-cdn-tilt] > .js-tilt-glare {
+  z-index: 18;
+  border-radius: inherit;
+  pointer-events: none;
+}
+html[data-design-cdn="ready"] [data-cdn-tilt] > .js-tilt-glare > .js-tilt-glare-inner {
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255,255,255,.72), rgba(118,240,215,.14) 44%, transparent 72%);
+}
+
+html[data-design-cdn="ready"] .creator-home {
+  box-shadow:
+    0 48px 120px rgba(0,0,0,.45),
+    0 0 0 1px rgba(126,190,255,.08),
+    inset 0 1px 0 rgba(255,255,255,.2);
+}
+html[data-design-cdn="ready"] .creator-profile-sheet,
+html[data-design-cdn="ready"] .creator-portrait-panel,
+html[data-design-cdn="ready"] .creator-depth-field { transform-style: preserve-3d; }
+html[data-design-cdn="ready"] .creator-name-row,
+html[data-design-cdn="ready"] .creator-role-row,
+html[data-design-cdn="ready"] .creator-profile-meta,
+html[data-design-cdn="ready"] .profile-line { transform: translateZ(13px); }
+html[data-design-cdn="ready"] .creator-album-block { transform: translateZ(18px); }
+html[data-design-cdn="ready"] .creator-sheet-actions { transform: translateZ(22px); }
+
+html[data-design-cdn="ready"] .prompt-card {
+  transition: box-shadow .38s cubic-bezier(.16,1,.3,1), border-color .38s ease;
+}
+html[data-design-cdn="ready"] .prompt-card:hover {
+  border-color: rgba(118,240,215,.34);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.88),
+    0 34px 68px rgba(0,0,0,.3),
+    0 0 0 1px rgba(118,240,215,.12);
+}
+html[data-design-cdn="ready"] .prompt-card .image-button { transform: translateZ(14px); }
+html[data-design-cdn="ready"] .prompt-card .card-body { transform: translateZ(8px); }
+html[data-design-cdn="ready"] .prompt-card .card-actions { transform: translateZ(17px); }
+
+html[data-design-cdn="ready"] .glass-nav,
+html[data-design-cdn="ready"] .library .glass-toolbar {
+  border-color: rgba(169,246,232,.25);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.2),
+    0 24px 70px rgba(0,0,0,.3),
+    0 0 0 1px rgba(126,190,255,.05);
+}
+
+html[data-design-cdn="ready"] .maker-strip,
+html[data-design-cdn="ready"] .rights-glass,
+html[data-design-cdn="ready"] .source-card {
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.22),
+    0 30px 74px rgba(0,0,0,.3),
+    0 0 38px rgba(118,240,215,.045);
+}
+
+html[data-design-cdn="ready"] .section-intro h2 {
+  text-shadow: 0 13px 38px rgba(72,215,193,.08);
+}
+
+html[data-design-cdn="ready"] .site-footer::after {
+  content: "MOTION × VANILLA TILT / PINNED CDN";
+  position: absolute;
+  right: clamp(22px,5vw,76px);
+  bottom: 12px;
+  color: rgba(155,211,211,.28);
+  font: 760 7px/1 var(--font-code);
+  letter-spacing: .16em;
+}
+
+@keyframes cdn-ambient-drift {
+  to { transform: translate3d(-4vw,-3vh,0) scale(1.12); filter: blur(72px) saturate(132%); }
+}
+
+@media (pointer: coarse), (max-width: 850px) {
+  html[data-design-cdn="ready"] [data-cdn-tilt] { transform: none !important; }
+  html[data-design-cdn="ready"] .creator-name-row,
+  html[data-design-cdn="ready"] .creator-role-row,
+  html[data-design-cdn="ready"] .creator-profile-meta,
+  html[data-design-cdn="ready"] .profile-line,
+  html[data-design-cdn="ready"] .creator-album-block,
+  html[data-design-cdn="ready"] .creator-sheet-actions,
+  html[data-design-cdn="ready"] .prompt-card .image-button,
+  html[data-design-cdn="ready"] .prompt-card .card-body,
+  html[data-design-cdn="ready"] .prompt-card .card-actions { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-design-cdn="ready"] .ambient { animation: none; }
+  html[data-design-cdn="ready"] [data-cdn-reveal] { opacity: 1 !important; transform: none !important; filter: none !important; }
+}
