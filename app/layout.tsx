@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import localPromptItems from "./data/prompt-items.json";
+import bootstrapFeed from "./data/bootstrap-feed.json";
 import fullIndexSummary from "./data/full-index-summary.json";
-import diffusionDbItems from "./data/diffusiondb-3d.json";
-import nanoBananaData from "./data/nano-banana-public.json";
 
-const totalBrowsable =
-  fullIndexSummary.uniquePromptCount + localPromptItems.length + diffusionDbItems.length + nanoBananaData.items.length;
+const totalBrowsable = fullIndexSummary.uniquePromptCount + bootstrapFeed.extraUniqueCount;
 
 export const metadata: Metadata = {
   title: "Prompt Atlas｜生图与 PPT 提示词灵感库",

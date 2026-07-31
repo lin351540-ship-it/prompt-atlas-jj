@@ -245,8 +245,18 @@ function imageCandidates(sources: string[]) {
   for (const source of sources.filter(Boolean)) {
     add(bootstrapImageCache[source] ?? "");
     add(source);
+    const jsDelivrMatch = source.match(/^https:\/\/cdn\.jsdelivr\.net\/gh\/([^/@]+)\/([^@/]+)@([^/]+)\/(.+)$/i);
+    if (jsDelivrMatch) {
+      const [, owner, repository, revision, path] = jsDelivrMatch;
+      add(`https://raw.githubusercontent.com/${owner}/${repository}/${revision}/${path}`);
+    }
+    const rawGitHubMatch = source.match(/^https:\/\/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\/([^/]+)\/(.+)$/i);
+    if (rawGitHubMatch) {
+      const [, owner, repository, revision, path] = rawGitHubMatch;
+      add(`https://cdn.jsdelivr.net/gh/${owner}/${repository}@${revision}/${path}`);
+    }
     if (/^https:\/\//i.test(source) && !source.includes("wsrv.nl/")) {
-      add(`https://wsrv.nl/?url=${encodeURIComponent(source)}&output=webp&q=82`);
+      add(`https://wsrv.nl/?url=${encodeURIComponent(source)}&output=webp&q=82&w=1800&we`);
     }
   }
   return candidates;
@@ -262,7 +272,7 @@ function ImageFallback({ alt, loading = false, className }: { alt: string; loadi
     >
       <i>{loading ? "LOADING PREVIEW" : "IMAGE SOURCE"}</i>
       <b>{loading ? "正在装入真实效果图" : "效果图暂不可用"}</b>
-      <small>{loading ? "超时会自动切换备用图源" : "点击卡片可重试，提示词正文仍可查看"}</small>
+      <small>{loading ? "加载失败会自动切换备用图源" : "提示词正文与来源仍可正常查看"}</small>
     </span>
   );
 }
@@ -276,28 +286,28 @@ function ResilientImage({ sources, alt, className, eager = false }: { sources: s
   const currentSource = usableSources[sourceIndex] ?? "";
   const imageRef = useRef<HTMLImageElement>(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const image = imageRef.current;
-    if (!currentSource || !image?.complete) return;
+    if (!currentSource || !image?.complete || image.naturalWidth <= 0) return;
     const frame = window.requestAnimationFrame(() => {
       setImageState({
         sourceKey,
-        sourceIndex: image.naturalWidth > 0 ? sourceIndex : sourceIndex + 1,
-        loaded: image.naturalWidth > 0,
+        sourceIndex,
+        loaded: true,
       });
     });
     return () => window.cancelAnimationFrame(frame);
   }, [currentSource, sourceIndex, sourceKey]);
 
   useEffect(() => {
-    if (loaded || sourceIndex >= usableSources.length) return;
+    if (!eager || loaded || sourceIndex >= usableSources.length) return;
     const timeout = window.setTimeout(() => {
       setImageState((current) => ({
         sourceKey,
         sourceIndex: current.sourceKey === sourceKey ? current.sourceIndex + 1 : 1,
         loaded: false,
       }));
-    }, eager ? 8_000 : 10_000);
+    }, 8_000);
     return () => window.clearTimeout(timeout);
   }, [eager, loaded, sourceIndex, sourceKey, usableSources.length]);
 

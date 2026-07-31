@@ -7,8 +7,24 @@ const root = resolve(import.meta.dirname, "..");
 const bootstrapPath = resolve(root, "app", "data", "bootstrap-feed.json");
 const outputDirectory = resolve(root, "public", "gallery", "bootstrap-cache");
 const bootstrap = JSON.parse(await readFile(bootstrapPath, "utf8"));
+const priorityFeedSpecs = [
+  ["live-index.json", 48],
+  ["nano-banana-public.json", 24],
+  ["evolink-public.json", 36],
+];
+const priorityItems = [];
+for (const [fileName, limit] of priorityFeedSpecs) {
+  try {
+    const payload = JSON.parse(await readFile(resolve(root, "public", "data", "feeds", fileName), "utf8"));
+    const items = Array.isArray(payload) ? payload : payload.items ?? [];
+    priorityItems.push(...items
+      .filter((item) => item.category === "PPT / 信息图")
+      .sort((left, right) => Number(right.index ?? 0) - Number(left.index ?? 0))
+      .slice(0, limit));
+  } catch {}
+}
 const remoteUrls = [...new Set(
-  [...bootstrap.items, ...bootstrap.heroItems]
+  [...bootstrap.items, ...bootstrap.heroItems, ...priorityItems]
     .flatMap((item) => item.imageUrls?.length ? item.imageUrls : [item.image])
     .filter((url) => /^https?:\/\//i.test(url)),
 )].sort();
@@ -93,11 +109,12 @@ bootstrap.imageCacheStats = {
   requested: remoteUrls.length,
   cached: Object.keys(imageCache).length,
   failed: failures.length,
+  priorityRecords: priorityItems.length,
 };
 await writeFile(bootstrapPath, `${JSON.stringify(bootstrap, null, 2)}\n`, "utf8");
 
 if (failures.length) {
-  console.warn(`Cached ${Object.keys(imageCache).length}/${remoteUrls.length} bootstrap previews; ${failures.length} will use resilient remote loading.`);
+  console.warn(`Cached ${Object.keys(imageCache).length}/${remoteUrls.length} priority previews; ${failures.length} will use resilient remote loading.`);
 } else {
-  console.log(`Cached all ${remoteUrls.length} remote bootstrap previews locally.`);
+  console.log(`Cached all ${remoteUrls.length} remote bootstrap and priority previews locally.`);
 }

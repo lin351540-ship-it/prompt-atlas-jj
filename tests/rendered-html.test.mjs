@@ -14,12 +14,18 @@ async function render() {
 }
 
 test("server-renders the unified real-output Prompt Atlas gallery", async () => {
+  const [summary, bootstrap] = await Promise.all([
+    readFile(new URL("../app/data/full-index-summary.json", import.meta.url), "utf8").then(JSON.parse),
+    readFile(new URL("../app/data/bootstrap-feed.json", import.meta.url), "utf8").then(JSON.parse),
+  ]);
+  const expectedTotal = (summary.uniquePromptCount + bootstrap.extraUniqueCount).toLocaleString("en-US");
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
   assert.match(html, /<title>Prompt Atlas｜生图与 PPT 提示词灵感库<\/title>/i);
+  assert.match(html, new RegExp(`${expectedTotal} 组真实生成效果与完整提示词`));
   assert.match(html, /把公开、可验证的灵感/);
   assert.match(html, /网站制作者/);
   assert.match(html, /小明猩制作/);
@@ -106,7 +112,8 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(page, /Motion\/mini \+ Vanilla Tilt · 双 CDN/);
   assert.match(page, /className={`image-fallback/);
   assert.match(page, /https:\/\/wsrv\.nl\/\?url=/);
-  assert.match(page, /超时会自动切换备用图源/);
+  assert.match(page, /加载失败会自动切换备用图源/);
+  assert.match(page, /raw\.githubusercontent\.com/);
   assert.match(page, /setImageState/);
   assert.match(page, /setVisibleLimit\(60\)/);
   assert.match(page, /loading=\{eager \? "eager" : "lazy"\}/);
@@ -151,6 +158,7 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.ok(bootstrap.heroItems.length >= 6);
   assert.ok(bootstrap.extraUniqueCount >= 1_500);
   assert.ok(Object.keys(bootstrap.imageCache ?? {}).length >= 40);
+  assert.ok(bootstrap.imageCacheStats?.priorityRecords >= 70);
   assert.equal(bootstrap.imageCacheStats?.failed, 0);
   await Promise.all(Object.values(bootstrap.imageCache).map(async (image) => {
     assert.match(image, /^\.\/gallery\/bootstrap-cache\/[a-f0-9]{24}\.webp$/);
