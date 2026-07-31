@@ -105,6 +105,9 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(page, /data-cdn-tilt="card"/);
   assert.match(page, /Motion\/mini \+ Vanilla Tilt · 双 CDN/);
   assert.match(page, /className={`image-fallback/);
+  assert.match(page, /https:\/\/wsrv\.nl\/\?url=/);
+  assert.match(page, /超时会自动切换备用图源/);
+  assert.match(page, /setImageState/);
   assert.match(page, /setVisibleLimit\(60\)/);
   assert.match(page, /loading=\{eager \? "eager" : "lazy"\}/);
   assert.match(page, /data-card-id=\{item\.id\}/);
@@ -112,6 +115,10 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.doesNotMatch(page, /platform\.twitter\.com\/widgets\.js|x-section/);
   const styles = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
   assert.match(styles, /font-family: "Geist Atlas"/);
+  assert.match(styles, /font-family: "Smiley Sans Atlas"/);
+  assert.match(styles, /font-family: "Instrument Serif Atlas"/);
+  assert.match(styles, /--font-display:/);
+  assert.match(styles, /\.resilient-preview-image\.is-loaded \{ opacity: 1; \}/);
   assert.doesNotMatch(styles, /(?:html|body)\s*\{[^}]*overscroll-behavior-y:\s*none/);
   assert.match(styles, /body\.modal-open \{ overflow: hidden; overscroll-behavior: none; \}/);
   assert.match(styles, /main \{[^}]*overflow-x: clip;[^}]*overflow-y: visible;/);
@@ -123,7 +130,9 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(styles, /\.prompt-grid\.stable-columns/);
   assert.match(styles, /\.library > :not\(\.glass-toolbar\)/);
   assert.match(styles, /\.image-button \{[^}]*aspect-ratio: 4 \/ 3/);
-  assert.match(JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8")).dependencies.geist, /^\^?1\.7\.2$/);
+  const packageData = JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8"));
+  assert.match(packageData.dependencies.geist, /^\^?1\.7\.2$/);
+  assert.equal(packageData.dependencies["@fontsource/instrument-serif"], "5.3.0");
   assert.match(layout, /lang="zh-CN"/);
   assert.match(layout, /creator: "小明猩"/);
   assert.match(layout, /preconnect" href="https:\/\/cdn\.jsdelivr\.net"/);
@@ -141,6 +150,13 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.ok(bootstrap.items.length >= 200);
   assert.ok(bootstrap.heroItems.length >= 6);
   assert.ok(bootstrap.extraUniqueCount >= 1_500);
+  assert.ok(Object.keys(bootstrap.imageCache ?? {}).length >= 40);
+  assert.equal(bootstrap.imageCacheStats?.failed, 0);
+  await Promise.all(Object.values(bootstrap.imageCache).map(async (image) => {
+    assert.match(image, /^\.\/gallery\/bootstrap-cache\/[a-f0-9]{24}\.webp$/);
+    const imageUrl = new URL(`../public/${image.replace(/^\.\//, "")}`, import.meta.url);
+    assert.ok((await stat(imageUrl)).size > 2_048);
+  }));
   await access(new URL("../public/data/feeds/evolink-public.json", import.meta.url));
   assert.match(notices, /提示词由 \[YouMind\.com\]/);
   assert.match(notices, /DiffusionDB CC0 3D collection/);
@@ -148,6 +164,9 @@ test("ships the full public catalog, prompt shards, resilient images, and attrib
   assert.match(notices, /Public X ALT prompt snapshot/);
   assert.match(notices, /No PromptWall prompt text or generated image is bundled/);
   assert.match(notices, /JCodesMore AI Website Cloner Template/);
+  assert.match(notices, /Smiley Sans \/ 得意黑/);
+  assert.match(notices, /Instrument Serif/);
+  assert.match(notices, /images\.weserv\.nl fallback delivery/);
   assert.match(notices, /Runtime version: 12\.43\.0/);
   assert.match(notices, /Runtime version: 1\.8\.1/);
   await access(new URL("../public/creator-anime.webp", import.meta.url));

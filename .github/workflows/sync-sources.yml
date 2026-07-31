@@ -36,6 +36,8 @@ jobs:
           git clone --depth 1 https://github.com/2slides/awesome-nano-banana-ppt-prompts.git ../prompt-gallery-sources/ppt-2slides
 
       - name: Refresh licensed gallery and public index
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           node scripts/import-curated-prompts.mjs
           node scripts/sync-public-index.mjs

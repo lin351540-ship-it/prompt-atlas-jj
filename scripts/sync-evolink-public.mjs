@@ -7,9 +7,12 @@ import { promisify } from "node:util";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outputPath = resolve(root, "app", "data", "evolink-public.json");
-const repositoryUrl = "https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts";
+const originalRepositoryUrl = "https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts";
+const repositoryUrl = "https://github.com/mageia/awesome-gpt-image-2-API-and-Prompts";
 const licenseUrl = `${repositoryUrl}/blob/main/LICENSE`;
-const rawRoot = "https://cdn.jsdelivr.net/gh/Evolink-AI/awesome-gpt-image-2-API-and-Prompts@main";
+const rawRoot = "https://cdn.jsdelivr.net/gh/mageia/awesome-gpt-image-2-API-and-Prompts@main";
+const treeUrl = "https://api.github.com/repos/mageia/awesome-gpt-image-2-API-and-Prompts/git/trees/main?recursive=1";
+const jsDelivrTreeUrl = "https://data.jsdelivr.com/v1/package/gh/mageia/awesome-gpt-image-2-API-and-Prompts@main/flat";
 const syncedAt = new Date().toISOString();
 const execFileAsync = promisify(execFile);
 const sources = [
@@ -24,6 +27,16 @@ const sources = [
 
 const compact = (value) => String(value ?? "").replace(/\r/g, "").replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim();
 const hash = (value) => createHash("sha256").update(value).digest("hex").slice(0, 12);
+
+async function resolveGitHubToken() {
+  if (process.env.GH_TOKEN || process.env.GITHUB_TOKEN) return process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
+  try {
+    const { stdout } = await execFileAsync("gh", ["auth", "token"], { cwd: root, encoding: "utf8" });
+    return stdout.trim();
+  } catch {
+    return "";
+  }
+}
 
 async function readPrevious() {
   const snapshots = [];
@@ -51,6 +64,7 @@ async function fetchText(url, attempts = 3) {
           accept: "text/markdown,text/plain,*/*",
           "user-agent": "PromptAtlasJJ/1.0 (CC0 source sync)",
         },
+        signal: AbortSignal.timeout(30_000),
       });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return await response.text();
@@ -62,19 +76,62 @@ async function fetchText(url, attempts = 3) {
   throw lastError;
 }
 
+async function fetchRepositoryFiles() {
+  try {
+    const githubToken = await resolveGitHubToken();
+    for (const [url, mode] of [[treeUrl, "github"], [jsDelivrTreeUrl, "jsdelivr"]]) {
+      try {
+        const headers = {
+          accept: "application/json",
+          "user-agent": "PromptAtlasJJ/1.0 (CC0 source sync)",
+        };
+        if (mode === "github" && githubToken) headers.authorization = `Bearer ${githubToken}`;
+        const response = await fetch(url, {
+          headers,
+          signal: AbortSignal.timeout(30_000),
+        });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const payload = await response.json();
+        if (mode === "github") {
+          return new Set(payload.tree.filter((entry) => entry.type === "blob").map((entry) => entry.path));
+        }
+        return new Set(payload.files.map((entry) => String(entry.name).replace(/^\//, "")));
+      } catch {}
+    }
+    throw new Error("GitHub and jsDelivr file indexes were both unavailable");
+  } catch (error) {
+    console.warn(`Could not verify the mirror tree (${error.message}); preserving URL-level fallbacks.`);
+    return null;
+  }
+}
+
+const repositoryFiles = await fetchRepositoryFiles();
+
 function resolveImage(sourcePath, url) {
   if (!url) return "";
-  if (/^https?:\/\//i.test(url)) return normalizeImageUrl(url);
-  const normalized = url.replace(/^(\.\.\/)+/, "").replace(/^\.\//, "");
-  if (normalized.startsWith("images/")) return `${rawRoot}/${normalized}`;
-  return `${rawRoot}/cases/${sourcePath.replace(/[^/]+$/, "")}${normalized}`;
+  let normalizedUrl;
+  if (/^https?:\/\//i.test(url)) {
+    normalizedUrl = normalizeImageUrl(url);
+  } else {
+    const normalized = url.replace(/^(\.\.\/)+/, "").replace(/^\.\//, "");
+    normalizedUrl = normalized.startsWith("images/")
+      ? `${rawRoot}/${normalized}`
+      : `${rawRoot}/cases/${sourcePath.replace(/[^/]+$/, "")}${normalized}`;
+  }
+  if (!repositoryFiles) return normalizedUrl;
+  const repositoryPath = normalizedUrl.startsWith(`${rawRoot}/`)
+    ? decodeURIComponent(normalizedUrl.slice(rawRoot.length + 1).split(/[?#]/)[0])
+    : "";
+  return !repositoryPath || repositoryFiles.has(repositoryPath) ? normalizedUrl : "";
 }
 
 function normalizeImageUrl(url) {
-  return String(url ?? "").replace(
-    "https://raw.githubusercontent.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts/main/",
-    `${rawRoot}/`,
-  );
+  return String(url ?? "")
+    .replace("https://raw.githubusercontent.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts/main/", `${rawRoot}/`)
+    .replace("https://raw.githubusercontent.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts/main/", `${rawRoot}/`)
+    .replace("https://cdn.jsdelivr.net/gh/Evolink-AI/awesome-gpt-image-2-API-and-Prompts@main/", `${rawRoot}/`)
+    .replace("https://cdn.jsdelivr.net/gh/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts@main/", `${rawRoot}/`)
+    .replace("https://raw.githubusercontent.com/mageia/awesome-gpt-image-2-API-and-Prompts/main/", `${rawRoot}/`);
 }
 
 function ratioFor(prompt) {
@@ -139,7 +196,7 @@ function parseCases(markdown, sourceSlug, baseCategory, collectionLabel) {
       previewSourceUrl: originalPostUrl,
       landingUrl: `${repositoryUrl}/blob/main/cases/${sourceSlug}.md`,
       attributionText: `提示词与效果图来源：@${authorHandle}；CC0 公开整理：EvoLink AI。本站保留逐条原帖。`,
-      modificationNote: "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      modificationNote: "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。原仓库下线后改用内容与 CC0 许可一致的公开 GitHub 镜像。",
       rightsReviewStatus: "cc0-1.0-public-github",
       rightsReviewedAt: syncedAt.slice(0, 10),
       assetHostingMode: "remote-jsdelivr-source-with-fallback",
@@ -168,10 +225,18 @@ for (const [slug, category, label] of sources) {
 const seen = new Set();
 const previousItems = (previous.items ?? []).map((item) => ({
   ...item,
-  image: normalizeImageUrl(item.image),
-  imageUrls: (item.imageUrls ?? [item.image]).map(normalizeImageUrl).filter(Boolean),
+  repositoryUrl,
+  promptLicenseUrl: licenseUrl,
+  landingUrl: String(item.landingUrl ?? "").replace(originalRepositoryUrl, repositoryUrl),
+  imageUrls: (item.imageUrls ?? [item.image])
+    .map(normalizeImageUrl)
+    .filter((url) => {
+      if (!repositoryFiles || !url.startsWith(`${rawRoot}/`)) return Boolean(url);
+      const repositoryPath = decodeURIComponent(url.slice(rawRoot.length + 1).split(/[?#]/)[0]);
+      return repositoryFiles.has(repositoryPath);
+    }),
   assetHostingMode: "remote-jsdelivr-source-with-fallback",
-}));
+})).filter((item) => item.imageUrls.length).map((item) => ({ ...item, image: item.imageUrls[0] }));
 const items = [...parsed, ...previousItems]
   .filter((item) => {
     const key = hash(`${item.originalPostUrl}\n${item.prompt}`.toLowerCase());
@@ -195,6 +260,8 @@ const payload = {
     pptRecords: items.filter((item) => item.category === "PPT / 信息图").length,
     license: "CC0-1.0",
     repositoryUrl,
+    originalRepositoryUrl,
+    mirrorReason: "The original repository became unavailable; this public mirror preserves the same files and CC0 license.",
     sources: sourceStats,
   },
   items,

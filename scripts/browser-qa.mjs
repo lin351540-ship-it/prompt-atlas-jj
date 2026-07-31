@@ -1,5 +1,6 @@
 import path from "node:path";
 import { pathToFileURL } from "node:url";
+import { mkdir } from "node:fs/promises";
 
 const moduleRoot = process.env.PLAYWRIGHT_MODULE_ROOT;
 const playwrightSpecifier = moduleRoot
@@ -10,11 +11,16 @@ const { chromium } = await import(playwrightSpecifier);
 const baseUrl = process.env.PROMPT_ATLAS_URL || "http://127.0.0.1:4173";
 const chromePath = process.env.CHROME_PATH || "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 const browser = await chromium.launch({ headless: true, executablePath: chromePath });
+const artifactDirectory = path.resolve(import.meta.dirname, "..", "output", "playwright");
+await mkdir(artifactDirectory, { recursive: true });
 
-const viewports = [
+const allViewports = [
   { name: "desktop", width: 1440, height: 1000 },
   { name: "mobile", width: 390, height: 844 },
 ];
+const viewports = process.env.PROMPT_ATLAS_QA_VIEWPORT
+  ? allViewports.filter(({ name }) => name === process.env.PROMPT_ATLAS_QA_VIEWPORT)
+  : allViewports;
 const results = [];
 
 for (const viewport of viewports) {
@@ -24,11 +30,15 @@ for (const viewport of viewports) {
   });
   const consoleErrors = [];
   const failedRequests = [];
+  const errorResponses = [];
   page.on("console", (message) => {
     if (message.type() === "error") consoleErrors.push(message.text());
   });
   page.on("requestfailed", (request) => {
     failedRequests.push({ url: request.url(), error: request.failure()?.errorText });
+  });
+  page.on("response", (response) => {
+    if (response.status() >= 400) errorResponses.push({ url: response.url(), status: response.status() });
   });
 
   const response = await page.goto(baseUrl, { waitUntil: "domcontentloaded", timeout: 120_000 });
@@ -38,7 +48,19 @@ for (const viewport of viewports) {
     undefined,
     { timeout: 30_000 },
   );
-  await page.waitForTimeout(1_500);
+  await page.evaluate(() => document.fonts.ready);
+  await page.waitForFunction(
+    () => [...document.querySelectorAll(".creator-album-strip button")].every((button) =>
+      button.querySelector("img.is-loaded") || button.querySelector(".image-fallback:not(.is-loading)"),
+    ),
+    undefined,
+    { timeout: 30_000 },
+  );
+  await page.waitForTimeout(350);
+  await page.screenshot({
+    path: path.resolve(artifactDirectory, `prompt-atlas-${viewport.name}.png`),
+    animations: "disabled",
+  });
 
   const initial = await page.evaluate(() => ({
     scrollY: window.scrollY,
@@ -64,6 +86,12 @@ for (const viewport of viewports) {
       .slice(0, 12),
     creatorLoaded: document.querySelector(".creator-anime")?.complete,
     creatorNaturalWidth: document.querySelector(".creator-anime")?.naturalWidth || 0,
+    displayFontsLoaded: document.fonts.check('32px "Smiley Sans Atlas"') && document.fonts.check('32px "Instrument Serif Atlas"'),
+    heroPreviewFallbacks: document.querySelectorAll(".creator-album-strip .image-fallback:not(.is-loading):not(.is-hidden)").length,
+    heroPreviewFallbackDetails: [...document.querySelectorAll(".creator-album-strip .image-fallback:not(.is-loading):not(.is-hidden)")].map((fallback) => ({
+      label: fallback.getAttribute("aria-label") || "",
+      buttonLabel: fallback.closest("button")?.getAttribute("aria-label") || "",
+    })),
     designCdnState: document.documentElement.dataset.designCdn || "",
   }));
 
@@ -88,6 +116,10 @@ for (const viewport of viewports) {
     const toolbar = document.querySelector(".glass-toolbar");
     if (!toolbar) return { position: "", top: -1 };
     return { position: getComputedStyle(toolbar).position, top: toolbar.getBoundingClientRect().top };
+  });
+  await page.screenshot({
+    path: path.resolve(artifactDirectory, `prompt-atlas-${viewport.name}-gallery.png`),
+    animations: "disabled",
   });
 
   await firstCard.locator(".image-button").click();
@@ -134,9 +166,12 @@ for (const viewport of viewports) {
     consoleErrors,
     actionableConsoleErrors,
     failedRequests: failedRequests.slice(0, 10),
+    errorResponses: errorResponses.slice(0, 10),
     assertions: {
       pageLoaded: response?.ok() === true,
       creatorLoaded: initial.creatorLoaded && initial.creatorNaturalWidth > 0,
+      displayFontsLoaded: initial.displayFontsLoaded,
+      noHeroPreviewFallbacks: initial.heroPreviewFallbacks === 0,
       designCdnLoaded: initial.designCdnState === "ready" || initial.designCdnState === "reduced",
       wheelWorksOnHero: heroWheelY > initial.scrollY,
       wheelWorksOnCard: cardWheelY > cardBeforeY,

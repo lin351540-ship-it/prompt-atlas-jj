@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "vinext dev",
-    "build": "node scripts/sync-font-assets.mjs && node scripts/sync-client-feed-assets.mjs && vinext build",
+    "build": "node scripts/sync-font-assets.mjs && node scripts/sync-client-feed-assets.mjs && node scripts/cache-bootstrap-images.mjs && node scripts/audit-image-assets.mjs && vinext build",
     "start": "vinext start",
     "sync": "node scripts/import-curated-prompts.mjs && node scripts/sync-public-index.mjs && node scripts/sync-nano-banana-public.mjs && node scripts/sync-youmind-search-index.mjs && node scripts/sync-evolink-public.mjs",
     "sync:x": "node scripts/sync-x-open-prompts.mjs",
@@ -17,6 +17,7 @@
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
+    "@fontsource/instrument-serif": "5.3.0",
     "drizzle-orm": "0.45.2",
     "geist": "^1.7.2",
     "next": "16.2.12",

@@ -76,6 +76,7 @@ function dedupePromptItems(items: CatalogItem[]) {
 const initialItems = bootstrapFeed.items as unknown as CatalogItem[];
 const heroBootstrapItems = bootstrapFeed.heroItems as unknown as CatalogItem[];
 const curatedYouMindImages = new Set(bootstrapFeed.curatedImageUrls);
+const bootstrapImageCache = ((bootstrapFeed as unknown as { imageCache?: Record<string, string> }).imageCache ?? {});
 const feedStats = bootstrapFeed.stats;
 
 const categoryMap: Record<string, Category> = {
@@ -105,7 +106,7 @@ const sourceLinks = [
     eyebrow: "GPT IMAGE 2 CASES · CC0 1.0",
     title: "EvoLink · Open Prompt–Image Cases",
     copy: `${feedStats.evolink.completeRecords} 条 CC0 完整提示词、${feedStats.evolink.imageCount} 张公开效果图，来自 ${feedStats.evolink.authorCount} 位 X 原作者。`,
-    url: "https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts",
+    url: "https://github.com/mageia/awesome-gpt-image-2-API-and-Prompts",
   },
   {
     eyebrow: "OFFICIAL PUBLIC INDEX · 14K+",
@@ -144,9 +145,15 @@ const sourceLinks = [
     url: "https://github.com/ToseaAI/awesome-gpt-image-2-prompts",
   },
   {
+    eyebrow: "EDITORIAL TYPE SYSTEM · OFL 1.1",
+    title: "Smiley Sans × Instrument Serif",
+    copy: "得意黑负责中文标题的窄斜几何张力，Instrument Serif 负责英文大字的编辑感；正文与数据标签继续保持克制易读。",
+    url: "https://atelier-anchor.com/typefaces/smiley-sans/",
+  },
+  {
     eyebrow: "TYPE SYSTEM · MIT",
     title: "JCodesMore · AI Website Cloner Template",
-    copy: "采用 Geist / Geist Mono 字体骨架、清晰的字号层级与更紧凑的编辑排版节奏。",
+    copy: "保留 Geist / Geist Mono 的正文与数据骨架，并在此基础上建立更鲜明的展示字体层级。",
     url: "https://github.com/JCodesMore/ai-website-cloner-template",
   },
   {
@@ -226,16 +233,96 @@ function SourceIcon() {
   return <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-8 8" /><path d="M18 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" /></svg>;
 }
 
+function imageCandidates(sources: string[]) {
+  const candidates: string[] = [];
+  const seen = new Set<string>();
+  const add = (source: string) => {
+    if (!source || seen.has(source)) return;
+    seen.add(source);
+    candidates.push(source);
+  };
+
+  for (const source of sources.filter(Boolean)) {
+    add(bootstrapImageCache[source] ?? "");
+    add(source);
+    if (/^https:\/\//i.test(source) && !source.includes("wsrv.nl/")) {
+      add(`https://wsrv.nl/?url=${encodeURIComponent(source)}&output=webp&q=82`);
+    }
+  }
+  return candidates;
+}
+
+function ImageFallback({ alt, loading = false, className }: { alt: string; loading?: boolean; className?: string }) {
+  return (
+    <span
+      className={`image-fallback${loading ? " is-loading" : ""}${className ? ` ${className}` : ""}`}
+      role={loading ? undefined : "img"}
+      aria-hidden={loading ? true : undefined}
+      aria-label={loading ? undefined : `${alt}（效果图源暂不可用）`}
+    >
+      <i>{loading ? "LOADING PREVIEW" : "IMAGE SOURCE"}</i>
+      <b>{loading ? "正在装入真实效果图" : "效果图暂不可用"}</b>
+      <small>{loading ? "超时会自动切换备用图源" : "点击卡片可重试，提示词正文仍可查看"}</small>
+    </span>
+  );
+}
+
 function ResilientImage({ sources, alt, className, eager = false }: { sources: string[]; alt: string; className?: string; eager?: boolean }) {
-  const usableSources = sources.filter(Boolean);
-  const [sourceIndex, setSourceIndex] = useState(0);
-  const [loaded, setLoaded] = useState(false);
+  const sourceKey = sources.filter(Boolean).join("\u001f");
+  const usableSources = useMemo(() => imageCandidates(sourceKey ? sourceKey.split("\u001f") : []), [sourceKey]);
+  const [imageState, setImageState] = useState({ sourceKey, sourceIndex: 0, loaded: false });
+  const sourceIndex = imageState.sourceKey === sourceKey ? imageState.sourceIndex : 0;
+  const loaded = imageState.sourceKey === sourceKey && imageState.loaded;
+  const currentSource = usableSources[sourceIndex] ?? "";
+  const imageRef = useRef<HTMLImageElement>(null);
+
+  useLayoutEffect(() => {
+    const image = imageRef.current;
+    if (!currentSource || !image?.complete) return;
+    const frame = window.requestAnimationFrame(() => {
+      setImageState({
+        sourceKey,
+        sourceIndex: image.naturalWidth > 0 ? sourceIndex : sourceIndex + 1,
+        loaded: image.naturalWidth > 0,
+      });
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [currentSource, sourceIndex, sourceKey]);
+
+  useEffect(() => {
+    if (loaded || sourceIndex >= usableSources.length) return;
+    const timeout = window.setTimeout(() => {
+      setImageState((current) => ({
+        sourceKey,
+        sourceIndex: current.sourceKey === sourceKey ? current.sourceIndex + 1 : 1,
+        loaded: false,
+      }));
+    }, eager ? 8_000 : 10_000);
+    return () => window.clearTimeout(timeout);
+  }, [eager, loaded, sourceIndex, sourceKey, usableSources.length]);
 
   if (!usableSources.length || sourceIndex >= usableSources.length) {
-    return <span className={`image-fallback ${className ?? ""}`} role="img" aria-label={`${alt}（效果图源暂不可用）`}><i>IMAGE SOURCE</i><b>效果图暂不可用</b><small>提示词正文仍可在站内查看</small></span>;
+    return <ImageFallback alt={alt} className={className} />;
   }
 
-  return <img className={`${className ?? ""}${loaded ? " is-loaded" : ""}`} src={usableSources[sourceIndex]} alt={alt} loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : "auto"} decoding="async" referrerPolicy="no-referrer" onLoad={() => setLoaded(true)} onError={() => { setLoaded(false); setSourceIndex((index) => index + 1); }} />;
+  return <>
+    <ImageFallback alt={alt} loading className={loaded ? "is-hidden" : ""} />
+    <img
+      key={currentSource}
+      ref={imageRef}
+      className={`${className ?? ""} resilient-preview-image${loaded ? " is-loaded" : ""}`}
+      src={currentSource}
+      alt={alt}
+      loading={eager ? "eager" : "lazy"}
+      fetchPriority={eager ? "high" : "auto"}
+      decoding="async"
+      referrerPolicy="no-referrer"
+      onLoad={() => setImageState({ sourceKey, sourceIndex, loaded: true })}
+      onError={() => {
+        setImageState({ sourceKey, sourceIndex: sourceIndex + 1, loaded: false });
+      }}
+    />
+  </>;
 }
 
 function previewAspectRatio(ratio: string) {
@@ -714,7 +801,7 @@ export default function Home() {
       </section>
 
       <section className="rights-section" id="rights">
-        <div className="rights-glass" data-cdn-tilt="panel" data-cdn-reveal><span className="section-index">03 / RIGHTS & TRANSPARENCY</span><h2>能公开验证多少，就准确展示多少。</h2><div className="rights-columns"><p><b>A · 公开数据范围：</b>YouMind 官方清单宣称 {fullIndexSummary.declaredTotalPrompts.toLocaleString()} 条；当前 11 个公开分类文件按 ID 去重后实际可验证 {fullIndexSummary.uniquePromptCount.toLocaleString()} 条，且均有提示词正文。分类会重叠，因此会员数合计不等于唯一条目数。</p><p><b>B · 新增开放图文：</b>当前新增 X 公开 ALT 完整提示词 {feedStats.x.completeRecords} 条、EvoLink CC0 图文 {feedStats.evolink.completeRecords} 条、Nano Banana {feedStats.nano.completeRecords} 条，以及 {feedStats.diffusionCount} 组 DiffusionDB CC0 原提示词—对应生成图；逐条保留作者、原帖和展示依据。</p><p><b>C · 获取与展示方式：</b>本站不破解 VIP、不绕过登录、不抓取私密或删除内容，也不复制受限会员页。X 仅收录公开检索可见、明确分享提示词且 ALT 正文完整的帖子；作者未声明开放许可证的 X 卡片会明确标记为“公开分享、保留署名”，不冒充 CC 授权。</p></div><p className="youmind-credit">提示词由 <a href="https://youmind.com" target="_blank" rel="noreferrer">YouMind.com</a>、X 公开作者及开放仓库共同提供；每张卡片均保留逐条来源。</p><div className="license-row"><a href={fullIndexSummary.source} target="_blank" rel="noreferrer">YouMind 公开索引 <SourceIcon /></a><a href="https://x.com/search?q=%22GPT%20Image%22%20prompt&src=typed_query" target="_blank" rel="noreferrer">X 公开分享 <SourceIcon /></a><a href="https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts/blob/main/LICENSE" target="_blank" rel="noreferrer">EvoLink CC0 <SourceIcon /></a><a href="https://github.com/poloclub/diffusiondb" target="_blank" rel="noreferrer">DiffusionDB CC0 <SourceIcon /></a><a href="https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE" target="_blank" rel="noreferrer">Nano Banana CC BY 4.0 <SourceIcon /></a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0 <SourceIcon /></a><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">Apache-2.0 <SourceIcon /></a><a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/main/LICENSE" target="_blank" rel="noreferrer">JCodesMore MIT <SourceIcon /></a><a href="https://github.com/motiondivision/motion/blob/main/LICENSE.md" target="_blank" rel="noreferrer">Motion MIT <SourceIcon /></a><a href="https://github.com/micku7zu/vanilla-tilt.js/blob/master/LICENSE" target="_blank" rel="noreferrer">Vanilla Tilt MIT <SourceIcon /></a><a href="https://www.jsdelivr.com/" target="_blank" rel="noreferrer">jsDelivr CDN <SourceIcon /></a><a href="https://github.com/lin351540-ship-it/prompt-atlas-jj" target="_blank" rel="noreferrer">本站仓库 <SourceIcon /></a></div></div>
+        <div className="rights-glass" data-cdn-tilt="panel" data-cdn-reveal><span className="section-index">03 / RIGHTS & TRANSPARENCY</span><h2>能公开验证多少，就准确展示多少。</h2><div className="rights-columns"><p><b>A · 公开数据范围：</b>YouMind 官方清单宣称 {fullIndexSummary.declaredTotalPrompts.toLocaleString()} 条；当前 11 个公开分类文件按 ID 去重后实际可验证 {fullIndexSummary.uniquePromptCount.toLocaleString()} 条，且均有提示词正文。分类会重叠，因此会员数合计不等于唯一条目数。</p><p><b>B · 新增开放图文：</b>当前新增 X 公开 ALT 完整提示词 {feedStats.x.completeRecords} 条、EvoLink CC0 图文 {feedStats.evolink.completeRecords} 条、Nano Banana {feedStats.nano.completeRecords} 条，以及 {feedStats.diffusionCount} 组 DiffusionDB CC0 原提示词—对应生成图；逐条保留作者、原帖和展示依据。</p><p><b>C · 获取与展示方式：</b>本站不破解 VIP、不绕过登录、不抓取私密或删除内容，也不复制受限会员页。X 仅收录公开检索可见、明确分享提示词且 ALT 正文完整的帖子；作者未声明开放许可证的 X 卡片会明确标记为“公开分享、保留署名”，不冒充 CC 授权。</p></div><p className="youmind-credit">提示词由 <a href="https://youmind.com" target="_blank" rel="noreferrer">YouMind.com</a>、X 公开作者及开放仓库共同提供；每张卡片均保留逐条来源。</p><div className="license-row"><a href={fullIndexSummary.source} target="_blank" rel="noreferrer">YouMind 公开索引 <SourceIcon /></a><a href="https://x.com/search?q=%22GPT%20Image%22%20prompt&src=typed_query" target="_blank" rel="noreferrer">X 公开分享 <SourceIcon /></a><a href="https://github.com/mageia/awesome-gpt-image-2-API-and-Prompts/blob/main/LICENSE" target="_blank" rel="noreferrer">EvoLink 镜像 CC0 <SourceIcon /></a><a href="https://github.com/poloclub/diffusiondb" target="_blank" rel="noreferrer">DiffusionDB CC0 <SourceIcon /></a><a href="https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE" target="_blank" rel="noreferrer">Nano Banana CC BY 4.0 <SourceIcon /></a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0 <SourceIcon /></a><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">Apache-2.0 <SourceIcon /></a><a href="https://github.com/atelier-anchor/smiley-sans/blob/main/LICENSE" target="_blank" rel="noreferrer">Smiley Sans OFL <SourceIcon /></a><a href="https://github.com/Instrument/instrument-serif/blob/main/OFL.txt" target="_blank" rel="noreferrer">Instrument Serif OFL <SourceIcon /></a><a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/main/LICENSE" target="_blank" rel="noreferrer">JCodesMore MIT <SourceIcon /></a><a href="https://github.com/motiondivision/motion/blob/main/LICENSE.md" target="_blank" rel="noreferrer">Motion MIT <SourceIcon /></a><a href="https://github.com/micku7zu/vanilla-tilt.js/blob/master/LICENSE" target="_blank" rel="noreferrer">Vanilla Tilt MIT <SourceIcon /></a><a href="https://www.jsdelivr.com/" target="_blank" rel="noreferrer">jsDelivr CDN <SourceIcon /></a><a href="https://www.weserv.nl/" target="_blank" rel="noreferrer">images.weserv.nl 备用图源 <SourceIcon /></a><a href="https://github.com/lin351540-ship-it/prompt-atlas-jj" target="_blank" rel="noreferrer">本站仓库 <SourceIcon /></a></div></div>
       </section>
 
       <footer className="site-footer" data-cdn-reveal><div className="footer-maker"><span className="creator-avatar">猩</span><span><small>网站制作者</small><strong>小明猩</strong></span></div><p>Prompt Atlas · {totalBrowsable.toLocaleString()} 组真实效果与完整提示词</p><a href="#top">返回顶部 ↑</a></footer>

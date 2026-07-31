@@ -76,6 +76,41 @@ URLs.
 - Project: https://github.com/vercel/geist-font
 - License: SIL Open Font License 1.1
 
+## Smiley Sans / 得意黑
+
+Prompt Atlas self-hosts the official Smiley Sans 2.0.1 WOFF2 build for large
+Chinese display text. The font is used unmodified and its complete OFL text is
+included at `vendor/fonts/LICENSE-SmileySans.txt`.
+
+- Project: https://github.com/atelier-anchor/smiley-sans
+- Official specimen: https://atelier-anchor.com/typefaces/smiley-sans/
+- Copyright (c) 2022--2024 atelierAnchor
+- Reserved Font Names: Smiley, 得意黑
+- License: SIL Open Font License 1.1
+
+## Instrument Serif
+
+Prompt Atlas self-hosts the regular and italic Latin WOFF2 builds from the
+official Fontsource package. Instrument Serif is used for large editorial
+headlines and is paired with Smiley Sans for Chinese glyphs.
+
+- Project: https://github.com/Instrument/instrument-serif
+- Package: `@fontsource/instrument-serif` 5.3.0
+- Designers: Rodrigo Fuenzalida and Jordan Egstad
+- License: SIL Open Font License 1.1
+
+## images.weserv.nl fallback delivery
+
+Remote public preview images first load from their attributed original source.
+If a source times out or cannot be decoded, the browser may retry the same URL
+through images.weserv.nl as a transport and format-conversion fallback. This
+does not change the displayed attribution, ownership, source link, or reuse
+terms. Curated above-the-fold previews are additionally cached in the site
+build so the first screen does not depend on a third-party image host.
+
+- Service: https://www.weserv.nl/
+- Project: https://github.com/weserv/images
+
 ## YouMind GPT Image 2 Prompts Search
 
 The large public prompt catalog is synchronized from YouMind OpenLab's
@@ -113,15 +148,18 @@ verified in the public GitHub README.
 
 ## EvoLink GPT Image 2 CC0 collection
 
-The site synchronizes complete prompt-image pairs from EvoLink's public GPT
-Image 2 case files. Records without a complete fenced prompt, an effect image,
-an original X post, or an author handle are excluded. Each accepted card keeps
+The site synchronizes complete prompt-image pairs from the public CC0 snapshot
+originally published by EvoLink. When the original repository became
+unavailable, the synchronizer switched to a public mirror that preserves the
+same case files and CC0 license. Repository-tree validation excludes every
+record whose image blob is absent from that mirror. Each accepted card keeps
 the upstream title, full prompt, effect-image URL, original author and original
 post.
 
-- Project: https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts
+- Original project (currently unavailable): https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts
+- Verified public mirror: https://github.com/mageia/awesome-gpt-image-2-API-and-Prompts
 - License: CC0 1.0 Universal
-- License text: https://github.com/Evolink-AI/awesome-gpt-image-2-API-and-Prompts/blob/main/LICENSE
+- License text: https://github.com/mageia/awesome-gpt-image-2-API-and-Prompts/blob/main/LICENSE
 - Local modifications: Chinese category mapping, search tags, ratio inference
   and source explanation only
 
