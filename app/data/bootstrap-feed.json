@@ -1210,7 +1210,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-08-11T02:30:45.698Z"
+      "syncedAt": "2026-08-11T07:40:51.002Z"
     },
     {
       "id": "youmind-2-a322ec153177",
@@ -1251,7 +1251,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-08-11T02:30:45.698Z"
+      "syncedAt": "2026-08-11T07:40:51.002Z"
     },
     {
       "id": "youmind-3-9fbd8425d2a3",
@@ -1293,7 +1293,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-08-11T02:30:45.698Z"
+      "syncedAt": "2026-08-11T07:40:51.002Z"
     },
     {
       "id": "youmind-6-c981d4f8c5bf",
@@ -1335,7 +1335,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-08-11T02:30:45.698Z"
+      "syncedAt": "2026-08-11T07:40:51.002Z"
     },
     {
       "id": "youmind-29-422a2dba9a1c",
@@ -1378,7 +1378,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-08-11T02:30:45.698Z"
+      "syncedAt": "2026-08-11T07:40:51.002Z"
     },
     {
       "id": "youmind-34-60245bd4871c",
@@ -1421,7 +1421,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-08-11T02:30:45.698Z"
+      "syncedAt": "2026-08-11T07:40:51.002Z"
     },
     {
       "id": "youmind-35-97d991a3e345",
@@ -1464,7 +1464,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-08-11T02:30:45.698Z"
+      "syncedAt": "2026-08-11T07:40:51.002Z"
     },
     {
       "id": "youmind-36-40ca158b28df",
@@ -1507,7 +1507,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-08-11T02:30:45.698Z"
+      "syncedAt": "2026-08-11T07:40:51.002Z"
     },
     {
       "id": "youmind-37-c3f26e1481d1",
@@ -1549,7 +1549,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-08-11T02:30:45.698Z"
+      "syncedAt": "2026-08-11T07:40:51.002Z"
     },
     {
       "id": "youmind-38-8992f14971b5",
@@ -1592,7 +1592,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-08-11T02:30:45.698Z"
+      "syncedAt": "2026-08-11T07:40:51.002Z"
     },
     {
       "id": "youmind-39-30736a9fdd34",
@@ -1635,7 +1635,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-08-11T02:30:45.698Z"
+      "syncedAt": "2026-08-11T07:40:51.002Z"
     },
     {
       "id": "youmind-40-5d185d928a4d",
@@ -1679,7 +1679,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-08-11T02:30:45.698Z"
+      "syncedAt": "2026-08-11T07:40:51.002Z"
     },
     {
       "id": "nano-banana-2-a1c6fd3c7c70",
@@ -1725,7 +1725,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-08-11T02:30:45.978Z"
+      "syncedAt": "2026-08-11T07:40:51.481Z"
     },
     {
       "id": "nano-banana-4-a04d3d2c3870",
@@ -1768,7 +1768,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-08-11T02:30:45.978Z"
+      "syncedAt": "2026-08-11T07:40:51.481Z"
     },
     {
       "id": "nano-banana-7-31b2cd6a2391",
@@ -1812,7 +1812,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-08-11T02:30:45.978Z"
+      "syncedAt": "2026-08-11T07:40:51.481Z"
     },
     {
       "id": "nano-banana-32-33de44466f0b",
@@ -1856,7 +1856,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-08-11T02:30:45.978Z"
+      "syncedAt": "2026-08-11T07:40:51.481Z"
     },
     {
       "id": "nano-banana-33-ef918ba48619",
@@ -1899,7 +1899,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-08-11T02:30:45.978Z"
+      "syncedAt": "2026-08-11T07:40:51.481Z"
     },
     {
       "id": "nano-banana-34-e9de3fb6a4cb",
@@ -1942,7 +1942,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-08-11T02:30:45.978Z"
+      "syncedAt": "2026-08-11T07:40:51.481Z"
     },
     {
       "id": "nano-banana-35-9d431fa58239",
@@ -1987,7 +1987,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-08-11T02:30:45.978Z"
+      "syncedAt": "2026-08-11T07:40:51.481Z"
     },
     {
       "id": "nano-banana-36-34c3158f8265",
@@ -2030,7 +2030,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-08-11T02:30:45.978Z"
+      "syncedAt": "2026-08-11T07:40:51.481Z"
     },
     {
       "id": "nano-banana-37-2277d3807f12",
@@ -2076,7 +2076,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-08-11T02:30:45.978Z"
+      "syncedAt": "2026-08-11T07:40:51.481Z"
     },
     {
       "id": "nano-banana-38-c455a58ddf57",
@@ -2122,7 +2122,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-08-11T02:30:45.978Z"
+      "syncedAt": "2026-08-11T07:40:51.481Z"
     },
     {
       "id": "nano-banana-39-32136b6b5ea0",
@@ -2168,7 +2168,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-08-11T02:30:45.978Z"
+      "syncedAt": "2026-08-11T07:40:51.481Z"
     },
     {
       "id": "nano-banana-40-5d411847ac9a",
@@ -2213,7 +2213,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-08-11T02:30:45.978Z"
+      "syncedAt": "2026-08-11T07:40:51.481Z"
     },
     {
       "id": "evolink-poster-39-d29f90ac8a84",
@@ -2258,7 +2258,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-08-11T02:30:53.489Z"
+      "syncedAt": "2026-08-11T07:40:56.718Z"
     },
     {
       "id": "evolink-poster-50-ba2b16425d81",
@@ -2303,7 +2303,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-08-11T02:30:53.489Z"
+      "syncedAt": "2026-08-11T07:40:56.718Z"
     },
     {
       "id": "evolink-poster-57-ead0143e32d5",
@@ -2348,7 +2348,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-08-11T02:30:53.489Z"
+      "syncedAt": "2026-08-11T07:40:56.718Z"
     },
     {
       "id": "evolink-poster-56-5243facc5baf",
@@ -2394,7 +2394,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-08-11T02:30:53.489Z"
+      "syncedAt": "2026-08-11T07:40:56.718Z"
     },
     {
       "id": "evolink-poster-110-378bf645911c",
@@ -2440,7 +2440,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-08-11T02:30:53.489Z"
+      "syncedAt": "2026-08-11T07:40:56.718Z"
     },
     {
       "id": "evolink-poster-119-780eeb218c9d",
@@ -2486,7 +2486,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-08-11T02:30:53.489Z"
+      "syncedAt": "2026-08-11T07:40:56.718Z"
     },
     {
       "id": "evolink-poster-120-23515a080d1e",
@@ -2532,7 +2532,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-08-11T02:30:53.489Z"
+      "syncedAt": "2026-08-11T07:40:56.718Z"
     },
     {
       "id": "diffusiondb-3d-8805770b-a40f-4d3c-817f-73e5fc2f446e",
@@ -8331,7 +8331,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-08-11T02:30:45.698Z"
+      "syncedAt": "2026-08-11T07:40:51.002Z"
     },
     {
       "id": "youmind-2-a322ec153177",
@@ -8372,7 +8372,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-08-11T02:30:45.698Z"
+      "syncedAt": "2026-08-11T07:40:51.002Z"
     },
     {
       "id": "nano-banana-2-a1c6fd3c7c70",
@@ -8418,7 +8418,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-08-11T02:30:45.978Z"
+      "syncedAt": "2026-08-11T07:40:51.481Z"
     },
     {
       "id": "nano-banana-4-a04d3d2c3870",
@@ -8461,7 +8461,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-08-11T02:30:45.978Z"
+      "syncedAt": "2026-08-11T07:40:51.481Z"
     },
     {
       "id": "evolink-poster-39-d29f90ac8a84",
@@ -8506,7 +8506,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-08-11T02:30:53.489Z"
+      "syncedAt": "2026-08-11T07:40:56.718Z"
     },
     {
       "id": "evolink-poster-50-ba2b16425d81",
@@ -8551,7 +8551,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-08-11T02:30:53.489Z"
+      "syncedAt": "2026-08-11T07:40:56.718Z"
     },
     {
       "id": "2slides-3d-impasto-micro-landscape-poster-oil-painting-pen-stroke-on-xuan-paper",
@@ -8918,7 +8918,7 @@
       "publicSections": 129,
       "completeRecords": 129,
       "imageCount": 261,
-      "sourceUpdatedAt": "2026年8月11日星期二 UTC 00:08:58"
+      "sourceUpdatedAt": "2026年8月11日星期二 UTC 04:27:19"
     },
     "diffusionCount": 383,
     "youMindCompleteRecords": 126
