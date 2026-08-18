@@ -1,79 +1,79 @@
 {
   "schemaVersion": 1,
   "source": "https://github.com/YouMind-OpenLab/gpt-image-2-prompts-search",
-  "sourceUpdatedAt": "2026-08-18T01:24:54.806Z",
-  "syncedAt": "2026-08-18T07:08:10.052Z",
-  "declaredTotalPrompts": 15421,
-  "uniquePromptCount": 15387,
-  "manifestDrift": 34,
-  "completePromptCount": 15387,
-  "categoryMemberships": 24194,
+  "sourceUpdatedAt": "2026-08-18T13:05:16.362Z",
+  "syncedAt": "2026-08-18T13:11:52.104Z",
+  "declaredTotalPrompts": 15531,
+  "uniquePromptCount": 15496,
+  "manifestDrift": 35,
+  "completePromptCount": 15496,
+  "categoryMemberships": 24374,
   "categories": [
     {
       "slug": "profile-avatar",
       "title": "Profile / Avatar",
       "file": "profile-avatar.json",
-      "count": 2192
+      "count": 2206
     },
     {
       "slug": "social-media-post",
       "title": "Social Media Post",
       "file": "social-media-post.json",
-      "count": 5867
+      "count": 5905
     },
     {
       "slug": "infographic-edu-visual",
       "title": "Infographic / Edu Visual",
       "file": "infographic-edu-visual.json",
-      "count": 1378
+      "count": 1387
     },
     {
       "slug": "youtube-thumbnail",
       "title": "YouTube Thumbnail",
       "file": "youtube-thumbnail.json",
-      "count": 210
+      "count": 211
     },
     {
       "slug": "comic-storyboard",
       "title": "Comic / Storyboard",
       "file": "comic-storyboard.json",
-      "count": 2348
+      "count": 2362
     },
     {
       "slug": "product-marketing",
       "title": "Product Marketing",
       "file": "product-marketing.json",
-      "count": 4225
+      "count": 4270
     },
     {
       "slug": "ecommerce-main-image",
       "title": "E-commerce Main Image",
       "file": "ecommerce-main-image.json",
-      "count": 439
+      "count": 444
     },
     {
       "slug": "game-asset",
       "title": "Game Asset",
       "file": "game-asset.json",
-      "count": 1891
+      "count": 1900
     },
     {
       "slug": "poster-flyer",
       "title": "Poster / Flyer",
       "file": "poster-flyer.json",
-      "count": 4299
+      "count": 4337
     },
     {
       "slug": "app-web-design",
       "title": "App / Web Design",
       "file": "app-web-design.json",
-      "count": 976
+      "count": 979
     },
     {
       "slug": "others",
       "title": "Uncategorized",
       "file": "others.json",
-      "count": 369
+      "count": 373
     }
   ],
   "chunkSize": 500,
@@ -81,187 +81,187 @@
     {
       "file": "chunks/001.json",
       "count": 500,
-      "firstId": 31746,
-      "lastId": 31167
+      "firstId": 31869,
+      "lastId": 31286
     },
     {
       "file": "chunks/002.json",
       "count": 500,
-      "firstId": 31166,
-      "lastId": 30595
+      "firstId": 31285,
+      "lastId": 30723
     },
     {
       "file": "chunks/003.json",
       "count": 500,
-      "firstId": 30594,
-      "lastId": 29983
+      "firstId": 30722,
+      "lastId": 30114
     },
     {
       "file": "chunks/004.json",
       "count": 500,
-      "firstId": 29982,
-      "lastId": 29386
+      "firstId": 30113,
+      "lastId": 29504
     },
     {
       "file": "chunks/005.json",
       "count": 500,
-      "firstId": 29385,
-      "lastId": 28810
+      "firstId": 29503,
+      "lastId": 28929
     },
     {
       "file": "chunks/006.json",
       "count": 500,
-      "firstId": 28809,
-      "lastId": 28256
+      "firstId": 28928,
+      "lastId": 28378
     },
     {
       "file": "chunks/007.json",
       "count": 500,
-      "firstId": 28255,
-      "lastId": 27689
+      "firstId": 28377,
+      "lastId": 27812
     },
     {
       "file": "chunks/008.json",
       "count": 500,
-      "firstId": 27688,
-      "lastId": 27140
+      "firstId": 27811,
+      "lastId": 27253
     },
     {
       "file": "chunks/009.json",
       "count": 500,
-      "firstId": 27139,
-      "lastId": 26578
+      "firstId": 27252,
+      "lastId": 26690
     },
     {
       "file": "chunks/010.json",
       "count": 500,
-      "firstId": 26577,
-      "lastId": 25970
+      "firstId": 26689,
+      "lastId": 26104
     },
     {
       "file": "chunks/011.json",
       "count": 500,
-      "firstId": 25969,
-      "lastId": 25354
+      "firstId": 26103,
+      "lastId": 25500
     },
     {
       "file": "chunks/012.json",
       "count": 500,
-      "firstId": 25353,
-      "lastId": 24666
+      "firstId": 25499,
+      "lastId": 24811
     },
     {
       "file": "chunks/013.json",
       "count": 500,
-      "firstId": 24665,
-      "lastId": 24054
+      "firstId": 24810,
+      "lastId": 24191
     },
     {
       "file": "chunks/014.json",
       "count": 500,
-      "firstId": 24053,
-      "lastId": 23454
+      "firstId": 24190,
+      "lastId": 23587
     },
     {
       "file": "chunks/015.json",
       "count": 500,
-      "firstId": 23453,
-      "lastId": 22828
+      "firstId": 23586,
+      "lastId": 22937
     },
     {
       "file": "chunks/016.json",
       "count": 500,
-      "firstId": 22827,
-      "lastId": 22187
+      "firstId": 22936,
+      "lastId": 22343
     },
     {
       "file": "chunks/017.json",
       "count": 500,
-      "firstId": 22186,
-      "lastId": 21545
+      "firstId": 22342,
+      "lastId": 21679
     },
     {
       "file": "chunks/018.json",
       "count": 500,
-      "firstId": 21544,
-      "lastId": 20937
+      "firstId": 21678,
+      "lastId": 21090
     },
     {
       "file": "chunks/019.json",
       "count": 500,
-      "firstId": 20936,
-      "lastId": 20341
+      "firstId": 21089,
+      "lastId": 20493
     },
     {
       "file": "chunks/020.json",
       "count": 500,
-      "firstId": 20340,
-      "lastId": 19708
+      "firstId": 20492,
+      "lastId": 19852
     },
     {
       "file": "chunks/021.json",
       "count": 500,
-      "firstId": 19707,
-      "lastId": 19095
+      "firstId": 19851,
+      "lastId": 19250
     },
     {
       "file": "chunks/022.json",
       "count": 500,
-      "firstId": 19094,
-      "lastId": 18452
+      "firstId": 19249,
+      "lastId": 18611
     },
     {
       "file": "chunks/023.json",
       "count": 500,
-      "firstId": 18451,
-      "lastId": 17858
+      "firstId": 18610,
+      "lastId": 17969
     },
     {
       "file": "chunks/024.json",
       "count": 500,
-      "firstId": 17857,
-      "lastId": 17218
+      "firstId": 17968,
+      "lastId": 17375
     },
     {
       "file": "chunks/025.json",
       "count": 500,
-      "firstId": 17217,
-      "lastId": 16650
+      "firstId": 17374,
+      "lastId": 16790
     },
     {
       "file": "chunks/026.json",
       "count": 500,
-      "firstId": 16649,
-      "lastId": 16080
+      "firstId": 16789,
+      "lastId": 16225
     },
     {
       "file": "chunks/027.json",
       "count": 500,
-      "firstId": 16079,
-      "lastId": 15546
+      "firstId": 16224,
+      "lastId": 15655
     },
     {
       "file": "chunks/028.json",
       "count": 500,
-      "firstId": 15545,
-      "lastId": 14980
+      "firstId": 15654,
+      "lastId": 15089
     },
     {
       "file": "chunks/029.json",
       "count": 500,
-      "firstId": 14979,
-      "lastId": 14467
+      "firstId": 15088,
+      "lastId": 14576
     },
     {
       "file": "chunks/030.json",
       "count": 500,
-      "firstId": 14466,
-      "lastId": 13914
+      "firstId": 14575,
+      "lastId": 14023
     },
     {
       "file": "chunks/031.json",
-      "count": 387,
-      "firstId": 13913,
+      "count": 496,
+      "firstId": 14022,
       "lastId": 13440
     }
   ],
