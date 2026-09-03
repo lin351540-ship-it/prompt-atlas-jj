@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-03T04:38:42.483Z",
+  "generatedAt": "2026-09-03T11:21:48.044Z",
   "status": "fresh",
   "sourceStats": {
-    "declaredTotal": 15462,
+    "declaredTotal": 15482,
     "publicSections": 129,
     "completeRecords": 129,
-    "imageCount": 232,
-    "sourceUpdatedAt": "2026年9月3日星期四 UTC 00:07:06"
+    "imageCount": 231,
+    "sourceUpdatedAt": "2026年9月3日星期四 UTC 08:03:27"
   },
   "items": [
     {
@@ -52,7 +52,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
       "id": "nano-banana-2-a1c6fd3c7c70",
@@ -98,7 +98,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
       "id": "nano-banana-3-fb1166bd3a27",
@@ -141,7 +141,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
       "id": "nano-banana-4-a04d3d2c3870",
@@ -184,7 +184,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
       "id": "nano-banana-5-14f8e5983887",
@@ -227,7 +227,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
       "id": "nano-banana-6-471053b61624",
@@ -272,7 +272,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
       "id": "nano-banana-7-31b2cd6a2391",
@@ -316,7 +316,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
       "id": "nano-banana-8-2562eec72e6c",
@@ -358,7 +358,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
       "id": "nano-banana-9-862ef5c29284",
@@ -400,11 +400,183 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-1-24d85987bdeb",
+      "id": "nano-banana-1-b79830261ba4",
       "index": 40001,
+      "title": "个人资料 / 头像 - 书房日落肖像",
+      "originalTitle": "个人资料 / 头像 - 书房日落肖像",
+      "description": "一张电影质感的特写胶片肖像，展现了一名男子在黄金时段舒适书房中的场景。",
+      "category": "创意发现",
+      "categories": [
+        "创意发现"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "光影中的珍珠。思绪飘向远方 [一张电影质感的特写胶片肖像，展现了一名 {argument name=\"subject\" default=\"年轻男子\"} 坐在 {argument name=\"setting\" default=\"舒适书房\"} 的明亮窗边。他留着棕色质感短发，穿着一件 {argument name=\"outfit\" default=\"宽松休闲的白色亚麻衬衫\"}。他正若有所思地看向镜头外，表情温柔而宁静。黄金时段的自然阳光从侧窗直射而入，在他的脸上投下温暖的高光，并在衬衫面料上形成鲜明而柔和的阴影。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418041487_8sendd_HRRVwlybUAAiiFc.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418041487_8sendd_HRRVwlybUAAiiFc.jpg"
+      ],
+      "author": "AI Qoro",
+      "authorHandle": "AIqoro",
+      "originalPostUrl": "https://x.com/AIqoro/status/2095394056784523731",
+      "publishedAt": "2026年9月3日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "AI Qoro",
+      "previewSourceUrl": "https://x.com/AIqoro/status/2095394056784523731",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33282",
+      "attributionText": "提示词与效果图：AI Qoro；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-2-1927b20b62f2",
+      "index": 40002,
+      "title": "个人资料 / 头像 - 黄金时刻的百叶窗影",
+      "originalTitle": "个人资料 / 头像 - 黄金时刻的百叶窗影",
+      "description": "一张充满电影质感的忧郁肖像，呈现出戏剧性的窗影图案与黄金时刻的自然光影。",
+      "category": "人像摄影",
+      "categories": [
+        "人像摄影"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "一张电影质感的特写肖像，主角为 {argument name=\"subject\" default=\"一位拥有自然美、淡褐色双眼的年轻女性\"}，双唇微启。她的 {argument name=\"hair\" default=\"波浪状的暖棕色头发\"} 随意地扎在脑后，几缕凌乱的发丝轻柔地垂在脸颊旁。她身穿一件 {argument name=\"outfit\" default=\"修身黑色罗纹针织半高领上衣\"}。黄金时刻的阳光透过窗户倾泻而入，在她的脸部和颈部投下锐利而富有戏剧性的百叶窗阴影。高对比度的明暗对照法照明，温暖的金色调与深邃的阴影交织，清晰可见的皮肤纹理与细微的雀斑，使用 85mm f/1.4 镜头拍摄，浅景深，柔和的背景虚化，充满情绪的编辑摄影风格。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418041131_tzw1om_HROk6DfbcAANuUX.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418041131_tzw1om_HROk6DfbcAANuUX.jpg"
+      ],
+      "author": "𝑨𝒇𝒓𝒊𝒏",
+      "authorHandle": "afrinxai",
+      "originalPostUrl": "https://x.com/afrinxai/status/2095318609287393715",
+      "publishedAt": "2026年9月3日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "𝑨𝒇𝒓𝒊𝒏",
+      "previewSourceUrl": "https://x.com/afrinxai/status/2095318609287393715",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33281",
+      "attributionText": "提示词与效果图：𝑨𝒇𝒓𝒊𝒏；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-3-72cc7304bfca",
+      "index": 40003,
+      "title": "个人资料 / 头像 - 高清肖像转换",
+      "originalTitle": "个人资料 / 头像 - 高清肖像转换",
+      "description": "一个全面的图像转换提示词，用于创建超逼真的摄影棚级特写肖像，并能精确控制面部特征和光影效果。",
+      "category": "人像摄影",
+      "categories": [
+        "人像摄影"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "将此图像转换为：一张超逼真的 {argument name=\"subject\" default=\"自信男性\"} 特写肖像，面部表情保持 {same}，且必须直视镜头，其身体、面部和双眼也必须完全正对镜头。图像必须呈现出高级摄影棚级的面部细节，高度逼真的皮肤纹理，包括可见的毛孔、自然的抬头纹、细微皱纹、面部瑕疵、逼真的次表面散射、细致的胡须毛囊、清晰的胡须边缘、自然的唇部纹理、逼真的睫毛以及高清眉毛。温暖的棕色眼睛带有明亮的眼神光和晶莹剔透的虹膜细节。电影级 YouTube 缩略图风格，面部焦点极其锐利，浅景深，左前方专业主光，头部和肩部周围有柔和的轮廓光，细微的对比度增强，戏剧性但干净的布光，顶级相机画质，超精细皮肤渲染，照片级面部解剖结构，8K 细节，超清晰图像质量。（移除麦克风和项链）保留参考图像中确切的面部特征、面部结构、比例、眼睛形状、鼻子形状、胡须图案、发际线、肤色以及所有独特的面部特征。不得以任何方式改变人物面部。保持 100% 的相似度和身份准确性。展示从头发顶部到肚脐上方一点的身体部位。背景：{argument name=\"background\" default=\"纯白色\"}。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "3D",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418034299_oyrq26_HRO9qF1W0AUIeas.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418034299_oyrq26_HRO9qF1W0AUIeas.jpg"
+      ],
+      "author": "Alex | The AI Ads Guy",
+      "authorHandle": "qwertyu_alex",
+      "originalPostUrl": "https://x.com/qwertyu_alex/status/2095226945437143283",
+      "publishedAt": "2026年9月2日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Alex | The AI Ads Guy",
+      "previewSourceUrl": "https://x.com/qwertyu_alex/status/2095226945437143283",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33271",
+      "attributionText": "提示词与效果图：Alex | The AI Ads Guy；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-4-accd8f3dd4d2",
+      "index": 40004,
+      "title": "个人资料 / 头像 - 健身房随拍镜面自拍",
+      "originalTitle": "个人资料 / 头像 - 健身房随拍镜面自拍",
+      "description": "一个用于生成健身房随拍镜面自拍的超写实提示词，描绘两位女性锻炼后的场景，注重自然肤质与真实光影。",
+      "category": "人像摄影",
+      "categories": [
+        "人像摄影"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "两位成年女性在现代商业健身房进行高强度锻炼后的超写实随拍镜面自拍。竖屏智能手机拍摄，全身构图。左侧是一位肤色白皙的成年女性，留着长长的自然波浪红棕色头发，身穿修身黑色短款运动 T 恤和紧身米白色运动短裤。她以放松的三分之四侧身姿势站立，看向镜子，带着淡淡的真诚微笑。右侧是一位肤色黝黑的成年女性，留着长长的深棕色湿发，身穿修身长袖灰色运动上衣和配套的灰色运动短裤。她将现代智能手机举在胸前进行镜面自拍，表情放松，带着一丝锻炼后的疲惫。背景是巨大的健身房落地镜，反射出真实的场景，可以看到成排的器械、长凳、龙门架、哑铃和健身器材。深色橡胶健身房地板，工业风现代健身中心室内设计，柔和的灰黑色调，头顶荧光照明。两位女性均呈现自然的皮肤纹理、运动后的轻微汗渍、逼真的发丝、真实的运动服面料以及符合人体工学的形态。自然智能手机摄影，随拍感，真实的透视效果，轻微的广角手机镜头畸变，细腻的镜面反射，逼真的阴影，平衡的曝光，略带瑕疵的日常照片，纪实健身摄影美学，超写实，高细节，无影棚灯光，无美颜修图。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418038160_828lbh_HROJon8W8AQo8V0.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418038160_828lbh_HROJon8W8AQo8V0.jpg"
+      ],
+      "author": "dripverse",
+      "authorHandle": "dripverseai",
+      "originalPostUrl": "https://x.com/dripverseai/status/2095169844949680481",
+      "publishedAt": "2026年9月2日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "dripverse",
+      "previewSourceUrl": "https://x.com/dripverseai/status/2095169844949680481",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33277",
+      "attributionText": "提示词与效果图：dripverse；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-5-24d85987bdeb",
+      "index": 40005,
       "title": "个人资料 / 头像 - 电影感城市黄昏人像",
       "originalTitle": "个人资料 / 头像 - 电影感城市黄昏人像",
       "description": "一个用于生成高质量竖屏人像的电影感提示词，画面主体为水中女性，背景为虚化的城市景观。",
@@ -446,11 +618,54 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-2-fb32c2b2d8e8",
-      "index": 40002,
+      "id": "nano-banana-6-1157b5fbd192",
+      "index": 40006,
+      "title": "个人资料 / 头像 - Netflix 风格电影感肖像",
+      "originalTitle": "个人资料 / 头像 - Netflix 风格电影感肖像",
+      "description": "一款专为利用参考图实现高面部一致性而设计的电影感肖像提示词，非常适合竖屏视频或社交媒体画幅。",
+      "category": "社媒 / 品牌",
+      "categories": [
+        "社媒 / 品牌"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "9:16",
+      "prompt": "超写实 IMAX 级 Netflix 风格电影感肖像，9:16 竖屏画幅，使用上传的图片作为主要面部参考以实现最大程度的面部一致性，{argument name=\"subject\" default=\"一位美丽的年轻女性模特\"}。身穿 {argument name=\"outfit\" default=\"休闲、丝滑的灰褐色纽扣翻领衬衫\"}，佩戴 {argument name=\"accessories\" default=\"经典的银色圆圈耳环和时尚的黑色旅行者太阳镜\"}。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418035705_g3tq71_HRINoyVaoAAU9Lk.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418035705_g3tq71_HRINoyVaoAAU9Lk.jpg"
+      ],
+      "author": "Aynah",
+      "authorHandle": "AynahhX",
+      "originalPostUrl": "https://x.com/AynahhX/status/2094751793444192486",
+      "publishedAt": "2026年9月1日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Aynah",
+      "previewSourceUrl": "https://x.com/AynahhX/status/2094751793444192486",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33273",
+      "attributionText": "提示词与效果图：Aynah；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-7-fb32c2b2d8e8",
+      "index": 40007,
       "title": "个人资料 / 头像 - 青色调工装连体裤摄影肖像",
       "originalTitle": "个人资料 / 头像 - 青色调工装连体裤摄影肖像",
       "description": "一个专注于青色调色彩搭配、高细节皮肤纹理以及浅景深效果的摄影肖像提示词。",
@@ -489,11 +704,53 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-3-95a14a3cd403",
-      "index": 40003,
+      "id": "nano-banana-8-c1439192f93c",
+      "index": 40008,
+      "title": "个人资料 / 头像 - 青色头发宁静肖像插画",
+      "originalTitle": "个人资料 / 头像 - 青色头发宁静肖像插画",
+      "description": "一个绘画风格的插画提示词，描绘了一位留着青蓝色头发、戴着芥末黄针织帽的宁静女性，具有柔和的铅笔质感和金色喷溅效果。",
+      "category": "插画 / 漫画",
+      "categories": [
+        "插画 / 漫画"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "一张宁静年轻女性的特写肖像，她闭着双眼，神情平和。她皮肤白皙，脸颊透着柔和的红晕，鼻梁和脸颊上有细小的雀斑，双唇呈淡粉色。她留着一头飘逸的长发，发色为 {argument name=\"hair color\" default=\"鲜艳浓郁的青蓝色\"}，柔和的波浪发丝环绕着脸庞。她戴着一顶 {argument name=\"hat\" default=\"舒适、粗针织的芥末黄针织帽\"}，帽檐压得很低，脖子上围着一条配套的厚实、有质感的芥末黄羊毛围巾。梦幻的绘画风格插画，带有柔和的彩色铅笔质感、柔和的阴影以及细微的颗粒感，背景为 {argument name=\"background\" default=\"深青色背景\"}，并点缀着精致的金色和白色油漆喷溅。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418044189_yy95wd_HRDqKJFbIAAPeWw.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418044189_yy95wd_HRDqKJFbIAAPeWw.jpg"
+      ],
+      "author": "𝑨𝒇𝒓𝒊𝒏",
+      "authorHandle": "afrinxai",
+      "originalPostUrl": "https://x.com/afrinxai/status/2094666563882545309",
+      "publishedAt": "2026年9月1日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "𝑨𝒇𝒓𝒊𝒏",
+      "previewSourceUrl": "https://x.com/afrinxai/status/2094666563882545309",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33084",
+      "attributionText": "提示词与效果图：𝑨𝒇𝒓𝒊𝒏；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-9-95a14a3cd403",
+      "index": 40009,
       "title": "个人资料 / 头像 - 深棕色头发女性肖像，搭配休闲盘发",
       "originalTitle": "个人资料 / 头像 - 深棕色头发女性肖像，搭配休闲盘发",
       "description": "一个高细节的女性肖像提示词，主角为深棕色头发、橄榄绿双眼的年轻女性，侧重于柔和光影与自然的皮肤纹理。",
@@ -531,11 +788,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-4-e86778f2b9b4",
-      "index": 40004,
+      "id": "nano-banana-10-e86778f2b9b4",
+      "index": 40010,
       "title": "个人资料 / 头像 - 写实电影感头像",
       "originalTitle": "个人资料 / 头像 - 写实电影感头像",
       "description": "一款超写实的摄影棚头像提示词，在保留参考照片面部特征的同时，添加戏剧性的伦勃朗光效。",
@@ -574,11 +831,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-5-2322d9303bad",
-      "index": 40005,
+      "id": "nano-banana-11-2322d9303bad",
+      "index": 40011,
       "title": "个人资料 / 头像 - 厚涂油画风格深情肖像",
       "originalTitle": "个人资料 / 头像 - 厚涂油画风格深情肖像",
       "description": "一个用于生成表现力强、具有厚重油画质感及动感漩涡背景的肖像画提示词，旨在传达强烈的运动感与能量。",
@@ -617,11 +874,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-6-fe46040b912b",
-      "index": 40006,
+      "id": "nano-banana-12-fe46040b912b",
+      "index": 40012,
       "title": "个人资料 / 头像 - 佩戴红色眼镜的写实自拍肖像",
       "originalTitle": "个人资料 / 头像 - 佩戴红色眼镜的写实自拍肖像",
       "description": "一份详细的提示词，用于生成一张年轻东亚女性的超写实室内自拍，展现柔和的自然光和独特的红色眼镜。",
@@ -662,11 +919,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-7-d832dea8d3ac",
-      "index": 40007,
+      "id": "nano-banana-13-d832dea8d3ac",
+      "index": 40013,
       "title": "个人资料 / 头像 - 亲密风格头巾肖像",
       "originalTitle": "个人资料 / 头像 - 亲密风格头巾肖像",
       "description": "一张关于佩戴灰粉色头巾女性的柔和、亲密特写肖像提示词，聚焦于温暖的灯光和细腻的质感。",
@@ -706,11 +963,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-8-b82040f098a7",
-      "index": 40008,
+      "id": "nano-banana-14-b82040f098a7",
+      "index": 40014,
       "title": "个人资料 / 头像 - 双重曝光水彩肖像",
       "originalTitle": "个人资料 / 头像 - 双重曝光水彩肖像",
       "description": "一个用于创作风格化双重曝光水彩肖像的详细提示词，描绘了一位坐在公园长椅上的女性，展现其优雅的装束与沉思的神情。",
@@ -748,11 +1005,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-9-dc10f218422d",
-      "index": 40009,
+      "id": "nano-banana-15-dc10f218422d",
+      "index": 40015,
       "title": "个人资料 / 头像 - 高级时尚杂志人像",
       "originalTitle": "个人资料 / 头像 - 高级时尚杂志人像",
       "description": "创作一张精致的奢华杂志封面人像，同时保留拍摄对象独特的面部特征和发型。",
@@ -796,11 +1053,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-10-6b29d040e55c",
-      "index": 40010,
+      "id": "nano-banana-16-6b29d040e55c",
+      "index": 40016,
       "title": "个人资料 / 头像 - 逼真的单反自拍人像",
       "originalTitle": "个人资料 / 头像 - 逼真的单反自拍人像",
       "description": "一个用于生成栩栩如生的单反风格自拍的详细提示词，重点在于自然光线、皮肤质感和眼神交流。",
@@ -838,11 +1095,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-11-9568e70de47a",
-      "index": 40011,
+      "id": "nano-banana-17-9568e70de47a",
+      "index": 40017,
       "title": "个人资料 / 头像 - 温馨卧室私密肖像",
       "originalTitle": "个人资料 / 头像 - 温馨卧室私密肖像",
       "description": "一张在温馨卧室场景中拍摄的东亚女性私密写实肖像，聚焦于柔和的灯光和自然的质感。",
@@ -883,11 +1140,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-12-196d25d7846a",
-      "index": 40012,
+      "id": "nano-banana-18-196d25d7846a",
+      "index": 40018,
       "title": "个人资料 / 头像 - 金色光影电影感肖像",
       "originalTitle": "个人资料 / 头像 - 金色光影电影感肖像",
       "description": "一幅令人惊叹的明暗对照法肖像，展现了一位女性，伴有精致的叶影和温暖的金色高光。",
@@ -926,11 +1183,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-13-4f702b13f5bd",
-      "index": 40013,
+      "id": "nano-banana-19-4f702b13f5bd",
+      "index": 40019,
       "title": "个人资料 / 头像 - 人造毛皮兜帽美妆人像",
       "originalTitle": "个人资料 / 头像 - 人造毛皮兜帽美妆人像",
       "description": "一个高分辨率美妆摄影提示词，用于拍摄一位沉浸在白色人造毛皮兜帽中的东亚女性亲密肖像。",
@@ -972,273 +1229,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-14-6115126774fa",
-      "index": 40014,
-      "title": "个人资料 / 头像 - 电影级斯巴达勇士头像",
-      "originalTitle": "个人资料 / 头像 - 电影级斯巴达勇士头像",
-      "description": "一份教程提示词，用于在保留用户面部特征的同时，创作出具有电影质感且气势磅礴的斯巴达勇士肖像。",
-      "category": "海报设计",
-      "categories": [
-        "海报设计"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "电影级、超写实肖像，将我呈现为 {argument name=\"warrior type\" default=\"强大的古斯巴达勇士\"} 风格，以戏剧性的侧面轮廓展示，背景全黑，佩戴装饰华丽的黑色金属斯巴达头盔，头盔上带有高耸的 {argument name=\"crest color\" default=\"深红色\"} 马鬃饰，同时确保我的整张脸完全露出且清晰可辨，不佩戴任何面具或遮挡物；添加抛光的黑色战甲，肩上披着深红色的斯巴达斗篷，强烈的低调摄影布光，锐利的红色轮廓光勾勒出头盔和斗篷边缘，深邃的阴影，高对比度，细腻的金属反射，神秘的英雄氛围，极简构图，照片级真实纹理，高级电影海报美学，高细节，戏剧性且气势逼人",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "极简",
-        "摄影感"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788071779381_5ed4ys_HQ3_TLGaYAAT4H0.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788071779381_5ed4ys_HQ3_TLGaYAAT4H0.jpg",
-        "https://cms-assets.youmind.com/media/1788071779435_t7nf4b_HQ3_TeXawAAL1FX.jpg",
-        "https://cms-assets.youmind.com/media/1788071779419_scpp7q_HQ3_Tv9bEAAUVdC.jpg",
-        "https://cms-assets.youmind.com/media/1788071782350_6ll0jw_HQ3_UAvagAACDN1.jpg"
-      ],
-      "author": "Shushant Lakhyani",
-      "authorHandle": "shushant_l",
-      "originalPostUrl": "https://x.com/shushant_l/status/2093610127773540612",
-      "publishedAt": "2026年8月29日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Shushant Lakhyani",
-      "previewSourceUrl": "https://x.com/shushant_l/status/2093610127773540612",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=32924",
-      "attributionText": "提示词与效果图：Shushant Lakhyani；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-15-1d055f616e59",
-      "index": 40015,
-      "title": "个人资料 / 头像 - 保持角色一致性的极简提示词",
-      "originalTitle": "个人资料 / 头像 - 保持角色一致性的极简提示词",
-      "description": "这是一条专为 Nano Banana 设计的指令，旨在通过仅关注构图变化而非重复描述细节，来保持角色的一致性。",
-      "category": "插画 / 漫画",
-      "categories": [
-        "插画 / 漫画"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "保持所附人物形象不变，仅更改 {argument name=\"change\" default=\"composition\"}",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "极简"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788071786561_dtq9w0_HQ37fJcaIAA1RBT.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788071786561_dtq9w0_HQ37fJcaIAA1RBT.jpg",
-        "https://cms-assets.youmind.com/media/1788071786672_tjlyn0_HQ37h4baMAAEWS5.jpg"
-      ],
-      "author": "あぎ",
-      "authorHandle": "agi_aibusi",
-      "originalPostUrl": "https://x.com/agi_aibusi/status/2093607090996818418",
-      "publishedAt": "2026年8月29日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "あぎ",
-      "previewSourceUrl": "https://x.com/agi_aibusi/status/2093607090996818418",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=32927",
-      "attributionText": "提示词与效果图：あぎ；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-16-d809336f3382",
-      "index": 40016,
-      "title": "个人资料 / 头像 - 复古人物胶片修复",
-      "originalTitle": "个人资料 / 头像 - 复古人物胶片修复",
-      "description": "一个图像转换提示词，在保持原始胶片颗粒感和精细背景纹理的同时，将服装颜色修改为粉色。",
-      "category": "创意发现",
-      "categories": [
-        "创意发现"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "一张基于 image_1.png 的高分辨率原始胶片抓拍照片，画面中年轻女性留着深色卷发，俏皮地坐在复古棕色皮扶手椅上。场景保留了她原本的姿态和淡粉色运动套装，但所有背景元素均呈现出清晰的焦点。唯一改动：将服装颜色修改为 {argument name=\"outfit color\" default=\"pastel pink\"} 运动套装，同时保留完全相同的面料纹理、褶皱、缝线、阴影和剪裁，不对款式进行任何重新设计或更改。带有华丽星状缝线的精细皮椅展现出清晰的纹理和质感。旁边放着复古模拟相机和一叠胶片底片的木制边桌清晰度极高，展现出镜头和纸张边缘的复杂细节。窗帘轮廓分明。将右侧墙上原本详细的数据铭牌完全替换为一块干净、精确且清晰易读的金属铭牌，上面仅刻有“{argument name=\"plaque text\" default=\"NOAH\"}”字样，采用锐利的雕刻字体，并带有逼真的金属反光。整个深焦场景中呈现出细腻的自然胶片颗粒感，强调了原始档案照片的美感，且没有任何视觉模糊。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "东方美学"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1787985291840_lhw55b_HQ0XP7QaMAAnLgu.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1787985291840_lhw55b_HQ0XP7QaMAAnLgu.jpg"
-      ],
-      "author": "Noah",
-      "authorHandle": "NoahNeku",
-      "originalPostUrl": "https://x.com/NoahNeku/status/2093354985962516910",
-      "publishedAt": "2026年8月28日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Noah",
-      "previewSourceUrl": "https://x.com/NoahNeku/status/2093354985962516910",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=32843",
-      "attributionText": "提示词与效果图：Noah；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-17-4d93821f0d04",
-      "index": 40017,
-      "title": "个人资料 / 头像 - 单色蝙蝠侠超级英雄肖像",
-      "originalTitle": "个人资料 / 头像 - 单色蝙蝠侠超级英雄肖像",
-      "description": "一份基于参考图像，用于创作电影感、低调单色超级英雄肖像的详尽提示词。",
-      "category": "海报设计",
-      "categories": [
-        "海报设计"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "创作一张电影感、超写实的单色肖像，灵感来源于所附的参考图像。让我站在画面中央，正对镜头，背景为黑暗、极简的黑色摄影棚环境。请保持我的真实面部完全可见且可辨认，不要佩戴任何面具、头盔、面部遮盖物或超级英雄头罩。让我身穿 {argument name=\"suit style\" default=\"精致的哑光黑色未来感战术套装\"}，带有雕塑感的装甲板、微妙的深色胸徽，以及自然披在肩上的厚重黑色斗篷。使用 {argument name=\"lighting\" default=\"来自正上方的强烈低调布光\"} 来照亮我的头顶、前额、面部轮廓、肩膀和胸部，同时让场景的其他部分逐渐消失在深邃的阴影中。营造强烈的明暗对比、深邃的黑色、微妙的高光、真实的皮肤纹理、自然的比例、锐利的双眼、紧闭的双唇，以及严肃、冷静且充满力量的表情。构图采用对称式，留出充足的负空间，背景几乎全黑，呈现高级电影摄影质感、戏剧性对比、氛围阴影、写实材质、极其细腻的织物与装甲纹理、细微的胶片颗粒感、电影海报级的审美、神秘而威严的氛围，主体锐利且阴影过渡柔和，呈现 85mm 肖像摄影风格，高动态范围，极度写实、电影感、美学、精致、极简、8K 细节。在我身后添加间距宽阔的极简白色文字 \"{argument name=\"name\" default=\"SHUSHANT\"}\"，并使其被我的头部和身体自然遮挡，以匹配高级暗黑超级英雄电影海报的排版与构图。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "极简",
-        "文字排版",
-        "摄影感"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1787985288642_cfsdr6_HQ0HMb2aYAAVYjK.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1787985288642_cfsdr6_HQ0HMb2aYAAVYjK.jpg",
-        "https://cms-assets.youmind.com/media/1787985290132_99pu32_HQ0HMw3bAAAimYY.jpg",
-        "https://cms-assets.youmind.com/media/1787985289908_76m3bm_HQ0HNTNacAA9kSD.jpg",
-        "https://cms-assets.youmind.com/media/1787985289351_kjp13x_HQ0HNhaaoAAUXjq.jpg"
-      ],
-      "author": "Shushant Lakhyani",
-      "authorHandle": "shushant_l",
-      "originalPostUrl": "https://x.com/shushant_l/status/2093337335794696434",
-      "publishedAt": "2026年8月28日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Shushant Lakhyani",
-      "previewSourceUrl": "https://x.com/shushant_l/status/2093337335794696434",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=32839",
-      "attributionText": "提示词与效果图：Shushant Lakhyani；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-18-afb6342e71de",
-      "index": 40018,
-      "title": "个人资料 / 头像 - 照片级写实户外毛衣肖像",
-      "originalTitle": "个人资料 / 头像 - 照片级写实户外毛衣肖像",
-      "description": "一个高保真肖像提示词，专注于保持 1:1 的外观、柔和的自然光以及户外草地背景下沉思的表情。",
-      "category": "创意发现",
-      "categories": [
-        "创意发现"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "1:1",
-      "prompt": "严格保持 1:1 的外观 — 面部、特征、比例、皮肤纹理、肤色、年龄、颜色和头发长度均不作更改，不进行修图。格式 4:5。照片级写实户外肖像，背景为 {argument name=\"setting\" default=\"高草丛\"}。相机：{argument name=\"lens\" default=\"全画幅，85mm，f/3.2\"}，ISO 200，1/500。身体略微舒展，头部端正，直视镜头，表情平静、深邃、略带沉思。右手抬起至下巴处，手指自然地搭在脸上。头发披散，呈柔和的波浪状，几缕细发因风吹过脸庞。服装：{argument name=\"clothing\" default=\"宽松蓝色针织毛衣，长袖，柔软质感羊毛\"}。柔和的自然日间光线，无直射阳光，微阴氛围，色调柔和，呈现自然质感，带有轻微胶片颗粒感。草地具有深度，无强烈的背景虚化。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1787985294805_ltx2rk_HQtWNtNaIAANeSm.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1787985294805_ltx2rk_HQtWNtNaIAANeSm.jpg"
-      ],
-      "author": "dreamy digital arts",
-      "authorHandle": "dreamydigiarts",
-      "originalPostUrl": "https://x.com/dreamydigiarts/status/2093292509552369967",
-      "publishedAt": "2026年8月28日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "dreamy digital arts",
-      "previewSourceUrl": "https://x.com/dreamydigiarts/status/2093292509552369967",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=32845",
-      "attributionText": "提示词与效果图：dreamy digital arts；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-19-9ea49e4711fa",
-      "index": 40019,
-      "title": "个人资料 / 头像 - 男士奢华时尚栏杆大片",
-      "originalTitle": "个人资料 / 头像 - 男士奢华时尚栏杆大片",
-      "description": "生成一张高对比度的男士时尚编辑大片，展示一位身穿飞行员夹克的帅气男性倚靠在豪华庄园的石栏杆旁。",
-      "category": "创意发现",
-      "categories": [
-        "创意发现"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "一位二十出头、自信帅气的男性位于画面中央，采用低角度拍摄，呈现倚靠姿势，重心偏移，双肩平齐。他身穿一件 {argument name=\"jacket style\" default=\"厚实的黑色皮质飞行员夹克\"}，领口带有醒目的大号棕褐色羊羔毛，内搭灰色高领毛衣，下身搭配黑色长裤。他面部表情经过精心设计，显得成熟干练，嘴唇闭合，眉毛放松，双眼微眯。左手置于胸前下方，握着一副黑色皮手套，指关节清晰可见；右手轻轻搭在左手上，拇指可见，自然地固定住手套。他倚靠在纯白色的石栏杆上，栏杆由旋转式混凝土立柱和横跨前景的平坦扶手组成。深邃的空间感展现出清晰、富裕的户外庄园环境。主体后方矗立着一座宏伟的古典庄园建筑，拥有平整的哑光灰白色外墙、建筑线条、深色板岩屋顶、老虎窗以及带有深色玻璃的白色边框窗户。一棵高大茂盛的圆锥形常青树耸立在屋顶中心线上方，左侧辅以大型落叶乔木，右侧前景为浅灰色实心瓷砖步道。场景沐浴在来自单一光源的明亮、高指向性自然硬光下，营造出一种冷峻、充满活力且高对比度的氛围，画面以浓郁的黑色、清脆的白色和鲜艳明亮的天蓝色为基调。下巴下方、面部右侧、夹克右侧以及栏杆沿线投下了深黑色、边缘锐利的戏剧性阴影。同时，明亮的高光照亮了面部左侧、头发、纹理丰富的棕褐色羊羔毛领以及纯白色建筑的左侧立面。图像呈现为一张极其锐利、写实的当代男士时尚生活方式编辑大片，使用 35mm 至 50mm 镜头拍摄，光圈设定在 f/5.6 至 f/8，快门速度快至 1/1000 秒，ISO 100 以过滤明亮的日光。后期处理采用了高对比度调色，压低阴影以加深服装的黑色质感，适当提升白色亮度，并增强了天空蓝的饱和度，最终呈现出一种干净的“老钱风”奢华美学，采用 4:5 画幅比例。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1787985291635_g18fx2_HQUZia2X0AAulKv.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1787985291635_g18fx2_HQUZia2X0AAulKv.jpg"
-      ],
-      "author": "Picts by AI",
-      "authorHandle": "pictsbyai",
-      "originalPostUrl": "https://x.com/pictsbyai/status/2093251740980187530",
-      "publishedAt": "2026年8月28日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Picts by AI",
-      "previewSourceUrl": "https://x.com/pictsbyai/status/2093251740980187530",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=32747",
-      "attributionText": "提示词与效果图：Picts by AI；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
       "id": "nano-banana-20-d6a0653ea45d",
@@ -1280,11 +1271,267 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-21-d6ef1ec92388",
+      "id": "nano-banana-21-e0b33d95e186",
       "index": 40021,
+      "title": "社交媒体帖子 - 神秘河流肖像",
+      "originalTitle": "社交媒体帖子 - 神秘河流肖像",
+      "description": "一张电影质感的肖像，描绘了一位站在雾气缭绕河流中的亚洲女性，伴有魔法水流特效，呈现 8k 高清分辨率与奇幻写实风格。",
+      "category": "社媒 / 品牌",
+      "categories": [
+        "社媒 / 品牌"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "一张电影质感的肖像，描绘了一位美丽的 {argument name=\"ethnicity\" default=\"亚洲\"} 女性，她腰部以下浸没在清澈且雾气缭绕的河流中，背景是壮丽的层叠瀑布，周围环绕着 {argument name=\"surroundings\" default=\"茂密的绿色森林植被\"}。她身着一件 {argument name=\"outfit\" default=\"优雅的白色缎面传统长袍\"}，领口交叠并系有腰带，搭配精致的金色臂环和华丽的金色项链。她乌黑的长直发随风飘动，仿佛置身于神秘的微风之中。她神情专注而强烈，双手张开，动态的水花与漩涡在她周围神奇地向上盘旋。超写实的体积光束穿透森林树冠，水滴细节丰富，光影效果极具戏剧性，呈现出奇幻写实风格，8k 分辨率。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418039624_a5uzdn_HRQqkpLb0AAgqgQ.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418039624_a5uzdn_HRQqkpLb0AAgqgQ.jpg"
+      ],
+      "author": "Lavinia",
+      "authorHandle": "laviniavelle",
+      "originalPostUrl": "https://x.com/laviniavelle/status/2095346791919280207",
+      "publishedAt": "2026年9月3日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Lavinia",
+      "previewSourceUrl": "https://x.com/laviniavelle/status/2095346791919280207",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33278",
+      "attributionText": "提示词与效果图：Lavinia；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-22-a443fca32220",
+      "index": 40022,
+      "title": "社交媒体帖子 - 奢华花园生活方式人像",
+      "originalTitle": "社交媒体帖子 - 奢华花园生活方式人像",
+      "description": "一张南亚女性在现代花园中的高分辨率生活方式摄影作品，侧重于面部特征保留与照片级真实感。",
+      "category": "人像摄影",
+      "categories": [
+        "人像摄影"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "100% 保留面部 ID 和表情，创作一张超写实、高分辨率的竖版生活方式时尚摄影作品，在构图、取景、姿势、造型、环境、光影、色彩及摄影真实感方面尽可能贴合参考图像。一位 {argument name=\"subject\" default=\"年轻南亚女性\"}，拥有自然柔美的曲线身材，优雅地坐在 {argument name=\"setting\" default=\"奢华现代花园\"} 中的 {argument name=\"surface\" default=\"深炭灰色/黑色石砖台阶\"} 上。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418039764_j3iil0_HRQnEOXb0AASizV.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418039764_j3iil0_HRQnEOXb0AASizV.jpg"
+      ],
+      "author": "aynelle",
+      "authorHandle": "aynellex",
+      "originalPostUrl": "https://x.com/aynellex/status/2095342691781591157",
+      "publishedAt": "2026年9月3日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "aynelle",
+      "previewSourceUrl": "https://x.com/aynellex/status/2095342691781591157",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33279",
+      "attributionText": "提示词与效果图：aynelle；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-23-b224d4bfea1e",
+      "index": 40023,
+      "title": "社交媒体帖子 - 机场黄金时刻三联画",
+      "originalTitle": "社交媒体帖子 - 机场黄金时刻三联画",
+      "description": "一种精细的多面板三联画布局，展示了一位年轻女性在黄金时刻的机场场景，重点在于保持面部特征的一致性。",
+      "category": "社媒 / 品牌",
+      "categories": [
+        "社媒 / 品牌"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "9:16",
+      "prompt": "三联画 9:16，左侧大面板 + 右侧 2 个堆叠面板，细白边框。使用 100% 与参考图一致的面部特征，FACE LOCKED；年轻白人女性，有雀斑，{argument name=\"hair style\" default=\"深棕色层次感发型，空气刘海\"}。{argument name=\"outfit\" default=\"酒红色/米色条纹橄榄球衫，浅色阔腿牛仔裤，白色运动鞋，酒红色发圈\"}。银色罗纹行李箱 + 酒红色蝴蝶结包。{argument name=\"scene\" default=\"左侧：站在行李箱旁，举起手臂比耶，灿烂微笑。右上：手放在头发上，闭眼，幸福微笑。\"}",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418032272_1v08pk_HROBzTMbMAA4ruh.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418032272_1v08pk_HROBzTMbMAA4ruh.jpg"
+      ],
+      "author": "aynelle",
+      "authorHandle": "aynellex",
+      "originalPostUrl": "https://x.com/aynellex/status/2095160983287484551",
+      "publishedAt": "2026年9月2日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "aynelle",
+      "previewSourceUrl": "https://x.com/aynellex/status/2095160983287484551",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33267",
+      "attributionText": "提示词与效果图：aynelle；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-24-3aff906c3837",
+      "index": 40024,
+      "title": "社交媒体帖子 - 电影感男性正式晚宴肖像",
+      "originalTitle": "社交媒体帖子 - 电影感男性正式晚宴肖像",
+      "description": "一张精致的狗仔队风格夜间肖像，一名身着燕尾服的男子站在一辆复古汽车旁，运用高对比度光影和“老钱风”美学。",
+      "category": "UI / 产品",
+      "categories": [
+        "UI / 产品"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "3:4",
+      "prompt": "一位年轻成年男性 {argument name=\"subject\" default=\"male\"} 身体呈 45 度角自然侧转，双肩放松，身着 {argument name=\"clothing\" default=\"经典的深黑色燕尾服、领结、挺括的白色衬衫领口以及精致的口袋巾\"}。他英俊而严肃的侧脸看向远方，嘴唇紧闭，神情中性，眉毛自然舒展。他浓密的中短发向后梳理，发型经典且低调，没有明显的侧分，使用了强力发油定型，呈现出带有梳理痕迹的湿润光泽感，尽管发油厚重，但在头顶和后脑勺处仍可见发丝的自然纹理。他的左手随意插在左侧裤兜里，露出洁白的法式袖口和腕间的金属正装腕表。他站在 {argument name=\"background\" default=\"右下角前景中一辆洁净的复古汽车旁，背景是深邃的暗黑色草地\"}，汽车漆面光亮如雪，配有圆形镀铬侧后视镜，车内仪表盘呈现出温暖的棕色调。深邃的空间背景中，左中地平线上隐约可见模糊的白色车灯光晕，右上方的天空下，枯萎且错综复杂的落叶树枝呈现出剪影效果。来自左前方的强烈人工闪光灯刺破了这种富有阶层疏离感的神秘氛围，在面部右侧、颈部和深色西装上投下深黑且边缘锐利的阴影。明亮的镜面高光精准地捕捉到他明亮的颧骨、下颌线、鼻梁以及复古汽车弯曲的镀铬和漆面。冷色调、高对比度且去饱和的互补色调中，前景深邃的黑色与纯白色的汽车及细节形成强烈对比，背景是逐渐过渡到温暖琥珀色地平线的暮蓝色天空，柔和地映射在他的肤色上。采用 35mm 至 50mm 镜头、f/4 至 f/5.6 光圈、1/100s 快门速度和 ISO 800 至 1600，以直拍视角呈现出一张写实、锐利的数字摄影作品，融合了狗仔队风格的夜间肖像与优雅的“老钱风”电影美学。这张具有深景深效果的编辑类图像最终通过压暗黑色、提升中间调对比度、略微调冷的白平衡以及大气的数字胶片噪点进行润色，采用 3:4 竖构图比例。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418042230_lf7mzr_HRN9BM3aAAEKjmT.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418042230_lf7mzr_HRN9BM3aAAEKjmT.jpg"
+      ],
+      "author": "AI Qoro",
+      "authorHandle": "AIqoro",
+      "originalPostUrl": "https://x.com/AIqoro/status/2095155739803455918",
+      "publishedAt": "2026年9月2日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "AI Qoro",
+      "previewSourceUrl": "https://x.com/AIqoro/status/2095155739803455918",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33283",
+      "attributionText": "提示词与效果图：AI Qoro；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-25-ecfccb84e525",
+      "index": 40025,
+      "title": "社交媒体帖子 - Old-Money 风格晚宴礼服夜间肖像",
+      "originalTitle": "社交媒体帖子 - Old-Money 风格晚宴礼服夜间肖像",
+      "description": "一张精致的狗仔队风格夜间肖像，拍摄了一位身穿晚宴礼服的男士站在一辆复古汽车旁。",
+      "category": "UI / 产品",
+      "categories": [
+        "UI / 产品"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "3:4",
+      "prompt": "一位年轻男性以 45 度角侧身站立，姿态从容，双肩放松，身着 {argument name=\"outfit\" default=\"经典的深黑色晚宴礼服、领结、挺括的纯白色衬衫领口以及精致的口袋巾\"}。他英俊而严肃的面容以侧影呈现，目光望向别处，嘴唇紧闭，神情中性，眉毛舒展。他浓密的中短发向后梳理，紧贴耳后，呈现出低容量的经典锥形发型，没有明显的侧分，使用了强力发油进行重度造型，营造出带有明显梳理痕迹的湿润光泽感，尽管发胶厚重，但在头顶和后部仍能看到发丝的自然纹理。他的左手随意插在左裤兜里，露出了洁白的法式袖口和手腕上的一块金属正装腕表。他站在深黑色的草地上，身旁是一辆 {argument name=\"vehicle\" default=\"崭新的复古汽车\"}，占据了右下角的前景，车身漆面光洁如雪，配有镀铬圆形侧后视镜，内饰仪表盘呈现出温暖的棕色调。深邃的空间背景中，左中部的地平线上隐约可见模糊的白色车灯光芒，右上方的天空映衬出落叶乔木枯枝错综复杂的剪影。来自左前方的 {argument name=\"lighting\" default=\"强烈且具有指向性的人造闪光灯\"} 刺破了那种富有阶层特有的疏离感与神秘氛围，在面部右侧、颈部和深色西装上投下了浓重且边缘锐利的黑色阴影。明亮的高光精准地捕捉到他被照亮的颧骨、下颌线、鼻梁以及复古汽车弯曲的镀铬件和漆面。整体色调为冷色调、高对比度且低饱和度的互补色，前景中深邃的黑色与纯白色的车身及细节形成强烈对比，背景是逐渐过渡到温暖琥珀色地平线的暮蓝色天空，柔和地映射在他的肤色上。采用正面拍摄，呈现出写实且极其锐利的数码摄影效果，融合了狗仔队风格的夜间肖像与优雅的 Old-Money 电影美学，使用 35mm 至 50mm 镜头，光圈 f/4 至 f/5.6，快门速度 1/100s，ISO 800 至 1600。这张具有深景深的编辑类图像最终呈现出压暗的黑色、提升的中间调对比度、略微偏冷的白平衡以及充满氛围感的数码胶片颗粒感，采用 3:4 竖构图比例。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418040974_oxzvic_HQ_c39wXUAAOvy3.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418040974_oxzvic_HQ_c39wXUAAOvy3.jpg"
+      ],
+      "author": "Picts by AI",
+      "authorHandle": "pictsbyai",
+      "originalPostUrl": "https://x.com/pictsbyai/status/2095063680148971624",
+      "publishedAt": "2026年9月2日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Picts by AI",
+      "previewSourceUrl": "https://x.com/pictsbyai/status/2095063680148971624",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33280",
+      "attributionText": "提示词与效果图：Picts by AI；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-26-4387e1245f8e",
+      "index": 40026,
+      "title": "社交媒体帖子 - 电影感街头时尚海报",
+      "originalTitle": "社交媒体帖子 - 电影感街头时尚海报",
+      "description": "一款利用参考图确保人物一致性的街头时尚海报提示词，包含黑白与彩色双重肖像。",
+      "category": "海报设计",
+      "categories": [
+        "海报设计"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "超写实电影感街头时尚海报，4:5 竖构图。使用参考图中的人物，并保持高度精准的 {argument name=\"subject features\" default=\"面部特征、发型、胡须、肤色及自然身份\"}。展示同一名男性的两个形象：背景中是一个高对比度的 {argument name=\"background style\" default=\"黑白特写肖像\"}，佩戴着 {argument name=\"accessory\" default=\"深色墨镜\"}；前景中是一个较小的全身彩色版本，姿态强劲有力。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418038012_if346e_HRMXIdyb0AAsLTY.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418038012_if346e_HRMXIdyb0AAsLTY.jpg"
+      ],
+      "author": "Muhammad Jamil",
+      "authorHandle": "JamilAI55",
+      "originalPostUrl": "https://x.com/JamilAI55/status/2095043721385660819",
+      "publishedAt": "2026年9月2日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Muhammad Jamil",
+      "previewSourceUrl": "https://x.com/JamilAI55/status/2095043721385660819",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33275",
+      "attributionText": "提示词与效果图：Muhammad Jamil；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-27-d6ef1ec92388",
+      "index": 40027,
       "title": "社交媒体帖子 - 女性时尚编辑拼贴肖像",
       "originalTitle": "社交媒体帖子 - 女性时尚编辑拼贴肖像",
       "description": "一份详细的提示词，用于创作浪漫、柔美的女性时尚编辑拼贴画，包含写实风格的年轻女性以及植物和花卉元素。",
@@ -1300,9 +1547,9 @@
       "tags": [
         "Nano Banana"
       ],
-      "image": "https://cms-assets.youmind.com/media/1788332551134_zixyxe_HRLl2eBaoAAG4v_.jpg",
+      "image": "https://cms-assets.youmind.com/media/1788418039630_dhdd3n_HRLl2eBaoAAG4v_.jpg",
       "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788332551134_zixyxe_HRLl2eBaoAAG4v_.jpg"
+        "https://cms-assets.youmind.com/media/1788418039630_dhdd3n_HRLl2eBaoAAG4v_.jpg"
       ],
       "author": "aynelle",
       "authorHandle": "aynellex",
@@ -1322,11 +1569,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-22-d998a153cb6f",
-      "index": 40022,
+      "id": "nano-banana-28-d998a153cb6f",
+      "index": 40028,
       "title": "社交媒体帖子 - 俏皮的头巾肖像",
       "originalTitle": "社交媒体帖子 - 俏皮的头巾肖像",
       "description": "一张年轻女性佩戴长春花蓝头巾的特写肖像提示词，展现了俏皮的半眨眼表情和柔和的自然光影。",
@@ -1367,11 +1614,56 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-23-137c46b749b5",
-      "index": 40023,
+      "id": "nano-banana-29-f5b6542a6e71",
+      "index": 40029,
+      "title": "社交媒体帖子 - 空灵海洋奇幻动漫插画",
+      "originalTitle": "社交媒体帖子 - 空灵海洋奇幻动漫插画",
+      "description": "一个详细的动漫风格提示词，描绘了一位拥有水蓝色长发的空灵女性，置身于受古希腊美学启发的海洋奇幻环境中。",
+      "category": "海报设计",
+      "categories": [
+        "海报设计"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "9:16",
+      "prompt": "空灵的海洋奇幻动漫插画，描绘了一位美丽的年轻女性，采用 9:16 竖构图。她拥有精致年轻的面容、大而富有表现力的蓝灰色眼睛、柔和的桃色皮肤、小巧优雅的鼻子和明亮温柔的微笑。她的头发长而蓬松 {argument name=\"hair color\" default=\"水蓝色和绿松石色\"}，仿佛被水下洋流带动，在身体周围戏剧性地飘动。松散的卷发环绕在脸颊两侧，编织着装饰性的发辫，并点缀着海洋风格的小饰品。\n\n她身穿一件优雅飘逸的 {argument name=\"gown color\" default=\"海蓝色\"} 奇幻礼服，灵感源自 {argument name=\"aesthetic\" default=\"古希腊和美人鱼\"} 美学。礼服采用贴身的浅水色抹胸上衣，配有柔和的褶皱面料和细腻的半透明层叠设计。宽大的华丽腰带环绕腰间，装饰着金绳、贝壳状细节、珍珠和精致的金属饰品。裙摆长而飘逸，轻盈灵动，层叠的半透明蓝色面料向外大幅度展开。\n\n配饰\n精致的金色额饰\n层叠的珍珠和绿松石项链\n小贝壳和花朵发饰\n金手镯和细手环\n优雅的装饰性耳环\n全身点缀着精细的金色细节\n姿势\n\n她优雅地站立，双臂举过头顶，双手轻轻交叠，勾勒出优雅流动的轮廓。身体微微转向，脸部看向观众。她蓝色的长发和裙摆在周围剧烈飘动，营造出动感和魔法能量。\n\n背景\n\n一个奇幻的海洋环境，充满了汹涌的绿松石色波浪、泡沫状的白水、漂浮的水滴、柔和的薄雾以及流动的蓝色水带。构图仿佛她正从神奇的海洋中浮现。白色的负空间与浅水色调形成了鲜明的对比，与生动的绿松石色元素相得益彰。\n\n艺术风格\n\n高细节日本奇幻插画，优雅动漫角色艺术，水彩和水墨画，细腻的线条，柔和的赛璐珞阴影，绘画质感，发光高光，飘逸的面料，动态的头发运动，复杂的服装设计，神奇的海洋氛围，优雅的女性构图，梦幻般的奇幻海报美学。\n\n调色板：绿松石色、水蓝色、浅青色、象牙白、柔和金色、细腻的桃色肤色。\n\n负面提示词：写实照片、3D CGI、塑料质感、现代服装、暗淡色彩、解剖结构扭曲、多余的手指、畸形的手、不对称的眼睛、凌乱的面部特征、低细节、模糊的艺术作品、粗重的轮廓线、文字、水印、标志。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "3D",
+        "东方美学"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418045895_rn9hdl_HRGyrx8acAAV86w.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418045895_rn9hdl_HRGyrx8acAAV86w.jpg",
+        "https://cms-assets.youmind.com/media/1788418043979_ry3lb1_HRGys9Xa8AAHjok.jpg"
+      ],
+      "author": "𝑨𝒇𝒓𝒊𝒏",
+      "authorHandle": "afrinxai",
+      "originalPostUrl": "https://x.com/afrinxai/status/2094817562093875243",
+      "publishedAt": "2026年9月1日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "𝑨𝒇𝒓𝒊𝒏",
+      "previewSourceUrl": "https://x.com/afrinxai/status/2094817562093875243",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33206",
+      "attributionText": "提示词与效果图：𝑨𝒇𝒓𝒊𝒏；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-30-137c46b749b5",
+      "index": 40030,
       "title": "社交媒体帖子 - 韩系时尚日落拼贴画",
       "originalTitle": "社交媒体帖子 - 韩系时尚日落拼贴画",
       "description": "生成一张多画幅的生活方式拼贴画，展现一位女性在黄金时刻公园中的身影，呈现超大款酒红色服装与韩系审美风格。",
@@ -1410,11 +1702,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-24-51a8d7d7e9e8",
-      "index": 40024,
+      "id": "nano-banana-31-51a8d7d7e9e8",
+      "index": 40031,
       "title": "社交媒体帖子 - Netflix 风格电影感人像",
       "originalTitle": "社交媒体帖子 - Netflix 风格电影感人像",
       "description": "一款专为 Netflix 风格视觉效果设计的高端电影感人像提示词，强调与参考图像的面部一致性，并呈现现代休闲时尚美学。",
@@ -1453,86 +1745,44 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-25-141935cf8bfa",
-      "index": 40025,
-      "title": "社交媒体帖子 - 羽毛丝绸裙镜面自拍",
-      "originalTitle": "社交媒体帖子 - 羽毛丝绸裙镜面自拍",
-      "description": "一个用于在奢华绿色大理石浴室中拍摄羽毛装饰丝绸裙高级时装镜面自拍的结构化 JSON 提示词。",
-      "category": "UI / 产品",
+      "id": "nano-banana-32-cc17bc7405ad",
+      "index": 40032,
+      "title": "社交媒体帖子 - 复古未来主义橙色主题时尚肖像",
+      "originalTitle": "社交媒体帖子 - 复古未来主义橙色主题时尚肖像",
+      "description": "一张具有 1960-70 年代复古氛围的风格化时尚肖像，主角是一位佩戴超大号橙色墨镜的年轻女性，背景融入了日式纺织图案元素。",
+      "category": "海报设计",
       "categories": [
-        "UI / 产品"
+        "海报设计"
       ],
       "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "{\n  \"core_content\": {\n    \"main_description\": \"一位时尚的年轻女性在奢华浴室中进行镜面自拍，身穿 {argument name=\"outfit\" default=\"优雅的白色丝绸吊带裙，配有羽毛装饰\"}，搭配金色手镯和蓝色手提包。\"\n  },\n  \"subjects\": [\n    {\n      \"identity\": \"年轻女性\",\n      \"spatial_position\": {\n        \"placement\": \"画面中心\",\n        \"scale\": \"中景\"\n      },\n      \"pose\": {\n        \"body_narrative\": \"身体直立并略微倾斜，一只手抬起轻触下巴，姿态从容优雅，另一只手拿着智能手机捕捉镜中影像。\",\n        \"hand_gesture\": \"右手轻触下巴，左手拿着智能手机。\"\n      },\n      \"eye_gaze\": {\n        \"direction\": \"看向镜中倒影\",\n        \"contact\": \"直视\",\n        \"focus\": \"清晰\"\n      },\n      \"appearance\": {\n        \"features\": \"棕色长发扎成高马尾，肤色年轻，自然妆容\",\n        \"expression\": \"宁静且中性\"\n      },\n      \"attire\": {\n        \"outer_layer\": \"白色缎面吊带裙，配有垂坠领口和极具视觉冲击力的羽毛装饰高开叉\",\n        \"accessories\": \"右手佩戴多层金色手镯，左手佩戴金戒指，背着鲜艳的钴蓝色皮革单肩包\"\n      }\n    }\n  ],\n  \"environment\": {\n    \"scene\": \"豪华酒店浴室\",\n    \"background_elements\": [\n      {\n        \"object\": \"墙壁\",\n        \"description\": \"{argument name=\"wall material\" default=\"深森林绿大理石，带有白色纹理\"}\"\n      },\n      {\n        \"object\": \"镜子\",\n        \"description\": \"带有细金框的大型圆形镜子\"\n      }\n    ]\n  },\n  \"aesthetics\": {\n    \"art_style\": \"高级时装社交媒体摄影，干净的审美风格\",\n    \"lighting\": {\n      \"key_light\": \"温暖的室内梳妆台灯光，柔和且漫射\",\n      \"shadows\": \"极少，阴影柔和\"\n    },\n    \"camera\": {\n      \"angle\": \"平视\",\n      \"lens\": \"智能手机人像镜头\"\n    }\n  }\n}",
+      "ratio": "9:16",
+      "prompt": "风格化的复古未来主义时尚肖像，{argument name=\"subject\" default=\"美丽的年轻女性\"}，9:16 竖构图。画面展示了她从肩膀以上的部位，正对镜头，头部微微上扬，展现出自信、梦幻且前卫的时尚感。她留着一头自然垂落的长波浪深色秀发，发丝清晰可见，在肩部周围略显凌乱。她的皮肤呈现出柔和的暖米色调，带有细腻真实的质感。她佩戴着一副超大号圆形墨镜，镜片为深半透明红橙色，配以纤细的金属镜框，遮住了大部分眼睛。她的嘴唇丰满、有光泽，微微张开，涂着柔和的珊瑚红色唇膏。她的五官精致对称，体现了高级的时尚审美。她穿着一件 {argument name=\"outfit\" default=\"鲜艳的橙红色图案服装，灵感源自复古日式纺织图案\"}，在肩部和领口处可见。背景与艺术指导：大胆的暖金橙色纹理背景，头部后方有一个居中的大红橙色太阳圆环。在构图周围添加微妙的手绘抽象线条、精致的涂鸦、淡淡的油漆痕迹、颗粒感以及复古印刷瑕疵。整体美学应结合 {argument name=\"style\" default=\"1960-70 年代复古海报艺术\"}、日式平面设计、当代时尚插画和电影级时尚肖像摄影。强烈的橙色、红色、金色和柔和的青色调构成了引人注目的配色方案。纹理与渲染：高度细腻的墨水与绘画质感、精细的交叉排线、微妙的半色调印刷、纸张颗粒感、略显不完美的丝网印刷边缘、分层插画纹理、柔和的氛围阴影、逼真的发丝细节、精致的面部渲染、艺术化的瑕疵，呈现出高级时尚杂志封面的美感。构图：主体居中，对称式构图，特写肖像，以红色大墨镜为主要视觉焦点，视觉层级清晰，画面简洁，竖版海报构图。",
       "promptType": "original-public-github",
       "featured": false,
       "tags": [
         "Nano Banana",
+        "3D",
+        "文字排版",
         "摄影感"
       ],
-      "image": "https://cms-assets.youmind.com/media/1788332544181_wyk165_HRH1KzkacAAempt.jpg",
+      "image": "https://cms-assets.youmind.com/media/1788418044519_f75tgr_HRGotwGaoAAltcy.jpg",
       "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788332544181_wyk165_HRH1KzkacAAempt.jpg"
-      ],
-      "author": "AI Qoro",
-      "authorHandle": "AIqoro",
-      "originalPostUrl": "https://x.com/AIqoro/status/2094724888883761657",
-      "publishedAt": "2026年9月1日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "AI Qoro",
-      "previewSourceUrl": "https://x.com/AIqoro/status/2094724888883761657",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33183",
-      "attributionText": "提示词与效果图：AI Qoro；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-26-8b707beb0961",
-      "index": 40026,
-      "title": "社交媒体帖子 - 质感油漆飞溅肖像",
-      "originalTitle": "社交媒体帖子 - 质感油漆飞溅肖像",
-      "description": "一个极具特写的肖像提示词，专注于超写实的皮肤纹理以及涂抹在脸部色彩鲜艳、厚重的油漆飞溅效果。",
-      "category": "人像摄影",
-      "categories": [
-        "人像摄影"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "超写实电影感特写肖像，拍摄一位年轻女性，正面朝向镜头。她的面容自然美丽，拥有深邃传神的深褐色眼睛、轮廓分明的眉毛、柔和写实的面部特征、丰满自然的双唇以及温暖的中性肤色。她留着凌乱、微湿的深棕色/黑色长发，自然地垂落在脸颊和肩头，每一根发丝都清晰可见。\n\n她的整张脸覆盖着厚重、有质感且富有表现力的油漆飞溅和笔触，颜色为 {argument name=\"paint colors\" default=\"鲜艳的油漆——生动的绿松石色、青色、红色、橙色、黄色、白色以及少许绿色\"}。油漆看起来像是物理涂抹在真实皮肤上的，带有层叠的纹理、细小的液滴、涂抹痕迹、裂纹以及凸起的笔触细节。保持她的眼睛、嘴唇和面部结构在油漆下清晰可辨。部分油漆自然地延伸到她的颈部和衣物上部。\n\n她穿着一件 {argument name=\"clothing\" default=\"深蓝色艺术感上衣\"}，上面带有细微的彩色油漆印记。背景为深沉、忧郁的蓝灰色摄影棚背景，经过柔和虚化处理，极简的背景与她脸上鲜艳的色彩形成了强烈的对比。\n\n光影：{argument name=\"lighting\" default=\"戏剧性的电影级摄影棚灯光\"}，左前方柔和的主光，细微的轮廓光将她深色的头发与背景分离开来，湿润的油漆和皮肤上呈现出写实的高光，深邃自然的阴影，高动态范围。\n\n摄影：极致的面部细节，写实的毛孔，细致的发丝，自然的皮肤纹理，锐利的双眼，浅景深，85mm 肖像镜头，f/1.8，专业编辑摄影，细腻的胶片颗粒感，丰富的色调范围，照片级色彩分级，精致的艺术肖像美学。\n\n构图：居中对称的人脸，紧凑的头部和肩部取景，相机与眼睛齐平，直接的眼神交流，主体周围有深色的负空间。\n\n负面提示词：卡通，动漫，CGI 感，塑料感皮肤，美颜滤镜，过度修图，面部扭曲，眼睛不对称，多余的面部特征，眼睛模糊，手部畸形，皮肤饱和度过高，人工合成头发，低细节，水印，文字，Logo。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "极简",
-        "摄影感"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788332542660_toib9o_HRGfUiRagAAM5Ip.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788332542660_toib9o_HRGfUiRagAAM5Ip.jpg"
+        "https://cms-assets.youmind.com/media/1788418044519_f75tgr_HRGotwGaoAAltcy.jpg"
       ],
       "author": "𝑨𝒇𝒓𝒊𝒏",
       "authorHandle": "afrinxai",
-      "originalPostUrl": "https://x.com/afrinxai/status/2094711868824965198",
+      "originalPostUrl": "https://x.com/afrinxai/status/2094757166708076822",
       "publishedAt": "2026年9月1日",
       "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
       "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
       "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
       "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
       "previewOwner": "𝑨𝒇𝒓𝒊𝒏",
-      "previewSourceUrl": "https://x.com/afrinxai/status/2094711868824965198",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33184",
+      "previewSourceUrl": "https://x.com/afrinxai/status/2094757166708076822",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33192",
       "attributionText": "提示词与效果图：𝑨𝒇𝒓𝒊𝒏；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
       "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
       "rightsReviewStatus": "cc-by-4.0-public-github",
@@ -1540,354 +1790,54 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-27-7e85279e0ca3",
-      "index": 40027,
-      "title": "社交媒体帖子 - 夏季奢华时尚大片",
-      "originalTitle": "社交媒体帖子 - 夏季奢华时尚大片",
-      "description": "一份关于在凉亭中拍摄男性高对比度奢华时尚大片的综合提示词，包含对光影和质感的详细描述。",
-      "category": "社媒 / 品牌",
-      "categories": [
-        "社媒 / 品牌"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "一位 {argument name=\"subject\" default=\"留着短黑发和浓密胡须的古铜色皮肤成年男性\"} 正面居中坐着，散发出自信、放松且刻意摆拍的气质。他戴着黑色旅行者太阳镜，嘴唇紧闭，表情中性。他身穿 {argument name=\"clothing\" default=\"深海军蓝（近乎黑色）的未扣纽扣亚麻衬衫，搭配利落的白色长裤\"}。他的姿势微微向右倾斜，重心由撑在臀部后方软垫上的右手支撑。他的左膝抬起，左手随意地搭在膝盖上，手指自然下垂，露出一块带有鲜艳蓝色表盘的银色金属手表。他坐在一间豪华水上凉亭内，坐垫是宽大且洁净的米色簇绒户外躺椅垫。左侧、顶部和中心由半透明的灰白色凉亭窗帘环绕，窗帘以动态的褶皱、折痕和半透明哑光面料的重叠层束起，捕捉着阳光。右下角是浅暖棕色的木质甲板。右侧甲板外，深处的中景展现出清澈、涟漪阵阵的绿松石色海水，并逐渐过渡为更深邃的鲜艳蓝色，浅滩海底的圆石清晰可见。深远的背景延伸至郁郁葱葱的森林海岸线，绿色的松树覆盖着连绵起伏的丘陵，与水面相接。场景沐浴在充满活力的、高指向性的明亮硬质自然光下，光线从前方 45 度角射入。这种强烈的照明营造出高饱和度、温暖的互补色调，在下巴下方、弯曲的左膝下方以及窗帘投射在簇绒软垫上的阴影处，形成了生硬、清晰且深邃的黑色阴影。额头、鼻梁、左臂上方以及白色长裤上闪烁着明亮锐利的高光。使用 35mm 镜头，ISO 100，f/8，1/500s 拍摄，这张极其清晰的数码照片捕捉到了高对比度男性夏季奢华时尚大片的精髓。深景深使远处的景观保持完全清晰且无噪点，后期处理增强了海洋蓝和温暖棕褐色肤色的活力，保护了高光，并略微压暗了黑色，以实现强烈的非对称视觉层次感，并以 4:5 的画幅比例完美呈现。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788332549832_i0wely_HQ_cu30XUAAKXnB.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788332549832_i0wely_HQ_cu30XUAAKXnB.jpg"
-      ],
-      "author": "Picts by AI",
-      "authorHandle": "pictsbyai",
-      "originalPostUrl": "https://x.com/pictsbyai/status/2094701293302395313",
-      "publishedAt": "2026年9月1日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Picts by AI",
-      "previewSourceUrl": "https://x.com/pictsbyai/status/2094701293302395313",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33189",
-      "attributionText": "提示词与效果图：Picts by AI；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-28-c1439192f93c",
-      "index": 40028,
-      "title": "社交媒体帖子 - 青色头发宁静肖像插画",
-      "originalTitle": "社交媒体帖子 - 青色头发宁静肖像插画",
-      "description": "一个绘画风格的插画提示词，描绘了一位留着青蓝色头发、戴着芥末黄针织帽的宁静女性，具有柔和的铅笔质感和金色喷溅效果。",
-      "category": "插画 / 漫画",
-      "categories": [
-        "插画 / 漫画"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "一张宁静年轻女性的特写肖像，她闭着双眼，神情平和。她皮肤白皙，脸颊透着柔和的红晕，鼻梁和脸颊上有细小的雀斑，双唇呈淡粉色。她留着一头飘逸的长发，发色为 {argument name=\"hair color\" default=\"鲜艳浓郁的青蓝色\"}，柔和的波浪发丝环绕着脸庞。她戴着一顶 {argument name=\"hat\" default=\"舒适、粗针织的芥末黄针织帽\"}，帽檐压得很低，脖子上围着一条配套的厚实、有质感的芥末黄羊毛围巾。梦幻的绘画风格插画，带有柔和的彩色铅笔质感、柔和的阴影以及细微的颗粒感，背景为 {argument name=\"background\" default=\"深青色背景\"}，并点缀着精致的金色和白色油漆喷溅。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788332548843_ymha1z_HRDqKJFbIAAPeWw.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788332548843_ymha1z_HRDqKJFbIAAPeWw.jpg"
-      ],
-      "author": "𝑨𝒇𝒓𝒊𝒏",
-      "authorHandle": "afrinxai",
-      "originalPostUrl": "https://x.com/afrinxai/status/2094666563882545309",
-      "publishedAt": "2026年9月1日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "𝑨𝒇𝒓𝒊𝒏",
-      "previewSourceUrl": "https://x.com/afrinxai/status/2094666563882545309",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33084",
-      "attributionText": "提示词与效果图：𝑨𝒇𝒓𝒊𝒏；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-29-ecad0302aec4",
-      "index": 40029,
-      "title": "社交媒体帖子 - 明暗对比时尚人像",
-      "originalTitle": "社交媒体帖子 - 明暗对比时尚人像",
-      "description": "一个利用戏剧性明暗对比照明和超大帽子来营造神秘感与优雅气质的高级时尚摄影提示词。",
-      "category": "人像摄影",
-      "categories": [
-        "人像摄影"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "一张高级时尚摄影棚人像，一位优雅的女性置身于 {argument name=\"lighting\" default=\"戏剧性的明暗对比光影\"} 中，背景为纯深灰色。她戴着一顶 {argument name=\"accessory\" default=\"超大宽檐黑色羊毛毡帽\"}，帽檐向下倾斜，投下的深邃阴影完全遮住了她的眼睛和额头。画面中清晰可见她精致的下颌线、立体的颧骨以及大胆的哑光深红色双唇。她身着一件 {argument name=\"clothing\" default=\"露肩黑色绷带晚礼服\"}，凸显出她外露的锁骨和修长的颈部。侧面定向柔光照明，深邃阴影，极简主义，精致考究，使用 85mm 镜头拍摄，f/1.8 光圈，细节清晰，Vogue 编辑风格。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "极简",
-        "摄影感"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788332549330_f9p7x7_HRDlZMvbkAAqKRy.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788332549330_f9p7x7_HRDlZMvbkAAqKRy.jpg"
-      ],
-      "author": "𝑨𝒇𝒓𝒊𝒏",
-      "authorHandle": "afrinxai",
-      "originalPostUrl": "https://x.com/afrinxai/status/2094651467311317159",
-      "publishedAt": "2026年9月1日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "𝑨𝒇𝒓𝒊𝒏",
-      "previewSourceUrl": "https://x.com/afrinxai/status/2094651467311317159",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33088",
-      "attributionText": "提示词与效果图：𝑨𝒇𝒓𝒊𝒏；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-30-1b1c451eb265",
-      "index": 40030,
-      "title": "社交媒体帖子 - 侧颜梦幻蕾丝肖像",
-      "originalTitle": "社交媒体帖子 - 侧颜梦幻蕾丝肖像",
-      "description": "一个艺术肖像提示词，展现了一位身着浪漫蕾丝与欧根纱服饰的女性侧颜，在柔和自然光下的光影效果。",
-      "category": "社媒 / 品牌",
-      "categories": [
-        "社媒 / 品牌"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "创作一张女性侧颜艺术肖像，她看向镜头外的一侧光源。她浓密的深棕色长发呈自然波浪状，捕捉着柔和的高光。她穿着一件 {argument name=\"clothing\" default=\"精致的露肩白色蕾丝服饰\"}，上面饰有复杂的碎花蕾丝图案。轻薄蓬松的欧根纱袖子为她的装扮增添了一抹柔和、浪漫且梦幻的质感。柔和的日光透过背景中的薄纱窗帘洒入，营造出温和的逆光效果。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788332542142_vzvtkq_HRGtRG1b0AAsBOF.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788332542142_vzvtkq_HRGtRG1b0AAsBOF.jpg"
-      ],
-      "author": "aynelle",
-      "authorHandle": "aynellex",
-      "originalPostUrl": "https://x.com/aynellex/status/2094645819974545735",
-      "publishedAt": "2026年9月1日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "aynelle",
-      "previewSourceUrl": "https://x.com/aynellex/status/2094645819974545735",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33104",
-      "attributionText": "提示词与效果图：aynelle；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-31-0e481356e0fd",
-      "index": 40031,
-      "title": "社交媒体帖子 - 融合世界地图纹理的混合媒介肖像",
-      "originalTitle": "社交媒体帖子 - 融合世界地图纹理的混合媒介肖像",
-      "description": "一款极具创意的混合媒介肖像提示词，将都市拼贴风格与复古地图纹理及鲜艳的蓝色头发相结合，呈现出当代街头艺术美感。",
+      "id": "nano-banana-33-ec686af192e4",
+      "index": 40033,
+      "title": "信息图 / 教育视觉图 - 企业营收报告信息图",
+      "originalTitle": "信息图 / 教育视觉图 - 企业营收报告信息图",
+      "description": "一个简洁且专业的用于展示财务数据（如公司营收报告）的信息图提示词。它包含清晰的标题和用于可视化年度增长的图表。",
       "category": "PPT / 信息图",
       "categories": [
         "PPT / 信息图"
       ],
       "sourceCategory": "youmind-nano-banana-public-github",
       "ratio": "自适应",
-      "prompt": "一张特写的混合媒介肖像，主角是一位 {argument name=\"subject\" default=\"美丽的年轻女性\"}，留着鲜艳的 {argument name=\"hair color\" default=\"电光蓝\"} 头发，拥有迷人的 {argument name=\"eye color\" default=\"青色\"} 双眸。她的鼻梁和脸颊上散布着雀斑，皮肤透出莹润光泽，樱桃红色的双唇微微开启。这件艺术品采用当代都市拼贴和撕贴街头艺术风格创作，在做旧的木质表面上呈现出层叠的纹理。叠加元素包括撕裂的复古纸质素材、褪色的邮票、精致的建筑线条草图、潦草的铅笔痕迹、白色油漆溅点，以及画布上细腻的裂纹质感。高对比度，细节丰富，纹理感混合媒介绘画，美术馆级品质。",
+      "prompt": "创建一个简洁的信息图来总结 {argument name=\"subject\" default=\"Teva 的营收报告\"}，并配以清晰的标题和 {argument name=\"chart type\" default=\"展示年度增长的图表\"}。",
       "promptType": "original-public-github",
       "featured": false,
       "tags": [
         "PPT 可用",
         "信息图"
       ],
-      "image": "https://cms-assets.youmind.com/media/1788332549545_kxiu22_HRGfM85aAAAgDU4.jpg",
+      "image": "https://cms-assets.youmind.com/media/1788418046936_8ijwch_HRMjI63X0AEYwgg.jpg",
       "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788332549545_kxiu22_HRGfM85aAAAgDU4.jpg"
+        "https://cms-assets.youmind.com/media/1788418046936_8ijwch_HRMjI63X0AEYwgg.jpg"
       ],
-      "author": "𝑨𝒇𝒓𝒊𝒏",
-      "authorHandle": "afrinxai",
-      "originalPostUrl": "https://x.com/afrinxai/status/2094640390431195454",
-      "publishedAt": "2026年9月1日",
+      "author": "Ofer Shapira",
+      "authorHandle": "ofer_shapira",
+      "originalPostUrl": "https://x.com/ofer_shapira/status/2095056890828816510",
+      "publishedAt": "2026年9月2日",
       "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
       "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
       "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
       "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "𝑨𝒇𝒓𝒊𝒏",
-      "previewSourceUrl": "https://x.com/afrinxai/status/2094640390431195454",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33097",
-      "attributionText": "提示词与效果图：𝑨𝒇𝒓𝒊𝒏；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "previewOwner": "Ofer Shapira",
+      "previewSourceUrl": "https://x.com/ofer_shapira/status/2095056890828816510",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33285",
+      "attributionText": "提示词与效果图：Ofer Shapira；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
       "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
       "rightsReviewStatus": "cc-by-4.0-public-github",
       "rightsReviewedAt": "2026-09-03",
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-32-bf56428adcd1",
-      "index": 40032,
-      "title": "社交媒体帖子 - 街头风格长曝光时尚摄影",
-      "originalTitle": "社交媒体帖子 - 街头风格长曝光时尚摄影",
-      "description": "一个现代时尚编辑风格的提示词，展现了一位身穿橙色连帽衫的东亚女性，背景为动态模糊的人群。",
-      "category": "人像摄影",
-      "categories": [
-        "人像摄影"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "现代极简主义摄影棚内，一位年轻东亚女性的时尚编辑风格摄影。她身穿 {argument name=\"outfit\" default=\"鲜艳的超大款橙色连帽衫\"}，搭配束口宽松黑色运动裤，以及带有白色波浪条纹的黑色高帮滑板鞋。她留着黑色长发，五官精致，佩戴小巧的金耳环，转头看向镜头，表情平静自然。一只手插在口袋里。背景是一个干净的中性色调房间，模糊的 {argument name=\"motion\" default=\"幽灵般的剪影\"} 人群在周围营造出刻意的长曝光动态模糊和光轨效果。柔和的室内漫射光，色调干净，冷色调背景与温暖的橙色连帽衫形成对比，使用 {argument name=\"film\" default=\"35mm 胶片\"} 拍摄，主体焦点清晰，具有电影感的街头时尚大片风格。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "极简",
-        "摄影感"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788332548488_l3go0c_HRDPqolawAAZ99c.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788332548488_l3go0c_HRDPqolawAAZ99c.jpg"
-      ],
-      "author": "𝑨𝒇𝒓𝒊𝒏",
-      "authorHandle": "afrinxai",
-      "originalPostUrl": "https://x.com/afrinxai/status/2094606172791652612",
-      "publishedAt": "2026年9月1日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "𝑨𝒇𝒓𝒊𝒏",
-      "previewSourceUrl": "https://x.com/afrinxai/status/2094606172791652612",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33085",
-      "attributionText": "提示词与效果图：𝑨𝒇𝒓𝒊𝒏；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-33-3c216c4bddc8",
-      "index": 40033,
-      "title": "社交媒体帖子 - 海岸悬崖日落电影感人像",
-      "originalTitle": "社交媒体帖子 - 海岸悬崖日落电影感人像",
-      "description": "一个令人惊叹的风景人像提示词，描绘了一位站在海岸悬崖上欣赏日落的女性，旨在唤起自由感与情感治愈。",
-      "category": "人像摄影",
-      "categories": [
-        "人像摄影"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "从背后拍摄，一位 {argument name=\"subject\" default=\"孤独的年轻赤脚女性\"} 伫立在陡峭海岸悬崖那饱经风霜的边缘，背景是壮丽的日落。她身穿一件 {argument name=\"clothing\" default=\"长款飘逸的白色棉质连衣裙\"}，在海风的吹拂下裙摆飞扬。她深棕色的长发也在强风中向后飘散，与裙摆的灵动感相得益彰。她双臂完全舒展，拥抱着那片闪烁着迷人金橙色光芒的无垠海平线。天空中布满了层次丰富、质感强烈且色彩斑斓的戏剧性云层，被夕阳最后的余晖染成了深紫色、火橙色和金色。前景中陡峭的岩石悬崖和随风摇曳的金色草丛，增添了一种与世隔绝的原始自然之美。整幅构图是一张令人屏息的电影感风景人像，唤起了一种深沉、强烈的情感，象征着自由、解放与心灵治愈。画面呈现自然金色的光影、照片级的细节以及梦幻般的氛围。崎岖岩石的纹理、光线带来的柔和镜头光晕，以及织物和发丝的真实动态感都刻画得细腻入微。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "摄影感"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788245878165_xhadfw_HREAkyNa8AAOtN8.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788245878165_xhadfw_HREAkyNa8AAOtN8.jpg"
-      ],
-      "author": "Compound Learning - Tech | Science",
-      "authorHandle": "SheBuildsAI_",
-      "originalPostUrl": "https://x.com/SheBuildsAI_/status/2094455937427980635",
-      "publishedAt": "2026年8月31日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Compound Learning - Tech | Science",
-      "previewSourceUrl": "https://x.com/SheBuildsAI_/status/2094455937427980635",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33100",
-      "attributionText": "提示词与效果图：Compound Learning - Tech | Science；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-34-d1a2c0887eb8",
+      "id": "nano-banana-34-c8e2b24ad9b5",
       "index": 40034,
-      "title": "社交媒体帖子 - 电影感夏季热带码头人像",
-      "originalTitle": "社交媒体帖子 - 电影感夏季热带码头人像",
-      "description": "一个充满活力的夏季人像提示词，描绘了一位年轻女性坐在热带水域上方的木质码头上，重点展现被风吹拂的秀发和棉质纹理。",
-      "category": "人像摄影",
-      "categories": [
-        "人像摄影"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "超写实电影感夏季人像，一位年轻女性坐在清澈热带水域上方的质朴木质码头上，采用 4:5 竖构图。她身穿 {argument name=\"clothing\" default=\"飘逸的蓝绿色棉质长裙\"}，吊带设计，收腰剪裁，面料纹理细腻，裙摆修长飘逸。她佩戴着贝壳首饰、小巧耳环和精致手链。她棕色的短发在海风中自然飘动。她对着镜头灿烂微笑。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "摄影感"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788245879787_2xu2zo_HRD0raTbIAALu6o.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788245879787_2xu2zo_HRD0raTbIAALu6o.jpg"
-      ],
-      "author": "aynelle",
-      "authorHandle": "aynellex",
-      "originalPostUrl": "https://x.com/aynellex/status/2094442877963403407",
-      "publishedAt": "2026年8月31日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "aynelle",
-      "previewSourceUrl": "https://x.com/aynellex/status/2094442877963403407",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33103",
-      "attributionText": "提示词与效果图：aynelle；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-35-c8e2b24ad9b5",
-      "index": 40035,
       "title": "信息图 / 教育视觉图 - 复古旅行日志编辑拼贴画",
       "originalTitle": "信息图 / 教育视觉图 - 复古旅行日志编辑拼贴画",
       "description": "一个用于制作复杂垂直旅行编辑拼贴画的提示词，结合了纪实摄影与手绘插图。",
@@ -1928,11 +1878,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-36-c5f2c4108133",
-      "index": 40036,
+      "id": "nano-banana-35-c5f2c4108133",
+      "index": 40035,
       "title": "信息图 / 教育视觉图 - 编辑风烹饪故事板布局",
       "originalTitle": "信息图 / 教育视觉图 - 编辑风烹饪故事板布局",
       "description": "一份详细的烹饪序列故事板提示词，以印尼炒面（mie goreng）为主题，采用编辑级美食摄影风格并附带技术注释。",
@@ -1972,11 +1922,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-37-275b67307d26",
-      "index": 40037,
+      "id": "nano-banana-36-275b67307d26",
+      "index": 40036,
       "title": "信息图 / 教育视觉图 - 复古旅行日志拼贴画",
       "originalTitle": "信息图 / 教育视觉图 - 复古旅行日志拼贴画",
       "description": "生成包含照片级真实感街头摄影与做旧纸张丝网印刷插图的多城市旅行编辑拼贴画。",
@@ -2020,11 +1970,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-38-3e972adafbce",
-      "index": 40038,
+      "id": "nano-banana-37-3e972adafbce",
+      "index": 40037,
       "title": "信息图 / 教育视觉图 - 区域文化图谱海报",
       "originalTitle": "信息图 / 教育视觉图 - 区域文化图谱海报",
       "description": "一个高级提示词，用于创建结构化的 2x2 网格海报，通过食物和工艺品对比区域文化美学。",
@@ -2069,11 +2019,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-39-15827b324dd3",
-      "index": 40039,
+      "id": "nano-banana-38-15827b324dd3",
+      "index": 40038,
       "title": "信息图 / 教育视觉图 - 奇趣涂色页插画",
       "originalTitle": "信息图 / 教育视觉图 - 奇趣涂色页插画",
       "description": "一个充满趣味的黑白线条绘画提示词，适用于内容丰富的贴纸风格涂色页，并支持自定义文本。",
@@ -2112,11 +2062,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-40-15c7854a16bf",
-      "index": 40040,
+      "id": "nano-banana-39-15c7854a16bf",
+      "index": 40039,
       "title": "信息图 / 教育视觉图 - 专业牛肉塔可产品摄影",
       "originalTitle": "信息图 / 教育视觉图 - 专业牛肉塔可产品摄影",
       "description": "一款高端美食摄影提示词，旨在通过电影级影棚灯光，创作出令人垂涎欲滴的牛肉塔可商业视觉效果。",
@@ -2157,11 +2107,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-41-517bf1daebf2",
-      "index": 40041,
+      "id": "nano-banana-40-517bf1daebf2",
+      "index": 40040,
       "title": "信息图 / 教育视觉图 - Milkshake 产品信息图",
       "originalTitle": "信息图 / 教育视觉图 - Milkshake 产品信息图",
       "description": "一款用于高端饮品的爆炸视图信息图提示词，展示了具有专业影棚灯光和质感的层叠配料。",
@@ -2202,11 +2152,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-42-33de44466f0b",
-      "index": 40042,
+      "id": "nano-banana-41-33de44466f0b",
+      "index": 40041,
       "title": "信息图 / 教育视觉图 - 欧洲仓鼠野生动物摄影",
       "originalTitle": "信息图 / 教育视觉图 - 欧洲仓鼠野生动物摄影",
       "description": "一个专为 Nano Banana 2 设计的野生动物摄影提示词，捕捉欧洲仓鼠在田野中进食的特写镜头。",
@@ -2246,11 +2196,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-43-ef918ba48619",
-      "index": 40043,
+      "id": "nano-banana-42-ef918ba48619",
+      "index": 40042,
       "title": "信息图 / 教育视觉图 - 写实渡渡鸟插画",
       "originalTitle": "信息图 / 教育视觉图 - 写实渡渡鸟插画",
       "description": "一个关于渡渡鸟的详细动物提示词，具有自然的羽毛质感和独特的裂纹质感鸟喙，专为 Nano Banana 2 优化。",
@@ -2289,11 +2239,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-44-e9de3fb6a4cb",
-      "index": 40044,
+      "id": "nano-banana-43-e9de3fb6a4cb",
+      "index": 40043,
       "title": "信息图 / 教育视觉图 - 人体工学办公椅电商移动端详情页",
       "originalTitle": "信息图 / 教育视觉图 - 人体工学办公椅电商移动端详情页",
       "description": "一份用于生成人体工学办公椅移动端电商详情页的综合提示词。包含多角度展示、结构标注以及使用场景，整体采用简洁的蓝图风格设计。",
@@ -2332,11 +2282,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-45-9d431fa58239",
-      "index": 40045,
+      "id": "nano-banana-44-9d431fa58239",
+      "index": 40044,
       "title": "信息图 / 教育视觉图 - 微缩立体书透视模型",
       "originalTitle": "信息图 / 教育视觉图 - 微缩立体书透视模型",
       "description": "一份用于生成逼真微缩立体书城市透视模型的详细提示词，包含精细的纸艺地标和结构化纸张机械设计。",
@@ -2377,11 +2327,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-46-34c3158f8265",
-      "index": 40046,
+      "id": "nano-banana-45-34c3158f8265",
+      "index": 40045,
       "title": "信息图 / 教育视觉图 - 复古 20 世纪 70 年代字母图形设计",
       "originalTitle": "信息图 / 教育视觉图 - 复古 20 世纪 70 年代字母图形设计",
       "description": "一份详细的提示词，用于生成具有 20 世纪 70 年代图形风格的奇趣字母集，包含俏皮的圆体字、粗轮廓以及鲜艳的柔和色调装饰。",
@@ -2420,11 +2370,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-47-2277d3807f12",
-      "index": 40047,
+      "id": "nano-banana-46-2277d3807f12",
+      "index": 40046,
       "title": "信息图 / 教育视觉图 - Voxel 杂志立体艺术",
       "originalTitle": "信息图 / 教育视觉图 - Voxel 杂志立体艺术",
       "description": "一个创意微距摄影提示词，用于杂志内页，展示从页面中升起的 3D Voxel 或黏土模型。",
@@ -2466,11 +2416,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-48-c455a58ddf57",
-      "index": 40048,
+      "id": "nano-banana-47-c455a58ddf57",
+      "index": 40047,
       "title": "信息图 / 教育视觉图 - 几何马赛克肖像插画",
       "originalTitle": "信息图 / 教育视觉图 - 几何马赛克肖像插画",
       "description": "生成具有立体主义抽象风格和技术绘图元素的精细几何马赛克肖像。",
@@ -2512,57 +2462,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-49-32136b6b5ea0",
-      "index": 40049,
-      "title": "信息图 / 教育视觉图 - 技术剖面图",
-      "originalTitle": "信息图 / 教育视觉图 - 技术剖面图",
-      "description": "一个用于生成带有标签和内部细节、背景简洁的超写实技术剖面图的专业提示词。",
-      "category": "PPT / 信息图",
-      "categories": [
-        "PPT / 信息图"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "{argument name=\"object\" default=\"机械设备\"} 的剖面图，展示详细的内部组件，白色背景。高分辨率，采用聚焦技术，并带有说明各部件信息的文本标注。内部细节丰富，外观超写实。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "PPT 可用",
-        "信息图"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1783149741330_an29tc_HMUlkZJXYAADL8_.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1783149741330_an29tc_HMUlkZJXYAADL8_.jpg",
-        "https://cms-assets.youmind.com/media/1783149741300_cb1pfr_HMUlkksWsAAl3fH.jpg",
-        "https://cms-assets.youmind.com/media/1783149741421_xmb6up_HMUlkw8XUAEnCeX.jpg",
-        "https://cms-assets.youmind.com/media/1783149742149_oc6fvg_HMUlk8mXMAAecVN.jpg"
-      ],
-      "author": "Pierrick Chevallier | IA",
-      "authorHandle": "CharaspowerAI",
-      "originalPostUrl": "https://x.com/CharaspowerAI/status/2073104523476828533",
-      "publishedAt": "2026年7月3日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Pierrick Chevallier | IA",
-      "previewSourceUrl": "https://x.com/CharaspowerAI/status/2073104523476828533",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=27529",
-      "attributionText": "提示词与效果图：Pierrick Chevallier | IA；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-50-9adb39a081bc",
-      "index": 40050,
+      "id": "nano-banana-48-9adb39a081bc",
+      "index": 40048,
       "title": "YouTube 缩略图 - 顶级暗黑奇幻动漫电影感画面",
       "originalTitle": "YouTube 缩略图 - 顶级暗黑奇幻动漫电影感画面",
       "description": "一份用于创作高预算动漫电影感艺术作品的综合提示词，重点刻画一位极具魅力的战士，展现强烈的能量气场与极具张力的环境深度。",
@@ -2602,11 +2506,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-51-ce4bb23caf62",
-      "index": 40051,
+      "id": "nano-banana-49-ce4bb23caf62",
+      "index": 40049,
       "title": "YouTube 缩略图 - 甲子园棒球转播画面",
       "originalTitle": "YouTube 缩略图 - 甲子园棒球转播画面",
       "description": "一份用于生成逼真高中棒球决赛电视转播截图的详细提示词，包含特定的记分牌和频道文字叠加效果。",
@@ -2644,11 +2548,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-52-b2eaac0a8334",
-      "index": 40052,
+      "id": "nano-banana-50-b2eaac0a8334",
+      "index": 40050,
       "title": "YouTube 缩略图 - 排版涌现电影海报网格",
       "originalTitle": "YouTube 缩略图 - 排版涌现电影海报网格",
       "description": "一个高度技术化、SQL 风格的逻辑提示词，用于创建 2x2 的排版电影海报网格，其中图像完全由文本构成。",
@@ -2688,11 +2592,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-53-7c9cf018b751",
-      "index": 40053,
+      "id": "nano-banana-51-7c9cf018b751",
+      "index": 40051,
       "title": "YouTube 缩略图 - 科幻风格咖啡机 Boss 战",
       "originalTitle": "YouTube 缩略图 - 科幻风格咖啡机 Boss 战",
       "description": "一个幽默的模因风格提示词，将办公室咖啡机重新构想为大型科幻 Boss 战场景。",
@@ -2730,11 +2634,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-54-d418af9f6494",
-      "index": 40054,
+      "id": "nano-banana-52-d418af9f6494",
+      "index": 40052,
       "title": "YouTube 缩略图 - 威尼斯超现实主义巨型女性",
       "originalTitle": "YouTube 缩略图 - 威尼斯超现实主义巨型女性",
       "description": "一个令人惊叹的高写实感提示词，用于生成一幅超现实场景：一位巨型女性优雅地坐在威尼斯圣马可广场的游客中间，呈现电影级光影与 8K 细节。",
@@ -2773,11 +2677,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-55-8c4ae90be243",
-      "index": 40055,
+      "id": "nano-banana-53-8c4ae90be243",
+      "index": 40053,
       "title": "YouTube 缩略图 - 电影级体育纪录片主视觉图",
       "originalTitle": "YouTube 缩略图 - 电影级体育纪录片主视觉图",
       "description": "一个伪代码结构的提示词，用于生成具有电影质感和高端风格的体育纪录片系列主视觉图。",
@@ -2818,11 +2722,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-56-29735c7c34eb",
-      "index": 40056,
+      "id": "nano-banana-54-29735c7c34eb",
+      "index": 40054,
       "title": "YouTube 缩略图 - 雄伟象群云朵摄影",
       "originalTitle": "YouTube 缩略图 - 雄伟象群云朵摄影",
       "description": "一个超现实的提示词，用于创作在稀树草原上空由体积云形成的细节逼真的大象摄影作品。",
@@ -2862,11 +2766,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-57-1f8ac9b1e47f",
-      "index": 40057,
+      "id": "nano-banana-55-1f8ac9b1e47f",
+      "index": 40055,
       "title": "YouTube 缩略图 - 动漫风格火车站转换",
       "originalTitle": "YouTube 缩略图 - 动漫风格火车站转换",
       "description": "将木质火车站的照片或草图转换为动漫风格的插画，并提供描述性提示词。",
@@ -2904,11 +2808,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-58-8fe2721d82ae",
-      "index": 40058,
+      "id": "nano-banana-56-8fe2721d82ae",
+      "index": 40056,
       "title": "YouTube 缩略图 - 憨豆先生与 Mini Cooper 的疯狂时刻",
       "originalTitle": "YouTube 缩略图 - 憨豆先生与 Mini Cooper 的疯狂时刻",
       "description": "一张超写实的广角镜头照片，展现了憨豆先生疯狂驾驶着一辆复古 Mini Cooper，并将动画角色融入到混乱场景中的画面。",
@@ -2948,11 +2852,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-59-ee7b0fa221bf",
-      "index": 40059,
+      "id": "nano-banana-57-ee7b0fa221bf",
+      "index": 40057,
       "title": "YouTube 缩略图 - 电影感月光天台人像拼贴",
       "originalTitle": "YouTube 缩略图 - 电影感月光天台人像拼贴",
       "description": "一个精致的多帧提示词，旨在创作一张情感丰富、具有电影质感的拼贴画，展现人物在城市天台、巨大满月下的场景，侧重于氛围感和环境质感。",
@@ -2992,11 +2896,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-60-02edea96c188",
-      "index": 40060,
+      "id": "nano-banana-58-02edea96c188",
+      "index": 40058,
       "title": "YouTube 缩略图 - 街头时尚风格蛋糕刀人像",
       "originalTitle": "YouTube 缩略图 - 街头时尚风格蛋糕刀人像",
       "description": "一张电影感的高角度人像，一位身着 Balenciaga 风格服装的女性坐在地毯上，手边放着蛋糕，正舔舐着刀刃，展现出一种随性的街头时尚氛围。",
@@ -3035,11 +2939,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-61-158ef7d4fe44",
-      "index": 40061,
+      "id": "nano-banana-59-158ef7d4fe44",
+      "index": 40059,
       "title": "YouTube 缩略图 - 电影感义警主题海报",
       "originalTitle": "YouTube 缩略图 - 电影感义警主题海报",
       "description": "一款高对比度的电影感海报提示词，描绘了一位身着战术套装的蒙面义警，配有醒目的排版和粗犷的黑色电影美学。",
@@ -3082,11 +2986,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-62-885eadad3a53",
-      "index": 40062,
+      "id": "nano-banana-60-885eadad3a53",
+      "index": 40060,
       "title": "YouTube 缩略图 - 篮球场馆转播肖像",
       "originalTitle": "YouTube 缩略图 - 篮球场馆转播肖像",
       "description": "一个复杂的 JSON 格式结构化提示词，用于生成一张女性在篮球比赛现场的转播风格图像，包含 UI 覆盖层和场馆灯光效果。",
@@ -3126,11 +3030,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-63-0bbf069e3dcf",
-      "index": 40063,
+      "id": "nano-banana-61-0bbf069e3dcf",
+      "index": 40061,
       "title": "YouTube 缩略图 - NBA 转播球场截图",
       "originalTitle": "YouTube 缩略图 - NBA 转播球场截图",
       "description": "一个复杂的结构化提示词，旨在模拟 ESPN 转播画面中，一位女性身处篮球场观众席的截图。",
@@ -3169,11 +3073,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-64-38523a7528d9",
-      "index": 40064,
+      "id": "nano-banana-62-38523a7528d9",
+      "index": 40062,
       "title": "YouTube 缩略图 - 奇幻书籍可视化网格",
       "originalTitle": "YouTube 缩略图 - 奇幻书籍可视化网格",
       "description": "一种富有创意的加权提示词公式，用于生成 2x2 的书籍内部奇幻立体模型网格。",
@@ -3215,11 +3119,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-65-c0776aa86993",
-      "index": 40065,
+      "id": "nano-banana-63-c0776aa86993",
+      "index": 40063,
       "title": "YouTube 缩略图 - 歌曲转图像可视化",
       "originalTitle": "YouTube 缩略图 - 歌曲转图像可视化",
       "description": "一个通过特定歌曲名称和艺术家来生成能够代表该音乐氛围感的图像的提示词。",
@@ -3260,11 +3164,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-66-b48ac98fd1ca",
-      "index": 40066,
+      "id": "nano-banana-64-b48ac98fd1ca",
+      "index": 40064,
       "title": "YouTube 缩略图 - 电影感播客工作室人像",
       "originalTitle": "YouTube 缩略图 - 电影感播客工作室人像",
       "description": "一个关于现代工作室场景中专业播客主持人的提示词，包含温暖的重点照明和逼真的设备细节。",
@@ -3303,11 +3207,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-67-105b775fb421",
-      "index": 40067,
+      "id": "nano-banana-65-105b775fb421",
+      "index": 40065,
       "title": "YouTube 缩略图 - 日式电视节目风格图像生成",
       "originalTitle": "YouTube 缩略图 - 日式电视节目风格图像生成",
       "description": "这是一个为 Nano Banana Pro 设计的提示词模板，用于生成日式电视节目风格的图像。它允许 AI 根据简短的场景描述，自主构思包括字幕和采访内容在内的整体氛围。",
@@ -3348,56 +3252,101 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-68-2101cd4eddf5",
-      "index": 40068,
-      "title": "YouTube 缩略图 - Millie Bobby Brown 的电影感节日摄影作品",
-      "originalTitle": "YouTube 缩略图 - Millie Bobby Brown 的电影感节日摄影作品",
-      "description": "这是一个为 Nano Banana 2 设计的高细节、电影感、照片级真实感的提示词，用于生成 Millie Bobby Brown 在摩天轮附近的户外节日场景照片。提示词详细说明了人物外观、服装、动态姿势、光照条件（黄昏光线结合霓虹轮廓光）、相机设置（竖屏构图、长焦镜头、浅景深）以及整体氛围。",
-      "category": "人像摄影",
+      "id": "nano-banana-66-b50b88438b7a",
+      "index": 40066,
+      "title": "漫画 / 故事板 - 电影级 3D 动画 AI 档案员",
+      "originalTitle": "漫画 / 故事板 - 电影级 3D 动画 AI 档案员",
+      "description": "一张电影级 3D 动画剧照，出自一部原创系列动画，展示了一位在神秘图书馆档案室中工作的小型 AI 档案员，角色设计保持高度一致。",
+      "category": "插画 / 漫画",
       "categories": [
-        "人像摄影"
+        "插画 / 漫画"
       ],
       "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "9:16",
-      "prompt": "\"创作一张高细节、电影感、照片级真实感的生活化照片，主角是 {argument name=\"subject\" default=\"Millie Bobby Brown\"}，场景设定在傍晚的户外节日现场。她留着微卷的长发，表情俏皮，露齿微笑，正回头看向右肩，直视镜头。妆容清透自然。她头顶架着一副太阳镜，佩戴着硕大的青色水滴状耳环，右手腕戴着亮黄色的节日手环。\n\n她身材苗条匀称，身穿一件浅灰绿色的短袖露脐 T 恤，正面有褪色印花，搭配浅蓝色破洞牛仔短裤。脚穿经典的黑色高帮帆布鞋，配有白色鞋带、白色鞋头和白色鞋底。\n\n她的姿势动态十足且自信：背对镜头站立，上半身扭转，回头看向右肩。右手微微抬起，手部自然放松地垂在腰间，左臂自然下垂。重心主要落在伸直的左腿上，右腿微屈，呈现出一种随性而充满活力的姿态。\n\n背景是一个热闹的户外节日现场，类似于游乐园。背景中有一座巨大的摩天轮，轮辐和边缘闪烁着霓虹粉色和白色的灯光。背景中可以看到模糊的行人身影，地面呈现出深色，像是临时铺设的路面。\n\n光线结合了柔和的黄昏光和来自摩天轮的强烈冷色调人工环境光。霓虹灯在她的头发、肩膀和轮廓周围营造出明亮的轮廓光，而柔和的前补光则清晰地照亮了她的面部和身体。\n\n整体氛围充满活力、青春、动感且具有电影质感，捕捉到了夏季节日的热闹气息。色彩基调强调霓虹粉、亮白、浅牛仔蓝、灰绿、黑色和柔粉色调。\n\n图像应采用竖屏构图（9:16），使用略微仰拍的视角和紧凑的取景（中景或美式景别），使主体几乎占据整个画面。使用 85mm 到 135mm 之间的长焦镜头来压缩透视并突出主体，配合浅景深效果，确保主体极其清晰，同时背景保持柔和的虚化效果。最终成品应具备高细节、主体对焦锐利、色彩鲜艳且对比强烈、专业布光以及 8K 分辨率的品质。\"",
+      "ratio": "16:9",
+      "prompt": "创作一张电影级 3D 动画剧照，出自名为 BOTU Universe 的原创系列动画。{argument name=\"character\" default=\"BOTU\"} 是主角：一位孩童般的小型 AI 局档案员，拥有奶油色的光头、大而富有表现力的棕色眼睛，前额中心有一个银色的圆形“记忆光圈”（Memory Aperture），耳边环绕着发光的蓝色圆形“听觉轨道”（Listening Orbit），身穿黑色皮革质感的局制服，配有金色滚边和金色的 BOTU 局徽章。请保持该角色设计的一致性和辨识度。场景：{argument name=\"scene\" default=\"在神秘的 BOTU 局档案室内部，BOTU 突然发现室内竟然下起了雨\"}。BOTU 独自站在抛光后的深色大理石地板上，周围环绕着巨大的档案架、神秘的文件、黄铜灯具和漂浮的蓝色“记忆丝线”（Memory Threads）。雨水正对着 BOTU 在一个小范围内集中落下。BOTU 抬头仰望，神情极其困惑。他周围的地板大多是干的，使得这种不可思议的室内雨景格外显眼。他的表情应传达出：“发生了什么？”BOTU 前额的银色“记忆光圈”必须清晰可见。构图：宽画幅电影镜头，BOTU 位于画面中心且清晰可见。强烈的视觉叙事感。雨水清晰可见。周围环绕着巨大的神秘局档案室。动态视角和景深。无留白区域。风格：{argument name=\"style\" default=\"高质量风格化 3D 动画长片美学\"}。富有表现力的角色表演。电影级灯光。细节丰富的环境。精致的材质。温暖的金色局内灯光与冷色调的蓝色“记忆丝线”光芒形成对比。适合家庭观看的悬疑喜剧基调。重要提示：BOTU 的角色设计必须保持不变。请勿移除或更改前额的“记忆光圈”。请勿更改他的服装、比例、面部、眼睛、颜色或局徽章。画面中不得出现其他角色。无文字。无水印。纵横比：16:9。项目",
       "promptType": "original-public-github",
       "featured": false,
       "tags": [
         "Nano Banana",
-        "摄影感"
+        "3D",
+        "极简"
       ],
-      "image": "https://cms-assets.youmind.com/media/1775112286065_i3xthk_HE2rSFhXkAAGgfN.jpg",
+      "image": "https://cms-assets.youmind.com/media/1788418032857_litw4u_HRO0NUdbUAA11wx.jpg",
       "imageUrls": [
-        "https://cms-assets.youmind.com/media/1775112286065_i3xthk_HE2rSFhXkAAGgfN.jpg",
-        "https://cms-assets.youmind.com/media/1775112286121_ci0x0k_HE2rSMaboAAoGaX.jpg",
-        "https://cms-assets.youmind.com/media/1775112286153_qoy1f1_HE2rSJoXEAAym-q.jpg"
+        "https://cms-assets.youmind.com/media/1788418032857_litw4u_HRO0NUdbUAA11wx.jpg"
       ],
-      "author": "Giulia",
-      "authorHandle": "Giulia_4i",
-      "originalPostUrl": "https://x.com/Giulia_4i/status/2039474538212401240",
-      "publishedAt": "2026年4月1日",
+      "author": "Yash Trivedi",
+      "authorHandle": "yashktrivedi",
+      "originalPostUrl": "https://x.com/yashktrivedi/status/2095216398423482753",
+      "publishedAt": "2026年9月2日",
       "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
       "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
       "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
       "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Giulia",
-      "previewSourceUrl": "https://x.com/Giulia_4i/status/2039474538212401240",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=13128",
-      "attributionText": "提示词与效果图：Giulia；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "previewOwner": "Yash Trivedi",
+      "previewSourceUrl": "https://x.com/yashktrivedi/status/2095216398423482753",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33268",
+      "attributionText": "提示词与效果图：Yash Trivedi；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
       "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
       "rightsReviewStatus": "cc-by-4.0-public-github",
       "rightsReviewedAt": "2026-09-03",
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-69-5fd553a85aa6",
-      "index": 40069,
+      "id": "nano-banana-67-02b1e9101482",
+      "index": 40067,
+      "title": "漫画 / 故事板 - 椰子水产品项目",
+      "originalTitle": "漫画 / 故事板 - 椰子水产品项目",
+      "description": "一份为高端椰子水广告准备的详细多画面项目提示词。它概述了八个电影级场景，重点展示了冷凝水珠、液体旋涡和水花飞溅等产品细节，以高端广告代理商的风格呈现。",
+      "category": "海报设计",
+      "categories": [
+        "海报设计"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "3:4",
+      "prompt": "标题：高端椰子水产品广告项目\n\n格式：\n• 单页高端项目\n• 3:4 竖屏比例\n• 高端天然饮品营销活动\n• 8 个电影级产品特写场景\n• 产品始终作为核心主角\n• 高端广告代理商演示风格\n\n页眉：\n• 简洁现代的排版\n• 信息卡片：\n  - 时长：20 秒\n  - 风格：清新天然饮品广告\n  - 产品：椰子水\n  - 音频：热带水声 + 清爽 ASMR\n• “为何这种风格有效”部分\n• 白色、椰子绿与天然米色美学\n• 极简热带装饰元素\n\n项目：\n1. 冰镇椰子水瓶立于潮湿的天然石材上，瓶身覆盖着冷凝水珠\n2. 瓶盖开启，清晰的密封特写\n3. 椰子水倒入透明玻璃杯中\n4. 清澈的液体在杯中旋转，伴有细小气泡\n5. 新鲜椰子块在慢动作中掉落在瓶子旁边\n6. 冰块落入饮品中，激起受控的水花\n7. 瓶身冷凝水珠流动的极致微距镜头\n8. 最终主角：瓶子与玻璃杯，周围环绕着新鲜椰子块和冰冻水花\n\n每个面板：\n• 场景编号\n• 时长标签\n• 摄像机方向\n• 视觉效果\n• 动作描述\n• 产品细节\n\n摄像机：\n高速液体摄影、极致微距、冷凝水珠特写、慢动作冰块掉落、透明液体旋涡、低角度产品拍摄、电影级主角构图。\n\n风格：\n超写实饮品广告、晶莹剔透的液体、逼真的冷凝水珠、细腻的椰子纹理、动态水花、自然高端布光、简洁包装、奢华商业摄影、8K 分辨率。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "演示设计",
+        "极简",
+        "文字排版",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418042772_wytgm3_HRIV2OMWEAAdkxS.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418042772_wytgm3_HRIV2OMWEAAdkxS.jpg"
+      ],
+      "author": "𝐌",
+      "authorHandle": "Strength04_X",
+      "originalPostUrl": "https://x.com/Strength04_X/status/2094760813794111843",
+      "publishedAt": "2026年9月1日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "𝐌",
+      "previewSourceUrl": "https://x.com/Strength04_X/status/2094760813794111843",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33284",
+      "attributionText": "提示词与效果图：𝐌；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-68-5fd553a85aa6",
+      "index": 40068,
       "title": "漫画 / 故事板 - 黑色电影风格编辑图形肖像",
       "originalTitle": "漫画 / 故事板 - 黑色电影风格编辑图形肖像",
       "description": "一个复杂的编辑插画提示词，结合了技术钢笔雕刻、黑色电影美学和建筑元素，旨在呈现极具戏剧性的肖像效果。",
@@ -3438,11 +3387,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-70-81f0a50ac958",
-      "index": 40070,
+      "id": "nano-banana-69-81f0a50ac958",
+      "index": 40069,
       "title": "漫画 / 故事板 - 高端披萨商业广告分镜脚本",
       "originalTitle": "漫画 / 故事板 - 高端披萨商业广告分镜脚本",
       "description": "一份全面的冷冻食品广告宣传活动分镜脚本提示词，包含详细的摄像机角度和专业的食品摄影风格。",
@@ -3484,11 +3433,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-71-be4ae9f1e375",
-      "index": 40071,
+      "id": "nano-banana-70-be4ae9f1e375",
+      "index": 40070,
       "title": "漫画 / 故事板 - 香辣薯片商业广告项目",
       "originalTitle": "漫画 / 故事板 - 香辣薯片商业广告项目",
       "description": "一份全面的多画面项目提示词，专为高端香辣薯片食品广告设计，包含摄像机角度和布光风格。",
@@ -3530,11 +3479,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-72-f7a05ae8fb75",
-      "index": 40072,
+      "id": "nano-banana-71-f7a05ae8fb75",
+      "index": 40071,
       "title": "漫画 / 故事板 - 废弃温室电影感人像",
       "originalTitle": "漫画 / 故事板 - 废弃温室电影感人像",
       "description": "一个童话现实主义风格的提示词，用于创作一张年轻女性在杂草丛生、阳光穿透的废弃温室中的电影感人像。",
@@ -3573,11 +3522,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-73-a104551c51af",
-      "index": 40073,
+      "id": "nano-banana-72-a104551c51af",
+      "index": 40072,
       "title": "漫画 / 故事板 - 高级草莓果酱项目",
       "originalTitle": "漫画 / 故事板 - 高级草莓果酱项目",
       "description": "一个综合性的结构化提示词，用于生成单页奢侈食品商业项目，专门针对草莓果酱。",
@@ -3617,11 +3566,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-74-3575d7f0591e",
-      "index": 40074,
+      "id": "nano-banana-73-3575d7f0591e",
+      "index": 40073,
       "title": "漫画 / 故事板 - 黑色电影风格地铁站台肖像",
       "originalTitle": "漫画 / 故事板 - 黑色电影风格地铁站台肖像",
       "description": "生成一张电影感黑色惊悚片剧照，画面主体为深夜拥挤地铁站台上的年轻东亚男性，强调其强烈的神情与都市的拥挤感。",
@@ -3660,11 +3609,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-75-e891aa80acd7",
-      "index": 40075,
+      "id": "nano-banana-74-e891aa80acd7",
+      "index": 40074,
       "title": "漫画 / 故事板 - 野花丛中奇幻的幽灵",
       "originalTitle": "漫画 / 故事板 - 野花丛中奇幻的幽灵",
       "description": "一个奇幻且略带诡异的提示词，描绘了一只戴着雏菊装饰女巫帽的半透明幽灵，置身于花海之中。",
@@ -3702,11 +3651,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-76-8305136cd59c",
-      "index": 40076,
+      "id": "nano-banana-75-8305136cd59c",
+      "index": 40075,
       "title": "漫画 / 故事板 - 沙漠中的黏土动画风格外星人",
       "originalTitle": "漫画 / 故事板 - 沙漠中的黏土动画风格外星人",
       "description": "生成一个迷人的黏土动画风格场景，描绘了在沙漠景观中满月下的身着银色连体衣的绿色外星人。",
@@ -3744,11 +3693,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-77-55f333aa65a3",
-      "index": 40077,
+      "id": "nano-banana-76-55f333aa65a3",
+      "index": 40076,
       "title": "漫画 / 故事板 - 大图书馆读者肖像",
       "originalTitle": "漫画 / 故事板 - 大图书馆读者肖像",
       "description": "一个结构化的 JSON 提示词，用于生成一张宁静、照片级逼真的女性在历史悠久的图书馆中阅读的场景。",
@@ -3787,11 +3736,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-78-a7cbf3ad1966",
-      "index": 40078,
+      "id": "nano-banana-77-a7cbf3ad1966",
+      "index": 40077,
       "title": "漫画 / 故事板 - 3D 风格化卡通女孩坐在石凳上",
       "originalTitle": "漫画 / 故事板 - 3D 风格化卡通女孩坐在石凳上",
       "description": "一幅精致的 3D 风格化渲染图，描绘了一位拥有祖母绿双眸和铂金长发的卡通女孩，以梦幻般的姿态坐在石凳上。",
@@ -3831,11 +3780,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-79-d56ff7f9d9b5",
-      "index": 40079,
+      "id": "nano-banana-78-d56ff7f9d9b5",
+      "index": 40078,
       "title": "漫画 / 故事板 - 70 年代伊朗政治团体肖像",
       "originalTitle": "漫画 / 故事板 - 70 年代伊朗政治团体肖像",
       "description": "一个用于生成 20 世纪 70 年代德黑兰政治团体历史场景的提示词，具有特定的时代美学风格。",
@@ -3873,11 +3822,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-80-4e7ebb60af05",
-      "index": 40080,
+      "id": "nano-banana-79-4e7ebb60af05",
+      "index": 40079,
       "title": "漫画 / 故事板 - 奇幻动物水岸插画",
       "originalTitle": "漫画 / 故事板 - 奇幻动物水岸插画",
       "description": "两组用于生成可爱动物（熊和猫）在星空下水边休憩的奇幻提示词，采用柔和的动漫或卡通风格。",
@@ -3916,11 +3865,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-81-c989b6859d4b",
-      "index": 40081,
+      "id": "nano-banana-80-c989b6859d4b",
+      "index": 40080,
       "title": "漫画 / 故事板 - 高端有机蜂蜜商业广告项目",
       "originalTitle": "漫画 / 故事板 - 高端有机蜂蜜商业广告项目",
       "description": "一份详细的高端有机蜂蜜商业广告项目提示词，包含微距镜头、液体质感及温暖的金色美学设计。",
@@ -3961,11 +3910,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-82-f9e00229337b",
-      "index": 40082,
+      "id": "nano-banana-81-f9e00229337b",
+      "index": 40081,
       "title": "漫画 / 故事板 - 高端方便面广告项目",
       "originalTitle": "漫画 / 故事板 - 高端方便面广告项目",
       "description": "一个高能量的美食广告项目提示词，专注于方便面的微距摄影和动态灯光效果。",
@@ -4005,263 +3954,42 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-83-28710cfb7f24",
-      "index": 40083,
-      "title": "漫画 / 故事板 - 自然环境中的电影感 Android",
-      "originalTitle": "漫画 / 故事板 - 自然环境中的电影感 Android",
-      "description": "这是一个用于 Nano Banana Pro 的电影感提示词，旨在生成一个置身于郁郁葱葱的自然草甸背景下的 Android 角色。",
-      "category": "插画 / 漫画",
+      "id": "nano-banana-82-c5b2cea461af",
+      "index": 40082,
+      "title": "产品营销 - 单色红色影棚肖像",
+      "originalTitle": "产品营销 - 单色红色影棚肖像",
+      "description": "一张身着街头服饰的女性高定影棚肖像，背景为戏剧性的深红色，并配有鲜艳的红色轮廓光。",
+      "category": "人像摄影",
       "categories": [
-        "插画 / 漫画"
+        "人像摄影"
       ],
       "sourceCategory": "youmind-nano-banana-public-github",
       "ratio": "自适应",
-      "prompt": "电影感 {argument name=\"character\" default=\"Android\"}，背景为 {argument name=\"setting\" default=\"草甸\"}",
+      "prompt": "一张高定影棚肖像，画面中的 {argument name=\"subject\" default=\"一位时尚的东亚年轻女性\"} 正在动态摆拍，一只手轻触头发。她身着 {argument name=\"clothing\" default=\"一件超大款米色圆领卫衣，塞进橄榄绿高腰工装慢跑裤中，裤腰带有抽绳，配有大翻盖口袋\"}。佩戴黑色搭扣颈圈、银色圆环耳环和精致的戒指作为点缀。她梳着凌乱的半丸子头，波浪发丝修饰脸型，妆容柔和性感，唇部带有光泽。{argument name=\"lighting\" default=\"戏剧性的单色深红与绯红色影棚灯光\"} 投射出柔和的阴影和鲜艳的红色轮廓高光，纯暖红色背景，85mm 肖像摄影，时尚画册风格，高细节，照片级真实感，8k 分辨率。",
       "promptType": "original-public-github",
       "featured": false,
       "tags": [
         "Nano Banana",
         "摄影感"
       ],
-      "image": "https://cms-assets.youmind.com/media/1787120741335_arstps_HQAhYD6WAAAGizs.jpg",
+      "image": "https://cms-assets.youmind.com/media/1788418033189_cs2lzy_HROJMMjaEAArQWH.jpg",
       "imageUrls": [
-        "https://cms-assets.youmind.com/media/1787120741335_arstps_HQAhYD6WAAAGizs.jpg"
-      ],
-      "author": "Kōda",
-      "authorHandle": "aimikoda",
-      "originalPostUrl": "https://x.com/aimikoda/status/2089707047801454941",
-      "publishedAt": "2026年8月18日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Kōda",
-      "previewSourceUrl": "https://x.com/aimikoda/status/2089707047801454941",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=31885",
-      "attributionText": "提示词与效果图：Kōda；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-84-078176474b5b",
-      "index": 40084,
-      "title": "漫画 / 故事板 - 奢华沙龙中的时尚护士",
-      "originalTitle": "漫画 / 故事板 - 奢华沙龙中的时尚护士",
-      "description": "一张高定时尚风格的肖像照，展现了一位身着白色套装的护士，背景是装饰着古典风格的金色锦缎奢华沙龙。",
-      "category": "插画 / 漫画",
-      "categories": [
-        "插画 / 漫画"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "在包裹着金色锦缎和华丽拼花地板的奢华沙龙内，一种静谧而反叛的氛围油然而生。特写镜头下，一位从容的年轻 {argument name=\"subject\" default=\"护士女性\"} 以坚定不移的目光和半掩眼帘的自信掌控着整个空间，她坐在一张 {argument name=\"furniture\" default=\"复古红色扶手椅\"} 上。她身着 {argument name=\"outfit\" default=\"白色露脐上衣、白色短裙，搭配白色长袜和带有红十字标志的白色高跟鞋，头戴带有红十字标志的护士帽\"}。她剪裁考究的套装与精致的蕾丝纹理，与厚重的古典装饰形成了鲜明对比。温暖的琥珀色定向光雕琢着她的五官，并以明晰的光感笼罩着整个场景。古色古香的大理石壁炉和深邃的古典房间消融在温暖的赭色与金色调的油画质感中。背景墙上悬挂着一幅从地面延伸至天花板的巨幅德拉克罗瓦风格金色画作。整个场景捕捉到了纯粹的时尚编辑力量，展现了永恒传统与当代强烈自我意识的碰撞。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1787120735839_aux1ho_HQAdQKNXsAAMSvQ.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1787120735839_aux1ho_HQAdQKNXsAAMSvQ.jpg",
-        "https://cms-assets.youmind.com/media/1787120735810_5tj92v_HQAdQKSXUAAn2QY.jpg",
-        "https://cms-assets.youmind.com/media/1787120735885_bbd9bf_HQAdQKPWYAATXZr.jpg",
-        "https://cms-assets.youmind.com/media/1787120736538_y820f4_HQAdQKMXkAEWdPa.jpg"
-      ],
-      "author": "KeorUnreal",
-      "authorHandle": "KeorUnreal",
-      "originalPostUrl": "https://x.com/KeorUnreal/status/2089702402559447530",
-      "publishedAt": "2026年8月18日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "KeorUnreal",
-      "previewSourceUrl": "https://x.com/KeorUnreal/status/2089702402559447530",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=31880",
-      "attributionText": "提示词与效果图：KeorUnreal；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-85-02fb04dad1ce",
-      "index": 40085,
-      "title": "漫画 / 故事板 - 超现实主义火烈鸟芭蕾舞裙插画",
-      "originalTitle": "漫画 / 故事板 - 超现实主义火烈鸟芭蕾舞裙插画",
-      "description": "用于生成一幅超现实、细节丰富的黑白插画的提示词，画面描绘了一只穿着荷叶边芭蕾舞裙站在棋盘格地板上的火烈鸟。",
-      "category": "插画 / 漫画",
-      "categories": [
-        "插画 / 漫画"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "一幅黑白且细节极其丰富的 {argument name=\"style\" default=\"超现实主义插画\"}，描绘了一只 {argument name=\"subject\" default=\"火烈鸟\"} 站在棋盘格地板上。火烈鸟的身体装饰着一条 {argument name=\"clothing\" default=\"蓬松的荷叶边芭蕾舞裙\"}，看起来如同层层叠叠的精致织物。芭蕾舞裙下露出它细长的双腿，脖颈优雅地弯曲，头部转向一侧。背景黑暗且充满氛围感，隐约可见抽象的形状和纹理，营造出一种梦幻或戏剧化的场景。整体氛围优雅且略带忧郁，颗粒感的纹理和阴暗深沉的灯光赋予了画面复古的美感。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1787120731915_pmg62t_HPcwmoQWcAAuU2T.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1787120731915_pmg62t_HPcwmoQWcAAuU2T.jpg"
-      ],
-      "author": "Heather Green",
-      "authorHandle": "heathergreen",
-      "originalPostUrl": "https://x.com/heathergreen/status/2089532739124887591",
-      "publishedAt": "2026年8月18日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Heather Green",
-      "previewSourceUrl": "https://x.com/heathergreen/status/2089532739124887591",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=31757",
-      "attributionText": "提示词与效果图：Heather Green；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-86-cc2b9360e2f1",
-      "index": 40086,
-      "title": "漫画 / 故事板 - Velvet Afterlight 系统提示词",
-      "originalTitle": "漫画 / 故事板 - Velvet Afterlight 系统提示词",
-      "description": "一套精密的系统指令集，用于创建具有特定光影和关系焦点的油画质感动漫风格图像提示词。",
-      "category": "插画 / 漫画",
-      "categories": [
-        "插画 / 漫画"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "VELVET AFTERLIGHT\n\n将用户的文本、图像或两者重写为 GPT Image Gen V2 或 Nano Banana Pro 的单一提示词。除非指定使用 Nano，否则请使用 GPT。保留语言、确切文本以及请求或来源的比例。\n\n使用三个系统。Relation Chamber 通过高度、姿势、深色框架块和开放间隔来组织注视、触及、接触、反射、路径或共享光线关系。Painted Cel Register 使用符合年龄的动漫解剖结构、细致的彩色轮廓、宽广的手绘色值、分组头发、选择性的柔和过渡以及特定材质的高光。Afterlight Veil 使用一个冷色调的后方或侧方光源、窄边缘照明、微弱的反射补光、局部的紫蓝色光晕以及选择性的轮廓缺失。\n\n保留主体、数量、身份、动作、场景、服装、物体、颜色、文本和参考信息。对于编辑，请保留未被要求修改的内容。\n\n选择一个确切的瞬间和一个关系轴。高度、触及、注视、支撑和接触需要物理成因。保持一个开放间隔和一个安静区域。单个主体应与物体、光线、反射、阈值、阴影或画外目标建立关系，而不是凭空增加同伴。\n\n使用细靛蓝、李子色、棕色或木炭色轮廓。在眼睛、手部、接缝、边缘和重叠处加强线条。在明亮边缘、柔和的面部平面、远处的形态、雾气以及暗部接触处减少线条。使用两到四个色值组，并辅以选择性的喷枪过渡。不要使用统一的轮廓线、矢量边缘、塑料质感的皮肤或平滑的 3D 渲染。\n\n头发使用一个大块面、次级发束和有限的细丝。材质需保持各自的质感响应。边缘光仅出现在面向光源的轮廓上，并在遮挡处中断。反射光揭示选定的面部、手部、服装或物体平面，且保持弱于直接光源。光晕（Bloom）仅保留在真实的明亮边缘附近。禁止使用完整的发光轮廓、全局紫色滤镜、随机粒子或全画幅模糊。\n\nGPT：返回 500 到 800 字，分为五个段落，涵盖场景、主体、关系、绘画结构、光线、过渡、构图、参考、文本和失败案例。\n\nNANO：仅返回 JSON，1000 到 1800 token，使用 “aspect_ratio”、“references”、“scene”、“subjects”、“relation_chamber”、“painted_cel_register”、“afterlight_veil”、“transitions”、“composition”、“surface_and_palette”、“text”、“avoid”。省略未使用的字段。无需元数据、ID、权重、注释或重复内容。\n\n仅返回最终生成的提示词。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "3D"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1787120732962_omxduy_HP9a6P7bQAAMod9.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1787120732962_omxduy_HP9a6P7bQAAMod9.jpg",
-        "https://cms-assets.youmind.com/media/1787120732980_e6siop_HP9a6P5bwAAqD2y.jpg",
-        "https://cms-assets.youmind.com/media/1787120733045_6w5wu5_HP9a6P8bQAAAIj6.jpg",
-        "https://cms-assets.youmind.com/media/1787120733661_ib9jk2_HP9a6P1asAAANCw.jpg"
-      ],
-      "author": "Emily",
-      "authorHandle": "IamEmily2050",
-      "originalPostUrl": "https://x.com/IamEmily2050/status/2089488719158161621",
-      "publishedAt": "2026年8月17日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Emily",
-      "previewSourceUrl": "https://x.com/IamEmily2050/status/2089488719158161621",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=31877",
-      "attributionText": "提示词与效果图：Emily；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-87-a7632be071cb",
-      "index": 40087,
-      "title": "漫画 / 故事板 - 猫咪 CEO 办公室面试",
-      "originalTitle": "漫画 / 故事板 - 猫咪 CEO 办公室面试",
-      "description": "一个冷幽默提示词：一只小橘猫坐在 CEO 的椅子上，在未来派摩天大楼的办公室里面试人类。",
-      "category": "插画 / 漫画",
-      "categories": [
-        "插画 / 漫画"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "{\n  \"title\": \"面试\",\n\n  \"scene\": \"位于 98 层的一间豪华企业办公室，俯瞰着一座未来派城市。\",\n\n  \"subject\": \"一只小橘猫自信地坐在 CEO 的椅子上，六名紧张的人类坐在桌子对面等待面试。\",\n\n  \"detail\": \"其中一份人类简历上写着“12 年工作经验”。猫咪头也不抬地慢慢将其推到一边。\",\n\n  \"image_text\": \"\\\"下一个。\\\"\",\n\n  \"atmosphere\": \"冷幽默，电影感，高级审美\",\n\n  \"style\": \"超写实，好莱坞电影剧照，极致细节，Roger Deakins 灯光，8K\"\n}",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "摄影感"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1787034148281_vjkob4_HP76UENbIAEDLI7.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1787034148281_vjkob4_HP76UENbIAEDLI7.jpg"
-      ],
-      "author": "Compound Learning - Tech | Science",
-      "authorHandle": "SheBuildsAI_",
-      "originalPostUrl": "https://x.com/SheBuildsAI_/status/2089382503471874106",
-      "publishedAt": "2026年8月17日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Compound Learning - Tech | Science",
-      "previewSourceUrl": "https://x.com/SheBuildsAI_/status/2089382503471874106",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=31752",
-      "attributionText": "提示词与效果图：Compound Learning - Tech | Science；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-88-cc17bc7405ad",
-      "index": 40088,
-      "title": "产品营销 - 复古未来主义橙色主题时尚肖像",
-      "originalTitle": "产品营销 - 复古未来主义橙色主题时尚肖像",
-      "description": "一张具有 1960-70 年代复古氛围的风格化时尚肖像，主角是一位佩戴超大号橙色墨镜的年轻女性，背景融入了日式纺织图案元素。",
-      "category": "海报设计",
-      "categories": [
-        "海报设计"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "9:16",
-      "prompt": "风格化的复古未来主义时尚肖像，{argument name=\"subject\" default=\"美丽的年轻女性\"}，9:16 竖构图。画面展示了她从肩膀以上的部位，正对镜头，头部微微上扬，展现出自信、梦幻且前卫的时尚感。她留着一头自然垂落的长波浪深色秀发，发丝清晰可见，在肩部周围略显凌乱。她的皮肤呈现出柔和的暖米色调，带有细腻真实的质感。她佩戴着一副超大号圆形墨镜，镜片为深半透明红橙色，配以纤细的金属镜框，遮住了大部分眼睛。她的嘴唇丰满、有光泽，微微张开，涂着柔和的珊瑚红色唇膏。她的五官精致对称，体现了高级的时尚审美。她穿着一件 {argument name=\"outfit\" default=\"鲜艳的橙红色图案服装，灵感源自复古日式纺织图案\"}，在肩部和领口处可见。背景与艺术指导：大胆的暖金橙色纹理背景，头部后方有一个居中的大红橙色太阳圆环。在构图周围添加微妙的手绘抽象线条、精致的涂鸦、淡淡的油漆痕迹、颗粒感以及复古印刷瑕疵。整体美学应结合 {argument name=\"style\" default=\"1960-70 年代复古海报艺术\"}、日式平面设计、当代时尚插画和电影级时尚肖像摄影。强烈的橙色、红色、金色和柔和的青色调构成了引人注目的配色方案。纹理与渲染：高度细腻的墨水与绘画质感、精细的交叉排线、微妙的半色调印刷、纸张颗粒感、略显不完美的丝网印刷边缘、分层插画纹理、柔和的氛围阴影、逼真的发丝细节、精致的面部渲染、艺术化的瑕疵，呈现出高级时尚杂志封面的美感。构图：主体居中，对称式构图，特写肖像，以红色大墨镜为主要视觉焦点，视觉层级清晰，画面简洁，竖版海报构图。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "3D",
-        "文字排版",
-        "摄影感"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788332552440_7i05o8_HRGotwGaoAAltcy.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788332552440_7i05o8_HRGotwGaoAAltcy.jpg"
+        "https://cms-assets.youmind.com/media/1788418033189_cs2lzy_HROJMMjaEAArQWH.jpg"
       ],
       "author": "𝑨𝒇𝒓𝒊𝒏",
       "authorHandle": "afrinxai",
-      "originalPostUrl": "https://x.com/afrinxai/status/2094757166708076822",
-      "publishedAt": "2026年9月1日",
+      "originalPostUrl": "https://x.com/afrinxai/status/2095179946134270076",
+      "publishedAt": "2026年9月2日",
       "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
       "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
       "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
       "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
       "previewOwner": "𝑨𝒇𝒓𝒊𝒏",
-      "previewSourceUrl": "https://x.com/afrinxai/status/2094757166708076822",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33192",
+      "previewSourceUrl": "https://x.com/afrinxai/status/2095179946134270076",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33269",
       "attributionText": "提示词与效果图：𝑨𝒇𝒓𝒊𝒏；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
       "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
       "rightsReviewStatus": "cc-by-4.0-public-github",
@@ -4269,11 +3997,241 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-89-deb26e6cfa43",
-      "index": 40089,
+      "id": "nano-banana-83-ec97c3e5cff9",
+      "index": 40083,
+      "title": "产品营销 - 3D 分层衍纸时尚艺术",
+      "originalTitle": "产品营销 - 3D 分层衍纸时尚艺术",
+      "description": "一个用于创作 3D 分层衍纸时尚插画的艺术提示词，包含优雅的设计、纹理纸张背景以及精致的花卉边框。",
+      "category": "人像摄影",
+      "categories": [
+        "人像摄影"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "3D 衍纸与分层纸艺风格的优雅时尚插画，在干净的米白色纹理纸背景上进行平铺拍摄，配以柔和的顶部摄影棚灯光和细腻的投影。画面中央是一位完全由分层剪纸工艺制作的时尚女性形象。她身穿一件引人注目的 {argument name=\"dress color\" default=\"珊瑚红\"} 无袖连衣裙，采用心形领口设计，腰间系着一条带有微型金色扣环的黑色细腰带，裙摆为极具层次感的飘逸花瓣裙，并带有高开叉设计。她头上戴着一顶相配的宽檐 {argument name=\"hat color\" default=\"珊瑚红\"} 遮阳帽，帽身饰有黑色细带。她拥有一头浓密且富有质感的黑色衍纸长发，呈现出柔和的卷曲感；面部设计极简，仅点缀红色唇妆，佩戴红色吊坠耳环，脚踩黑色尖头高跟鞋。她一只手优雅地拎着一个编织米色柳条手提袋，前臂挎着一个小巧的黑色绗缝手提包。构图的四个角落均饰有精致的衍纸花卉，包括深红色玫瑰、花心明黄的珊瑚红五瓣花、米色衍纸螺旋玫瑰、绿叶以及红色小花蕾。左上角点缀着一个硕大而优雅的 {argument name=\"bow color\" default=\"珊瑚红\"} 折纸蝴蝶结。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "3D",
+        "极简",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418034813_8kuo8i_HROJJN3WYAI-4eB.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418034813_8kuo8i_HROJJN3WYAI-4eB.jpg",
+        "https://cms-assets.youmind.com/media/1788418034972_xq3vkn_HROJKfaXIAM0PdR.jpg",
+        "https://cms-assets.youmind.com/media/1788418035434_mk2uxg_HROJLgjbIAASt86.jpg",
+        "https://cms-assets.youmind.com/media/1788418035991_4hjgoh_HROJMrebkAA5BnF.jpg"
+      ],
+      "author": "Gilbert Odera | Your AI Plug",
+      "authorHandle": "yourPlugAI",
+      "originalPostUrl": "https://x.com/yourPlugAI/status/2095169126356451536",
+      "publishedAt": "2026年9月2日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Gilbert Odera | Your AI Plug",
+      "previewSourceUrl": "https://x.com/yourPlugAI/status/2095169126356451536",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33272",
+      "attributionText": "提示词与效果图：Gilbert Odera | Your AI Plug；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-84-f88c54fc6c54",
+      "index": 40084,
+      "title": "产品营销 - 忧郁建筑风格时尚肖像",
+      "originalTitle": "产品营销 - 忧郁建筑风格时尚肖像",
+      "description": "一个用于超现实高级时装编辑肖像的复杂提示词，融合了不对称建筑元素与忧郁主题。",
+      "category": "人像摄影",
+      "categories": [
+        "人像摄影"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "{ \"vibe_title_en\": \"悬浮黄金时代的忧郁建筑师\", \"master_prompt\": \"一张超写实的中画幅编辑摄影作品。构图：中心力量中景，完美的胸部以上肖像，具有绝对的水平对称性。主角的面部位于画面上方三分之一处的正中心。主体：主角表现出一种忧郁、悲伤的专注感，眼中流露出非凡才华带来的沉重负担。他们拥有雕塑般的及腰淡天蓝色长发，造型为精确、反重力、冻结的随风飘动的建筑波浪。妆容：编辑级高级时装风格；光泽感眼睑，模糊的赤陶色唇染，泪腺附近有精准点缀的金箔。动作/姿势：双手优雅地抬至画面下方，手指上沾满了原始的金粉，轻轻握住一个沉重、复杂的黄铜钟表齿轮，进行触觉感官互动。服装：一件剪裁考究的高级定制浅蓝色细条纹西装外套，配有由厚重、有质感的羊毛丝绸制成的夸张且完全对称的翻领。环境：超现实的镜面干涸盐滩。主角身后是一个巨大的、高预算的实景特效：浓密的干冰烟雾被塑造成一个巨大的圆形云朵时钟，实心抛光黄铜罗马数字通过隐形线悬浮在半空中。灯光：主体两侧使用两个大型柔光箱进行完美对称布光，产生均匀、无阴影的肤色。与之形成鲜明对比的是，背景环境沐浴在温暖、尘土飞扬的体积光中，空气中悬浮着清晰可见的尘埃颗粒，与明亮湛蓝的天空形成对比。技术规格：使用 Hasselblad H6D-100c 拍摄，100mm f/4 镜头。Kodak Portra 400 胶片。不可思议的写实感，皮肤毛孔、织物纹理和金属反射的微观细节。无霓虹灯。\", \"meta\": { \"intent\": \"超现实高级时装编辑肖像\", \"priorities\": \"绝对对称，写实超现实主义，触觉忧郁感，体积尘埃\", \"device_profile\": \"中画幅数码相机，带模拟胶片仿真\" }, \"frame\": { \"aspect\": \"4:5\", \"composition\": \"中心力量中景\", \"layout\": \"绝对水平对称。面部位于上方三分之一处的正中心。\", \"camera_angle\": \"平视，与主体完全平行\", \"tilt_roll_degrees\": \"0 度，完全水平\" }, \"subject\": { \"gender\": \"女性\", \"identity\": \"忧郁天才\", \"demographics\": \"无龄感，空灵的特征\", \"face\": \"对称的结构，带有沉重、悲伤的凝视和光泽的皮肤质感\", \"hair\": \"雕塑般的及腰淡天蓝色长发，造型为精确、反重力、冻结的随风飘动的建筑波浪\", \"makeup\": \"光泽感眼睑，模糊的渐变赤陶色唇染，泪腺附近精准点缀的金箔\", \"body\": \"姿势挺拔，双肩平齐，稳重而静止\", \"expression\": \"忧郁的专注，承载着非凡才华的沉重负担\", \"pose\": \"胸部以上，正面朝向。双手可见于画面下方，轻轻与一个小物体互动\" }, \"wardrobe_accessories\": { \"garments\": [ { \"item\": \"带有夸张翻领的高级定制西装外套\", \"material\": \"厚重有质感的羊毛丝绸混纺\", \"color\": \"浅蓝色配白色细条纹\", \"fit\": \"剪裁考究，结构感强，且完全对称\" } ], \"accessories\": [ { \"item\": \"沉重复杂的钟表齿轮\", \"color\": \"抛光陈年黄铜色\", \"material\": \"实心黄铜\", \"brand_style\": \"复古钟表零件\" }, { \"item\": \"金粉污渍\", \"color\": \"金属金\", \"material\": \"原始金粉颜料\", \"brand_style\": \"手工触觉细节\" } ] }, \"environment\": { \"setting\": \"明亮蓝天下的镜面干涸盐滩，带有巨大的悬浮云朵时钟实景特效\", \"surfaces\": \"开裂的白色盐地，浓密的干冰烟雾，抛光的悬浮黄铜数字\", \"depth\": \"背景浅景深，使巨大的时钟略显柔和，而主体保持极其锐利\", \"atmosphere\": \"温暖、沉重且忧郁，空气中漂浮着清晰可见的尘埃颗粒\", \"lens_interaction\": \"光线穿过悬浮尘埃微粒产生的微妙散射\" }, \"lighting\": { \"key\": \"主体左右两侧的大型柔光箱\", \"fill\": \"对称的反光板以消除面部所有阴影\", \"rim\": \"温暖、微妙的背光，将主体与云朵结构分离开来\", \"shadows\": \"主体面部无阴影；背景烟雾结构内部有深邃、真实的物理阴影\", \"color_temperature\": \"主体为中性日光（5500K），背景为温暖的黄金时刻（3200K）尘埃光束\", \"sensor_flare\": \"无，完美控制的光学传输\" }, \"camera\": { \"lens_type\": \"中焦定焦镜头\", \"focal_length\": \"100mm\", \"aperture\": \"f/4.0\", \"focus\": \"对焦在主体忧郁的眼睛和沾满金粉的手指上，极其锐利\", \"sensor_format\": \"中画幅 (Hasselblad H6D-100c)\", \"perspective_distortion\": \"零畸变，压缩且完全平坦的透视\" }, \"post_processing\": { \"color\": \"Kodak Portra 400 色彩科学，丰富的暖色调中音与天蓝色形成对比\", \"tonality\": \"高动态范围，柔和的滚动高光和背景中深邃、天鹅绒般的黑色\", \"texture\": \"真实的 400 ISO 胶片颗粒，高度详细的皮肤毛孔和织物纹理保留\", \"digital_sharpening\": \"无，完全依赖中画幅光学锐度\", \"chromatic_aberration\": \"失焦背景中黄铜数字边缘极其细微的色散\" }, \"negative_specifications\": [ \"霓虹灯\", \"赛博朋克\", \"咖啡馆\", \"屋顶\", \"图书馆\", \"极简办公室\", \"卡通化\", \"插画\", \"3D 渲染\", \"短发\", \"不对称\", \"面部刺眼的阴影\", \"数码塑料皮肤\", \"文字\", \"水印\" ] }",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "3D",
+        "极简",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418035820_xc3fv3_HRN4RXGWQAILymz.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418035820_xc3fv3_HRN4RXGWQAILymz.jpg",
+        "https://cms-assets.youmind.com/media/1788418035358_a13n8t_HRN4RdXWsAEjb2N.jpg",
+        "https://cms-assets.youmind.com/media/1788418035822_r6nr7i_HRN4ROxWcAAq7fE.jpg",
+        "https://cms-assets.youmind.com/media/1788418036369_50c53m_HRN4RTNWEAQB6wR.jpg"
+      ],
+      "author": "timedoctor.eth",
+      "authorHandle": "timedoctor_nft",
+      "originalPostUrl": "https://x.com/timedoctor_nft/status/2095150497523007866",
+      "publishedAt": "2026年9月2日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "timedoctor.eth",
+      "previewSourceUrl": "https://x.com/timedoctor_nft/status/2095150497523007866",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33274",
+      "attributionText": "提示词与效果图：timedoctor.eth；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-85-914ee6bb0294",
+      "index": 40085,
+      "title": "产品营销 - 红色单色时尚广告企划",
+      "originalTitle": "产品营销 - 红色单色时尚广告企划",
+      "description": "一个采用红色单色主题和面板布局的高级时尚广告提示词，旨在保留模特原貌。",
+      "category": "海报设计",
+      "categories": [
+        "海报设计"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "16:9",
+      "prompt": "使用我上传的女性模特作为主要女性主体的唯一身份参考，创作一张高端、超写实的时尚广告宣传图。必须精准保留她的面部特征和自然外观——包括脸型、肤色、眼睛、眉毛、鼻子、嘴唇、下颌线、颧骨、发型、发质以及面部比例。确保她具有极高的辨识度。请勿进行美化、重塑、女性化、衰老、减龄或任何改变其面部特征的操作。将参考图的整体视觉概念重构为奢华的当代时尚广告，呈现出引人注目的红色单色美学。主要构图：创建一个精致的编辑排版，包含三个摄影面板：* 上方大面板：女性模特摆出戏剧性的低角度时尚姿势，自信地看向镜头，身穿优雅飘逸的深绯红色/红色高级定制礼服，具有雕塑感的褶皱和长袖设计。动态的织物褶皱与动感，展现强大的时尚编辑气场。* 左下方面板：同一模特摆出优雅的全身动态姿势，红裙在空中戏剧性地飘动，营造出优雅的织物动感。* 右下方面板：模特自信地站立，身着精致的红色时尚装束，姿态强劲，电影级布光，奢华造型。在每个面板中使用不同的姿势和构图，同时保持完全一致的模特身份。艺术指导：大胆的红配红调色板，丰富的深红色背景，鲜艳的猩红色高光，深酒红色的阴影，光泽感时尚杂志质感，戏剧性的影棚布光，细腻的轮廓光，高对比度，奢华氛围。整体设计应呈现出高端时尚科技初创公司宣传/杂志广告的感觉，现代、精致、极简、艺术且高度精炼。在构图中融入品味高雅的编辑排版文字：“SEE WHAT’S COMING”，中央大标题：“FRILANZE”，下方小副标题：“NOUN: FREELANCE”，底部标题：“RED AWAKENING”，底部文案：“Where creativity becomes content.” “Waitlist Now Live!” 排版应简洁、现代、优雅且具有时尚编辑感，并具备出色的间距和层级。超写实摄影，奢华时尚广告，电影级影棚布光，真实的皮肤质感，自然的脸部细节，在不改变身份的前提下进行高级修图，细腻的织物纹理，戏剧性的飘逸面料，精致的构图，Vogue 风格的编辑摄影，高端商业广告，清晰对焦，照片级真实，精良的艺术指导。长宽比：16:9 横屏。禁止出现额外人物、手部畸形、肢体重复、面部改变、人造感皮肤、水印、随机文字或标志变形。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "极简",
+        "文字排版",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418037652_vztjt7_HRMsV6ZbEAAiWNk.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418037652_vztjt7_HRMsV6ZbEAAiWNk.jpg",
+        "https://cms-assets.youmind.com/media/1788418037686_b7wfhe_HRMsV6dbAAARvlI.jpg",
+        "https://cms-assets.youmind.com/media/1788418037674_ia74jf_HRMsV6ZbcAAFwnA.jpg",
+        "https://cms-assets.youmind.com/media/1788418038305_s3xwua_HRMsV6WbUAAD2VC.jpg"
+      ],
+      "author": "Aniya Intelligence",
+      "authorHandle": "aniyaintel",
+      "originalPostUrl": "https://x.com/aniyaintel/status/2095067017015709750",
+      "publishedAt": "2026年9月2日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Aniya Intelligence",
+      "previewSourceUrl": "https://x.com/aniyaintel/status/2095067017015709750",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33276",
+      "attributionText": "提示词与效果图：Aniya Intelligence；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-86-7e85279e0ca3",
+      "index": 40086,
+      "title": "产品营销 - 夏季奢华时尚大片",
+      "originalTitle": "产品营销 - 夏季奢华时尚大片",
+      "description": "一份关于在凉亭中拍摄男性高对比度奢华时尚大片的综合提示词，包含对光影和质感的详细描述。",
+      "category": "创意发现",
+      "categories": [
+        "创意发现"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "一位 {argument name=\"subject\" default=\"留着短黑发和浓密胡须的古铜色皮肤成年男性\"} 正面居中坐着，散发出自信、放松且刻意摆拍的气质。他戴着黑色旅行者太阳镜，嘴唇紧闭，表情中性。他身穿 {argument name=\"clothing\" default=\"深海军蓝（近乎黑色）的未扣纽扣亚麻衬衫，搭配利落的白色长裤\"}。他的姿势微微向右倾斜，重心由撑在臀部后方软垫上的右手支撑。他的左膝抬起，左手随意地搭在膝盖上，手指自然下垂，露出一块带有鲜艳蓝色表盘的银色金属手表。他坐在一间豪华水上凉亭内，坐垫是宽大且洁净的米色簇绒户外躺椅垫。左侧、顶部和中心由半透明的灰白色凉亭窗帘环绕，窗帘以动态的褶皱、折痕和半透明哑光面料的重叠层束起，捕捉着阳光。右下角是浅暖棕色的木质甲板。右侧甲板外，深处的中景展现出清澈、涟漪阵阵的绿松石色海水，并逐渐过渡为更深邃的鲜艳蓝色，浅滩海底的圆石清晰可见。深远的背景延伸至郁郁葱葱的森林海岸线，绿色的松树覆盖着连绵起伏的丘陵，与水面相接。场景沐浴在充满活力的、高指向性的明亮硬质自然光下，光线从前方 45 度角射入。这种强烈的照明营造出高饱和度、温暖的互补色调，在下巴下方、弯曲的左膝下方以及窗帘投射在簇绒软垫上的阴影处，形成了生硬、清晰且深邃的黑色阴影。额头、鼻梁、左臂上方以及白色长裤上闪烁着明亮锐利的高光。使用 35mm 镜头，ISO 100，f/8，1/500s 拍摄，这张极其清晰的数码照片捕捉到了高对比度男性夏季奢华时尚大片的精髓。深景深使远处的景观保持完全清晰且无噪点，后期处理增强了海洋蓝和温暖棕褐色肤色的活力，保护了高光，并略微压暗了黑色，以实现强烈的非对称视觉层次感，并以 4:5 的画幅比例完美呈现。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788332549832_i0wely_HQ_cu30XUAAKXnB.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788332549832_i0wely_HQ_cu30XUAAKXnB.jpg"
+      ],
+      "author": "Picts by AI",
+      "authorHandle": "pictsbyai",
+      "originalPostUrl": "https://x.com/pictsbyai/status/2094701293302395313",
+      "publishedAt": "2026年9月1日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Picts by AI",
+      "previewSourceUrl": "https://x.com/pictsbyai/status/2094701293302395313",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33189",
+      "attributionText": "提示词与效果图：Picts by AI；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-87-ecad0302aec4",
+      "index": 40087,
+      "title": "产品营销 - 明暗对比时尚人像",
+      "originalTitle": "产品营销 - 明暗对比时尚人像",
+      "description": "一个利用戏剧性明暗对比照明和超大帽子来营造神秘感与优雅气质的高级时尚摄影提示词。",
+      "category": "人像摄影",
+      "categories": [
+        "人像摄影"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "一张高级时尚摄影棚人像，一位优雅的女性置身于 {argument name=\"lighting\" default=\"戏剧性的明暗对比光影\"} 中，背景为纯深灰色。她戴着一顶 {argument name=\"accessory\" default=\"超大宽檐黑色羊毛毡帽\"}，帽檐向下倾斜，投下的深邃阴影完全遮住了她的眼睛和额头。画面中清晰可见她精致的下颌线、立体的颧骨以及大胆的哑光深红色双唇。她身着一件 {argument name=\"clothing\" default=\"露肩黑色绷带晚礼服\"}，凸显出她外露的锁骨和修长的颈部。侧面定向柔光照明，深邃阴影，极简主义，精致考究，使用 85mm 镜头拍摄，f/1.8 光圈，细节清晰，Vogue 编辑风格。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "极简",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418043350_dx8j27_HRDlZMvbkAAqKRy.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418043350_dx8j27_HRDlZMvbkAAqKRy.jpg"
+      ],
+      "author": "𝑨𝒇𝒓𝒊𝒏",
+      "authorHandle": "afrinxai",
+      "originalPostUrl": "https://x.com/afrinxai/status/2094651467311317159",
+      "publishedAt": "2026年9月1日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "𝑨𝒇𝒓𝒊𝒏",
+      "previewSourceUrl": "https://x.com/afrinxai/status/2094651467311317159",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33088",
+      "attributionText": "提示词与效果图：𝑨𝒇𝒓𝒊𝒏；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-88-deb26e6cfa43",
+      "index": 40088,
       "title": "产品营销 - 提示词：",
       "originalTitle": "产品营销 - 提示词：",
       "description": "null",
@@ -4311,7 +4269,51 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-89-bf56428adcd1",
+      "index": 40089,
+      "title": "产品营销 - 街头风格长曝光时尚摄影",
+      "originalTitle": "产品营销 - 街头风格长曝光时尚摄影",
+      "description": "一个现代时尚编辑风格的提示词，展现了一位身穿橙色连帽衫的东亚女性，背景为动态模糊的人群。",
+      "category": "人像摄影",
+      "categories": [
+        "人像摄影"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "现代极简主义摄影棚内，一位年轻东亚女性的时尚编辑风格摄影。她身穿 {argument name=\"outfit\" default=\"鲜艳的超大款橙色连帽衫\"}，搭配束口宽松黑色运动裤，以及带有白色波浪条纹的黑色高帮滑板鞋。她留着黑色长发，五官精致，佩戴小巧的金耳环，转头看向镜头，表情平静自然。一只手插在口袋里。背景是一个干净的中性色调房间，模糊的 {argument name=\"motion\" default=\"幽灵般的剪影\"} 人群在周围营造出刻意的长曝光动态模糊和光轨效果。柔和的室内漫射光，色调干净，冷色调背景与温暖的橙色连帽衫形成对比，使用 {argument name=\"film\" default=\"35mm 胶片\"} 拍摄，主体焦点清晰，具有电影感的街头时尚大片风格。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "极简",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418042663_hcpwxz_HRDPqolawAAZ99c.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418042663_hcpwxz_HRDPqolawAAZ99c.jpg"
+      ],
+      "author": "𝑨𝒇𝒓𝒊𝒏",
+      "authorHandle": "afrinxai",
+      "originalPostUrl": "https://x.com/afrinxai/status/2094606172791652612",
+      "publishedAt": "2026年9月1日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "𝑨𝒇𝒓𝒊𝒏",
+      "previewSourceUrl": "https://x.com/afrinxai/status/2094606172791652612",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33085",
+      "attributionText": "提示词与效果图：𝑨𝒇𝒓𝒊𝒏；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
       "id": "nano-banana-90-95a84efcd833",
@@ -4356,7 +4358,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
       "id": "nano-banana-91-a7cc0f65d4c2",
@@ -4400,7 +4402,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
       "id": "nano-banana-92-3c5e53159c6d",
@@ -4442,7 +4444,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
       "id": "nano-banana-93-538a83cfbc13",
@@ -4489,7 +4491,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
       "id": "nano-banana-94-49afb0a597c7",
@@ -4535,186 +4537,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-95-1e5dc2bd8836",
+      "id": "nano-banana-95-8edf7d17da68",
       "index": 40095,
-      "title": "产品营销 - 湖畔风景生活方式摄影",
-      "originalTitle": "产品营销 - 湖畔风景生活方式摄影",
-      "description": "一份用于拍摄欧洲湖畔风景中男性写实生活方式照片的精细提示词。",
-      "category": "人像摄影",
-      "categories": [
-        "人像摄影"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "3:4",
-      "prompt": "一张写实风格的编辑类生活方式照片，拍摄对象为 {argument name=\"subject\" default=\"一位留着中分棕色波浪发型的年轻健壮男性\"}，身着 {argument name=\"clothing\" default=\"长袖海军蓝 Polo 衫、宽腿百褶卡其米色长裤以及灰蓝色越野跑鞋\"}。他表情严肃且自然真实，眉宇放松，目光看向画面右侧。他身体向后并向右大幅倾斜，倚靠在一处齐腰高的结构上，身体与支撑物呈 45 度角，双腿随意交叉，倚靠一侧的肩膀微微下沉。他的右手自然地搭在结构圆润的边缘上，手指松弛地垂在深色金属表面。他站在一条灰色与棕色碎石铺就的小径上，前景由平整的灰石边框围合。他倚靠着装饰华丽、饱经风霜的深棕黑色铸铁栏杆，栏杆带有竖条纹和中央装饰性圆章，底部缠绕着翠绿的爬山虎。栏杆外展现出 {argument name=\"location\" default=\"深邃、风景如画的欧洲湖泊远景\"}，右下角是平静、纯净的深蓝绿色水域。广阔的背景中显露出高耸的深绿色地中海柏树、郁郁葱葱的森林山丘，以及经典的复古灰泥别墅，别墅漆成温暖的淡黄色和桃色，顶部覆盖着赤陶橙色瓦片并配有百叶窗，湖岸边还坐落着一座船屋。整体氛围宁静、从容且高级，沐浴在阴天过滤出的柔和、漫射的自然光下。这种低对比度、中等强度的光线在他的鞋下投射出短而渐变的灰色阴影，栏杆下方也有微妙的遮光，同时在发丝上勾勒出柔和的光泽，并在皮肤上形成自然的亮部。分裂互补的配色方案优雅地平衡了海军蓝与卡其色的服饰，与深森林绿和赤陶建筑色调相得益彰。使用 85mm 镜头，光圈在 f/4.0 到 f/5.6 之间，ISO 100，正面拍摄，主体清晰锐利，与背景形成对比，背景略显柔和但完全可辨，最后进行微妙的色彩分级，倾向于经典胶片色调，略微降低鲜艳色彩的饱和度，呈现出有机、干净的美感，整体采用 3:4 的画幅比例。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "摄影感"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788159795106_s46jkp_HQUZvUIXUAA8JD6.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788159795106_s46jkp_HQUZvUIXUAA8JD6.jpg"
-      ],
-      "author": "Picts by AI",
-      "authorHandle": "pictsbyai",
-      "originalPostUrl": "https://x.com/pictsbyai/status/2093976516573229435",
-      "publishedAt": "2026年8月30日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Picts by AI",
-      "previewSourceUrl": "https://x.com/pictsbyai/status/2093976516573229435",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=32987",
-      "attributionText": "提示词与效果图：Picts by AI；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-96-3afa2cb70876",
-      "index": 40096,
-      "title": "产品营销 - 身着花卉传统服饰的南亚女性",
-      "originalTitle": "产品营销 - 身着花卉传统服饰的南亚女性",
-      "description": "生成一张在现代室内环境中，身着浅绿色传统服饰、带有鲜艳热带花卉图案的女性全身竖构图肖像。",
-      "category": "创意发现",
-      "categories": [
-        "创意发现"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "一张全身竖构图肖像，主角为 {argument name=\"subject\" default=\"年轻南亚女性\"}，背景为 {argument name=\"setting\" default=\"现代室内环境\"}。她身着 {argument name=\"outfit\" default=\"浅绿色传统两件套\"}，包括长袖束腰外衣 (kurti) 和配套的阔腿裤 (palazzo pants)，两者均装饰有鲜艳的粉色、白色和柔和绿色的热带花卉图案。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788159788656_p13jxp_HQ88mlVbwAAGqUl.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788159788656_p13jxp_HQ88mlVbwAAGqUl.jpg"
-      ],
-      "author": "Amy jones",
-      "authorHandle": "Amyjoneswk3",
-      "originalPostUrl": "https://x.com/Amyjoneswk3/status/2093959034865160681",
-      "publishedAt": "2026年8月30日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Amy jones",
-      "previewSourceUrl": "https://x.com/Amyjoneswk3/status/2093959034865160681",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=32980",
-      "attributionText": "提示词与效果图：Amy jones；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-97-bef1a1f120c0",
-      "index": 40097,
-      "title": "产品营销 - 豪华汽车超现实主义海报",
-      "originalTitle": "产品营销 - 豪华汽车超现实主义海报",
-      "description": "一张高端时尚海报，展示了一辆豪华跑车和一位身处极简主义深红色摄影棚中的男模特。",
-      "category": "海报设计",
-      "categories": [
-        "海报设计"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "3:4",
-      "prompt": "一张为豪华汽车品牌打造的高端时尚超现实主义海报。一个 {argument name=\"brand color\" default=\"深绯红色\"} 的极简主义摄影棚，配有抛光反光地板。一辆巨大的亮红色跑车如雕塑般引人注目地矗立着。一位身着剪裁考究的黑色西装、佩戴时髦黑色墨镜及奢华配饰的时尚男模特，正随意地倚靠在引擎盖前。背景中，醒目且优雅的汽车灵感排版以大型精致衬线字体呈现，部分被车身遮挡。底部中央标语：“Power, perfected. Presence, defined.” 情绪化的奢华灯光，深红色调，电影级反光，戏剧性阴影，超高端编辑摄影，照片级真实细节。长宽比：3:4",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "极简",
-        "文字排版",
-        "摄影感"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788159794839_i53tkq_HQ8Z1QPbUAADNhT.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788159794839_i53tkq_HQ8Z1QPbUAADNhT.jpg"
-      ],
-      "author": "James AI",
-      "authorHandle": "AIwithJames",
-      "originalPostUrl": "https://x.com/AIwithJames/status/2093920767759311334",
-      "publishedAt": "2026年8月30日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "James AI",
-      "previewSourceUrl": "https://x.com/AIwithJames/status/2093920767759311334",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=32911",
-      "attributionText": "提示词与效果图：James AI；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-98-a5b90b7c5bfa",
-      "index": 40098,
-      "title": "产品营销 - 奢侈腕表品牌超现实主义海报",
-      "originalTitle": "产品营销 - 奢侈腕表品牌超现实主义海报",
-      "description": "一款专为奢侈腕表品牌广告设计的超现实主义高定海报提示词，采用极简主义摄影棚灯光与醒目的排版设计。",
-      "category": "海报设计",
-      "categories": [
-        "海报设计"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "3:4",
-      "prompt": "一款为 {argument name=\"brand\" default=\"Rolex\"} 设计的高定超现实主义海报。深祖母绿色的极简主义摄影棚，配有抛光反光地板。一枚巨大的 Rolex 腕表如纪念碑般矗立。一位身着定制 {argument name=\"suit color\" default=\"深绿色\"} 西装的男模特随意地倚靠在表盘旁，佩戴着同款 Rolex 腕表。背景中，醒目的“ROLEX”字样以优雅的大号衬线字体呈现，部分被遮挡。底部中央标语：“{argument name=\"tagline\" default=\"Time, perfected. Presence, defined.\"}” 充满质感的奢华灯光，色调浓郁，电影级反光效果。长宽比：3:4",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "极简",
-        "文字排版",
-        "摄影感"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788159792923_ze685v_HQ45ZOSa8AAtbrq.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788159792923_ze685v_HQ45ZOSa8AAtbrq.jpg"
-      ],
-      "author": "Dr Bloodline | AI",
-      "authorHandle": "AiwithBloodline",
-      "originalPostUrl": "https://x.com/AiwithBloodline/status/2093673995149414685",
-      "publishedAt": "2026年8月29日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Dr Bloodline | AI",
-      "previewSourceUrl": "https://x.com/AiwithBloodline/status/2093673995149414685",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=32916",
-      "attributionText": "提示词与效果图：Dr Bloodline | AI；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-09-03",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
-    },
-    {
-      "id": "nano-banana-99-8edf7d17da68",
-      "index": 40099,
       "title": "电商主图 - 高端饮品广告摄影",
       "originalTitle": "电商主图 - 高端饮品广告摄影",
       "description": "一款专业的广告摄影提示词，旨在为饮品品牌创作具有角色和产品参考的超写实主视觉图。",
@@ -4754,11 +4581,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-100-df9d220c52ab",
-      "index": 40100,
+      "id": "nano-banana-96-df9d220c52ab",
+      "index": 40096,
       "title": "电商主图 - 优雅黑色欧根纱丝带",
       "originalTitle": "电商主图 - 优雅黑色欧根纱丝带",
       "description": "一个极简的图像生成提示词，用于创作高质量、细节丰富的黑色欧根纱丝带，重点展现其细腻的质感与优雅气质。",
@@ -4798,11 +4625,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-101-78cda65ecfe0",
-      "index": 40101,
+      "id": "nano-banana-97-78cda65ecfe0",
+      "index": 40097,
       "title": "电商主图 - 奢华巧克力广告静物摄影",
       "originalTitle": "电商主图 - 奢华巧克力广告静物摄影",
       "description": "一种复杂的优质巧克力广告排版，包含分层玻璃托盘、原材料以及粉色背景上的金箔包装。",
@@ -4845,11 +4672,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-102-6ec2162f3f24",
-      "index": 40102,
+      "id": "nano-banana-98-6ec2162f3f24",
+      "index": 40098,
       "title": "电商主图 - 超现实美妆产品卷发筒",
       "originalTitle": "电商主图 - 超现实美妆产品卷发筒",
       "description": "一个充满趣味与超现实感的商业摄影提示词，将产品管体作为超大号卷发筒，呈现高端美妆美学。",
@@ -4888,11 +4715,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-103-1cc1294b0c3f",
-      "index": 40103,
+      "id": "nano-banana-99-1cc1294b0c3f",
+      "index": 40099,
       "title": "电商主图 - 树莓外壳产品摄影",
       "originalTitle": "电商主图 - 树莓外壳产品摄影",
       "description": "一个商业产品摄影提示词，展示了被包裹在超写实、果汁滴落的树莓横截面中的产品。",
@@ -4935,11 +4762,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-104-ef333598b5fb",
-      "index": 40104,
+      "id": "nano-banana-100-ef333598b5fb",
+      "index": 40100,
       "title": "电商主图 - 带有蜘蛛网元素的电影质感产品广告",
       "originalTitle": "电商主图 - 带有蜘蛛网元素的电影质感产品广告",
       "description": "一款专业的广告提示词，旨在将参考产品与逼真的蜘蛛网效果及极简主义摄影棚灯光相结合。",
@@ -4980,11 +4807,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-105-5ada2cc934df",
-      "index": 40105,
+      "id": "nano-banana-101-5ada2cc934df",
+      "index": 40101,
       "title": "电商主图 - 冰块中的极简主义产品",
       "originalTitle": "电商主图 - 冰块中的极简主义产品",
       "description": "一个用于比较 Grok Imagine 2.0 和 Nano Banana 2 的简单产品摄影提示词。",
@@ -5024,11 +4851,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-106-03a7db90e09a",
-      "index": 40106,
+      "id": "nano-banana-102-03a7db90e09a",
+      "index": 40102,
       "title": "电商主图 - 高端水瓶产品摄影",
       "originalTitle": "电商主图 - 高端水瓶产品摄影",
       "description": "一个专业的商业摄影提示词，适用于展示带有动态水花和高端影棚灯光效果的优质水瓶。",
@@ -5070,11 +4897,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-107-c2252467dce3",
-      "index": 40107,
+      "id": "nano-banana-103-c2252467dce3",
+      "index": 40103,
       "title": "电商主图 - 夏季护肤品产品摄影",
       "originalTitle": "电商主图 - 夏季护肤品产品摄影",
       "description": "专业的护肤品产品摄影，以阳光亲吻过的海滩为背景，展示古铜色美黑精华液，伴有柔和的海浪与泡沫。",
@@ -5117,11 +4944,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-108-98fe136f9682",
-      "index": 40108,
+      "id": "nano-banana-104-98fe136f9682",
+      "index": 40104,
       "title": "电商主图 - Nano Banana Pro 产品拼贴画",
       "originalTitle": "电商主图 - Nano Banana Pro 产品拼贴画",
       "description": "一份专业的商业产品摄影提示词，用于创建包含微距细节和影棚拍摄的三联拼贴画。",
@@ -5161,11 +4988,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-109-f766aa506721",
-      "index": 40109,
+      "id": "nano-banana-105-f766aa506721",
+      "index": 40105,
       "title": "电商主图 - 风格化收藏级玩具包装",
       "originalTitle": "电商主图 - 风格化收藏级玩具包装",
       "description": "此提示词可将目标对象转化为收藏级玩具，并生成包含塑料质感及吸塑零售包装的创意模型。",
@@ -5206,11 +5033,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-110-75ec17a94952",
-      "index": 40110,
+      "id": "nano-banana-106-75ec17a94952",
+      "index": 40106,
       "title": "电商主图 - 高端产品摄影棚级视觉转换",
       "originalTitle": "电商主图 - 高端产品摄影棚级视觉转换",
       "description": "一个专门用于将基础产品图片转换为高端摄影棚级广告的提示词，通过提取主体并添加配料元素来实现。",
@@ -5252,11 +5079,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-111-f0794f93927a",
-      "index": 40111,
+      "id": "nano-banana-107-f0794f93927a",
+      "index": 40107,
       "title": "电商主图 - 奢华护肤品广告",
       "originalTitle": "电商主图 - 奢华护肤品广告",
       "description": "一套专业级的护肤品商业摄影提示词，包含柔和的渐变色调和优雅的梳妆台道具。",
@@ -5299,11 +5126,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-112-2dc87342442e",
-      "index": 40112,
+      "id": "nano-banana-108-2dc87342442e",
+      "index": 40108,
       "title": "电商主图 - 将 3D 模型转换为照片级真实感产品渲染图",
       "originalTitle": "电商主图 - 将 3D 模型转换为照片级真实感产品渲染图",
       "description": "一个技术提示词，用于将 3D 模型截图转换为具有特定材质和灯光的高端摄影棚产品照片。",
@@ -5343,11 +5170,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-113-50caa03d2860",
-      "index": 40113,
+      "id": "nano-banana-109-50caa03d2860",
+      "index": 40109,
       "title": "电商主图 - 奢侈品集群主提示词",
       "originalTitle": "电商主图 - 奢侈品集群主提示词",
       "description": "一款精致的主提示词，旨在将多个产品渲染为密集、高端且具有逼真纹理的 3D 集群。",
@@ -5389,11 +5216,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-114-7809a50a28d2",
-      "index": 40114,
+      "id": "nano-banana-110-7809a50a28d2",
+      "index": 40110,
       "title": "电商主图 - 显示器微距屏幕纹理",
       "originalTitle": "电商主图 - 显示器微距屏幕纹理",
       "description": "一个用于捕捉电脑显示器像素结构、灰尘和电子表格细节的极致微距摄影提示词。",
@@ -5432,11 +5259,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-115-55040aacb740",
-      "index": 40115,
+      "id": "nano-banana-111-55040aacb740",
+      "index": 40111,
       "title": "电商主图 - 休闲牛仔风格摄影棚人像",
       "originalTitle": "电商主图 - 休闲牛仔风格摄影棚人像",
       "description": "一个高质量的摄影棚人像提示词，聚焦于休闲牛仔时尚，模特身穿紧身胸衣和破洞牛仔裤，背景为中性色调。",
@@ -5475,11 +5302,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-116-5716098ce80e",
-      "index": 40116,
+      "id": "nano-banana-112-5716098ce80e",
+      "index": 40112,
       "title": "电商主图 - 草地山丘上的极简主义产品摄影",
       "originalTitle": "电商主图 - 草地山丘上的极简主义产品摄影",
       "description": "为 Nano Banana Pro 设计的专业产品摄影提示词，呈现黄金时段草地山丘上的极简场景，非常适合高端编辑类摄影。",
@@ -5522,11 +5349,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-117-b013cc7eb1b5",
-      "index": 40117,
+      "id": "nano-banana-113-b013cc7eb1b5",
+      "index": 40113,
       "title": "电商主图 - 湿润板岩上的编辑风格产品摄影",
       "originalTitle": "电商主图 - 湿润板岩上的编辑风格产品摄影",
       "description": "一个用于在湿润黑色板岩上拍摄产品的微距摄影提示词，包含编辑级布光和水滴效果。",
@@ -5566,11 +5393,54 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-118-6bd93951f6a4",
-      "index": 40118,
+      "id": "nano-banana-114-18c64e64c1e4",
+      "index": 40114,
+      "title": "游戏素材 - 全息画布玻璃工作室",
+      "originalTitle": "游戏素材 - 全息画布玻璃工作室",
+      "description": "一个极简主义提示词，用于创作电影质感的玻璃工作室场景，展示带有钨丝灯与青色混合光效的全息画布。",
+      "category": "创意发现",
+      "categories": [
+        "创意发现"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "{argument name=\"setting\" default=\"玻璃工作室\"}, {argument name=\"canvas\" default=\"全息画布\"}, {argument name=\"lighting\" default=\"钨丝灯与青色混合光效\"}.",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "极简"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788418033881_eocfo7_HROwLtrbwAAm8dQ.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788418033881_eocfo7_HROwLtrbwAAm8dQ.jpg"
+      ],
+      "author": "Buble AI",
+      "authorHandle": "itsBubleAI",
+      "originalPostUrl": "https://x.com/itsBubleAI/status/2095211970131615927",
+      "publishedAt": "2026年9月2日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Buble AI",
+      "previewSourceUrl": "https://x.com/itsBubleAI/status/2095211970131615927",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33270",
+      "attributionText": "提示词与效果图：Buble AI；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-115-6bd93951f6a4",
+      "index": 40115,
       "title": "游戏素材 - 精英动漫电影级战士气场",
       "originalTitle": "游戏素材 - 精英动漫电影级战士气场",
       "description": "一个用于生成高端动漫关键视觉图的提示词，展现了一位极具魅力、散发着压倒性大气能量气场的战士，背景设定在废墟神殿中。",
@@ -5609,11 +5479,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-119-90e9a6ae4b4a",
-      "index": 40119,
+      "id": "nano-banana-116-90e9a6ae4b4a",
+      "index": 40116,
       "title": "游戏素材 - 未来伦敦 GTA 风格概念艺术",
       "originalTitle": "游戏素材 - 未来伦敦 GTA 风格概念艺术",
       "description": "使用 Nano Banana Pro 生成以未来伦敦为背景、具有 GTA 风格的硬核概念艺术。",
@@ -5652,11 +5522,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     },
     {
-      "id": "nano-banana-120-23b45fc00c3c",
-      "index": 40120,
+      "id": "nano-banana-117-23b45fc00c3c",
+      "index": 40117,
       "title": "游戏素材 - 黑色石板上的玻璃弹珠",
       "originalTitle": "游戏素材 - 黑色石板上的玻璃弹珠",
       "description": "一个用于基准测试多个 AI 模型的极简提示词，旨在创作出玻璃弹珠在湿润石材表面上的逼真图像。",
@@ -5695,7 +5565,146 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-09-03T04:38:42.483Z"
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-118-beab478caa66",
+      "index": 40118,
+      "title": "游戏素材 - 科幻书籍电影感立体模型",
+      "originalTitle": "游戏素材 - 科幻书籍电影感立体模型",
+      "description": "创作一个照片级逼真的电影感立体模型，展现一个从打开的书本中物理浮现出的科幻世界，包含微缩人物和 3D 排版设计。",
+      "category": "海报设计",
+      "categories": [
+        "海报设计"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "创作一个从打开的书本中物理浮现出的照片级逼真电影感立体模型。自动推断：HERO_ENTITY（英雄实体）、TITLE（标题）、WORLD（世界）、TITLE_MATERIAL（标题材质）、FOREGROUND_EVENT（前景事件）、MINIATURE_ACTORS（微缩演员）、PROP_SET（道具集）、LIGHT_DNA（光影基因）、FX_DNA（特效基因）。构图：- 打开的精装书占据画面下方大部分区域 - 书页物理转化为 {argument name=\"topic\" default=\"scifi book\"}，而非保持干净的纸张状态 - TITLE 成为嵌入地形中的大型独立 3D 排版 - TITLE 的材质和结构根据 TOPIC 推断 - HERO_ENTITY 以巨大的相对比例在排版后方、上方、穿过或周围升起 - FOREGROUND_EVENT 作为微缩叙事场景在首页展开 - 仅在语义上有用时才推断微缩演员、载具、工具、植被、碎片、结构或道具 - 书页边缘保持可见，以确保“世界从书中浮现”的错觉真实可信。光影：根据 TOPIC 推断的电影级实用光影，以及可信的环境照明。渲染：微距实拍效果摄影、真实的纸张纤维、物理微缩材质、接触阴影、灰尘和表面瑕疵、大气深度、高端手工立体模型质感。不包含硬编码的标题、角色、环境、材质、动作、载具或视觉特效。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "3D",
+        "文字排版",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1787910194613_obrhko_HQmw-mvXEAAD8E1.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1787910194613_obrhko_HQmw-mvXEAAD8E1.jpg",
+        "https://cms-assets.youmind.com/media/1787910194574_lbhl1s_HQmw-m-WMAA3vXO.jpg",
+        "https://cms-assets.youmind.com/media/1787910194598_u6xloa_HQmw-m1XsAIE_YC.jpg",
+        "https://cms-assets.youmind.com/media/1787910195271_kvba8k_HQmw-pWWYAAdxqT.jpg"
+      ],
+      "author": "Gadgetify",
+      "authorHandle": "Gdgtify",
+      "originalPostUrl": "https://x.com/Gdgtify/status/2093007884854378782",
+      "publishedAt": "2026年8月27日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Gadgetify",
+      "previewSourceUrl": "https://x.com/Gdgtify/status/2093007884854378782",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=32744",
+      "attributionText": "提示词与效果图：Gadgetify；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-119-66b6c77bcc80",
+      "index": 40119,
+      "title": "游戏素材 - 漫画角色粘土人风格立体模型",
+      "originalTitle": "游戏素材 - 漫画角色粘土人风格立体模型",
+      "description": "一个复杂且结构化的提示词，用于生成 L 型展示台中的 Q 版漫画角色手办，并配有自定义 3D 音效和漫画分镜背景。",
+      "category": "人像摄影",
+      "categories": [
+        "人像摄影"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "1:1",
+      "prompt": "<instruction> 1. 语义推理引擎输入 A 是一个 {argument name=\"character\" default=\"漫画/动画角色或漫画英雄\"} (例如：悟空、蜘蛛侠、欧尔麦特)。拆解该角色以生成 3 个动作资产：能量（特效）：确定 {argument name=\"attack\" default=\"标志性攻击\"}。(例如：火球、蛛丝发射、心灵爆破、闪电)。声音（拟声词）：确定 {argument name=\"sound effect\" default=\"漫画音效文字\"}。(例如：\"BOOM!\", \"SMASH!\", \"THWIP!\", \"KABOOM!\")。颜色（光环）：确定主要的能量颜色。(例如：橙色、红色、紫色、绿色)。 2. 容器（展示底座）：目标：“粘土人”风格立体模型摄影。舞台：一个简单的 L 型展示底座（垂直背板 + 水平底板）。背景：垂直墙面覆盖着黑白漫画分镜或连环画拼贴，营造出混乱、浓重的墨水质感背景。 3. 手办（Q 版英雄）：风格：Q 版 / 超变形 (SD)。大头、小身躯、大而传神的眼睛。姿势：动态的空中动作姿势（向镜头挥拳或施展法术）。材质：光滑的哑光 PVC 或乙烯基塑料（收藏级玩具美学）。 4. 视觉特效（2.5D 冲击感）：文字：“声音”（第 1 步）被渲染为漂浮在角色周围的大型、锯齿状、色彩鲜艳的 3D 文字板（橙色/红色，带有黑色轮廓）。碎片：3D 岩石、玻璃或撕裂纸片的碎片从中心向外飞溅，模拟爆炸效果。能量：半透明的彩色塑料部件（代表“能量”）在角色手脚周围盘旋。 5. 灯光与氛围：灯光：明亮的摄影棚主光。玩具摄影中常见的均匀、无阴影照明。氛围：充满活力、俏皮且具有爆发力。输出：一张图片，1:1 纵横比，3D 渲染，“动漫手办”美学，高饱和度。 </instruction>",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "3D",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1787910196466_o942ee_HQiIeVbW8AE7rHc.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1787910196466_o942ee_HQiIeVbW8AE7rHc.jpg",
+        "https://cms-assets.youmind.com/media/1787910196488_3j1fk4_HQiIecjWsAAJw7C.jpg",
+        "https://cms-assets.youmind.com/media/1787910196488_mnfkjk_HQiIeVYXMAA40pK.jpg"
+      ],
+      "author": "Gadgetify",
+      "authorHandle": "Gdgtify",
+      "originalPostUrl": "https://x.com/Gdgtify/status/2092887591313953062",
+      "publishedAt": "2026年8月27日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Gadgetify",
+      "previewSourceUrl": "https://x.com/Gdgtify/status/2092887591313953062",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=32662",
+      "attributionText": "提示词与效果图：Gadgetify；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
+    },
+    {
+      "id": "nano-banana-120-7a97cfd3e5fa",
+      "index": 40120,
+      "title": "游戏素材 - 充满流动感的电影级奇幻肖像",
+      "originalTitle": "游戏素材 - 充满流动感的电影级奇幻肖像",
+      "description": "一个高度精细的电影级肖像提示词，描绘了一位年轻女性向观众伸手，周围环绕着鲜艳的流体飞溅和逼真的光影效果。",
+      "category": "UI / 产品",
+      "categories": [
+        "UI / 产品"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "超写实 IMAX 级 Netflix 风格电影感奇幻肖像，4:5 竖构图，以上传图片作为主要面部参考，保持最大程度的面部一致性，创作一位年轻女性动态地向镜头倾斜，一只手直接向前伸向前景，由于强烈的透视效果和浅景深，伸出的手显得格外大，手指自然张开，仿佛在俏皮地向观众伸手，另一只手臂自然地靠近身体，上半身向前倾斜，姿态充满活力且自然，身穿 {argument name=\"outfit color\" default=\"柔和米色\"} 的飘逸垂坠服装，自然地包裹着上半身，宽松的褶皱延伸至肩部和躯干，深黑色头发盘成凌乱的高发髻，头顶、太阳穴和脸颊两侧有丰富的发丝散落，几缕细碎的发丝自然地向上飘起，周围环绕着戏剧性凝固的透明液体飞溅，混合着鲜艳的 {argument name=\"fluid colors\" default=\"青色、红色、粉色、金黄色和橙色\"} 油漆状流体形态，向上并向外围绕身体飞溅，单个液滴在空中清晰悬浮，多彩的流体弧线在周围形成一个动态的圆形框架，飞溅间隙可见明亮的中性背景，高度精细的半透明液体表面，带有逼真的反射和折射，强烈的远近景深分离，电影级透视，面部细节清晰，伸出的手因镜头景深而在最前景处逐渐变得柔和，捕捉到飞溅瞬间凝固的真实动能，精致的摄影棚灯光，面部有柔和的正面照明，湿润的液滴和发丝上有微妙的高光，色彩鲜艳但自然平衡，逼真的织物纹理，自然的摄影细节，电影级景深，高动态范围。皮肤：肤色白皙自然，带有中性暖色调，散发柔和健康的微光，可见皮肤纹理、细小毛孔，面部和身体色调一致。面部表情：双眼睁大，明亮俏皮地直视镜头，眉毛因兴奋而自然扬起，嘴巴张开，露出灿烂的 {argument name=\"smile type\" default=\"真诚笑容\"}，露出上排牙齿，双唇因笑容自然拉伸，脸颊明显提升并圆润，眼角和嘴角形成自然的笑纹，营造出快乐、自发且充满活力的表情。负面提示词：扭曲的面部、多余的手指、畸形的手、肢体重复、透视变形、人造皮肤、过度平滑、CGI 感、凌乱的面部特征。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1787639844605_3cbv9r_HQdbMO1aMAAy6DN.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1787639844605_3cbv9r_HQdbMO1aMAAy6DN.jpg",
+        "https://cms-assets.youmind.com/media/1787639844557_555q4h_HQdbMO9aMAAOtlc.jpg",
+        "https://cms-assets.youmind.com/media/1787639844623_o6zh82_HQdbMO8bUAE4BwP.jpg"
+      ],
+      "author": "Ayushi Srivastava",
+      "authorHandle": "punkhuri1",
+      "originalPostUrl": "https://x.com/punkhuri1/status/2091740825734803621",
+      "publishedAt": "2026年8月24日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Ayushi Srivastava",
+      "previewSourceUrl": "https://x.com/punkhuri1/status/2091740825734803621",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=32399",
+      "attributionText": "提示词与效果图：Ayushi Srivastava；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-09-03",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-09-03T11:21:48.044Z"
     }
   ]
 }
