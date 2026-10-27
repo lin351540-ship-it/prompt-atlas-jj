@@ -1210,7 +1210,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-27T12:21:01.566Z"
+      "syncedAt": "2026-10-27T22:20:44.152Z"
     },
     {
       "id": "youmind-2-a322ec153177",
@@ -1251,7 +1251,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-27T12:21:01.566Z"
+      "syncedAt": "2026-10-27T22:20:44.152Z"
     },
     {
       "id": "youmind-3-9fbd8425d2a3",
@@ -1293,7 +1293,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-27T12:21:01.566Z"
+      "syncedAt": "2026-10-27T22:20:44.152Z"
     },
     {
       "id": "youmind-6-c981d4f8c5bf",
@@ -1335,11 +1335,101 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-27T12:21:01.566Z"
+      "syncedAt": "2026-10-27T22:20:44.152Z"
     },
     {
-      "id": "youmind-35-312d6725aa91",
+      "id": "youmind-35-b31665906c19",
       "index": 20035,
+      "title": "Infographic / Edu Visual - Whale Tail Photo & Ink Illustration Diptych",
+      "originalTitle": "Infographic / Edu Visual - Whale Tail Photo & Ink Illustration Diptych",
+      "description": "A split-layout design featuring a realistic photo of a breaching whale tail above a minimalist stippled ink illustration with Korean typography.",
+      "category": "PPT / 信息图",
+      "sourceCategory": "youmind-public-github",
+      "ratio": "自适应",
+      "prompt": "Create a vertical diptych-style composition split into two distinct halves. The top half is a photorealistic, high-resolution photograph of a humpback whale's tail fluke rising vertically out of the deep blue ocean. The water is textured with white foam and splashing droplets around the base of the tail. In the background, there are soft-focus blue mountains under a bright sky with scattered clouds. The bottom half is a minimalist illustration on a pale blue-grey paper texture background. It features a stylized black ink drawing of the same whale tail shape, but rendered entirely using a pointillism or stippling technique (composed of thousands of tiny dots). Include specific Korean typography in the bottom section: 'No. 027' in small text at the top left, followed by a large title '먼바다로 가는 꼬리' and a smaller subtitle '먼 곳을 향한 꼬리'. At the very bottom center, include the scientific name 'Megaptera novaeangliae · 해양 포유류' in a serif font.",
+      "promptType": "original",
+      "featured": false,
+      "tags": [
+        "PPT 可用",
+        "信息图",
+        "3D",
+        "极简",
+        "文字排版"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1792827964396_8vv18a_HVTiAE4aMAAJsR9.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1792827964396_8vv18a_HVTiAE4aMAAJsR9.jpg",
+        "https://cms-assets.youmind.com/media/1792827964483_1za9p7_HVTiAg-acAAUviA.jpg",
+        "https://cms-assets.youmind.com/media/1792827964389_5mf8ys_HVTiBB7akAAnCnT.jpg",
+        "https://cms-assets.youmind.com/media/1792827965165_sbm8m5_HVTiBh8bYAErcwL.jpg"
+      ],
+      "author": "小小东",
+      "authorHandle": "xiaoxiaodong",
+      "originalPostUrl": "https://x.com/xiaoxiaodong/status/2113568095839068251",
+      "publishedAt": "October 23, 2026",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
+      "collectionName": "YouMind OpenLab · Awesome GPT Image 2",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2/blob/main/LICENSE",
+      "previewOwner": "小小东",
+      "previewSourceUrl": "https://x.com/xiaoxiaodong/status/2113568095839068251",
+      "landingUrl": "https://youmind.com/gpt-image-2-prompts?id=36846",
+      "attributionText": "提示词与效果图：小小东；公开整理：YouMind OpenLab。图片从 GitHub 清单所列的来源地址远程展示。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "source-attributed-public-github",
+      "rightsReviewedAt": "2026-10-27",
+      "assetHostingMode": "remote-source",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-full-record",
+      "syncedAt": "2026-10-27T22:20:44.152Z"
+    },
+    {
+      "id": "youmind-36-fa0b65adacc7",
+      "index": 20036,
+      "title": "Infographic / Edu Visual - Photorealistic to Watercolor Transformation Prompts",
+      "originalTitle": "Infographic / Edu Visual - Photorealistic to Watercolor Transformation Prompts",
+      "description": "Two prompts for transforming photos into split-composition artworks where the top half is photorealistic and the bottom half is a delicate watercolor illustration.",
+      "category": "PPT / 信息图",
+      "sourceCategory": "youmind-public-github",
+      "ratio": "自适应",
+      "prompt": "Create a charming photorealistic-to-watercolor transformation using the reference image. Show a cute toddler wearing a yellow sun hat, a light blue checkered romper, yellow socks, and dark sandals, crouching curiously and interacting with three white ducks on a quiet country road. Include lush green grass along the roadside, distant residential buildings, soft daylight, and a peaceful countryside atmosphere. In the lower half, transform the same scene into a delicate hand-painted watercolor illustration on textured cream-colored paper. Preserve the toddler’s pose, outfit, the ducks’ positions, and the original composition. Use soft watercolor washes, fine pencil outlines, subtle pastel blue and sage-green accents, loose brushstrokes, and minimal hand-drawn grass details. Elegant minimalist storybook aesthetic, warm paper texture, generous negative space, heartwarming mood, high detail, vertical 4:5 composition.\n\nCreate a beautiful photorealistic-to-watercolor transformation using the reference image. Show an adorable fluffy golden-colored dog sitting in a lush green meadow, looking directly at the camera with bright expressive brown eyes, a happy open mouth, and its pink tongue hanging out. Capture its soft, fluffy fur, rounded ears, bushy tail, and friendly personality in warm natural sunlight, with a softly blurred countryside background. In the lower half, transform the same dog into a delicate watercolor painting on textured cream-colored paper. Preserve the dog’s facial features, fur color, expression, and overall silhouette. Use loose golden-beige watercolor washes, delicate pencil outlines, soft pigment splashes, subtle sage-green grass strokes, and light blue brush accents. Minimalist handmade illustration, charming children’s storybook style, natural paper grain, soft pastel palette, generous negative space, cozy and heartwarming atmosphere, vertical 4:5 composition.",
+      "promptType": "original",
+      "featured": false,
+      "tags": [
+        "PPT 可用",
+        "信息图",
+        "极简",
+        "摄影感",
+        "东方美学"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1792827959989_8q4fmn_HVTZ3xTaQAA3oQ1.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1792827959989_8q4fmn_HVTZ3xTaQAA3oQ1.jpg",
+        "https://cms-assets.youmind.com/media/1792827959988_4r7vrn_HVTZ3xmbAAAg3Hk.jpg"
+      ],
+      "author": "Taaruk",
+      "authorHandle": "Taaruk_",
+      "originalPostUrl": "https://x.com/Taaruk_/status/2113553689386655988",
+      "publishedAt": "October 23, 2026",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
+      "collectionName": "YouMind OpenLab · Awesome GPT Image 2",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2/blob/main/LICENSE",
+      "previewOwner": "Taaruk",
+      "previewSourceUrl": "https://x.com/Taaruk_/status/2113553689386655988",
+      "landingUrl": "https://youmind.com/gpt-image-2-prompts?id=36839",
+      "attributionText": "提示词与效果图：Taaruk；公开整理：YouMind OpenLab。图片从 GitHub 清单所列的来源地址远程展示。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "source-attributed-public-github",
+      "rightsReviewedAt": "2026-10-27",
+      "assetHostingMode": "remote-source",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-full-record",
+      "syncedAt": "2026-10-27T22:20:44.152Z"
+    },
+    {
+      "id": "youmind-37-312d6725aa91",
+      "index": 20037,
       "title": "Infographic / Edu Visual - GPT Image 2 Prompt Length Comparison",
       "originalTitle": "Infographic / Edu Visual - GPT Image 2 Prompt Length Comparison",
       "description": "A side-by-side visual comparison showing how GPT Image 2 renders a space library concept using 5-word, 25-word, and 100-word prompts.",
@@ -1377,11 +1467,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-27T12:21:01.566Z"
+      "syncedAt": "2026-10-27T22:20:44.152Z"
     },
     {
-      "id": "youmind-36-927f8437f3eb",
-      "index": 20036,
+      "id": "youmind-38-927f8437f3eb",
+      "index": 20038,
       "title": "Infographic / Edu Visual - GPT Image 2 Hand-drawn Infographic Prompt",
       "originalTitle": "Infographic / Edu Visual - GPT Image 2 Hand-drawn Infographic Prompt",
       "description": "A prompt for GPT Image 2 to create a hand-drawn style infographic card explaining the water cycle, with specific layout and color instructions.",
@@ -1419,11 +1509,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-27T12:21:01.566Z"
+      "syncedAt": "2026-10-27T22:20:44.152Z"
     },
     {
-      "id": "youmind-37-547d4e44f17e",
-      "index": 20037,
+      "id": "youmind-39-547d4e44f17e",
+      "index": 20039,
       "title": "Infographic / Edu Visual - Kiyomizu-dera Travel LP with Anime Mascot",
       "originalTitle": "Infographic / Edu Visual - Kiyomizu-dera Travel LP with Anime Mascot",
       "description": "A detailed vertical infographic-style landing page for Kiyomizu-dera tourism, combining an anime character guide with real scenic photos, app UI mockups, and structured travel information.",
@@ -1462,11 +1552,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-27T12:21:01.566Z"
+      "syncedAt": "2026-10-27T22:20:44.152Z"
     },
     {
-      "id": "youmind-38-ded2f8dea8b4",
-      "index": 20038,
+      "id": "youmind-40-ded2f8dea8b4",
+      "index": 20040,
       "title": "Infographic / Edu Visual - Swiss Editorial Diptych with Texture Zones",
       "originalTitle": "Infographic / Edu Visual - Swiss Editorial Diptych with Texture Zones",
       "description": "A detailed GPT Image 2 prompt for creating a vertical diptych from an uploaded photo. The top half preserves the original image, while the bottom half applies seven experimental texture zones (Reeded Glass, Engraving, Stipple, Halftone, Pixel Mosaic, Overlay, Duotone) in a Swiss editorial style.",
@@ -1506,11 +1596,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-27T12:21:01.566Z"
+      "syncedAt": "2026-10-27T22:20:44.152Z"
     },
     {
-      "id": "youmind-39-7d76ed79e94d",
-      "index": 20039,
+      "id": "youmind-41-7d76ed79e94d",
+      "index": 20041,
       "title": "Infographic / Edu Visual - Anime Character Sheet: Crying Girl",
       "originalTitle": "Infographic / Edu Visual - Anime Character Sheet: Crying Girl",
       "description": "A detailed anime character reference sheet featuring a 3-year-old girl with multiple expressions, body angles, and clothing details.",
@@ -1548,11 +1638,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-27T12:21:01.566Z"
+      "syncedAt": "2026-10-27T22:20:44.152Z"
     },
     {
-      "id": "youmind-40-07eda4b26c0c",
-      "index": 20040,
+      "id": "youmind-42-07eda4b26c0c",
+      "index": 20042,
       "title": "Infographic / Edu Visual - Cyber Stage Character Concept Sheet",
       "originalTitle": "Infographic / Edu Visual - Cyber Stage Character Concept Sheet",
       "description": "Generates a detailed character design document for a futuristic idol-warrior hybrid, complete with multiple views, expressions, materials, weapons, and combat poses suitable for game development or animation projects.",
@@ -1589,88 +1679,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-27T12:21:01.566Z"
-    },
-    {
-      "id": "youmind-41-16cffbfcf64e",
-      "index": 20041,
-      "title": "Infographic / Edu Visual - Quiet vs Abandoned Train Station Comparison",
-      "originalTitle": "Infographic / Edu Visual - Quiet vs Abandoned Train Station Comparison",
-      "description": "Generates a side-by-side comparison showing how changing one word from 'quiet' to 'abandoned' dramatically alters a train station scene at dusk, useful for demonstrating AI prompt sensitivity.",
-      "category": "PPT / 信息图",
-      "sourceCategory": "youmind-public-github",
-      "ratio": "自适应",
-      "prompt": "A split-screen comparison of two train station scenes at dusk, separated by a thin vertical line. Left panel: A quiet, well-maintained train station named \"RIVERDALE\" with warm yellow lighting under the platform canopy, a wooden bench, a round clock on the wall, clean concrete platform with yellow tactile paving edge, curved railway tracks leading into the distance, signal lights glowing red, and a vibrant sunset sky with orange and purple hues over distant hills. Right panel: An abandoned, dilapidated train station named \"RAVENSBROOK\" with peeling paint, broken windows, overgrown weeds and grass between cracked concrete platforms, rusted railway tracks, weathered wooden support beams, dark and eerie atmosphere, similar sunset sky but more muted and cloudy. Bottom labels: \"QUIET\" in white text on dark background beneath left image, \"ABANDONED\" in white text on dark background beneath right image.",
-      "promptType": "original",
-      "featured": false,
-      "tags": [
-        "PPT 可用",
-        "信息图",
-        "极简"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1792223108309_bu9zqf_HUwsVYcXAAAkMAu.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1792223108309_bu9zqf_HUwsVYcXAAAkMAu.jpg"
-      ],
-      "author": "Human.exe",
-      "authorHandle": "Human_exer",
-      "originalPostUrl": "https://x.com/Human_exer/status/2111111073168269554",
-      "publishedAt": "October 16, 2026",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
-      "collectionName": "YouMind OpenLab · Awesome GPT Image 2",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2/blob/main/LICENSE",
-      "previewOwner": "Human.exe",
-      "previewSourceUrl": "https://x.com/Human_exer/status/2111111073168269554",
-      "landingUrl": "https://youmind.com/gpt-image-2-prompts?id=36543",
-      "attributionText": "提示词与效果图：Human.exe；公开整理：YouMind OpenLab。图片从 GitHub 清单所列的来源地址远程展示。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "source-attributed-public-github",
-      "rightsReviewedAt": "2026-10-27",
-      "assetHostingMode": "remote-source",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-27T12:21:01.566Z"
-    },
-    {
-      "id": "youmind-42-bf89ec9f1b26",
-      "index": 20042,
-      "title": "Infographic / Edu Visual - Haiku About Neglected Wine Cellar",
-      "originalTitle": "Infographic / Edu Visual - Haiku About Neglected Wine Cellar",
-      "description": "A poetic prompt describing rats in a neglected wine cellar, generated by GPT Image 2 Low.",
-      "category": "PPT / 信息图",
-      "sourceCategory": "youmind-public-github",
-      "ratio": "自适应",
-      "prompt": "the abbot\nhas neglected the wine cellar\nand the rats\ncontent to eat rancid grapes\nhave the run of the place",
-      "promptType": "original",
-      "featured": false,
-      "tags": [
-        "PPT 可用",
-        "信息图"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1792136980254_fnn2ho_HUsW4IcbEAAHCjD.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1792136980254_fnn2ho_HUsW4IcbEAAHCjD.jpg"
-      ],
-      "author": "Michael H. Lester",
-      "authorHandle": "mhlester",
-      "originalPostUrl": "https://x.com/mhlester/status/2110806010516660564",
-      "publishedAt": "October 15, 2026",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
-      "collectionName": "YouMind OpenLab · Awesome GPT Image 2",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2/blob/main/LICENSE",
-      "previewOwner": "Michael H. Lester",
-      "previewSourceUrl": "https://x.com/mhlester/status/2110806010516660564",
-      "landingUrl": "https://youmind.com/gpt-image-2-prompts?id=36506",
-      "attributionText": "提示词与效果图：Michael H. Lester；公开整理：YouMind OpenLab。图片从 GitHub 清单所列的来源地址远程展示。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "source-attributed-public-github",
-      "rightsReviewedAt": "2026-10-27",
-      "assetHostingMode": "remote-source",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-27T12:21:01.566Z"
+      "syncedAt": "2026-10-27T22:20:44.152Z"
     },
     {
       "id": "nano-banana-2-a1c6fd3c7c70",
@@ -1716,7 +1725,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-27T12:21:01.824Z"
+      "syncedAt": "2026-10-27T22:20:44.687Z"
     },
     {
       "id": "nano-banana-4-a04d3d2c3870",
@@ -1759,7 +1768,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-27T12:21:01.824Z"
+      "syncedAt": "2026-10-27T22:20:44.687Z"
     },
     {
       "id": "nano-banana-7-31b2cd6a2391",
@@ -1803,7 +1812,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-27T12:21:01.824Z"
+      "syncedAt": "2026-10-27T22:20:44.687Z"
     },
     {
       "id": "nano-banana-29-815e2d823159",
@@ -1848,7 +1857,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-27T12:21:01.824Z"
+      "syncedAt": "2026-10-27T22:20:44.687Z"
     },
     {
       "id": "nano-banana-30-2440dea2825f",
@@ -1893,7 +1902,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-27T12:21:01.824Z"
+      "syncedAt": "2026-10-27T22:20:44.687Z"
     },
     {
       "id": "nano-banana-31-215bdf3b4e8d",
@@ -1936,7 +1945,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-27T12:21:01.824Z"
+      "syncedAt": "2026-10-27T22:20:44.687Z"
     },
     {
       "id": "nano-banana-32-18e4f701fd60",
@@ -1981,7 +1990,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-27T12:21:01.824Z"
+      "syncedAt": "2026-10-27T22:20:44.687Z"
     },
     {
       "id": "nano-banana-33-07fe7bb5f0aa",
@@ -2024,7 +2033,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-27T12:21:01.824Z"
+      "syncedAt": "2026-10-27T22:20:44.687Z"
     },
     {
       "id": "nano-banana-34-ec686af192e4",
@@ -2067,7 +2076,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-27T12:21:01.824Z"
+      "syncedAt": "2026-10-27T22:20:44.687Z"
     },
     {
       "id": "nano-banana-35-c8e2b24ad9b5",
@@ -2112,7 +2121,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-27T12:21:01.824Z"
+      "syncedAt": "2026-10-27T22:20:44.687Z"
     },
     {
       "id": "nano-banana-36-c5f2c4108133",
@@ -2156,7 +2165,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-27T12:21:01.824Z"
+      "syncedAt": "2026-10-27T22:20:44.687Z"
     },
     {
       "id": "nano-banana-37-275b67307d26",
@@ -2204,7 +2213,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-27T12:21:01.824Z"
+      "syncedAt": "2026-10-27T22:20:44.687Z"
     },
     {
       "id": "evolink-poster-39-d29f90ac8a84",
@@ -2249,7 +2258,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-27T12:21:10.313Z"
+      "syncedAt": "2026-10-27T22:20:52.641Z"
     },
     {
       "id": "evolink-poster-50-ba2b16425d81",
@@ -2294,7 +2303,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-27T12:21:10.313Z"
+      "syncedAt": "2026-10-27T22:20:52.641Z"
     },
     {
       "id": "evolink-poster-57-ead0143e32d5",
@@ -2339,7 +2348,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-27T12:21:10.313Z"
+      "syncedAt": "2026-10-27T22:20:52.641Z"
     },
     {
       "id": "evolink-poster-56-5243facc5baf",
@@ -2385,7 +2394,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-27T12:21:10.313Z"
+      "syncedAt": "2026-10-27T22:20:52.641Z"
     },
     {
       "id": "evolink-poster-110-378bf645911c",
@@ -2431,7 +2440,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-27T12:21:10.313Z"
+      "syncedAt": "2026-10-27T22:20:52.641Z"
     },
     {
       "id": "evolink-poster-119-780eeb218c9d",
@@ -2477,7 +2486,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-27T12:21:10.313Z"
+      "syncedAt": "2026-10-27T22:20:52.641Z"
     },
     {
       "id": "evolink-poster-120-23515a080d1e",
@@ -2523,7 +2532,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-27T12:21:10.313Z"
+      "syncedAt": "2026-10-27T22:20:52.641Z"
     },
     {
       "id": "diffusiondb-3d-8805770b-a40f-4d3c-817f-73e5fc2f446e",
@@ -8322,7 +8331,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-27T12:21:01.566Z"
+      "syncedAt": "2026-10-27T22:20:44.152Z"
     },
     {
       "id": "youmind-2-a322ec153177",
@@ -8363,7 +8372,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-27T12:21:01.566Z"
+      "syncedAt": "2026-10-27T22:20:44.152Z"
     },
     {
       "id": "nano-banana-2-a1c6fd3c7c70",
@@ -8409,7 +8418,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-27T12:21:01.824Z"
+      "syncedAt": "2026-10-27T22:20:44.687Z"
     },
     {
       "id": "nano-banana-4-a04d3d2c3870",
@@ -8452,7 +8461,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-27T12:21:01.824Z"
+      "syncedAt": "2026-10-27T22:20:44.687Z"
     },
     {
       "id": "evolink-poster-39-d29f90ac8a84",
@@ -8497,7 +8506,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-27T12:21:10.313Z"
+      "syncedAt": "2026-10-27T22:20:52.641Z"
     },
     {
       "id": "evolink-poster-50-ba2b16425d81",
@@ -8542,7 +8551,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-27T12:21:10.313Z"
+      "syncedAt": "2026-10-27T22:20:52.641Z"
     },
     {
       "id": "2slides-3d-impasto-micro-landscape-poster-oil-painting-pen-stroke-on-xuan-paper",
@@ -8588,9 +8597,12 @@
     "https://cms-assets.youmind.com/media/1776699445498_ga2ry5_HGO7H0DWkAApdKK.jpg",
     "https://cms-assets.youmind.com/media/1776756799880_c8u8w7_HGUKjjaasAAvVRa.jpg",
     "https://cms-assets.youmind.com/media/1776661968404_8a5flm_HGQc_KOaMAA2vt0.jpg",
-    "https://cms-assets.youmind.com/media/1793001762385_2hrqpq_HVh8-JmbcAAEdKA.jpg",
-    "https://cms-assets.youmind.com/media/1793001762267_p8lql4_HVh8-JfaMAAR-e7.jpg",
-    "https://cms-assets.youmind.com/media/1793001760815_wipb9d_HVh8-JobsAAHNtl.jpg",
+    "https://cms-assets.youmind.com/media/1793087718822_6znpxj_HVnJpvabkAAAECJ.jpg",
+    "https://cms-assets.youmind.com/media/1793087718924_prsgkb_HVnJpvWbIAA-gqR.jpg",
+    "https://cms-assets.youmind.com/media/1793087718849_5cpf85_HVnJpvdbcAAFC_s.jpg",
+    "https://cms-assets.youmind.com/media/1793087720383_l1uvaf_HVh8-JmbcAAEdKA.jpg",
+    "https://cms-assets.youmind.com/media/1793087720566_hvdgho_HVh8-JfaMAAR-e7.jpg",
+    "https://cms-assets.youmind.com/media/1793087720395_yb3nk3_HVh8-JobsAAHNtl.jpg",
     "https://cms-assets.youmind.com/media/1793001766423_9k7oyc_HVez3FGWcAAsMsL.jpg",
     "https://cms-assets.youmind.com/media/1793001763836_vqp5w4_HVd7EWVbEAAWX_T.jpg",
     "https://cms-assets.youmind.com/media/1793001762333_ioci5n_HVaBnPQaoAAE7DS.jpg",
@@ -8620,7 +8632,19 @@
     "https://cms-assets.youmind.com/media/1792136977676_3ilk2u_HUrpvFcawAAsN-i.jpg",
     "https://cms-assets.youmind.com/media/1792136977536_qfatut_HUsqZV6a0AA0MSn.jpg",
     "https://cms-assets.youmind.com/media/1792136979349_mapy18_HUrT-RfWsAAyJgW.jpg",
-    "https://cms-assets.youmind.com/media/1792136980824_7gdmht_HUqZgoZacAAEeRW.jpg",
+    "https://cms-assets.youmind.com/media/1793087720676_lrqqmw_HVjaxw1bcAExo7n.jpg",
+    "https://cms-assets.youmind.com/media/1793087720793_zp19j7_HVjaxw1aUAAQUxD.jpg",
+    "https://cms-assets.youmind.com/media/1793087725363_486mq1_HVmvpNpa4AAquD0.jpg",
+    "https://cms-assets.youmind.com/media/1793087725375_4auf9t_HVmvqMGbUAAJkfz.jpg",
+    "https://cms-assets.youmind.com/media/1793087720398_w72rqu_HVmwGTAaoAA12mz.jpg",
+    "https://cms-assets.youmind.com/media/1793087722593_sl63ga_HVkGKtYb0AATnry.jpg",
+    "https://cms-assets.youmind.com/media/1793087726676_z8xjs4_HVj7eZGbgAETBUF.jpg",
+    "https://cms-assets.youmind.com/media/1793087726134_hwexmm_HVjkIW8aEAA7Yz8.jpg",
+    "https://cms-assets.youmind.com/media/1793087718773_uc8akk_HVjVFHrbYAAdpxw.jpg",
+    "https://cms-assets.youmind.com/media/1793087717507_wg8s8b_HVjVFHaagAA2j8U.jpg",
+    "https://cms-assets.youmind.com/media/1793087722292_38581h_HVd5SN2a8AAIDqY.jpg",
+    "https://cms-assets.youmind.com/media/1793087722134_p6c059_HVd5pmcbQAAErwi.jpg",
+    "https://cms-assets.youmind.com/media/1793087718806_t4x789_HVgxFwObsAAWMPi.jpg",
     "https://cms-assets.youmind.com/media/1793001764472_4az5cm_HVd_K6AbEAASRYf.jpg",
     "https://cms-assets.youmind.com/media/1793001760872_9a32tc_HVdAMnSbEAA0JbJ.jpg",
     "https://cms-assets.youmind.com/media/1793001766525_benoxp_HVbLVNrXoAIik8u.jpg",
@@ -8633,26 +8657,12 @@
     "https://cms-assets.youmind.com/media/1792914378555_tdpw8q_HVUpmUHasAACCos.jpg",
     "https://cms-assets.youmind.com/media/1792914378198_jqq1jh_HVUpmUNakAAChiF.jpg",
     "https://cms-assets.youmind.com/media/1792914379146_ar10jv_HVUpmUNbQAAloco.jpg",
-    "https://cms-assets.youmind.com/media/1792914376386_7j70s8_HVZDjCWaMAAdC17.jpg",
-    "https://cms-assets.youmind.com/media/1792914376487_7ivzbf_HVZDjCpbIAA7Q4S.jpg",
-    "https://cms-assets.youmind.com/media/1792914378608_1ty842_HVYKsM3b0AAmnqA.jpg",
-    "https://cms-assets.youmind.com/media/1792914378628_zm6hp2_HVYKueXbAAAXPh7.jpg",
-    "https://cms-assets.youmind.com/media/1792914378387_i3hbe9_HVYKueObkAEjleF.jpg",
-    "https://cms-assets.youmind.com/media/1792914377927_snadf7_HVYDLWebAAA2XKZ.jpg",
-    "https://cms-assets.youmind.com/media/1792914377961_wmwf9i_HVYDLWlbUAAgEjq.jpg",
-    "https://cms-assets.youmind.com/media/1792914380608_st1ybv_HVXlScaawAAdJHD.jpg",
-    "https://cms-assets.youmind.com/media/1792914380708_4l9san_HVXlScabcAAx1TI.jpg",
-    "https://cms-assets.youmind.com/media/1792914380694_1ww5c4_HVXlScYaEAE_c0_.jpg",
-    "https://cms-assets.youmind.com/media/1792914381362_zfofiw_HVXlScfagAAUgld.jpg",
-    "https://cms-assets.youmind.com/media/1792827963686_e0qhu6_HVXJ0k3asAAYYXk.jpg",
-    "https://cms-assets.youmind.com/media/1792827960185_dnn4dr_HVTrPHzboAAg5wi.jpg",
     "https://cms-assets.youmind.com/media/1792827964396_8vv18a_HVTiAE4aMAAJsR9.jpg",
     "https://cms-assets.youmind.com/media/1792827964483_1za9p7_HVTiAg-acAAUviA.jpg",
     "https://cms-assets.youmind.com/media/1792827964389_5mf8ys_HVTiBB7akAAnCnT.jpg",
     "https://cms-assets.youmind.com/media/1792827965165_sbm8m5_HVTiBh8bYAErcwL.jpg",
     "https://cms-assets.youmind.com/media/1792827959989_8q4fmn_HVTZ3xTaQAA3oQ1.jpg",
     "https://cms-assets.youmind.com/media/1792827959988_4r7vrn_HVTZ3xmbAAAg3Hk.jpg",
-    "https://cms-assets.youmind.com/media/1792827961377_0gj98p_HVS5yWAakAAAxC3.jpg",
     "https://cms-assets.youmind.com/media/1792655537186_02bb3c_HVKb7QxWYAAdwlm.jpg",
     "https://cms-assets.youmind.com/media/1792655536306_ls8575_HVJR58Wb0AAm5Zk.jpg",
     "https://cms-assets.youmind.com/media/1792655539295_4nzuva_HVI4562aoAEfx-k.jpg",
@@ -8671,8 +8681,12 @@
     "https://cms-assets.youmind.com/media/1791532581350_cuycy1_HUGq8Itb0AASE7_.jpg",
     "https://cms-assets.youmind.com/media/1791013857616_l2v0on_HTZm4AraEAAeKLJ.jpg",
     "https://cms-assets.youmind.com/media/1790754867032_cm6hl4_HTZTm6WbAAAgeT6.jpg",
+    "https://cms-assets.youmind.com/media/1793087722419_9v6tbg_HVlGBggWMAAsnD7.jpg",
+    "https://cms-assets.youmind.com/media/1793087723418_afbaxb_HVjyBajagAAYoXs.jpg",
+    "https://cms-assets.youmind.com/media/1793087724352_1cap77_HVilDGjbIAAnmy8.jpg",
     "https://cms-assets.youmind.com/media/1793001764227_wrqwhm_HVeiVmGboAE6eCl.jpg",
     "https://cms-assets.youmind.com/media/1792827962935_5k3dfv_HVUtU7xbIAAFbaP.jpg",
+    "https://cms-assets.youmind.com/media/1792827961377_0gj98p_HVS5yWAakAAAxC3.jpg",
     "https://cms-assets.youmind.com/media/1792741906016_6k5xga_HVPCL50b0AAqRO3.jpg",
     "https://cms-assets.youmind.com/media/1792569135476_ldl0qm_HVD-ndGaUAAgucY.jpg",
     "https://cms-assets.youmind.com/media/1792569135133_7ko1cq_HVD-oALbYAASlC-.jpg",
@@ -8691,9 +8705,9 @@
     "https://cms-assets.youmind.com/media/1791107308177_uxeiui_HTv0CHuawAArHzn.jpg",
     "https://cms-assets.youmind.com/media/1791107318784_r0dgd0_HTrLUyqaQAALBxC.jpg",
     "https://cms-assets.youmind.com/media/1790927580522_6jbl29_HTi7jJyaAAATRkZ.jpg",
-    "https://cms-assets.youmind.com/media/1790841309951_bh4xcq_HTb_TqpaIAAL-0W.jpg",
-    "https://cms-assets.youmind.com/media/1790754868013_kvbhrk_HTYyP3nasAAiwx_.jpg",
-    "https://cms-assets.youmind.com/media/1790754867229_2r7sis_HTWQozcbIAAwDt1.jpg",
+    "https://cms-assets.youmind.com/media/1792914378608_1ty842_HVYKsM3b0AAmnqA.jpg",
+    "https://cms-assets.youmind.com/media/1792914378628_zm6hp2_HVYKueXbAAAXPh7.jpg",
+    "https://cms-assets.youmind.com/media/1792914378387_i3hbe9_HVYKueObkAEjleF.jpg",
     "https://cms-assets.youmind.com/media/1792827963367_5kzh0f_HVSm2icWkAAzALz.jpg",
     "https://cms-assets.youmind.com/media/1792655536062_2pnubp_HVHsSY6aoAAUlsN.jpg",
     "https://cms-assets.youmind.com/media/1792655536072_m8ahm6_HVHsSYlbcAAKyDO.jpg",
@@ -8727,6 +8741,9 @@
     "https://cms-assets.youmind.com/media/1789199149794_ouvrj1_HR_JOC8bYAA3zp3.jpg",
     "https://cms-assets.youmind.com/media/1789199149911_uct728_HR-PEFiaQAAP6P3.jpg",
     "https://cms-assets.youmind.com/media/1789199149949_ubizxa_HR-PEFhb0AEoMnP.jpg",
+    "https://cms-assets.youmind.com/media/1792914376386_7j70s8_HVZDjCWaMAAdC17.jpg",
+    "https://cms-assets.youmind.com/media/1792914376487_7ivzbf_HVZDjCpbIAA7Q4S.jpg",
+    "https://cms-assets.youmind.com/media/1792827960185_dnn4dr_HVTrPHzboAAg5wi.jpg",
     "https://cms-assets.youmind.com/media/1792655534507_au5rni_HVFB_M2bIAEIVbs.jpg",
     "https://cms-assets.youmind.com/media/1792655534523_td99zd_HVFCA3UbAAE7XG4.jpg",
     "https://cms-assets.youmind.com/media/1792482820813_mtdoc7_HU854tgbIAE9SlB.jpg",
@@ -8809,16 +8826,7 @@
     "https://cms-assets.youmind.com/media/1788942336338_pno2c0_HRunAK4a8AAgaeo.jpg",
     "https://cms-assets.youmind.com/media/1788942336335_c9iow2_HRunAK4bEAAuUrl.jpg",
     "https://cms-assets.youmind.com/media/1788942336347_njta2l_HRunAK7boAAhW8b.jpg",
-    "https://cms-assets.youmind.com/media/1788942337698_21gvm6_HRunAK5bgAAlJqH.jpg",
-    "https://cms-assets.youmind.com/media/1788942315707_4sytlg_HRuXCqdagAAoIpC.jpg",
-    "https://cms-assets.youmind.com/media/1788942315769_dm2egp_HRuXCqiaQAADMwJ.jpg",
-    "https://cms-assets.youmind.com/media/1788855295885_pvw99a_HRpj3B8aoAAScPU.jpg",
-    "https://cms-assets.youmind.com/media/1788855320165_tg6adc_HRm1opdXQAEwb6-.jpg",
-    "https://cms-assets.youmind.com/media/1793001765390_hh8cvj_HViIfdmaEAA7KSs.jpg",
-    "https://cms-assets.youmind.com/media/1792741900865_clgy3f_HVPc8aSasAAzWmk.jpg",
-    "https://cms-assets.youmind.com/media/1792741901403_iznjri_HVPc_j-aYAEzQMd.jpg",
-    "https://cms-assets.youmind.com/media/1792741901130_frljwu_HVJziWabYAEfSvJ.jpg",
-    "https://cms-assets.youmind.com/media/1792741901322_7x9kdp_HVJzj3nagAAapWL.jpg"
+    "https://cms-assets.youmind.com/media/1788942337698_21gvm6_HRunAK5bgAAlJqH.jpg"
   ],
   "extraUniqueCount": 1642,
   "stats": {
@@ -8951,7 +8959,7 @@
       "publicSections": 129,
       "completeRecords": 129,
       "imageCount": 233,
-      "sourceUpdatedAt": "2026年10月27日星期二 UTC 12:04:19"
+      "sourceUpdatedAt": "2026年10月27日星期二 UTC 20:02:31"
     },
     "diffusionCount": 383,
     "youMindCompleteRecords": 126
@@ -9103,12 +9111,18 @@
     "https://cms-assets.youmind.com/media/1792655532802_d57ipr_HVIaD8JaUAAhavB.jpg": "./gallery/bootstrap-cache/4bd2e86466b3d9c690bfef34.webp",
     "https://cms-assets.youmind.com/media/1792655536306_ls8575_HVJR58Wb0AAm5Zk.jpg": "./gallery/bootstrap-cache/d8405da511e65f77ce50e89d.webp",
     "https://cms-assets.youmind.com/media/1792655537186_02bb3c_HVKb7QxWYAAdwlm.jpg": "./gallery/bootstrap-cache/bebd2698956f54bfdfb5cadb.webp",
-    "https://cms-assets.youmind.com/media/1792655539295_4nzuva_HVI4562aoAEfx-k.jpg": "./gallery/bootstrap-cache/f4ce0bb43b1cda83bc0412eb.webp"
+    "https://cms-assets.youmind.com/media/1792655539295_4nzuva_HVI4562aoAEfx-k.jpg": "./gallery/bootstrap-cache/f4ce0bb43b1cda83bc0412eb.webp",
+    "https://cms-assets.youmind.com/media/1792827959988_4r7vrn_HVTZ3xmbAAAg3Hk.jpg": "./gallery/bootstrap-cache/098d7a5a4bcdf78470438bd9.webp",
+    "https://cms-assets.youmind.com/media/1792827959989_8q4fmn_HVTZ3xTaQAA3oQ1.jpg": "./gallery/bootstrap-cache/c9b2babc078a061184db3d45.webp",
+    "https://cms-assets.youmind.com/media/1792827964389_5mf8ys_HVTiBB7akAAnCnT.jpg": "./gallery/bootstrap-cache/2533e0c6a6ed114a19b9ab7b.webp",
+    "https://cms-assets.youmind.com/media/1792827964396_8vv18a_HVTiAE4aMAAJsR9.jpg": "./gallery/bootstrap-cache/c30fd13d3a92915775458ef4.webp",
+    "https://cms-assets.youmind.com/media/1792827964483_1za9p7_HVTiAg-acAAUviA.jpg": "./gallery/bootstrap-cache/8469559a4e58a5f19d0b4276.webp",
+    "https://cms-assets.youmind.com/media/1792827965165_sbm8m5_HVTiBh8bYAErcwL.jpg": "./gallery/bootstrap-cache/fcf188e20f80d15600f584c7.webp"
   },
   "imageCacheStats": {
-    "requested": 147,
-    "cached": 147,
+    "requested": 153,
+    "cached": 153,
     "failed": 0,
-    "priorityRecords": 92
+    "priorityRecords": 94
   }
 }
