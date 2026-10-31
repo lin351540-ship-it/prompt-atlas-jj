@@ -1210,7 +1210,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-31T12:42:39.714Z"
+      "syncedAt": "2026-10-31T21:41:57.748Z"
     },
     {
       "id": "youmind-2-a322ec153177",
@@ -1251,7 +1251,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-31T12:42:39.714Z"
+      "syncedAt": "2026-10-31T21:41:57.748Z"
     },
     {
       "id": "youmind-3-9fbd8425d2a3",
@@ -1293,7 +1293,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-31T12:42:39.714Z"
+      "syncedAt": "2026-10-31T21:41:57.748Z"
     },
     {
       "id": "youmind-6-c981d4f8c5bf",
@@ -1335,11 +1335,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-31T12:42:39.714Z"
+      "syncedAt": "2026-10-31T21:41:57.748Z"
     },
     {
-      "id": "youmind-6-1e4914fe6b1a",
-      "index": 20006,
+      "id": "youmind-8-1e4914fe6b1a",
+      "index": 20008,
       "title": "Profile / Avatar - GPT Image 2 Korean Forest Portrait Prompt",
       "originalTitle": "Profile / Avatar - GPT Image 2 Korean Forest Portrait Prompt",
       "description": "A detailed prompt for generating a photorealistic portrait of an East Asian woman in a summer forest stream setting, featuring specific lighting and composition instructions.",
@@ -1378,7 +1378,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-31T12:42:39.714Z"
+      "syncedAt": "2026-10-31T21:41:57.748Z"
     },
     {
       "id": "youmind-32-b9d8f2a74eb9",
@@ -1421,7 +1421,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-31T12:42:39.714Z"
+      "syncedAt": "2026-10-31T21:41:57.748Z"
     },
     {
       "id": "youmind-33-b31665906c19",
@@ -1467,7 +1467,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-31T12:42:39.714Z"
+      "syncedAt": "2026-10-31T21:41:57.748Z"
     },
     {
       "id": "youmind-34-fa0b65adacc7",
@@ -1511,7 +1511,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-31T12:42:39.714Z"
+      "syncedAt": "2026-10-31T21:41:57.748Z"
     },
     {
       "id": "youmind-35-312d6725aa91",
@@ -1553,7 +1553,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-31T12:42:39.714Z"
+      "syncedAt": "2026-10-31T21:41:57.748Z"
     },
     {
       "id": "youmind-36-927f8437f3eb",
@@ -1595,7 +1595,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-31T12:42:39.714Z"
+      "syncedAt": "2026-10-31T21:41:57.748Z"
     },
     {
       "id": "youmind-37-547d4e44f17e",
@@ -1638,7 +1638,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-31T12:42:39.714Z"
+      "syncedAt": "2026-10-31T21:41:57.748Z"
     },
     {
       "id": "youmind-38-ded2f8dea8b4",
@@ -1682,7 +1682,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-31T12:42:39.714Z"
+      "syncedAt": "2026-10-31T21:41:57.748Z"
     },
     {
       "id": "nano-banana-2-a1c6fd3c7c70",
@@ -1728,7 +1728,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-31T12:42:39.949Z"
+      "syncedAt": "2026-10-31T21:41:58.056Z"
     },
     {
       "id": "nano-banana-4-a04d3d2c3870",
@@ -1771,7 +1771,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-31T12:42:39.949Z"
+      "syncedAt": "2026-10-31T21:41:58.056Z"
     },
     {
       "id": "nano-banana-7-31b2cd6a2391",
@@ -1815,7 +1815,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-31T12:42:39.949Z"
+      "syncedAt": "2026-10-31T21:41:58.056Z"
     },
     {
       "id": "nano-banana-31-815e2d823159",
@@ -1860,7 +1860,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-31T12:42:39.949Z"
+      "syncedAt": "2026-10-31T21:41:58.056Z"
     },
     {
       "id": "nano-banana-32-2440dea2825f",
@@ -1905,7 +1905,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-31T12:42:39.949Z"
+      "syncedAt": "2026-10-31T21:41:58.056Z"
     },
     {
       "id": "nano-banana-33-215bdf3b4e8d",
@@ -1948,7 +1948,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-31T12:42:39.949Z"
+      "syncedAt": "2026-10-31T21:41:58.056Z"
     },
     {
       "id": "nano-banana-34-18e4f701fd60",
@@ -1993,7 +1993,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-31T12:42:39.949Z"
+      "syncedAt": "2026-10-31T21:41:58.056Z"
     },
     {
       "id": "nano-banana-35-07fe7bb5f0aa",
@@ -2036,7 +2036,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-31T12:42:39.949Z"
+      "syncedAt": "2026-10-31T21:41:58.056Z"
     },
     {
       "id": "nano-banana-36-ec686af192e4",
@@ -2079,7 +2079,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-31T12:42:39.949Z"
+      "syncedAt": "2026-10-31T21:41:58.056Z"
     },
     {
       "id": "nano-banana-37-c8e2b24ad9b5",
@@ -2124,7 +2124,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-31T12:42:39.949Z"
+      "syncedAt": "2026-10-31T21:41:58.056Z"
     },
     {
       "id": "nano-banana-38-c5f2c4108133",
@@ -2168,7 +2168,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-31T12:42:39.949Z"
+      "syncedAt": "2026-10-31T21:41:58.056Z"
     },
     {
       "id": "nano-banana-39-275b67307d26",
@@ -2216,7 +2216,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-31T12:42:39.949Z"
+      "syncedAt": "2026-10-31T21:41:58.056Z"
     },
     {
       "id": "evolink-poster-39-d29f90ac8a84",
@@ -2261,7 +2261,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-31T12:42:48.768Z"
+      "syncedAt": "2026-10-31T21:42:07.825Z"
     },
     {
       "id": "evolink-poster-50-ba2b16425d81",
@@ -2306,7 +2306,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-31T12:42:48.768Z"
+      "syncedAt": "2026-10-31T21:42:07.825Z"
     },
     {
       "id": "evolink-poster-57-ead0143e32d5",
@@ -2351,7 +2351,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-31T12:42:48.768Z"
+      "syncedAt": "2026-10-31T21:42:07.825Z"
     },
     {
       "id": "evolink-poster-56-5243facc5baf",
@@ -2397,7 +2397,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-31T12:42:48.768Z"
+      "syncedAt": "2026-10-31T21:42:07.825Z"
     },
     {
       "id": "evolink-poster-110-378bf645911c",
@@ -2443,7 +2443,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-31T12:42:48.768Z"
+      "syncedAt": "2026-10-31T21:42:07.825Z"
     },
     {
       "id": "evolink-poster-119-780eeb218c9d",
@@ -2489,7 +2489,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-31T12:42:48.768Z"
+      "syncedAt": "2026-10-31T21:42:07.825Z"
     },
     {
       "id": "evolink-poster-120-23515a080d1e",
@@ -2535,7 +2535,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-31T12:42:48.768Z"
+      "syncedAt": "2026-10-31T21:42:07.825Z"
     },
     {
       "id": "diffusiondb-3d-8805770b-a40f-4d3c-817f-73e5fc2f446e",
@@ -8334,7 +8334,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-31T12:42:39.714Z"
+      "syncedAt": "2026-10-31T21:41:57.748Z"
     },
     {
       "id": "youmind-2-a322ec153177",
@@ -8375,7 +8375,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-10-31T12:42:39.714Z"
+      "syncedAt": "2026-10-31T21:41:57.748Z"
     },
     {
       "id": "nano-banana-2-a1c6fd3c7c70",
@@ -8421,7 +8421,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-31T12:42:39.949Z"
+      "syncedAt": "2026-10-31T21:41:58.056Z"
     },
     {
       "id": "nano-banana-4-a04d3d2c3870",
@@ -8464,7 +8464,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-10-31T12:42:39.949Z"
+      "syncedAt": "2026-10-31T21:41:58.056Z"
     },
     {
       "id": "evolink-poster-39-d29f90ac8a84",
@@ -8509,7 +8509,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-31T12:42:48.768Z"
+      "syncedAt": "2026-10-31T21:42:07.825Z"
     },
     {
       "id": "evolink-poster-50-ba2b16425d81",
@@ -8554,7 +8554,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-10-31T12:42:48.768Z"
+      "syncedAt": "2026-10-31T21:42:07.825Z"
     },
     {
       "id": "2slides-3d-impasto-micro-landscape-poster-oil-painting-pen-stroke-on-xuan-paper",
@@ -8600,6 +8600,8 @@
     "https://cms-assets.youmind.com/media/1776699445498_ga2ry5_HGO7H0DWkAApdKK.jpg",
     "https://cms-assets.youmind.com/media/1776756799880_c8u8w7_HGUKjjaasAAvVRa.jpg",
     "https://cms-assets.youmind.com/media/1776661968404_8a5flm_HGQc_KOaMAA2vt0.jpg",
+    "https://cms-assets.youmind.com/media/1793432466215_q2ju4d_HV4VcevbQAAgKx1.jpg",
+    "https://cms-assets.youmind.com/media/1793432468175_lyk3b7_HV369IobQAAJCuL.jpg",
     "https://cms-assets.youmind.com/media/1793346284830_ztlq24_HV06BBEbkAA6v_b.jpg",
     "https://cms-assets.youmind.com/media/1793346286438_mqnezb_HV0GiBCawAAuJSH.jpg",
     "https://cms-assets.youmind.com/media/1793346288152_c3pcj6_HVzjGJFaAAANEAx.jpg",
@@ -8626,29 +8628,25 @@
     "https://cms-assets.youmind.com/media/1793001763836_vqp5w4_HVd7EWVbEAAWX_T.jpg",
     "https://cms-assets.youmind.com/media/1793001762333_ioci5n_HVaBnPQaoAAE7DS.jpg",
     "https://cms-assets.youmind.com/media/1792914375004_3tpa10_HVVn-gibQAAbDuD.jpg",
-    "https://cms-assets.youmind.com/media/1792827962059_ds2thp_HVUF6MhacAAs28_.jpg",
-    "https://cms-assets.youmind.com/media/1792827957115_600l27_HVSm_nYa0AAhjOp.jpg",
-    "https://cms-assets.youmind.com/media/1792827957600_9j60u4_HVSnAQ-aoAAY4F4.jpg",
-    "https://cms-assets.youmind.com/media/1792827958605_90dbw1_HVSnA5Xb0AAzyyp.jpg",
+    "https://cms-assets.youmind.com/media/1793432464763_ps85qg_HV4qUhmasAAzXTm.jpg",
+    "https://cms-assets.youmind.com/media/1793432463373_eri84l_HV4qVYtakAA7dC1.jpg",
+    "https://cms-assets.youmind.com/media/1793432467680_0lo4dm_HV7_q38bgAAfvQJ.jpg",
+    "https://cms-assets.youmind.com/media/1793432465396_fdphn0_HV45jOhbsAAljsI.jpg",
+    "https://cms-assets.youmind.com/media/1793432465226_1wa9ib_HV45khtbsAAd4Ea.jpg",
+    "https://cms-assets.youmind.com/media/1793432466888_8upwsm_HV6r5dWboAAZZB4.jpg",
+    "https://cms-assets.youmind.com/media/1793432463404_itj08y_HVsJDN8bAAAv-uj.jpg",
+    "https://cms-assets.youmind.com/media/1793432464570_gji7p5_HVsNYLWbkAA0wtE.jpg",
+    "https://cms-assets.youmind.com/media/1793432463290_0m0wve_HV2unoLaEAAuvva.jpg",
     "https://cms-assets.youmind.com/media/1793346285332_q0jfxq_HV2l0KsboAAfVp6.jpg",
     "https://cms-assets.youmind.com/media/1793346285365_eq4qpv_HV2l0Kqa8AEZr7Y.jpg",
     "https://cms-assets.youmind.com/media/1793346285399_pkcfpj_HV2l0KwawAAsIIu.jpg",
     "https://cms-assets.youmind.com/media/1793346286230_npmcp0_HV2l0KqbAAAtc9r.jpg",
-    "https://cms-assets.youmind.com/media/1793346288376_5ymtpk_HVzfO_mbcAAc6lt.jpg",
-    "https://cms-assets.youmind.com/media/1793346288396_1mk1mh_HVzfQTnaQAA5_IR.jpg",
+    "https://cms-assets.youmind.com/media/1793432465806_qit4ee_HVzfO_mbcAAc6lt.jpg",
+    "https://cms-assets.youmind.com/media/1793432466159_38912z_HVzfQTnaQAA5_IR.jpg",
     "https://cms-assets.youmind.com/media/1793346282571_n6z8if_HVrT5s3bkAAKWz2.jpg",
     "https://cms-assets.youmind.com/media/1793346283812_7zzjyz_HVrT6tpbMAARbVy.jpg",
     "https://cms-assets.youmind.com/media/1793259852632_91l7dg_HVuFcT7bgAA6a73.jpg",
     "https://cms-assets.youmind.com/media/1793259852770_hjptub_HVtrnTHasAAKC3g.jpg",
-    "https://cms-assets.youmind.com/media/1793259853359_zdj5ww_HVti2rxXEAAo_Zf.jpg",
-    "https://cms-assets.youmind.com/media/1793173380002_iw8mtx_HVoLzXHawAATZ-M.jpg",
-    "https://cms-assets.youmind.com/media/1793173367484_ex0gni_HVnJpvabkAAAECJ.jpg",
-    "https://cms-assets.youmind.com/media/1793173367461_kc5hw1_HVnJpvWbIAA-gqR.jpg",
-    "https://cms-assets.youmind.com/media/1793173367490_ra5zfz_HVnJpvdbcAAFC_s.jpg",
-    "https://cms-assets.youmind.com/media/1793087725363_486mq1_HVmvpNpa4AAquD0.jpg",
-    "https://cms-assets.youmind.com/media/1793087725375_4auf9t_HVmvqMGbUAAJkfz.jpg",
-    "https://cms-assets.youmind.com/media/1793087722593_sl63ga_HVkGKtYb0AATnry.jpg",
-    "https://cms-assets.youmind.com/media/1793087726676_z8xjs4_HVj7eZGbgAETBUF.jpg",
     "https://cms-assets.youmind.com/media/1793173380419_t4aqe6_HVr4qGLbkAAbPC5.jpg",
     "https://cms-assets.youmind.com/media/1792827964396_8vv18a_HVTiAE4aMAAJsR9.jpg",
     "https://cms-assets.youmind.com/media/1792827964483_1za9p7_HVTiAg-acAAUviA.jpg",
@@ -8673,6 +8671,7 @@
     "https://cms-assets.youmind.com/media/1791705043799_e3o9cy_HUSC9MNbEAAWeD9.jpg",
     "https://cms-assets.youmind.com/media/1791532581350_cuycy1_HUGq8Itb0AASE7_.jpg",
     "https://cms-assets.youmind.com/media/1791013857616_l2v0on_HTZm4AraEAAeKLJ.jpg",
+    "https://cms-assets.youmind.com/media/1793432468415_uxr321_HV4pdu2a8AAnW-f.jpg",
     "https://cms-assets.youmind.com/media/1793087722419_9v6tbg_HVlGBggWMAAsnD7.jpg",
     "https://cms-assets.youmind.com/media/1793087723418_afbaxb_HVjyBajagAAYoXs.jpg",
     "https://cms-assets.youmind.com/media/1793087724352_1cap77_HVilDGjbIAAnmy8.jpg",
@@ -8699,7 +8698,6 @@
     "https://cms-assets.youmind.com/media/1791273289296_sxkavk_HTxS5SLbUAAy7PO.jpg",
     "https://cms-assets.youmind.com/media/1791107308177_uxeiui_HTv0CHuawAArHzn.jpg",
     "https://cms-assets.youmind.com/media/1791107318784_r0dgd0_HTrLUyqaQAALBxC.jpg",
-    "https://cms-assets.youmind.com/media/1790927580522_6jbl29_HTi7jJyaAAATRkZ.jpg",
     "https://cms-assets.youmind.com/media/1792914378608_1ty842_HVYKsM3b0AAmnqA.jpg",
     "https://cms-assets.youmind.com/media/1792914378628_zm6hp2_HVYKueXbAAAXPh7.jpg",
     "https://cms-assets.youmind.com/media/1792914378387_i3hbe9_HVYKueObkAEjleF.jpg",
@@ -8727,12 +8725,6 @@
     "https://cms-assets.youmind.com/media/1789803922198_267gor_HSelTpIbMAAaqvs.jpg",
     "https://cms-assets.youmind.com/media/1789803923400_oe944n_HSelUUUaAAAOdSR.jpg",
     "https://cms-assets.youmind.com/media/1789717714151_cwx8mp_HSd3pWebgAAyN6k.jpg",
-    "https://cms-assets.youmind.com/media/1789717712171_3eh858_HSb3HpIWcAEg9ih.jpg",
-    "https://cms-assets.youmind.com/media/1789717711740_cqwvem_HSb3HpJWQAEVbcE.jpg",
-    "https://cms-assets.youmind.com/media/1789717711810_1k352d_HSb3HpKW8AEihPT.jpg",
-    "https://cms-assets.youmind.com/media/1789717712692_lpzufz_HSb3HpPW8AAqpGp.jpg",
-    "https://cms-assets.youmind.com/media/1789631458350_1r8oar_HSUeSbNaIAAvoXV.jpg",
-    "https://cms-assets.youmind.com/media/1789545105778_3zwlh0_HSSHFHnbsAAh6O5.jpg",
     "https://cms-assets.youmind.com/media/1793346286387_itwz8y_HVyINxVWsAA3wM8.jpg",
     "https://cms-assets.youmind.com/media/1793346286340_pnb1rn_HVyINxcXQAAxVcA.jpg",
     "https://cms-assets.youmind.com/media/1793346286379_o8eduu_HVyINxhXYAAKr2B.jpg",
@@ -8740,6 +8732,7 @@
     "https://cms-assets.youmind.com/media/1793259850774_hwdo40_HVt3eXoXsAAoXfl.jpg",
     "https://cms-assets.youmind.com/media/1793259850776_m82h7z_HVt3eXtWIAAqHQq.jpg",
     "https://cms-assets.youmind.com/media/1793259851806_1g09ss_HVt3eXdXsAASS4a.jpg",
+    "https://cms-assets.youmind.com/media/1793259853359_zdj5ww_HVti2rxXEAAo_Zf.jpg",
     "https://cms-assets.youmind.com/media/1793001764472_4az5cm_HVd_K6AbEAASRYf.jpg",
     "https://cms-assets.youmind.com/media/1792914376386_7j70s8_HVZDjCWaMAAdC17.jpg",
     "https://cms-assets.youmind.com/media/1792914376487_7ivzbf_HVZDjCpbIAA7Q4S.jpg",
@@ -8782,14 +8775,6 @@
     "https://cms-assets.youmind.com/media/1792482828954_yn9v4a_HU0m5NwaYAAXKqU.jpg",
     "https://cms-assets.youmind.com/media/1792482828954_fkova4_HU0m5Q5bEAAUehD.jpg",
     "https://cms-assets.youmind.com/media/1792482829677_atpvsw_HU0m5NxboAA3Rim.jpg",
-    "https://cms-assets.youmind.com/media/1792482825677_x00lf4_HU0mythbAAAuQ9D.jpg",
-    "https://cms-assets.youmind.com/media/1792482825644_18hhld_HU0mytmbYAAaqjU.jpg",
-    "https://cms-assets.youmind.com/media/1792482825651_vvrl9w_HU0mytlbgAAu6bn.jpg",
-    "https://cms-assets.youmind.com/media/1792482826518_03j28v_HU0mytvaMAAMSO8.jpg",
-    "https://cms-assets.youmind.com/media/1792309459309_40zqw1_HU0msrDb0AA7nC6.jpg",
-    "https://cms-assets.youmind.com/media/1792309459321_30eamg_HU0msrDbIAAXbpN.jpg",
-    "https://cms-assets.youmind.com/media/1792309459289_hl0s2u_HU0msrFaoAAxK3h.jpg",
-    "https://cms-assets.youmind.com/media/1792309460718_aymmkz_HU0msrBasAA8iHf.jpg",
     "https://cms-assets.youmind.com/media/1792482821019_1z13t3_HU_uoCua4AAqZqM.jpg",
     "https://cms-assets.youmind.com/media/1792482821290_tpzcws_HU_upCwbcAArcqo.jpg",
     "https://cms-assets.youmind.com/media/1792482819607_etijd8_HU5oFCWagAAu9JB.jpg",
@@ -8820,9 +8805,15 @@
     "https://cms-assets.youmind.com/media/1788942336335_c9iow2_HRunAK4bEAAuUrl.jpg",
     "https://cms-assets.youmind.com/media/1788942336347_njta2l_HRunAK7boAAhW8b.jpg",
     "https://cms-assets.youmind.com/media/1788942337698_21gvm6_HRunAK5bgAAlJqH.jpg",
-    "https://cms-assets.youmind.com/media/1788942315707_4sytlg_HRuXCqdagAAoIpC.jpg",
-    "https://cms-assets.youmind.com/media/1788942315769_dm2egp_HRuXCqiaQAADMwJ.jpg",
-    "https://cms-assets.youmind.com/media/1788855295885_pvw99a_HRpj3B8aoAAScPU.jpg"
+    "https://cms-assets.youmind.com/media/1793173380003_3zpmpc_HVsUF1EacAAH0UU.jpg",
+    "https://cms-assets.youmind.com/media/1793087724308_asqfjb_HViIfdmaEAA7KSs.jpg",
+    "https://cms-assets.youmind.com/media/1793087722292_38581h_HVd5SN2a8AAIDqY.jpg",
+    "https://cms-assets.youmind.com/media/1793087722134_p6c059_HVd5pmcbQAAErwi.jpg",
+    "https://cms-assets.youmind.com/media/1792741900865_clgy3f_HVPc8aSasAAzWmk.jpg",
+    "https://cms-assets.youmind.com/media/1792741901403_iznjri_HVPc_j-aYAEzQMd.jpg",
+    "https://cms-assets.youmind.com/media/1792741901130_frljwu_HVJziWabYAEfSvJ.jpg",
+    "https://cms-assets.youmind.com/media/1792741901322_7x9kdp_HVJzj3nagAAapWL.jpg",
+    "https://cms-assets.youmind.com/media/1792655538941_ozq4a8_HVKUo4va8AAf23t.jpg"
   ],
   "extraUniqueCount": 1642,
   "stats": {
@@ -8955,7 +8946,7 @@
       "publicSections": 129,
       "completeRecords": 129,
       "imageCount": 243,
-      "sourceUpdatedAt": "2026年10月31日星期六 UTC 12:01:47"
+      "sourceUpdatedAt": "2026年10月31日星期六 UTC 20:01:35"
     },
     "diffusionCount": 383,
     "youMindCompleteRecords": 126
@@ -9076,12 +9067,10 @@
     "https://cms-assets.youmind.com/media/1788942321734_9pzxvn_HRwjsc8bkAAKTG6.jpg": "./gallery/bootstrap-cache/fe6a5335b596e4cfe49815e4.webp",
     "https://cms-assets.youmind.com/media/1789195068235_67ks05_HR9NC4KasAAWshq.jpg": "./gallery/bootstrap-cache/790f7f20b3bf9f4214d5749f.webp",
     "https://cms-assets.youmind.com/media/1789195068455_wg7zzd_HR94WawagAESFAJ.jpg": "./gallery/bootstrap-cache/f265138bca162b347f1f60b7.webp",
-    "https://cms-assets.youmind.com/media/1789545105778_3zwlh0_HSSHFHnbsAAh6O5.jpg": "./gallery/bootstrap-cache/6b0b5fb5de7eefeba40a5478.webp",
     "https://cms-assets.youmind.com/media/1789885863707_jbcusb_HSmZa1AWsAEcqd1.jpg": "./gallery/bootstrap-cache/9235726664d6ed656d5cf279.webp",
     "https://cms-assets.youmind.com/media/1790495309102_68is3h_HTJm7e_bwAAhXD5.jpg": "./gallery/bootstrap-cache/43afc8be80d7f9b7a7f99227.webp",
     "https://cms-assets.youmind.com/media/1790668324918_j2tjd4_HTRAdKCaAAAL1LT.jpg": "./gallery/bootstrap-cache/b58173ea4be078ffcc825656.webp",
     "https://cms-assets.youmind.com/media/1790836512083_wy8lhe_HTRW_GWWEAAnc7S.jpg": "./gallery/bootstrap-cache/a90df7c464b008f6df51235b.webp",
-    "https://cms-assets.youmind.com/media/1790927580522_6jbl29_HTi7jJyaAAATRkZ.jpg": "./gallery/bootstrap-cache/a554e0166e17b3bc2b1af6b4.webp",
     "https://cms-assets.youmind.com/media/1791013857616_l2v0on_HTZm4AraEAAeKLJ.jpg": "./gallery/bootstrap-cache/0f46023b0b218bef9add9954.webp",
     "https://cms-assets.youmind.com/media/1791532581350_cuycy1_HUGq8Itb0AASE7_.jpg": "./gallery/bootstrap-cache/1ff32c1563470ec53f22e807.webp",
     "https://cms-assets.youmind.com/media/1791705043799_e3o9cy_HUSC9MNbEAAWeD9.jpg": "./gallery/bootstrap-cache/e308ab7fea4428cd37f0323d.webp",
@@ -9092,10 +9081,6 @@
     "https://cms-assets.youmind.com/media/1791878377594_h77rmu_HUZEwCea0AArl4k.jpg": "./gallery/bootstrap-cache/088393d2bdbffc1b46af96a1.webp",
     "https://cms-assets.youmind.com/media/1792136980254_fnn2ho_HUsW4IcbEAAHCjD.jpg": "./gallery/bootstrap-cache/cacd868882b21855f8479321.webp",
     "https://cms-assets.youmind.com/media/1792223108309_bu9zqf_HUwsVYcXAAAkMAu.jpg": "./gallery/bootstrap-cache/f7d8dbd54d5e4074f02bbb89.webp",
-    "https://cms-assets.youmind.com/media/1792309459289_hl0s2u_HU0msrFaoAAxK3h.jpg": "./gallery/bootstrap-cache/4289be7a7915201dcde959ac.webp",
-    "https://cms-assets.youmind.com/media/1792309459309_40zqw1_HU0msrDb0AA7nC6.jpg": "./gallery/bootstrap-cache/a299c05464be7cdaa9269b87.webp",
-    "https://cms-assets.youmind.com/media/1792309459321_30eamg_HU0msrDbIAAXbpN.jpg": "./gallery/bootstrap-cache/3211098abd217fb6124486b3.webp",
-    "https://cms-assets.youmind.com/media/1792309460718_aymmkz_HU0msrBasAA8iHf.jpg": "./gallery/bootstrap-cache/994efe63d6c98383229b9740.webp",
     "https://cms-assets.youmind.com/media/1792482828884_9kxk5u_HU0m5NubYAAJx45.jpg": "./gallery/bootstrap-cache/cba6a0bdb75910a5121da49a.webp",
     "https://cms-assets.youmind.com/media/1792482828954_fkova4_HU0m5Q5bEAAUehD.jpg": "./gallery/bootstrap-cache/9efaedb4ef58ad5f763b43c9.webp",
     "https://cms-assets.youmind.com/media/1792482828954_yn9v4a_HU0m5NwaYAAXKqU.jpg": "./gallery/bootstrap-cache/e8c777e01dc0bc66e6e40ba7.webp",
@@ -9117,9 +9102,9 @@
     "https://cms-assets.youmind.com/media/1793346282545_pseqjp_HVyf_bybsAAl3Fc.jpg": "./gallery/bootstrap-cache/59912141273694f0218e87d2.webp"
   },
   "imageCacheStats": {
-    "requested": 154,
-    "cached": 154,
+    "requested": 148,
+    "cached": 148,
     "failed": 0,
-    "priorityRecords": 95
+    "priorityRecords": 92
   }
 }
