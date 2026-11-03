@@ -1210,7 +1210,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-03T06:55:44.391Z"
+      "syncedAt": "2026-11-03T19:35:49.742Z"
     },
     {
       "id": "youmind-2-a322ec153177",
@@ -1251,7 +1251,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-03T06:55:44.391Z"
+      "syncedAt": "2026-11-03T19:35:49.742Z"
     },
     {
       "id": "youmind-3-9fbd8425d2a3",
@@ -1293,7 +1293,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-03T06:55:44.391Z"
+      "syncedAt": "2026-11-03T19:35:49.742Z"
     },
     {
       "id": "youmind-6-c981d4f8c5bf",
@@ -1335,11 +1335,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-03T06:55:44.391Z"
+      "syncedAt": "2026-11-03T19:35:49.742Z"
     },
     {
-      "id": "youmind-15-1e4914fe6b1a",
-      "index": 20015,
+      "id": "youmind-17-1e4914fe6b1a",
+      "index": 20017,
       "title": "Profile / Avatar - GPT Image 2 Korean Forest Portrait Prompt",
       "originalTitle": "Profile / Avatar - GPT Image 2 Korean Forest Portrait Prompt",
       "description": "A detailed prompt for generating a photorealistic portrait of an East Asian woman in a summer forest stream setting, featuring specific lighting and composition instructions.",
@@ -1378,11 +1378,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-03T06:55:44.391Z"
+      "syncedAt": "2026-11-03T19:35:49.742Z"
     },
     {
-      "id": "youmind-32-b9d8f2a74eb9",
-      "index": 20032,
+      "id": "youmind-33-b9d8f2a74eb9",
+      "index": 20033,
       "title": "Infographic / Edu Visual - Personalized Palmistry Guide Infographic",
       "originalTitle": "Infographic / Edu Visual - Personalized Palmistry Guide Infographic",
       "description": "Generates a detailed, multi-column infographic analyzing hand features, palm lines, and fingerprints with personalized interpretations.",
@@ -1421,11 +1421,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-03T06:55:44.391Z"
+      "syncedAt": "2026-11-03T19:35:49.742Z"
     },
     {
-      "id": "youmind-33-b31665906c19",
-      "index": 20033,
+      "id": "youmind-34-b31665906c19",
+      "index": 20034,
       "title": "Infographic / Edu Visual - Whale Tail Photo & Ink Illustration Diptych",
       "originalTitle": "Infographic / Edu Visual - Whale Tail Photo & Ink Illustration Diptych",
       "description": "A split-layout design featuring a realistic photo of a breaching whale tail above a minimalist stippled ink illustration with Korean typography.",
@@ -1467,11 +1467,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-03T06:55:44.391Z"
+      "syncedAt": "2026-11-03T19:35:49.742Z"
     },
     {
-      "id": "youmind-34-fa0b65adacc7",
-      "index": 20034,
+      "id": "youmind-35-fa0b65adacc7",
+      "index": 20035,
       "title": "Infographic / Edu Visual - Photorealistic to Watercolor Transformation Prompts",
       "originalTitle": "Infographic / Edu Visual - Photorealistic to Watercolor Transformation Prompts",
       "description": "Two prompts for transforming photos into split-composition artworks where the top half is photorealistic and the bottom half is a delicate watercolor illustration.",
@@ -1511,11 +1511,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-03T06:55:44.391Z"
+      "syncedAt": "2026-11-03T19:35:49.742Z"
     },
     {
-      "id": "youmind-35-312d6725aa91",
-      "index": 20035,
+      "id": "youmind-36-312d6725aa91",
+      "index": 20036,
       "title": "Infographic / Edu Visual - GPT Image 2 Prompt Length Comparison",
       "originalTitle": "Infographic / Edu Visual - GPT Image 2 Prompt Length Comparison",
       "description": "A side-by-side visual comparison showing how GPT Image 2 renders a space library concept using 5-word, 25-word, and 100-word prompts.",
@@ -1553,11 +1553,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-03T06:55:44.391Z"
+      "syncedAt": "2026-11-03T19:35:49.742Z"
     },
     {
-      "id": "youmind-36-927f8437f3eb",
-      "index": 20036,
+      "id": "youmind-37-927f8437f3eb",
+      "index": 20037,
       "title": "Infographic / Edu Visual - GPT Image 2 Hand-drawn Infographic Prompt",
       "originalTitle": "Infographic / Edu Visual - GPT Image 2 Hand-drawn Infographic Prompt",
       "description": "A prompt for GPT Image 2 to create a hand-drawn style infographic card explaining the water cycle, with specific layout and color instructions.",
@@ -1595,11 +1595,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-03T06:55:44.391Z"
+      "syncedAt": "2026-11-03T19:35:49.742Z"
     },
     {
-      "id": "youmind-37-547d4e44f17e",
-      "index": 20037,
+      "id": "youmind-38-547d4e44f17e",
+      "index": 20038,
       "title": "Infographic / Edu Visual - Kiyomizu-dera Travel LP with Anime Mascot",
       "originalTitle": "Infographic / Edu Visual - Kiyomizu-dera Travel LP with Anime Mascot",
       "description": "A detailed vertical infographic-style landing page for Kiyomizu-dera tourism, combining an anime character guide with real scenic photos, app UI mockups, and structured travel information.",
@@ -1638,11 +1638,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-03T06:55:44.391Z"
+      "syncedAt": "2026-11-03T19:35:49.742Z"
     },
     {
-      "id": "youmind-38-ded2f8dea8b4",
-      "index": 20038,
+      "id": "youmind-39-ded2f8dea8b4",
+      "index": 20039,
       "title": "Infographic / Edu Visual - Swiss Editorial Diptych with Texture Zones",
       "originalTitle": "Infographic / Edu Visual - Swiss Editorial Diptych with Texture Zones",
       "description": "A detailed GPT Image 2 prompt for creating a vertical diptych from an uploaded photo. The top half preserves the original image, while the bottom half applies seven experimental texture zones (Reeded Glass, Engraving, Stipple, Halftone, Pixel Mosaic, Overlay, Duotone) in a Swiss editorial style.",
@@ -1682,7 +1682,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-03T06:55:44.391Z"
+      "syncedAt": "2026-11-03T19:35:49.742Z"
     },
     {
       "id": "nano-banana-2-a1c6fd3c7c70",
@@ -1728,7 +1728,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-03T06:55:44.611Z"
+      "syncedAt": "2026-11-03T19:35:50.388Z"
     },
     {
       "id": "nano-banana-4-a04d3d2c3870",
@@ -1771,7 +1771,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-03T06:55:44.611Z"
+      "syncedAt": "2026-11-03T19:35:50.388Z"
     },
     {
       "id": "nano-banana-7-31b2cd6a2391",
@@ -1815,11 +1815,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-03T06:55:44.611Z"
+      "syncedAt": "2026-11-03T19:35:50.388Z"
     },
     {
-      "id": "nano-banana-23-d4fae0178105",
-      "index": 40023,
+      "id": "nano-banana-25-d4fae0178105",
+      "index": 40025,
       "title": "社交媒体帖子 - 电影感联系表提示词",
       "originalTitle": "社交媒体帖子 - 电影感联系表提示词",
       "description": "一个详细的提示词，用于生成逼真的电影感联系表（Contact Sheet），采用 2x2 网格布局，展示主体在四个不同户外场景中的形象，保持身份和光照的一致性。",
@@ -1859,7 +1859,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-03T06:55:44.611Z"
+      "syncedAt": "2026-11-03T19:35:50.388Z"
     },
     {
       "id": "nano-banana-34-815e2d823159",
@@ -1904,7 +1904,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-03T06:55:44.611Z"
+      "syncedAt": "2026-11-03T19:35:50.388Z"
     },
     {
       "id": "nano-banana-35-2440dea2825f",
@@ -1949,7 +1949,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-03T06:55:44.611Z"
+      "syncedAt": "2026-11-03T19:35:50.388Z"
     },
     {
       "id": "nano-banana-36-215bdf3b4e8d",
@@ -1992,7 +1992,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-03T06:55:44.611Z"
+      "syncedAt": "2026-11-03T19:35:50.388Z"
     },
     {
       "id": "nano-banana-37-18e4f701fd60",
@@ -2037,7 +2037,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-03T06:55:44.611Z"
+      "syncedAt": "2026-11-03T19:35:50.388Z"
     },
     {
       "id": "nano-banana-38-07fe7bb5f0aa",
@@ -2080,7 +2080,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-03T06:55:44.611Z"
+      "syncedAt": "2026-11-03T19:35:50.388Z"
     },
     {
       "id": "nano-banana-39-ec686af192e4",
@@ -2123,7 +2123,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-03T06:55:44.611Z"
+      "syncedAt": "2026-11-03T19:35:50.388Z"
     },
     {
       "id": "nano-banana-40-c8e2b24ad9b5",
@@ -2168,7 +2168,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-03T06:55:44.611Z"
+      "syncedAt": "2026-11-03T19:35:50.388Z"
     },
     {
       "id": "nano-banana-41-c5f2c4108133",
@@ -2212,7 +2212,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-03T06:55:44.611Z"
+      "syncedAt": "2026-11-03T19:35:50.388Z"
     },
     {
       "id": "evolink-poster-39-d29f90ac8a84",
@@ -2257,7 +2257,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-03T06:55:52.827Z"
+      "syncedAt": "2026-11-03T19:36:00.990Z"
     },
     {
       "id": "evolink-poster-50-ba2b16425d81",
@@ -2302,7 +2302,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-03T06:55:52.827Z"
+      "syncedAt": "2026-11-03T19:36:00.990Z"
     },
     {
       "id": "evolink-poster-57-ead0143e32d5",
@@ -2347,7 +2347,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-03T06:55:52.827Z"
+      "syncedAt": "2026-11-03T19:36:00.990Z"
     },
     {
       "id": "evolink-poster-56-5243facc5baf",
@@ -2393,7 +2393,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-03T06:55:52.827Z"
+      "syncedAt": "2026-11-03T19:36:00.990Z"
     },
     {
       "id": "evolink-poster-110-378bf645911c",
@@ -2439,7 +2439,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-03T06:55:52.827Z"
+      "syncedAt": "2026-11-03T19:36:00.990Z"
     },
     {
       "id": "evolink-poster-119-780eeb218c9d",
@@ -2485,7 +2485,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-03T06:55:52.827Z"
+      "syncedAt": "2026-11-03T19:36:00.990Z"
     },
     {
       "id": "evolink-poster-120-23515a080d1e",
@@ -2531,7 +2531,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-03T06:55:52.827Z"
+      "syncedAt": "2026-11-03T19:36:00.990Z"
     },
     {
       "id": "diffusiondb-3d-8805770b-a40f-4d3c-817f-73e5fc2f446e",
@@ -8330,7 +8330,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-03T06:55:44.391Z"
+      "syncedAt": "2026-11-03T19:35:49.742Z"
     },
     {
       "id": "youmind-2-a322ec153177",
@@ -8371,7 +8371,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-03T06:55:44.391Z"
+      "syncedAt": "2026-11-03T19:35:49.742Z"
     },
     {
       "id": "nano-banana-2-a1c6fd3c7c70",
@@ -8417,7 +8417,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-03T06:55:44.611Z"
+      "syncedAt": "2026-11-03T19:35:50.388Z"
     },
     {
       "id": "nano-banana-4-a04d3d2c3870",
@@ -8460,7 +8460,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-03T06:55:44.611Z"
+      "syncedAt": "2026-11-03T19:35:50.388Z"
     },
     {
       "id": "evolink-poster-39-d29f90ac8a84",
@@ -8505,7 +8505,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-03T06:55:52.827Z"
+      "syncedAt": "2026-11-03T19:36:00.990Z"
     },
     {
       "id": "evolink-poster-50-ba2b16425d81",
@@ -8550,7 +8550,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-03T06:55:52.827Z"
+      "syncedAt": "2026-11-03T19:36:00.990Z"
     },
     {
       "id": "2slides-3d-impasto-micro-landscape-poster-oil-painting-pen-stroke-on-xuan-paper",
@@ -8596,10 +8596,9 @@
     "https://cms-assets.youmind.com/media/1776699445498_ga2ry5_HGO7H0DWkAApdKK.jpg",
     "https://cms-assets.youmind.com/media/1776756799880_c8u8w7_HGUKjjaasAAvVRa.jpg",
     "https://cms-assets.youmind.com/media/1776661968404_8a5flm_HGQc_KOaMAA2vt0.jpg",
-    "https://cms-assets.youmind.com/media/1793605353303_hqxnth_HWGI704akAAamiU.jpg",
-    "https://cms-assets.youmind.com/media/1793605353414_md562i_HWGI71DbcAAld3-.jpg",
-    "https://cms-assets.youmind.com/media/1793605353290_nvuptf_HWGI702aUAAo1AA.jpg",
-    "https://cms-assets.youmind.com/media/1793605354065_ng0p2y_HWGI701bIAAoUMy.jpg",
+    "https://cms-assets.youmind.com/media/1793691797490_n9b7vn_HWLJCWPbcAAI0sj.jpg",
+    "https://cms-assets.youmind.com/media/1793691804292_e0umrs_HWIbDg6aUAAKj3I.jpg",
+    "https://cms-assets.youmind.com/media/1793691804901_sbzp1a_HWHgDe_bMAAVfHr.jpg",
     "https://cms-assets.youmind.com/media/1793605356518_dn0ddz_HWCPEKsa0AA2NNC.jpg",
     "https://cms-assets.youmind.com/media/1793605351826_n46p8m_HWBJ6dHbYAA8ZfF.jpg",
     "https://cms-assets.youmind.com/media/1793605352074_21g03n_HWBJ6dEaQAAkSu4.jpg",
@@ -8626,13 +8625,17 @@
     "https://cms-assets.youmind.com/media/1793259851428_m6z18p_HVm7J8MacAEjmDq.jpg",
     "https://cms-assets.youmind.com/media/1793259849469_tde706_HVsw2BJbYAEMeiZ.jpg",
     "https://cms-assets.youmind.com/media/1793259849526_cl6tfy_HVsw2Bab0AAnBnS.jpg",
-    "https://cms-assets.youmind.com/media/1793173367451_8jqv3c_HVsH00ubsAACrtk.jpg",
-    "https://cms-assets.youmind.com/media/1793259849835_8kd3px_HVm8ZrvaIAANqCS.jpg",
-    "https://cms-assets.youmind.com/media/1793259849580_05btrh_HVm835QbkAA8klN.jpg",
-    "https://cms-assets.youmind.com/media/1793605353620_y9luj3_HWF5VgjaAAAjgKE.jpg",
-    "https://cms-assets.youmind.com/media/1793605353526_6agvhn_HWF5VgwawAAzucN.jpg",
-    "https://cms-assets.youmind.com/media/1793605354603_2f0pyt_HWBjFxxaEAA4nMk.jpg",
-    "https://cms-assets.youmind.com/media/1793605354656_q7lttu_HWBjGtka4AAYLDo.jpg",
+    "https://cms-assets.youmind.com/media/1793691803128_fhe1hv_HWJ9tx2aQAAsAGr.jpg",
+    "https://cms-assets.youmind.com/media/1793691803207_xtx973_HWJ9tyEbYAA7diH.jpg",
+    "https://cms-assets.youmind.com/media/1793691796149_8qbrpe_HWIH2zfa8AAL7MF.jpg",
+    "https://cms-assets.youmind.com/media/1793691797537_dumy9h_HWIH2zTawAAJhCY.jpg",
+    "https://cms-assets.youmind.com/media/1793691805962_3jc1z3_HWHY3aObAAAfyXR.jpg",
+    "https://cms-assets.youmind.com/media/1793691801111_wslv2n_HWGI704akAAamiU.jpg",
+    "https://cms-assets.youmind.com/media/1793691800958_hwdh5p_HWGI71DbcAAld3-.jpg",
+    "https://cms-assets.youmind.com/media/1793691800979_bzlhj3_HWGI702aUAAo1AA.jpg",
+    "https://cms-assets.youmind.com/media/1793691801904_hbas5k_HWGI701bIAAoUMy.jpg",
+    "https://cms-assets.youmind.com/media/1793691803572_6galdb_HWBjFxxaEAA4nMk.jpg",
+    "https://cms-assets.youmind.com/media/1793691803895_nwqijc_HWBjGtka4AAYLDo.jpg",
     "https://cms-assets.youmind.com/media/1793605353388_hdd1r3_HWDhjs0asAAdDoO.jpg",
     "https://cms-assets.youmind.com/media/1793432464763_ps85qg_HV4qUhmasAAzXTm.jpg",
     "https://cms-assets.youmind.com/media/1793432463373_eri84l_HV4qVYtakAA7dC1.jpg",
@@ -8643,12 +8646,6 @@
     "https://cms-assets.youmind.com/media/1793432463404_itj08y_HVsJDN8bAAAv-uj.jpg",
     "https://cms-assets.youmind.com/media/1793432464570_gji7p5_HVsNYLWbkAA0wtE.jpg",
     "https://cms-assets.youmind.com/media/1793432463290_0m0wve_HV2unoLaEAAuvva.jpg",
-    "https://cms-assets.youmind.com/media/1793346285332_q0jfxq_HV2l0KsboAAfVp6.jpg",
-    "https://cms-assets.youmind.com/media/1793346285365_eq4qpv_HV2l0Kqa8AEZr7Y.jpg",
-    "https://cms-assets.youmind.com/media/1793346285399_pkcfpj_HV2l0KwawAAsIIu.jpg",
-    "https://cms-assets.youmind.com/media/1793346286230_npmcp0_HV2l0KqbAAAtc9r.jpg",
-    "https://cms-assets.youmind.com/media/1793432465806_qit4ee_HVzfO_mbcAAc6lt.jpg",
-    "https://cms-assets.youmind.com/media/1793432466159_38912z_HVzfQTnaQAA5_IR.jpg",
     "https://cms-assets.youmind.com/media/1793173380419_t4aqe6_HVr4qGLbkAAbPC5.jpg",
     "https://cms-assets.youmind.com/media/1792827964396_8vv18a_HVTiAE4aMAAJsR9.jpg",
     "https://cms-assets.youmind.com/media/1792827964483_1za9p7_HVTiAg-acAAUviA.jpg",
@@ -8673,6 +8670,7 @@
     "https://cms-assets.youmind.com/media/1791705043799_e3o9cy_HUSC9MNbEAAWeD9.jpg",
     "https://cms-assets.youmind.com/media/1791532581350_cuycy1_HUGq8Itb0AASE7_.jpg",
     "https://cms-assets.youmind.com/media/1791013857616_l2v0on_HTZm4AraEAAeKLJ.jpg",
+    "https://cms-assets.youmind.com/media/1793691805919_ndl10i_HWFyfiMagAAHuJp.jpg",
     "https://cms-assets.youmind.com/media/1793605356800_z4mkph_HWDLHWYbsAEDjmN.jpg",
     "https://cms-assets.youmind.com/media/1793605356734_1f6nx9_HWDLYoNbYAAwLYl.jpg",
     "https://cms-assets.youmind.com/media/1793605356729_ff59r7_HWDLdmOa8AA0LKf.jpg",
@@ -8700,12 +8698,12 @@
     "https://cms-assets.youmind.com/media/1791964325938_k5q5x5_HUglzUlaAAE8i79.jpg",
     "https://cms-assets.youmind.com/media/1791618683445_lkci2g_HUMcJy0bYAANzb-.jpg",
     "https://cms-assets.youmind.com/media/1791273291789_c5shmn_HT4Hl2yW4AAonaZ.jpg",
-    "https://cms-assets.youmind.com/media/1791107311806_x86p6q_HTxV57bakAER3nc.jpg",
-    "https://cms-assets.youmind.com/media/1791107311903_5iefzj_HTxV57bbcAAwLew.jpg",
     "https://cms-assets.youmind.com/media/1793605354954_hf7eyi_HV_hodRaAAAK6f9.jpg",
     "https://cms-assets.youmind.com/media/1793605354910_l3acw4_HV_hodbaMAAxFOp.jpg",
     "https://cms-assets.youmind.com/media/1793605354918_b66eyc_HV_hodbbYAAWdv9.jpg",
     "https://cms-assets.youmind.com/media/1793605355766_b94396_HV_hodQaAAA7usl.jpg",
+    "https://cms-assets.youmind.com/media/1793432465806_qit4ee_HVzfO_mbcAAc6lt.jpg",
+    "https://cms-assets.youmind.com/media/1793432466159_38912z_HVzfQTnaQAA5_IR.jpg",
     "https://cms-assets.youmind.com/media/1793346282571_n6z8if_HVrT5s3bkAAKWz2.jpg",
     "https://cms-assets.youmind.com/media/1793346283812_7zzjyz_HVrT6tpbMAARbVy.jpg",
     "https://cms-assets.youmind.com/media/1792914378608_1ty842_HVYKsM3b0AAmnqA.jpg",
@@ -8734,6 +8732,9 @@
     "https://cms-assets.youmind.com/media/1789803923586_w365m8_HSelN1NbQAA5oNJ.jpg",
     "https://cms-assets.youmind.com/media/1789803922198_267gor_HSelTpIbMAAaqvs.jpg",
     "https://cms-assets.youmind.com/media/1789803923400_oe944n_HSelUUUaAAAOdSR.jpg",
+    "https://cms-assets.youmind.com/media/1793691796941_lffa75_HWLPI9daoAAf1UI.jpg",
+    "https://cms-assets.youmind.com/media/1793691800054_k5p8x3_HWH2wR-bIAAFAjn.jpg",
+    "https://cms-assets.youmind.com/media/1793691802080_mnhu7h_HWGgDejbsAAeyzO.jpg",
     "https://cms-assets.youmind.com/media/1793518853248_kono4q_HV9gpreboAADVyJ.jpg",
     "https://cms-assets.youmind.com/media/1793518853266_jmekhs_HV9gprZbEAAiiQb.jpg",
     "https://cms-assets.youmind.com/media/1793346286387_itwz8y_HVyINxVWsAA3wM8.jpg",
@@ -8770,14 +8771,6 @@
     "https://cms-assets.youmind.com/media/1792397035552_sr8tzz_HU45JfbaQAAD5Lo.jpg",
     "https://cms-assets.youmind.com/media/1792397035584_4zugku_HU45L4UbYAAtSjy.jpg",
     "https://cms-assets.youmind.com/media/1792397036285_awsqqu_HU46AObaAAAtur3.jpg",
-    "https://cms-assets.youmind.com/media/1792397038572_lwzeqd_HU0nqwkbEAAM4Ib.jpg",
-    "https://cms-assets.youmind.com/media/1792397038012_5z1s0u_HU0nqwZbcAAPYTl.jpg",
-    "https://cms-assets.youmind.com/media/1792397037978_xrbo3k_HU0nqwYaYAAzOsT.jpg",
-    "https://cms-assets.youmind.com/media/1792397038884_xm92c0_HU0nqwiaIAA82Ey.jpg",
-    "https://cms-assets.youmind.com/media/1792397036544_98n5vd_HU0nZW9acAAn4FK.jpg",
-    "https://cms-assets.youmind.com/media/1792397036498_kcggb9_HU0nZXAbkAAZO9q.jpg",
-    "https://cms-assets.youmind.com/media/1792397036565_356j9e_HU0nZXCaUAAly5Z.jpg",
-    "https://cms-assets.youmind.com/media/1792397037412_z73oht_HU0nZW-bQAAjgSo.jpg",
     "https://cms-assets.youmind.com/media/1792482821019_1z13t3_HU_uoCua4AAqZqM.jpg",
     "https://cms-assets.youmind.com/media/1792482821290_tpzcws_HU_upCwbcAArcqo.jpg",
     "https://cms-assets.youmind.com/media/1792482819607_etijd8_HU5oFCWagAAu9JB.jpg",
@@ -8801,10 +8794,8 @@
     "https://cms-assets.youmind.com/media/1789388947736_m2pa42_HSF63L-bgAA_Hmi.jpg",
     "https://cms-assets.youmind.com/media/1788942321734_9pzxvn_HRwjsc8bkAAKTG6.jpg",
     "https://cms-assets.youmind.com/media/1788942292901_ftm719_HRwCeKraoAA-G5L.jpg",
-    "https://cms-assets.youmind.com/media/1788942358271_0ynebz_HRvk4F8bYAAUW5q.jpg",
-    "https://cms-assets.youmind.com/media/1788942358277_clgsrw_HRvk4F2bcAADmc3.jpg",
-    "https://cms-assets.youmind.com/media/1789029005307_j2vgpe_HRvBtnraAAAChs3.jpg",
     "https://cms-assets.youmind.com/media/1793518854650_7llyqo_HV9l2c-aIAAA1Fi.jpg",
+    "https://cms-assets.youmind.com/media/1793173367451_8jqv3c_HVsH00ubsAACrtk.jpg",
     "https://cms-assets.youmind.com/media/1793173380003_3zpmpc_HVsUF1EacAAH0UU.jpg",
     "https://cms-assets.youmind.com/media/1793087724308_asqfjb_HViIfdmaEAA7KSs.jpg",
     "https://cms-assets.youmind.com/media/1793087722292_38581h_HVd5SN2a8AAIDqY.jpg",
@@ -8812,9 +8803,7 @@
     "https://cms-assets.youmind.com/media/1792741900865_clgy3f_HVPc8aSasAAzWmk.jpg",
     "https://cms-assets.youmind.com/media/1792741901403_iznjri_HVPc_j-aYAEzQMd.jpg",
     "https://cms-assets.youmind.com/media/1792741901130_frljwu_HVJziWabYAEfSvJ.jpg",
-    "https://cms-assets.youmind.com/media/1792741901322_7x9kdp_HVJzj3nagAAapWL.jpg",
-    "https://cms-assets.youmind.com/media/1792655538941_ozq4a8_HVKUo4va8AAf23t.jpg",
-    "https://cms-assets.youmind.com/media/1792482828993_4x269v_HVBYUvwWwAAZQ-Q.jpg"
+    "https://cms-assets.youmind.com/media/1792741901322_7x9kdp_HVJzj3nagAAapWL.jpg"
   ],
   "extraUniqueCount": 1642,
   "stats": {
@@ -8943,11 +8932,11 @@
       ]
     },
     "nano": {
-      "declaredTotal": 15828,
+      "declaredTotal": 15831,
       "publicSections": 129,
       "completeRecords": 129,
-      "imageCount": 239,
-      "sourceUpdatedAt": "2026年11月3日星期二 UTC 04:01:36"
+      "imageCount": 243,
+      "sourceUpdatedAt": "2026年11月3日星期二 UTC 16:01:31"
     },
     "diffusionCount": 383,
     "youMindCompleteRecords": 126
