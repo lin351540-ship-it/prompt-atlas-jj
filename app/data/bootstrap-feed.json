@@ -1210,7 +1210,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-05T06:57:05.233Z"
+      "syncedAt": "2026-11-05T20:02:36.021Z"
     },
     {
       "id": "youmind-2-a322ec153177",
@@ -1251,7 +1251,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-05T06:57:05.233Z"
+      "syncedAt": "2026-11-05T20:02:36.021Z"
     },
     {
       "id": "youmind-3-9fbd8425d2a3",
@@ -1293,7 +1293,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-05T06:57:05.233Z"
+      "syncedAt": "2026-11-05T20:02:36.021Z"
     },
     {
       "id": "youmind-6-c981d4f8c5bf",
@@ -1335,7 +1335,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-05T06:57:05.233Z"
+      "syncedAt": "2026-11-05T20:02:36.021Z"
     },
     {
       "id": "youmind-17-1e4914fe6b1a",
@@ -1378,11 +1378,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-05T06:57:05.233Z"
+      "syncedAt": "2026-11-05T20:02:36.021Z"
     },
     {
-      "id": "youmind-37-b9d8f2a74eb9",
-      "index": 20037,
+      "id": "youmind-38-b9d8f2a74eb9",
+      "index": 20038,
       "title": "Infographic / Edu Visual - Personalized Palmistry Guide Infographic",
       "originalTitle": "Infographic / Edu Visual - Personalized Palmistry Guide Infographic",
       "description": "Generates a detailed, multi-column infographic analyzing hand features, palm lines, and fingerprints with personalized interpretations.",
@@ -1421,11 +1421,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-05T06:57:05.233Z"
+      "syncedAt": "2026-11-05T20:02:36.021Z"
     },
     {
-      "id": "youmind-38-b31665906c19",
-      "index": 20038,
+      "id": "youmind-39-b31665906c19",
+      "index": 20039,
       "title": "Infographic / Edu Visual - Whale Tail Photo & Ink Illustration Diptych",
       "originalTitle": "Infographic / Edu Visual - Whale Tail Photo & Ink Illustration Diptych",
       "description": "A split-layout design featuring a realistic photo of a breaching whale tail above a minimalist stippled ink illustration with Korean typography.",
@@ -1467,11 +1467,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-05T06:57:05.233Z"
+      "syncedAt": "2026-11-05T20:02:36.021Z"
     },
     {
-      "id": "youmind-39-fa0b65adacc7",
-      "index": 20039,
+      "id": "youmind-40-fa0b65adacc7",
+      "index": 20040,
       "title": "Infographic / Edu Visual - Photorealistic to Watercolor Transformation Prompts",
       "originalTitle": "Infographic / Edu Visual - Photorealistic to Watercolor Transformation Prompts",
       "description": "Two prompts for transforming photos into split-composition artworks where the top half is photorealistic and the bottom half is a delicate watercolor illustration.",
@@ -1511,11 +1511,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-05T06:57:05.233Z"
+      "syncedAt": "2026-11-05T20:02:36.021Z"
     },
     {
-      "id": "youmind-40-312d6725aa91",
-      "index": 20040,
+      "id": "youmind-41-312d6725aa91",
+      "index": 20041,
       "title": "Infographic / Edu Visual - GPT Image 2 Prompt Length Comparison",
       "originalTitle": "Infographic / Edu Visual - GPT Image 2 Prompt Length Comparison",
       "description": "A side-by-side visual comparison showing how GPT Image 2 renders a space library concept using 5-word, 25-word, and 100-word prompts.",
@@ -1553,11 +1553,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-05T06:57:05.233Z"
+      "syncedAt": "2026-11-05T20:02:36.021Z"
     },
     {
-      "id": "youmind-41-927f8437f3eb",
-      "index": 20041,
+      "id": "youmind-42-927f8437f3eb",
+      "index": 20042,
       "title": "Infographic / Edu Visual - GPT Image 2 Hand-drawn Infographic Prompt",
       "originalTitle": "Infographic / Edu Visual - GPT Image 2 Hand-drawn Infographic Prompt",
       "description": "A prompt for GPT Image 2 to create a hand-drawn style infographic card explaining the water cycle, with specific layout and color instructions.",
@@ -1595,11 +1595,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-05T06:57:05.233Z"
+      "syncedAt": "2026-11-05T20:02:36.021Z"
     },
     {
-      "id": "youmind-42-547d4e44f17e",
-      "index": 20042,
+      "id": "youmind-43-547d4e44f17e",
+      "index": 20043,
       "title": "Infographic / Edu Visual - Kiyomizu-dera Travel LP with Anime Mascot",
       "originalTitle": "Infographic / Edu Visual - Kiyomizu-dera Travel LP with Anime Mascot",
       "description": "A detailed vertical infographic-style landing page for Kiyomizu-dera tourism, combining an anime character guide with real scenic photos, app UI mockups, and structured travel information.",
@@ -1638,11 +1638,11 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-05T06:57:05.233Z"
+      "syncedAt": "2026-11-05T20:02:36.021Z"
     },
     {
-      "id": "youmind-43-ded2f8dea8b4",
-      "index": 20043,
+      "id": "youmind-44-ded2f8dea8b4",
+      "index": 20044,
       "title": "Infographic / Edu Visual - Swiss Editorial Diptych with Texture Zones",
       "originalTitle": "Infographic / Edu Visual - Swiss Editorial Diptych with Texture Zones",
       "description": "A detailed GPT Image 2 prompt for creating a vertical diptych from an uploaded photo. The top half preserves the original image, while the bottom half applies seven experimental texture zones (Reeded Glass, Engraving, Stipple, Halftone, Pixel Mosaic, Overlay, Duotone) in a Swiss editorial style.",
@@ -1682,7 +1682,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-05T06:57:05.233Z"
+      "syncedAt": "2026-11-05T20:02:36.021Z"
     },
     {
       "id": "nano-banana-2-a1c6fd3c7c70",
@@ -1728,7 +1728,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-05T06:57:05.460Z"
+      "syncedAt": "2026-11-05T20:02:36.180Z"
     },
     {
       "id": "nano-banana-4-a04d3d2c3870",
@@ -1771,7 +1771,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-05T06:57:05.460Z"
+      "syncedAt": "2026-11-05T20:02:36.180Z"
     },
     {
       "id": "nano-banana-7-31b2cd6a2391",
@@ -1815,11 +1815,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-05T06:57:05.460Z"
+      "syncedAt": "2026-11-05T20:02:36.180Z"
     },
     {
-      "id": "nano-banana-25-d4fae0178105",
-      "index": 40025,
+      "id": "nano-banana-28-d4fae0178105",
+      "index": 40028,
       "title": "社交媒体帖子 - 电影感联系表提示词",
       "originalTitle": "社交媒体帖子 - 电影感联系表提示词",
       "description": "一个详细的提示词，用于生成逼真的电影感联系表（Contact Sheet），采用 2x2 网格布局，展示主体在四个不同户外场景中的形象，保持身份和光照的一致性。",
@@ -1859,11 +1859,56 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-05T06:57:05.460Z"
+      "syncedAt": "2026-11-05T20:02:36.180Z"
     },
     {
-      "id": "nano-banana-34-815e2d823159",
+      "id": "nano-banana-34-b951d129f0b7",
       "index": 40034,
+      "title": "信息图 / 教育视觉图 - 泰姬陵建造过程电影级纪录片场景",
+      "originalTitle": "信息图 / 教育视觉图 - 泰姬陵建造过程电影级纪录片场景",
+      "description": "生成一系列电影级纪录片风格的图像，描绘 1632 年至 1653 年间泰姬陵的建造过程，呈现温暖光线与白色大理石美学。",
+      "category": "PPT / 信息图",
+      "categories": [
+        "PPT / 信息图"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "{argument name=\"number of scenes\" default=\"12\"} 个场景。泰姬陵拔地而起，{argument name=\"time period\" default=\"1632-1653\"}。风格：{argument name=\"style\" default=\"cinematic documentary\"}，{argument name=\"lighting\" default=\"warm light\"}，{argument name=\"material focus\" default=\"white marble\"}。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "PPT 可用",
+        "信息图",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1793859751430_p6j9id_HWPjAjqacAA6t5S.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1793859751430_p6j9id_HWPjAjqacAA6t5S.jpg",
+        "https://cms-assets.youmind.com/media/1793859751296_82pbgi_HWPjAj6bgAAlCtO.jpg"
+      ],
+      "author": "Engr Shahzaib Malik",
+      "authorHandle": "imzaibmalik",
+      "originalPostUrl": "https://x.com/imzaibmalik/status/2117785897567674490",
+      "publishedAt": "2026年11月4日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Engr Shahzaib Malik",
+      "previewSourceUrl": "https://x.com/imzaibmalik/status/2117785897567674490",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=37330",
+      "attributionText": "提示词与效果图：Engr Shahzaib Malik；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-11-05",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-11-05T20:02:36.180Z"
+    },
+    {
+      "id": "nano-banana-35-815e2d823159",
+      "index": 40035,
       "title": "信息图 / 教育视觉图 - 物体转建筑提示词",
       "originalTitle": "信息图 / 教育视觉图 - 物体转建筑提示词",
       "description": "为 Nano Banana Pro 设计的逻辑工作流提示词，用于分析随机物体并基于体量与结构将其转化为合理的标志性建筑。",
@@ -1904,11 +1949,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-05T06:57:05.460Z"
+      "syncedAt": "2026-11-05T20:02:36.180Z"
     },
     {
-      "id": "nano-banana-35-2440dea2825f",
-      "index": 40035,
+      "id": "nano-banana-36-2440dea2825f",
+      "index": 40036,
       "title": "信息图 / 教育视觉图 - 产品参考表工作流",
       "originalTitle": "信息图 / 教育视觉图 - 产品参考表工作流",
       "description": "使用 Nano Banana 为产品创建专业广告参考表的详细提示词和工作流。",
@@ -1949,11 +1994,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-05T06:57:05.460Z"
+      "syncedAt": "2026-11-05T20:02:36.180Z"
     },
     {
-      "id": "nano-banana-36-215bdf3b4e8d",
-      "index": 40036,
+      "id": "nano-banana-37-215bdf3b4e8d",
+      "index": 40037,
       "title": "信息图 / 教育视觉图 - 手写备忘录食谱插画",
       "originalTitle": "信息图 / 教育视觉图 - 手写备忘录食谱插画",
       "description": "一个用于生成温暖的 2D 手写风格信息图食谱页面的提示词，背景为网格纸，包含食材清单和带有可爱插图的分步说明。",
@@ -1992,11 +2037,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-05T06:57:05.460Z"
+      "syncedAt": "2026-11-05T20:02:36.180Z"
     },
     {
-      "id": "nano-banana-37-18e4f701fd60",
-      "index": 40037,
+      "id": "nano-banana-38-18e4f701fd60",
+      "index": 40038,
       "title": "信息图 / 教育视觉图 - 手绘风格 3 步流程 Slides",
       "originalTitle": "信息图 / 教育视觉图 - 手绘风格 3 步流程 Slides",
       "description": "用于创建简洁、友好的日式商务 Slides 的提示词，包含带有可爱插图和专业布局的 3 步流程图。",
@@ -2037,11 +2082,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-05T06:57:05.460Z"
+      "syncedAt": "2026-11-05T20:02:36.180Z"
     },
     {
-      "id": "nano-banana-38-07fe7bb5f0aa",
-      "index": 40038,
+      "id": "nano-banana-39-07fe7bb5f0aa",
+      "index": 40039,
       "title": "信息图 / 教育视觉图 - 复古英式讽刺漫画",
       "originalTitle": "信息图 / 教育视觉图 - 复古英式讽刺漫画",
       "description": "一幅 18 世纪讽刺风格的画作，描绘了一位发型夸张、头顶帆船装饰的女性。",
@@ -2080,11 +2125,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-05T06:57:05.460Z"
+      "syncedAt": "2026-11-05T20:02:36.180Z"
     },
     {
-      "id": "nano-banana-39-ec686af192e4",
-      "index": 40039,
+      "id": "nano-banana-40-ec686af192e4",
+      "index": 40040,
       "title": "信息图 / 教育视觉图 - 企业营收报告信息图",
       "originalTitle": "信息图 / 教育视觉图 - 企业营收报告信息图",
       "description": "一个简洁且专业的用于展示财务数据（如公司营收报告）的信息图提示词。它包含清晰的标题和用于可视化年度增长的图表。",
@@ -2123,11 +2168,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-05T06:57:05.460Z"
+      "syncedAt": "2026-11-05T20:02:36.180Z"
     },
     {
-      "id": "nano-banana-40-c8e2b24ad9b5",
-      "index": 40040,
+      "id": "nano-banana-41-c8e2b24ad9b5",
+      "index": 40041,
       "title": "信息图 / 教育视觉图 - 复古旅行日志编辑拼贴画",
       "originalTitle": "信息图 / 教育视觉图 - 复古旅行日志编辑拼贴画",
       "description": "一个用于制作复杂垂直旅行编辑拼贴画的提示词，结合了纪实摄影与手绘插图。",
@@ -2168,51 +2213,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-05T06:57:05.460Z"
-    },
-    {
-      "id": "nano-banana-41-c5f2c4108133",
-      "index": 40041,
-      "title": "信息图 / 教育视觉图 - 编辑风烹饪故事板布局",
-      "originalTitle": "信息图 / 教育视觉图 - 编辑风烹饪故事板布局",
-      "description": "一份详细的烹饪序列故事板提示词，以印尼炒面（mie goreng）为主题，采用编辑级美食摄影风格并附带技术注释。",
-      "category": "PPT / 信息图",
-      "categories": [
-        "PPT / 信息图"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "创建一个 4:5 的竖版烹饪故事板，包含 10 个面板，布局为 {argument name=\"grid\" default=\"2×5 网格\"}。背景为 {argument name=\"surface\" default=\"暖色木质桌面\"}，采用完美的俯视视角，带有细白边框、灰粉色圆角标题栏、奶油色说明框、带数字的圆圈以及黑色手写字体。\n\n展示精确的烹饪序列：{argument name=\"dish\" default=\"菜品\"} 包装袋 → 打开包装 → 面条放入银色锅中 → 面条煮沸 → 取出调料包 → 煮好的面条放入黑色碗中 → 加入调料 → 搅拌面条 → 在顶部放上煎蛋 → 完成带有煎蛋和配菜的 mie goreng。\n\n使用清晰的白色弧形箭头、动态线条和闪光效果来展示每一个动作。保持物体的一致性、食物的真实感、温暖的灯光、干净可爱的编辑风故事板风格，确保细节清晰且间距平衡。画面中不要出现人物、手部或额外的面板。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "PPT 可用",
-        "信息图",
-        "摄影感"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1788159793558_g5uwid_HQ9c_qzagAA6XNE.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1788159793558_g5uwid_HQ9c_qzagAA6XNE.jpg"
-      ],
-      "author": "𝐌",
-      "authorHandle": "Strength04_X",
-      "originalPostUrl": "https://x.com/Strength04_X/status/2093994617268322412",
-      "publishedAt": "2026年8月30日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "𝐌",
-      "previewSourceUrl": "https://x.com/Strength04_X/status/2093994617268322412",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=32986",
-      "attributionText": "提示词与效果图：𝐌；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-11-05",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-05T06:57:05.460Z"
+      "syncedAt": "2026-11-05T20:02:36.180Z"
     },
     {
       "id": "evolink-poster-39-d29f90ac8a84",
@@ -2257,7 +2258,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-05T06:57:13.786Z"
+      "syncedAt": "2026-11-05T20:02:45.154Z"
     },
     {
       "id": "evolink-poster-50-ba2b16425d81",
@@ -2302,7 +2303,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-05T06:57:13.786Z"
+      "syncedAt": "2026-11-05T20:02:45.154Z"
     },
     {
       "id": "evolink-poster-57-ead0143e32d5",
@@ -2347,7 +2348,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-05T06:57:13.786Z"
+      "syncedAt": "2026-11-05T20:02:45.154Z"
     },
     {
       "id": "evolink-poster-56-5243facc5baf",
@@ -2393,7 +2394,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-05T06:57:13.786Z"
+      "syncedAt": "2026-11-05T20:02:45.154Z"
     },
     {
       "id": "evolink-poster-110-378bf645911c",
@@ -2439,7 +2440,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-05T06:57:13.786Z"
+      "syncedAt": "2026-11-05T20:02:45.154Z"
     },
     {
       "id": "evolink-poster-119-780eeb218c9d",
@@ -2485,7 +2486,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-05T06:57:13.786Z"
+      "syncedAt": "2026-11-05T20:02:45.154Z"
     },
     {
       "id": "evolink-poster-120-23515a080d1e",
@@ -2531,7 +2532,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-05T06:57:13.786Z"
+      "syncedAt": "2026-11-05T20:02:45.154Z"
     },
     {
       "id": "diffusiondb-3d-8805770b-a40f-4d3c-817f-73e5fc2f446e",
@@ -8330,7 +8331,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-05T06:57:05.233Z"
+      "syncedAt": "2026-11-05T20:02:36.021Z"
     },
     {
       "id": "youmind-2-a322ec153177",
@@ -8371,7 +8372,7 @@
       "assetHostingMode": "remote-source",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-full-record",
-      "syncedAt": "2026-11-05T06:57:05.233Z"
+      "syncedAt": "2026-11-05T20:02:36.021Z"
     },
     {
       "id": "nano-banana-2-a1c6fd3c7c70",
@@ -8417,7 +8418,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-05T06:57:05.460Z"
+      "syncedAt": "2026-11-05T20:02:36.180Z"
     },
     {
       "id": "nano-banana-4-a04d3d2c3870",
@@ -8460,7 +8461,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-05T06:57:05.460Z"
+      "syncedAt": "2026-11-05T20:02:36.180Z"
     },
     {
       "id": "evolink-poster-39-d29f90ac8a84",
@@ -8505,7 +8506,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-05T06:57:13.786Z"
+      "syncedAt": "2026-11-05T20:02:45.154Z"
     },
     {
       "id": "evolink-poster-50-ba2b16425d81",
@@ -8550,7 +8551,7 @@
       "assetHostingMode": "remote-jsdelivr-source-with-fallback",
       "sourcePlatform": "EvoLink / GitHub / X",
       "syncMethod": "github-public-evolink-cc0",
-      "syncedAt": "2026-11-05T06:57:13.786Z"
+      "syncedAt": "2026-11-05T20:02:45.154Z"
     },
     {
       "id": "2slides-3d-impasto-micro-landscape-poster-oil-painting-pen-stroke-on-xuan-paper",
@@ -8625,6 +8626,9 @@
     "https://cms-assets.youmind.com/media/1793259851428_m6z18p_HVm7J8MacAEjmDq.jpg",
     "https://cms-assets.youmind.com/media/1793259849469_tde706_HVsw2BJbYAEMeiZ.jpg",
     "https://cms-assets.youmind.com/media/1793259849526_cl6tfy_HVsw2Bab0AAnBnS.jpg",
+    "https://cms-assets.youmind.com/media/1793864478489_zi6ip1_HWVlAnbaQAAf5ZF.jpg",
+    "https://cms-assets.youmind.com/media/1793864478477_ix9sq9_HWVlAnjbsAAp69j.jpg",
+    "https://cms-assets.youmind.com/media/1793864477712_tsp3ew_HWVlAnkb0AAn_1M.jpg",
     "https://cms-assets.youmind.com/media/1793778237654_oetja5_HWQdOpkbkAEWUzp.jpg",
     "https://cms-assets.youmind.com/media/1793778237811_ca7wxn_HWQdOpPbQAAFKkj.jpg",
     "https://cms-assets.youmind.com/media/1793778232935_l8khmd_HWP85oTaQAAq0Z_.jpg",
@@ -8777,10 +8781,6 @@
     "https://cms-assets.youmind.com/media/1792397033815_efp4vl_HU6khRUagAAW5wS.jpg",
     "https://cms-assets.youmind.com/media/1792397033814_nqn82v_HU6khRPbwAA6fDi.jpg",
     "https://cms-assets.youmind.com/media/1792397034645_jpkiy7_HU6khRaa8AIHxJT.jpg",
-    "https://cms-assets.youmind.com/media/1792397035560_d2fnaf_HU45G-5bEAArST9.jpg",
-    "https://cms-assets.youmind.com/media/1792397035552_sr8tzz_HU45JfbaQAAD5Lo.jpg",
-    "https://cms-assets.youmind.com/media/1792397035584_4zugku_HU45L4UbYAAtSjy.jpg",
-    "https://cms-assets.youmind.com/media/1792397036285_awsqqu_HU46AObaAAAtur3.jpg",
     "https://cms-assets.youmind.com/media/1793432464763_ps85qg_HV4qUhmasAAzXTm.jpg",
     "https://cms-assets.youmind.com/media/1793432463373_eri84l_HV4qVYtakAA7dC1.jpg",
     "https://cms-assets.youmind.com/media/1793432463404_itj08y_HVsJDN8bAAAv-uj.jpg",
@@ -8934,11 +8934,11 @@
       ]
     },
     "nano": {
-      "declaredTotal": 15833,
+      "declaredTotal": 15841,
       "publicSections": 129,
       "completeRecords": 129,
-      "imageCount": 246,
-      "sourceUpdatedAt": "2026年11月5日星期四 UTC 04:01:50"
+      "imageCount": 249,
+      "sourceUpdatedAt": "2026年11月5日星期四 UTC 12:02:08"
     },
     "diffusionCount": 383,
     "youMindCompleteRecords": 126
@@ -9039,7 +9039,6 @@
     "https://cms-assets.youmind.com/media/1776699414289_t6mebs_HGQQxukbUAA_qc0.jpg": "./gallery/bootstrap-cache/e57920e369b0ada687c12c0f.webp",
     "https://cms-assets.youmind.com/media/1785395942795_27fdn3_HOCZo_5WoAAiXCa.jpg": "./gallery/bootstrap-cache/1b782076447d6549bab2f557.webp",
     "https://cms-assets.youmind.com/media/1785568117051_2qk1u7_HOUvoOKXsAArLa_.jpg": "./gallery/bootstrap-cache/f8ddc8a47d538a4de00ed1af.webp",
-    "https://cms-assets.youmind.com/media/1786257242691_8zff74_HO4FJ_2XYAA8VPb.jpg": "./gallery/bootstrap-cache/2abb43cae11739e80987dbe9.webp",
     "https://cms-assets.youmind.com/media/1786344499918_eo7cpi_HO4FP3kXkAAl5eH.jpg": "./gallery/bootstrap-cache/0b99c9017c7c9bcc47f5b9c6.webp",
     "https://cms-assets.youmind.com/media/1787379854342_tnj7s4_HQOIyO5bMAAfMOO.jpg": "./gallery/bootstrap-cache/c6a8550997a29b69b45a6532.webp",
     "https://cms-assets.youmind.com/media/1787466537773_lhlib8_HQVoTC-a0AAbNyI.jpg": "./gallery/bootstrap-cache/cd1b4e932161418c0d4b8d78.webp",
@@ -9087,11 +9086,13 @@
     "https://cms-assets.youmind.com/media/1792827965165_sbm8m5_HVTiBh8bYAErcwL.jpg": "./gallery/bootstrap-cache/fcf188e20f80d15600f584c7.webp",
     "https://cms-assets.youmind.com/media/1793173380419_t4aqe6_HVr4qGLbkAAbPC5.jpg": "./gallery/bootstrap-cache/98bf4aabfce3195a69291286.webp",
     "https://cms-assets.youmind.com/media/1793346282545_pseqjp_HVyf_bybsAAl3Fc.jpg": "./gallery/bootstrap-cache/59912141273694f0218e87d2.webp",
-    "https://cms-assets.youmind.com/media/1793514063505_b1be6s_HV-C6OtWUAEC9OJ.jpg": "./gallery/bootstrap-cache/6662ad8f08ed134445cb1ee3.webp"
+    "https://cms-assets.youmind.com/media/1793514063505_b1be6s_HV-C6OtWUAEC9OJ.jpg": "./gallery/bootstrap-cache/6662ad8f08ed134445cb1ee3.webp",
+    "https://cms-assets.youmind.com/media/1793859751296_82pbgi_HWPjAj6bgAAlCtO.jpg": "./gallery/bootstrap-cache/86aab168817182d0ee16dba2.webp",
+    "https://cms-assets.youmind.com/media/1793859751430_p6j9id_HWPjAjqacAA6t5S.jpg": "./gallery/bootstrap-cache/86a9f70e42d5a986c947048a.webp"
   },
   "imageCacheStats": {
-    "requested": 144,
-    "cached": 144,
+    "requested": 145,
+    "cached": 145,
     "failed": 0,
     "priorityRecords": 91
   }
