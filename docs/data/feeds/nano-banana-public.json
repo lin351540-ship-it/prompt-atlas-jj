@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-09T06:46:34.786Z",
+  "generatedAt": "2026-11-09T22:28:03.440Z",
   "status": "fresh",
   "sourceStats": {
-    "declaredTotal": 15848,
+    "declaredTotal": 15846,
     "publicSections": 129,
     "completeRecords": 129,
-    "imageCount": 254,
-    "sourceUpdatedAt": "2026年11月9日星期一 UTC 04:01:54"
+    "imageCount": 256,
+    "sourceUpdatedAt": "2026年11月9日星期一 UTC 20:01:44"
   },
   "items": [
     {
@@ -52,7 +52,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-2-a1c6fd3c7c70",
@@ -98,7 +98,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-3-fb1166bd3a27",
@@ -141,7 +141,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-4-a04d3d2c3870",
@@ -184,7 +184,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-5-14f8e5983887",
@@ -227,7 +227,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-6-471053b61624",
@@ -272,7 +272,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-7-31b2cd6a2391",
@@ -316,7 +316,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-8-2562eec72e6c",
@@ -358,7 +358,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-9-862ef5c29284",
@@ -400,7 +400,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-1-ff322d9ae80f",
@@ -445,7 +445,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-2-8300b9ba382d",
@@ -488,7 +488,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-3-e47b51d361d4",
@@ -534,7 +534,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-4-f8ad629c1cc4",
@@ -579,7 +579,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-5-2741ce2e0563",
@@ -623,7 +623,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-6-eed43d4af834",
@@ -669,7 +669,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-7-54144627aace",
@@ -715,7 +715,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-8-100649c3e62f",
@@ -761,7 +761,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-9-f84b2af86406",
@@ -807,7 +807,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-10-7cb67b4cd4c4",
@@ -852,7 +852,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-11-a4f3a9cb7914",
@@ -897,7 +897,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-12-eb82d0b56b48",
@@ -943,7 +943,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-13-e66ecea7d572",
@@ -988,7 +988,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-14-48ef54d77118",
@@ -1035,7 +1035,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-15-3bd8479db0be",
@@ -1077,7 +1077,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-16-8cb28a3d9f46",
@@ -1120,7 +1120,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-17-63b1ed9d96de",
@@ -1163,7 +1163,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-18-7758173d8df2",
@@ -1208,7 +1208,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-19-9b408c94d1bc",
@@ -1253,7 +1253,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-20-d6a0653ea45d",
@@ -1295,11 +1295,58 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-21-0e99c4bdbd04",
+      "id": "nano-banana-21-0d13ff69256f",
       "index": 40021,
+      "title": "社交媒体帖子 - QT 服装试穿对比",
+      "originalTitle": "社交媒体帖子 - QT 服装试穿对比",
+      "description": "对比 Grok、Seedream 和 Nano Pro (Nano Banana Pro) 的服装试穿效果，使用统一的写实电影感时尚编辑提示词。",
+      "category": "人像摄影",
+      "categories": [
+        "人像摄影"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "照片级真实电影感时尚大片人像，一位年轻女子 [Face Reference] 坐在光滑的深色影棚地板上，身体呈四分之三侧身角度，躯干微微转向镜头，一只手臂向后伸展、手掌撑地支撑身体重量，另一只手臂自然放松，双肩柔和倾斜，双腿舒展并优雅地交叉偏向一侧。头部微倾，下巴略收，目光平静自信地直视镜头，神情柔和从容。\n\n身穿参考图中的服装。[Outfit Reference]\n\n相机采用略微低角度拍摄，四分之三半身构图（从头部至大腿中部），竖版画面。氛围感十足的深海军蓝无缝影棚背景，带有午夜蓝渐变效果与体积光蓝色薄雾；冷调钴蓝与青色的轮廓光勾勒出她的肩膀、手臂和发丝；柔和的蓝色主光搭配轻微补光；抛光地板上泛着细腻倒影；地面散落着几片精致的蓝色花瓣，以及大小不一、色调各异的蓝色水晶作为极简道具；背景中点缀着淡淡的蓝色光斑虚化。皮肤纹理自然真实，毛孔清晰可见并带有柔和光泽，面料质感逼真，浅景深，电影感青蓝色调调色并与温暖的肤色形成微妙对比，高端杂志级精修且保留原始质感。使用 Sony A7R V 拍摄，85mm f/1.4 镜头，超精细细节，8k，RAW 格式照片。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "极简",
+        "文字排版",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1794207468966_w89dsv_HWpdibVakAEKncp.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1794207468966_w89dsv_HWpdibVakAEKncp.jpg",
+        "https://cms-assets.youmind.com/media/1794207468441_patgbf_HWpdvlLb0AAQYCm.jpg",
+        "https://cms-assets.youmind.com/media/1794207469095_mhmuq4_HWpd8TwaEAAIbFq.jpg"
+      ],
+      "author": "Aiko💕",
+      "authorHandle": "LoveAiko2003",
+      "originalPostUrl": "https://x.com/LoveAiko2003/status/2119611294345236615",
+      "publishedAt": "2026年11月9日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Aiko💕",
+      "previewSourceUrl": "https://x.com/LoveAiko2003/status/2119611294345236615",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=37428",
+      "attributionText": "提示词与效果图：Aiko💕；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-11-09",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-11-09T22:28:03.440Z"
+    },
+    {
+      "id": "nano-banana-22-0e99c4bdbd04",
+      "index": 40022,
       "title": "社交媒体帖子 - 编辑风射箭时尚摄影提示词",
       "originalTitle": "社交媒体帖子 - 编辑风射箭时尚摄影提示词",
       "description": "用于创作时尚杂志风格特写人像的提示词，画面中女性手持弓箭，重点展现戏剧性的光影效果与构图。",
@@ -1339,11 +1386,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-22-677077fa3115",
-      "index": 40022,
+      "id": "nano-banana-23-677077fa3115",
+      "index": 40023,
       "title": "社交媒体帖子 - 马德里黄金时刻时尚大片",
       "originalTitle": "社交媒体帖子 - 马德里黄金时刻时尚大片",
       "description": "一份详细的提示词，用于生成亚洲女性模特在马德里黄金时刻倚靠城市建筑的高时尚编辑半身照，适用于多种 AI 图像模型。",
@@ -1384,11 +1431,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-23-f7f26ecdc590",
-      "index": 40023,
+      "id": "nano-banana-24-f7f26ecdc590",
+      "index": 40024,
       "title": "社交媒体帖子 - 芙莉莲动漫风格对比提示词",
       "originalTitle": "社交媒体帖子 - 芙莉莲动漫风格对比提示词",
       "description": "一个用于比较 Nano Banana、GPT Image 和 Grok 在生成特定动漫角色（芙莉莲）于现代便利店场景中的表现的提示词。",
@@ -1429,11 +1476,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-24-779f0e8a9d00",
-      "index": 40024,
+      "id": "nano-banana-25-779f0e8a9d00",
+      "index": 40025,
       "title": "社交媒体帖子 - 微距星系水滴提示词",
       "originalTitle": "社交媒体帖子 - 微距星系水滴提示词",
       "description": "用于对比 Grok 和 Nano Banana 输出的共享提示词，展示包含螺旋星系的微距摄影场景。",
@@ -1473,11 +1520,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-25-d0ce2408509a",
-      "index": 40025,
+      "id": "nano-banana-26-d0ce2408509a",
+      "index": 40026,
       "title": "社交媒体帖子 - 拖门闪光夜景时尚",
       "originalTitle": "社交媒体帖子 - 拖门闪光夜景时尚",
       "description": "用于创建具有拖门闪光等特定相机效果的夜景街头时尚编辑内容的提示词。",
@@ -1515,11 +1562,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-26-fc68b7ef3cce",
-      "index": 40026,
+      "id": "nano-banana-27-fc68b7ef3cce",
+      "index": 40027,
       "title": "社交媒体帖子 - 抽象水彩狐狸插画",
       "originalTitle": "社交媒体帖子 - 抽象水彩狐狸插画",
       "description": "用于创作松散、抽象的睡狐水彩画的提示词，重点在于颜料晕染和湿画法纹理。",
@@ -1560,11 +1607,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-27-8ee7887ad74e",
-      "index": 40027,
+      "id": "nano-banana-28-8ee7887ad74e",
+      "index": 40028,
       "title": "社交媒体帖子 - 礼貌英式排队图像对比",
       "originalTitle": "社交媒体帖子 - 礼貌英式排队图像对比",
       "description": "对比 GPT Image 和 Nano Banana 生成的英国男子在纽约排队图像，并分享完整的提示词。",
@@ -1604,11 +1651,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-28-2c5f79636757",
-      "index": 40028,
+      "id": "nano-banana-29-2c5f79636757",
+      "index": 40029,
       "title": "社交媒体帖子 - 高级时尚编辑风格提示词",
       "originalTitle": "社交媒体帖子 - 高级时尚编辑风格提示词",
       "description": "一个用于生成高级时尚编辑风格图像的详细提示词，画面中一位女性坐在湖边，周围有红色花朵，专为 Nano Banana 2（可能兼容 Pro）设计。",
@@ -1646,11 +1693,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-29-9d9d1604bb49",
-      "index": 40029,
+      "id": "nano-banana-30-9d9d1604bb49",
+      "index": 40030,
       "title": "社交媒体帖子 - 波西米亚风格客厅女性肖像",
       "originalTitle": "社交媒体帖子 - 波西米亚风格客厅女性肖像",
       "description": "一个详细的提示词，用于生成一位女性在阳光充足的波西米亚风格客厅中的逼真肖像，具体描述了服装、发型、背景元素和光线条件。",
@@ -1689,11 +1736,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-30-d4fae0178105",
-      "index": 40030,
+      "id": "nano-banana-31-d4fae0178105",
+      "index": 40031,
       "title": "社交媒体帖子 - 电影感联系表提示词",
       "originalTitle": "社交媒体帖子 - 电影感联系表提示词",
       "description": "一个详细的提示词，用于生成逼真的电影感联系表（Contact Sheet），采用 2x2 网格布局，展示主体在四个不同户外场景中的形象，保持身份和光照的一致性。",
@@ -1733,49 +1780,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
-    },
-    {
-      "id": "nano-banana-31-57bc49105640",
-      "index": 40031,
-      "title": "社交媒体帖子 - 拳击馆新娘时尚大片",
-      "originalTitle": "社交媒体帖子 - 拳击馆新娘时尚大片",
-      "description": "一个高度详细的提示词，用于生成一张逼真的编辑风格图像：新娘在拳击台内缠绕手部绷带，重点展现面料质感、光影效果以及真实的人体解剖结构。",
-      "category": "社媒 / 品牌",
-      "categories": [
-        "社媒 / 品牌"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "在一间真实且略带磨损痕迹的拳击馆内，创作一组竖版高级时装大片。画面主体是一位成年女性，她身着象牙白婚纱，低坐在拳台中央，正有条不紊地缠绕手部绷带。构图范围大致从裙摆中段延伸至头顶上方：距离要足够近以突出人物主体，同时又要足够宽，以便保留周围的围绳、昏暗的拳馆内部环境、悬挂的沙袋，以及画面左侧一扇泛着柔和光晕的大型工业窗。拳馆需保持实用且不完美的状态，而非奢华布景：地板磨损、围绳呈哑光质感、器材低调暗沉、角落隐没在深棕黑色的阴影中；没有观众，也没有戏剧化的场馆灯光。让她直接坐在拳台地面上，一侧膝盖高高抬起贴近躯干，另一条腿在铺展开的裙摆下较低处折叠。裙摆在地板上大面积堆叠，形成厚重而不规则的缎面褶皱，而非呈现干净利落的传统婚纱轮廓。躯干保持挺直但略微倾斜，双肩放松且高低不一，一只前臂随意搭在抬起的膝盖上。缠绷带的动作需在视觉上清晰明确。双手已部分缠上长长的白色棉质拳击绷带，一卷尚未用完的绷带静置于前景下方，一条松散的绷带向上延伸入手中。一只手拉紧绷带，另一只手的手腕正在被缠绕。手指保持自然用力的状态，不要刻意摆拍。在其中一只缠着绷带的手上，保留一枚清晰可见的钻石订婚戒指——尺寸虽小，但在光线折射下依然可辨。她身穿象牙白缎面婚纱，上身是结构利落的无肩带紧身胸衣，带有隐约的竖向鱼骨支撑，心形领口线条柔和，裙摆极为宽大，由厚实真丝缎制成。避免使用蕾丝、头纱、花卉贴花或公主风的装饰。这件礼服的高级感应源自剪裁、面料垂坠感与工艺结构，而非繁复装饰。手部绷带需呈现哑光、纤维质感并略带折痕，与缎面的光泽形成强烈对比。让礼服在与地面和弯曲双腿接触的地方自然起皱、堆积、压平，而不是完美地悬浮在她周围。发型做成松散、不完美的深色盘发，几缕湿润的发丝散落在额头、脸颊和颈部，仿佛她刚刚经历过剧烈运动。皮肤微微泛红，透出自然光泽，太阳穴、锁骨和前胸上部带有细密汗珠。妆容保持克制：眼部轮廓分明，眉毛自然，唇色柔和，拒绝新娘式的精致浓妆。头部明显转向拳台的一侧，而非朝向镜头。目光聚焦于画框之外的某处，双唇微启，神情平静、严肃且若有所思。她应当完全沉浸在自己的准备过程中，而不是在向观众演绎这个概念。以画面左侧窗户透入的方向性自然光作为主光源，周围环境仅提供微弱的漫反射补光。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1793514063475_n1czr6_HV23Ub5bIAAV391.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1793514063475_n1czr6_HV23Ub5bIAAV391.jpg"
-      ],
-      "author": "dreamy digital arts",
-      "authorHandle": "dreamydigiarts",
-      "originalPostUrl": "https://x.com/dreamydigiarts/status/2116553285490315466",
-      "publishedAt": "2026年10月31日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "dreamy digital arts",
-      "previewSourceUrl": "https://x.com/dreamydigiarts/status/2116553285490315466",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=37159",
-      "attributionText": "提示词与效果图：dreamy digital arts；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-11-09",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-32-b951d129f0b7",
@@ -1820,7 +1825,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-33-815e2d823159",
@@ -1865,7 +1870,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-34-2440dea2825f",
@@ -1910,7 +1915,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-35-215bdf3b4e8d",
@@ -1953,7 +1958,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-36-18e4f701fd60",
@@ -1998,7 +2003,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-37-07fe7bb5f0aa",
@@ -2041,7 +2046,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-38-ec686af192e4",
@@ -2084,7 +2089,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-39-c8e2b24ad9b5",
@@ -2129,7 +2134,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-40-c5f2c4108133",
@@ -2173,7 +2178,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-41-275b67307d26",
@@ -2221,7 +2226,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-42-3e972adafbce",
@@ -2270,7 +2275,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-43-15827b324dd3",
@@ -2313,7 +2318,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-44-15c7854a16bf",
@@ -2358,7 +2363,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-45-517bf1daebf2",
@@ -2403,7 +2408,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-46-33de44466f0b",
@@ -2447,7 +2452,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-47-575b000af862",
@@ -2493,7 +2498,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-48-b8e4073ce310",
@@ -2536,7 +2541,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-49-9471e519d1ad",
@@ -2582,7 +2587,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-50-69c3e4ebf4ae",
@@ -2625,7 +2630,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-51-d3e34dddfbdc",
@@ -2669,7 +2674,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-52-ed5425a88c7f",
@@ -2711,7 +2716,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-53-1cc2a0f46ff3",
@@ -2754,7 +2759,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-54-666480249199",
@@ -2797,7 +2802,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-55-01d93a747068",
@@ -2840,7 +2845,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-56-08c5e1cf9c87",
@@ -2883,7 +2888,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-57-72cc7304bfca",
@@ -2927,7 +2932,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-58-9adb39a081bc",
@@ -2971,7 +2976,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-59-ce4bb23caf62",
@@ -3013,7 +3018,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-60-b2eaac0a8334",
@@ -3057,7 +3062,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-61-9d431fa58239",
@@ -3102,7 +3107,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-62-7c9cf018b751",
@@ -3144,7 +3149,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-63-d418af9f6494",
@@ -3187,7 +3192,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-64-8c4ae90be243",
@@ -3232,7 +3237,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-65-29735c7c34eb",
@@ -3276,7 +3281,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-66-545270702e99",
@@ -3318,7 +3323,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-67-bce1aa3934b0",
@@ -3360,7 +3365,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-68-29fad8d07e28",
@@ -3405,7 +3410,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-69-51c94da26bdb",
@@ -3451,7 +3456,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-70-6b5c41db9396",
@@ -3494,7 +3499,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-71-a2f6ed3b0fb4",
@@ -3539,7 +3544,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-72-a56bf5aa1091",
@@ -3582,7 +3587,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-73-d87f84ca2927",
@@ -3624,7 +3629,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-74-f1dc3437489a",
@@ -3669,7 +3674,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-75-35a46763637e",
@@ -3711,7 +3716,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-76-49ec31c02f08",
@@ -3756,7 +3761,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-77-c0bd62b1cde3",
@@ -3798,7 +3803,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-78-89e6c34b0461",
@@ -3844,7 +3849,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-79-8e6294bcc987",
@@ -3890,7 +3895,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-80-3c6121d71a67",
@@ -3937,7 +3942,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-81-9139d1515a69",
@@ -3981,7 +3986,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-82-a9596db94a99",
@@ -4026,7 +4031,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-83-e66b776cd014",
@@ -4069,11 +4074,54 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-84-f70aebb0badf",
+      "id": "nano-banana-84-32acfcb09df9",
       "index": 40084,
+      "title": "产品营销 - 咖啡袋产品图对比",
+      "originalTitle": "产品营销 - 咖啡袋产品图对比",
+      "description": "GPT Image 2.6 与 Nano Banana 2.1 生成高端咖啡袋产品图的并排对比，附共享提示词。",
+      "category": "创意发现",
+      "categories": [
+        "创意发现"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "温暖石质台面上的精品咖啡袋，柔和的清晨窗光，左上角留出干净的空白区域用于放置标题。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1794207468914_s6iqvy_HWmJh2nbcAA9lZC.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1794207468914_s6iqvy_HWmJh2nbcAA9lZC.jpg",
+        "https://cms-assets.youmind.com/media/1794207468998_kvo9tc_HWmJjO4bIAAzb5z.jpg"
+      ],
+      "author": "Ashok | AI Design",
+      "authorHandle": "Ashok_ai1",
+      "originalPostUrl": "https://x.com/Ashok_ai1/status/2119376361412526391",
+      "publishedAt": "2026年11月8日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Ashok | AI Design",
+      "previewSourceUrl": "https://x.com/Ashok_ai1/status/2119376361412526391",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=37427",
+      "attributionText": "提示词与效果图：Ashok | AI Design；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-11-09",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-11-09T22:28:03.440Z"
+    },
+    {
+      "id": "nano-banana-85-f70aebb0badf",
+      "index": 40085,
       "title": "产品营销 - Nano Banana vs GPT Image：奢华海报效果对比",
       "originalTitle": "产品营销 - Nano Banana vs GPT Image：奢华海报效果对比",
       "description": "Nano Banana 与 GPT Image 在奢华商业海报生成方面的对比。包含两个模型使用的完整提示词。",
@@ -4115,11 +4163,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-85-1c653d9bb8af",
-      "index": 40085,
+      "id": "nano-banana-86-1c653d9bb8af",
+      "index": 40086,
       "title": "产品营销 - 光纤超现实主义人像提示词",
       "originalTitle": "产品营销 - 光纤超现实主义人像提示词",
       "description": "一份高度详细的 JSON 格式提示词，用于生成 Dakota Johnson（或类似主体）的超写实极端微距人像，将高级时装针织元素与赛博空灵的光纤照明相融合，专为 Nano Banana Pro 优化。",
@@ -4162,11 +4210,53 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-86-21104524fc7c",
-      "index": 40086,
+      "id": "nano-banana-87-57bc49105640",
+      "index": 40087,
+      "title": "产品营销 - 拳击馆新娘时尚大片",
+      "originalTitle": "产品营销 - 拳击馆新娘时尚大片",
+      "description": "一个高度详细的提示词，用于生成一张逼真的编辑风格图像：新娘在拳击台内缠绕手部绷带，重点展现面料质感、光影效果以及真实的人体解剖结构。",
+      "category": "创意发现",
+      "categories": [
+        "创意发现"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "自适应",
+      "prompt": "在一间真实且略带磨损痕迹的拳击馆内，创作一组竖版高级时装大片。画面主体是一位成年女性，她身着象牙白婚纱，低坐在拳台中央，正有条不紊地缠绕手部绷带。构图范围大致从裙摆中段延伸至头顶上方：距离要足够近以突出人物主体，同时又要足够宽，以便保留周围的围绳、昏暗的拳馆内部环境、悬挂的沙袋，以及画面左侧一扇泛着柔和光晕的大型工业窗。拳馆需保持实用且不完美的状态，而非奢华布景：地板磨损、围绳呈哑光质感、器材低调暗沉、角落隐没在深棕黑色的阴影中；没有观众，也没有戏剧化的场馆灯光。让她直接坐在拳台地面上，一侧膝盖高高抬起贴近躯干，另一条腿在铺展开的裙摆下较低处折叠。裙摆在地板上大面积堆叠，形成厚重而不规则的缎面褶皱，而非呈现干净利落的传统婚纱轮廓。躯干保持挺直但略微倾斜，双肩放松且高低不一，一只前臂随意搭在抬起的膝盖上。缠绷带的动作需在视觉上清晰明确。双手已部分缠上长长的白色棉质拳击绷带，一卷尚未用完的绷带静置于前景下方，一条松散的绷带向上延伸入手中。一只手拉紧绷带，另一只手的手腕正在被缠绕。手指保持自然用力的状态，不要刻意摆拍。在其中一只缠着绷带的手上，保留一枚清晰可见的钻石订婚戒指——尺寸虽小，但在光线折射下依然可辨。她身穿象牙白缎面婚纱，上身是结构利落的无肩带紧身胸衣，带有隐约的竖向鱼骨支撑，心形领口线条柔和，裙摆极为宽大，由厚实真丝缎制成。避免使用蕾丝、头纱、花卉贴花或公主风的装饰。这件礼服的高级感应源自剪裁、面料垂坠感与工艺结构，而非繁复装饰。手部绷带需呈现哑光、纤维质感并略带折痕，与缎面的光泽形成强烈对比。让礼服在与地面和弯曲双腿接触的地方自然起皱、堆积、压平，而不是完美地悬浮在她周围。发型做成松散、不完美的深色盘发，几缕湿润的发丝散落在额头、脸颊和颈部，仿佛她刚刚经历过剧烈运动。皮肤微微泛红，透出自然光泽，太阳穴、锁骨和前胸上部带有细密汗珠。妆容保持克制：眼部轮廓分明，眉毛自然，唇色柔和，拒绝新娘式的精致浓妆。头部明显转向拳台的一侧，而非朝向镜头。目光聚焦于画框之外的某处，双唇微启，神情平静、严肃且若有所思。她应当完全沉浸在自己的准备过程中，而不是在向观众演绎这个概念。以画面左侧窗户透入的方向性自然光作为主光源，周围环境仅提供微弱的漫反射补光。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1793514063475_n1czr6_HV23Ub5bIAAV391.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1793514063475_n1czr6_HV23Ub5bIAAV391.jpg"
+      ],
+      "author": "dreamy digital arts",
+      "authorHandle": "dreamydigiarts",
+      "originalPostUrl": "https://x.com/dreamydigiarts/status/2116553285490315466",
+      "publishedAt": "2026年10月31日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "dreamy digital arts",
+      "previewSourceUrl": "https://x.com/dreamydigiarts/status/2116553285490315466",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=37159",
+      "attributionText": "提示词与效果图：dreamy digital arts；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-11-09",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-11-09T22:28:03.440Z"
+    },
+    {
+      "id": "nano-banana-88-21104524fc7c",
+      "index": 40088,
       "title": "产品营销 - 透明材质静物对比",
       "originalTitle": "产品营销 - 透明材质静物对比",
       "description": "该提示词对比了 GPT-image-2.5、Nano Banana 2 (nano-banana-pro) 和 Grok-imagine2 在渲染玻璃、水和光线等透明材质方面的表现。",
@@ -4208,11 +4298,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-87-d536736564e1",
-      "index": 40087,
+      "id": "nano-banana-89-d536736564e1",
+      "index": 40089,
       "title": "产品营销 - 海滩玫瑰人像",
       "originalTitle": "产品营销 - 海滩玫瑰人像",
       "description": "用于生成年轻女性在鹅卵石海滩上手持红玫瑰的人像提示词，包含服装、光线和拍摄角度的具体细节。",
@@ -4250,11 +4340,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-88-06423b2c203a",
-      "index": 40088,
+      "id": "nano-banana-90-06423b2c203a",
+      "index": 40090,
       "title": "产品营销 - 超现实时尚编辑肖像：镀铬鲸鱼与玫瑰",
       "originalTitle": "产品营销 - 超现实时尚编辑肖像：镀铬鲸鱼与玫瑰",
       "description": "一个复杂的 JSON 结构化提示词，用于生成对称的超现实时尚编辑肖像，融合金属元素、悬浮鲸鱼和混乱沙漠背景，呈现高级时装风格。",
@@ -4297,11 +4387,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-89-c01e0ddbd711",
-      "index": 40089,
+      "id": "nano-banana-91-c01e0ddbd711",
+      "index": 40091,
       "title": "产品营销 - 蒸汽朋克飞艇电影感提示词",
       "originalTitle": "产品营销 - 蒸汽朋克飞艇电影感提示词",
       "description": "用于生成黄昏时分云层之上蒸汽朋克飞艇的详细提示词，旨在对比 GPT-image-2.5、nano banana2 和 Grok-imagine2 的输出效果。",
@@ -4343,11 +4433,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-90-3115acb11e5d",
-      "index": 40090,
+      "id": "nano-banana-92-3115acb11e5d",
+      "index": 40092,
       "title": "产品营销 - 喷火表演者高性能照片",
       "originalTitle": "产品营销 - 喷火表演者高性能照片",
       "description": "对比 Grok Imagine 与 Nano Banana Pro/2.1。提供的提示词旨在用于 Grok Imagine（“上传自拍 + #GrokImagine 提示词”），尽管用户声称 NB Pro 也表现出色。然而，严格来说，提取的提示词块在推文指令的上下文中被标记为用于 Grok Imagine。仔细查看：“我没想过 'Grok Imagine' 能像 Nano Banana Pro/2.1 一样很好地处理这个编辑类提示词。”然后，“女性喷火者提示词如下……上传自拍 + #GrokImagine 提示词：”。提示词本身足够通用，可以应用于两者，但明确的标签表明它是在 Grok 上测试的。鉴于这种歧义以及它列出了 'Nano Banana Pro/2.1'，我将根据作者的声明将其视为适用于 Nano B",
@@ -4386,11 +4476,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-91-eaf6ceb82fd5",
-      "index": 40091,
+      "id": "nano-banana-93-eaf6ceb82fd5",
+      "index": 40093,
       "title": "产品营销 - 希腊化时期 Medusa 编辑风格提示词",
       "originalTitle": "产品营销 - 希腊化时期 Medusa 编辑风格提示词",
       "description": "一个用于生成受希腊化时期古代艺术和 Medusa 传说启发的高级时尚暗黑神话编辑图像的详尽提示词，具有电影级布光和超写实纹理。",
@@ -4430,11 +4520,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-92-1d94d5ccb306",
-      "index": 40092,
+      "id": "nano-banana-94-1d94d5ccb306",
+      "index": 40094,
       "title": "产品营销 - 艾玛·沃特森前卫肖像",
       "originalTitle": "产品营销 - 艾玛·沃特森前卫肖像",
       "description": "用于 Nano Banana Pro 生成艾玛·沃特森前卫肖像的复杂 JSON 提示词。",
@@ -4476,94 +4566,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
-    },
-    {
-      "id": "nano-banana-93-837cdc30d016",
-      "index": 40093,
-      "title": "产品营销 - Clean-Girl 风格时尚编辑人像",
-      "originalTitle": "产品营销 - Clean-Girl 风格时尚编辑人像",
-      "description": "用于生成 Soho 顶层公寓中女性高级时尚编辑人像的提示词，特点包括水润肌肤质感、复古牛仔元素以及黄金时刻光影。",
-      "category": "人像摄影",
-      "categories": [
-        "人像摄影"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "主题：\n一幅纵向三联画式的时尚叙事，描绘了 Soho 区极简顶层公寓中上流社会的慵懒时光。\n\n主体：\n{argument name=\"name\" default=\"Elena\"}，一位 {argument name=\"age\" default=\"21\"} 岁的白人女性，身形清瘦且富有运动感。她依次出现在三个画面中：展现建筑空间的全景广角、平视视角的正面肖像，以及手扶腰际、充满触感的局部特写。\n\n人物 · 神态：\n心形脸庞搭配“clean girl”（清透裸妆）美学，羽状野生眉与高光泽唇妆相得益彰。她的眼神神秘而微垂，细腻的虹膜中倒映着曼哈顿的天际线。蜜金色长发烫成慵懒随性的“刚睡醒”波浪卷，在黄金时刻的逆光下熠熠生辉。肌肤水润透亮，呈现逼真的微观纹理，毛孔清晰可见，并覆有柔软的细小绒毛。\n\n服装 · 姿态：\n她身穿一件黑玛瑙色的 Chantilly 蕾丝高级定制连体衣，饰有繁复精致的花卉图案；下身搭配一条松垮挂在胯部的超大廓形重度水洗复古靛蓝牛仔裤。手腕上层叠佩戴着金色 Cartier Love 手镯与一枚 Juste un Clou 戒指，轻轻搭在粗犷的丹宁布料上，尽显高级珠宝与面料之间的质感碰撞。\n\n背景 · 光线：\n一间极其私密的 Soho 顶层公寓，配有落地窗与极简陈设，铺着白色长绒地毯，随意搭着柔软的纯棉被。场景沐浴在温暖定向的黄金时刻阳光中，勾勒出利落的几何阴影，并在肌肤与金饰上呈现出光线追踪般的细腻高光。\n\n构图 · 镜头：\n纵向三联拼贴构图。上方画面采用广角视角交代环境；中间画面为浅景深人像；下方画面则是聚焦材质纹理的微距特写。使用 Phase One XF IQ4 相机搭配 80mm Schneider Kreuznach 镜头拍摄。\n\n质感 · 风格：\n超写实的高级时装大片风格。细腻蕾丝、厚重丹宁与抛光黄金的触感均被极致还原。画面采用高对比度 S 型曲线调色，带有微妙的胶片颗粒感，蕾丝边缘的高光处泛着柔和的光晕。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "极简"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1792996786503_qocr1i_HVeYWHIW4AAF5oq.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1792996786503_qocr1i_HVeYWHIW4AAF5oq.jpg"
-      ],
-      "author": "Dominus Pellissier",
-      "authorHandle": "iamdomprompt",
-      "originalPostUrl": "https://x.com/iamdomprompt/status/2114326114634002630",
-      "publishedAt": "2026年10月25日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Dominus Pellissier",
-      "previewSourceUrl": "https://x.com/iamdomprompt/status/2114326114634002630",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=36907",
-      "attributionText": "提示词与效果图：Dominus Pellissier；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-11-09",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
-    },
-    {
-      "id": "nano-banana-94-b817241ede28",
-      "index": 40094,
-      "title": "产品营销 - 运动休闲时尚海报对比",
-      "originalTitle": "产品营销 - 运动休闲时尚海报对比",
-      "description": "GPT Image 2.5 与 Nano Banana 2.1 生成多面板运动休闲时尚海报的并排对比，重点展示角色身份一致性与服装细节。",
-      "category": "海报设计",
-      "categories": [
-        "海报设计"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "一张满版竖构图的运动休闲时尚海报，为海外原创品牌“{argument name=\"brand\" default=\"KUMORA ACTIVE\"}”打造，采用高端 2x2 影棚联系表（contact-sheet）排版，用于展示主推产品“{argument name=\"product\" default=\"STUDIO MOTION SET\"}”。四个画面中须出现同一位成年女性模特（明显超过 20 岁），背景为纯白无缝影棚背景，各画面之间以窄幅白色间距分隔。\n\n画面布局：左上为胸部以上特写肖像；右上为全身动态姿势；左下为蹲姿贴地动作；右下为掀起夹克的动态裁切构图。四张画面必须呈现出如同一场连贯影棚拍摄的效果。模特在每个画面中均穿着同一套风格统一的黑白运动装：黑色挂脖运动内衣，搭配印有“{argument name=\"brand\" default=\"KUMORA ACTIVE\"}”字样的白色弹力织带；宽松黑色运动长裤，两侧饰有双白条；Oversize 短款黑色夹克外套，带有低调的网眼拼接与小型白色标签；黑色弯檐帽，配有小巧的白色 K 标志；以及银色圆形耳罩的贴耳式运动耳机。服装、帽子、耳机及人物形象须完全保持一致；仅姿势与夹克状态有所变化。\n\n表情需冷静、专注且富有时尚大片感：肖像中侧目凝视，站立时姿态舒展有力，蹲姿安静直视镜头，掀起夹克的裁切画面中呈现风吹发丝的侧颜。每个画面中都必须清晰露出耳机。采用柔和的高调影棚布光，主光源位于前上方偏左，辅以轻柔补光，仅在必要处保留细微的接触阴影。白色背景占据主要画面空间；黑色服装构成图形骨架；白色滚边与条纹营造视觉节奏；银色耳机则是产品亮点。务必保留黑色面料的细节质感：哑光弹力内衣、罗纹弹力带、白色嵌线、尼龙夹克的微光泽、网眼纹理、帽子车线、织标以及光洁的金属耳罩。\n\n仅包含以下指定文字：每个画面上方靠近顶部的位置显示小字“{argument name=\"brand\" default=\"KUMORA ACTIVE\"}”，底部居中显示粗体标题“{argument name=\"product\" default=\"STUDIO MOTION SET\"}”，采用黑色大写无衬线字体。不添加任何额外文案。\n\n负面约束：不得出现其他模特，人物形象不得前后不一，服装部件不得错乱，耳机不得缺失，手部或肢体不得变形残缺，画面网格不得杂乱，黑色面料不得死黑丢失细节，皮肤不得呈现塑料感，地面不得脏污，不得出现生硬阴影，不得出现真实品牌 logo，文字不得拼写错误，文字不得遮挡面部或耳机，不得使用健身房或街头背景，不得出现道具，不得有拼贴痕迹，不得偏向绘画风格。",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "文字排版"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1792909737384_jwrdo7_HVaSrVuaQAEoi0l.jpg",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1792909737384_jwrdo7_HVaSrVuaQAEoi0l.jpg",
-        "https://cms-assets.youmind.com/media/1792909739166_rp3pu6_HVaSrV0bUAAECq3.jpg"
-      ],
-      "author": "Loriel.AI",
-      "authorHandle": "ou_zhen599",
-      "originalPostUrl": "https://x.com/ou_zhen599/status/2114038400735191523",
-      "publishedAt": "2026年10月24日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Loriel.AI",
-      "previewSourceUrl": "https://x.com/ou_zhen599/status/2114038400735191523",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=36879",
-      "attributionText": "提示词与效果图：Loriel.AI；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-11-09",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-95-e5a14f8ef4e2",
@@ -4605,7 +4608,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-96-ab743a483152",
@@ -4649,7 +4652,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-97-aad234e9cd54",
@@ -4692,7 +4695,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-98-5dd424dab38d",
@@ -4737,7 +4740,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-99-ef05929119d1",
@@ -4784,7 +4787,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-100-18401fd311fe",
@@ -4832,7 +4835,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-101-09bc7721748e",
@@ -4876,7 +4879,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-102-7efbbb1bdeb5",
@@ -4920,7 +4923,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-103-5bba8bd2648f",
@@ -4965,7 +4968,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-104-693e4f30eec6",
@@ -5007,7 +5010,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-105-92eecee5f00f",
@@ -5050,7 +5053,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-106-8edf7d17da68",
@@ -5094,7 +5097,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-107-df9d220c52ab",
@@ -5138,7 +5141,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-108-78cda65ecfe0",
@@ -5185,7 +5188,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-109-6ec2162f3f24",
@@ -5228,7 +5231,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-110-1cc1294b0c3f",
@@ -5275,7 +5278,7 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
       "id": "nano-banana-111-ef333598b5fb",
@@ -5320,55 +5323,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-112-5ada2cc934df",
+      "id": "nano-banana-112-47a846c1e426",
       "index": 40112,
-      "title": "电商主图 - 冰块中的极简主义产品",
-      "originalTitle": "电商主图 - 冰块中的极简主义产品",
-      "description": "一个用于比较 Grok Imagine 2.0 和 Nano Banana 2 的简单产品摄影提示词。",
-      "category": "人像摄影",
-      "categories": [
-        "人像摄影"
-      ],
-      "sourceCategory": "youmind-nano-banana-public-github",
-      "ratio": "自适应",
-      "prompt": "{argument name=\"product\" default=\"iPhone 18 Pro\"} 在冰块中，白色背景",
-      "promptType": "original-public-github",
-      "featured": false,
-      "tags": [
-        "Nano Banana",
-        "极简",
-        "摄影感"
-      ],
-      "image": "https://cms-assets.youmind.com/media/1786257225958_njgnpk_HPLRmraa8AAW99W.png",
-      "imageUrls": [
-        "https://cms-assets.youmind.com/media/1786257225958_njgnpk_HPLRmraa8AAW99W.png"
-      ],
-      "author": "Tim Jayas",
-      "authorHandle": "TimJayas",
-      "originalPostUrl": "https://x.com/TimJayas/status/2085962225886679161",
-      "publishedAt": "2026年8月8日",
-      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
-      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
-      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
-      "previewOwner": "Tim Jayas",
-      "previewSourceUrl": "https://x.com/TimJayas/status/2085962225886679161",
-      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=30800",
-      "attributionText": "提示词与效果图：Tim Jayas；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
-      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
-      "rightsReviewStatus": "cc-by-4.0-public-github",
-      "rightsReviewedAt": "2026-11-09",
-      "assetHostingMode": "remote-source-with-fallback",
-      "sourcePlatform": "YouMind OpenLab / X",
-      "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
-    },
-    {
-      "id": "nano-banana-113-47a846c1e426",
-      "index": 40113,
       "title": "游戏素材 - 体素游戏美术模型对比",
       "originalTitle": "游戏素材 - 体素游戏美术模型对比",
       "description": "对比 GPT Image、Nano Banana 和 Grok 生成的带有 HUD 元素的体素游戏美术截图。",
@@ -5407,11 +5366,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-114-9aae61eb77ef",
-      "index": 40114,
+      "id": "nano-banana-113-9aae61eb77ef",
+      "index": 40113,
       "title": "游戏素材 - 《侠盗一号》风格电影剧照提示词",
       "originalTitle": "游戏素材 - 《侠盗一号》风格电影剧照提示词",
       "description": "使用 Nano Banana Pro 生成具有特定光影和质感要求的《侠盗一号》/《安多》风格写实电影剧照的详细提示词。",
@@ -5449,11 +5408,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-115-326c1a15425d",
-      "index": 40115,
+      "id": "nano-banana-114-326c1a15425d",
+      "index": 40114,
       "title": "游戏素材 - 雨林野生动物观测站微缩世界",
       "originalTitle": "游戏素材 - 雨林野生动物观测站微缩世界",
       "description": "以艺术森林朋克风格呈现的雨林盆地野生动物观测站奇幻微缩世界，使用 Nano Banana Pro 生成。",
@@ -5491,11 +5450,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-116-7ae7792f04fb",
-      "index": 40116,
+      "id": "nano-banana-115-7ae7792f04fb",
+      "index": 40115,
       "title": "游戏素材 - 可爱毛毡青蛙场景",
       "originalTitle": "游戏素材 - 可爱毛毡青蛙场景",
       "description": "使用 Nano Banana Pro 生成一个异想天开的、毛毡质感的 3D 场景提示词，展示荷叶上的卡通青蛙。",
@@ -5534,11 +5493,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-117-dc3367b74683",
-      "index": 40117,
+      "id": "nano-banana-116-dc3367b74683",
+      "index": 40116,
       "title": "游戏素材 - 机械忧郁微距人像提示词",
       "originalTitle": "游戏素材 - 机械忧郁微距人像提示词",
       "description": "为 Nano Banana Pro 设计的复杂 JSON 格式提示词，用于生成一位带有黄铜钟表元素和机械蜂鸟的忧郁神童的极致特写微距人像。",
@@ -5580,11 +5539,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-118-73c286518e13",
-      "index": 40118,
+      "id": "nano-banana-117-73c286518e13",
+      "index": 40117,
       "title": "游戏素材 - Q 版 RPG 游戏活动主视觉图",
       "originalTitle": "游戏素材 - Q 版 RPG 游戏活动主视觉图",
       "description": "专为移动端 RPG 活动公告设计，此提示词可生成充满童趣的奇幻插画，包含可爱的 Q 版角色和魔法宝箱。",
@@ -5623,11 +5582,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-119-38b56d40cd1d",
-      "index": 40119,
+      "id": "nano-banana-118-38b56d40cd1d",
+      "index": 40118,
       "title": "游戏素材 - 表现主义写实混合风格肖像",
       "originalTitle": "游戏素材 - 表现主义写实混合风格肖像",
       "description": "一个融合了经典绘画写实主义与精致电影感角色插画的高级概念艺术设计提示词。",
@@ -5669,11 +5628,11 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     },
     {
-      "id": "nano-banana-120-37131e9cf93f",
-      "index": 40120,
+      "id": "nano-banana-119-37131e9cf93f",
+      "index": 40119,
       "title": "游戏素材 - Artifact Diorama SQL 生成",
       "originalTitle": "游戏素材 - Artifact Diorama SQL 生成",
       "description": "一种独特的 SQL 风格生成提示词，用于创建具有雕刻石材和古董金质感的复杂建筑立体模型。",
@@ -5716,7 +5675,51 @@
       "assetHostingMode": "remote-source-with-fallback",
       "sourcePlatform": "YouMind OpenLab / X",
       "syncMethod": "github-public-nano-banana-record",
-      "syncedAt": "2026-11-09T06:46:34.786Z"
+      "syncedAt": "2026-11-09T22:28:03.440Z"
+    },
+    {
+      "id": "nano-banana-120-24ad0fd1271a",
+      "index": 40120,
+      "title": "游戏素材 - Woodpunk 动力木质雕塑自动机",
+      "originalTitle": "游戏素材 - Woodpunk 动力木质雕塑自动机",
+      "description": "一套复杂的提示词系统，可将任何主题转化为带有发条细节的机械木质动力雕塑。",
+      "category": "人像摄影",
+      "categories": [
+        "人像摄影"
+      ],
+      "sourceCategory": "youmind-nano-banana-public-github",
+      "ratio": "1:1",
+      "prompt": "1. 语义推理引擎（动态材质映射）：\n输入 A 为任意主题（物体、动物、植物或概念）。\n分析主题的固有属性并将其映射到手工材质：\n主体（底盘）：推断主题的主要颜色/重量，并分配相应的硬木。\n装饰（镶嵌）：推断主题的图案或细节，并分配对比鲜明的细木镶嵌材质。\n机械结构（骨架）：推断主题的关节或动力源，并分配金属五金件。\n2. “不可变”容器（自动机）：\n目标：“达芬奇工作室”风格的产品摄影。\n物体：将主题渲染为一个复杂的、独立的木制机械玩具。\n底座：模型矗立在代表其语义环境的手工雕刻木块上。\n比例：桌面物体的微距摄影（约 12 英寸高）。\n3. 发条内部（变形）：\n剖面：视觉上移除或铰接打开部分外部“木壳”。\n内部：内部的生物或机械构造被发条装置取代。\n规则：可见的齿轮、自行车链条、手表发条和黄铜飞轮必须暗示物体通过发条动力驱动。\n紧固件：木材接缝处可见微小的黄铜螺丝、铆钉和铰链。\n4. 叙事角色（操作员）：\n角色：场景中集成了一个标准的关节木制人体模型（艺术家玩偶风格）。\n职责：该角色作为主题的维护者、骑手或操作员。\n互动：他们正在爬梯子擦拭物体、转动巨大的发条钥匙，或驾驶野兽/机器。\n配件：玩偶穿着与语境相符的雕刻木质装备。\n5. 灯光与氛围：\n灯光：柔光箱摄影棚灯光。漫射的高端商业灯光，在涂漆的曲线上营造出优雅的长条高光。\n背景：中性摄影棚灰。无缝无限背景，聚焦于材质纹理。\n质感：高光清漆。木材必须看起来昂贵、光滑且色彩饱和度深。\n输出：一张图片，1:1 纵横比，产品摄影，“Woodpunk”美学，8k 分辨率。",
+      "promptType": "original-public-github",
+      "featured": false,
+      "tags": [
+        "Nano Banana",
+        "3D",
+        "摄影感"
+      ],
+      "image": "https://cms-assets.youmind.com/media/1788591095766_6nq71i_HRP8n6XWcAEna6M.jpg",
+      "imageUrls": [
+        "https://cms-assets.youmind.com/media/1788591095766_6nq71i_HRP8n6XWcAEna6M.jpg"
+      ],
+      "author": "Gadgetify",
+      "authorHandle": "Gdgtify",
+      "originalPostUrl": "https://x.com/Gdgtify/status/2095854642882019392",
+      "publishedAt": "2026年9月4日",
+      "repositoryUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "collectionName": "YouMind OpenLab · Awesome Nano Banana Pro Prompts",
+      "promptLicense": "CC BY 4.0（公开 GitHub 集合）",
+      "promptLicenseUrl": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/LICENSE",
+      "previewOwner": "Gadgetify",
+      "previewSourceUrl": "https://x.com/Gdgtify/status/2095854642882019392",
+      "landingUrl": "https://youmind.com/zh-CN/nano-banana-pro-prompts?id=33483",
+      "attributionText": "提示词与效果图：Gadgetify；公开整理：YouMind OpenLab。本站保留逐条原作者与原始来源。",
+      "modificationNote": "完整提示词未改写；本站仅增加中文分类、检索标签与来源说明。",
+      "rightsReviewStatus": "cc-by-4.0-public-github",
+      "rightsReviewedAt": "2026-11-09",
+      "assetHostingMode": "remote-source-with-fallback",
+      "sourcePlatform": "YouMind OpenLab / X",
+      "syncMethod": "github-public-nano-banana-record",
+      "syncedAt": "2026-11-09T22:28:03.440Z"
     }
   ]
 }
