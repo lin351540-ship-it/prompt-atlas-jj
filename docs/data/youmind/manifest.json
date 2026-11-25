@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "source": "https://github.com/YouMind-OpenLab/gpt-image-2-prompts-search",
-  "sourceUpdatedAt": "2026-11-24T22:20:56.447Z",
-  "syncedAt": "2026-11-24T22:32:43.137Z",
-  "declaredTotalPrompts": 18144,
+  "sourceUpdatedAt": "2026-11-25T07:41:39.557Z",
+  "syncedAt": "2026-11-25T08:45:26.356Z",
+  "declaredTotalPrompts": 18145,
   "uniquePromptCount": 18106,
-  "manifestDrift": 38,
+  "manifestDrift": 39,
   "completePromptCount": 18106,
-  "categoryMemberships": 28427,
+  "categoryMemberships": 28428,
   "categories": [
     {
       "slug": "profile-avatar",
@@ -19,7 +19,7 @@
       "slug": "social-media-post",
       "title": "Social Media Post",
       "file": "social-media-post.json",
-      "count": 7081
+      "count": 7082
     },
     {
       "slug": "infographic-edu-visual",
